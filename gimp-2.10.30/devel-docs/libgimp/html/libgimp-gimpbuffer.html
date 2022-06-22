@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpbuffer: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-general.html" title="Functions not Related to Specific Images">
+<link rel="prev" href="libgimp-gimpenums.html" title="gimpenums">
+<link rel="next" href="libgimp-gimpcontext.html" title="gimpcontext">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpbuffer.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-general.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpenums.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpcontext.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpbuffer"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpbuffer.top_of_page"></a>gimpbuffer</span></h2>
+<p>gimpbuffer — Functions for manipulating cut buffers.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpbuffer.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> **
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbuffer.html#gimp-buffers-get-list" title="gimp_buffers_get_list ()">gimp_buffers_get_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbuffer.html#gimp-buffer-rename" title="gimp_buffer_rename ()">gimp_buffer_rename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbuffer.html#gimp-buffer-delete" title="gimp_buffer_delete ()">gimp_buffer_delete</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbuffer.html#gimp-buffer-get-width" title="gimp_buffer_get_width ()">gimp_buffer_get_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbuffer.html#gimp-buffer-get-height" title="gimp_buffer_get_height ()">gimp_buffer_get_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbuffer.html#gimp-buffer-get-bytes" title="gimp_buffer_get_bytes ()">gimp_buffer_get_bytes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpImageBaseType"><span class="returnvalue">GimpImageBaseType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbuffer.html#gimp-buffer-get-image-type" title="gimp_buffer_get_image_type ()">gimp_buffer_get_image_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpbuffer.description"></a><h2>Description</h2>
+<p>Functions related to named cut buffers.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpbuffer.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-buffers-get-list"></a><h3>gimp_buffers_get_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> **
+gimp_buffers_get_list (<em class="parameter"><code>const <span class="type">gchar</span> *filter</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *num_buffers</code></em>);</pre>
+<p>Retrieve a complete listing of the available buffers.</p>
+<p>This procedure returns a complete listing of available named
+buffers.</p>
+<div class="refsect3">
+<a name="gimp-buffers-get-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filter</p></td>
+<td class="parameter_description"><p>An optional regular expression used to filter the list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_buffers</p></td>
+<td class="parameter_description"><p>The number of buffers.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-buffers-get-list.returns"></a><h4>Returns</h4>
+<p> The list of buffer names. The returned value must be freed
+with <code class="function">g_strfreev()</code>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-buffer-rename"></a><h3>gimp_buffer_rename ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_buffer_rename (<em class="parameter"><code>const <span class="type">gchar</span> *buffer_name</code></em>,
+                    <em class="parameter"><code>const <span class="type">gchar</span> *new_name</code></em>);</pre>
+<p>Renames a named buffer.</p>
+<p>This procedure renames a named buffer.</p>
+<div class="refsect3">
+<a name="gimp-buffer-rename.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer_name</p></td>
+<td class="parameter_description"><p>The buffer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_name</p></td>
+<td class="parameter_description"><p>The buffer's new name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-buffer-rename.returns"></a><h4>Returns</h4>
+<p> The real name given to the buffer.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-buffer-delete"></a><h3>gimp_buffer_delete ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_buffer_delete (<em class="parameter"><code>const <span class="type">gchar</span> *buffer_name</code></em>);</pre>
+<p>Deletes a named buffer.</p>
+<p>This procedure deletes a named buffer.</p>
+<div class="refsect3">
+<a name="gimp-buffer-delete.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>buffer_name</p></td>
+<td class="parameter_description"><p>The buffer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-buffer-delete.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-buffer-get-width"></a><h3>gimp_buffer_get_width ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_buffer_get_width (<em class="parameter"><code>const <span class="type">gchar</span> *buffer_name</code></em>);</pre>
+<p>Retrieves the specified buffer's width.</p>
+<p>This procedure retrieves the specified named buffer's width.</p>
+<div class="refsect3">
+<a name="gimp-buffer-get-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>buffer_name</p></td>
+<td class="parameter_description"><p>The buffer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-buffer-get-width.returns"></a><h4>Returns</h4>
+<p> The buffer width.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-buffer-get-height"></a><h3>gimp_buffer_get_height ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_buffer_get_height (<em class="parameter"><code>const <span class="type">gchar</span> *buffer_name</code></em>);</pre>
+<p>Retrieves the specified buffer's height.</p>
+<p>This procedure retrieves the specified named buffer's height.</p>
+<div class="refsect3">
+<a name="gimp-buffer-get-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>buffer_name</p></td>
+<td class="parameter_description"><p>The buffer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-buffer-get-height.returns"></a><h4>Returns</h4>
+<p> The buffer height.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-buffer-get-bytes"></a><h3>gimp_buffer_get_bytes ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_buffer_get_bytes (<em class="parameter"><code>const <span class="type">gchar</span> *buffer_name</code></em>);</pre>
+<p>Retrieves the specified buffer's bytes.</p>
+<p>This procedure retrieves the specified named buffer's bytes.</p>
+<div class="refsect3">
+<a name="gimp-buffer-get-bytes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>buffer_name</p></td>
+<td class="parameter_description"><p>The buffer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-buffer-get-bytes.returns"></a><h4>Returns</h4>
+<p> The buffer bpp.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-buffer-get-image-type"></a><h3>gimp_buffer_get_image_type ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpImageBaseType"><span class="returnvalue">GimpImageBaseType</span></a>
+gimp_buffer_get_image_type (<em class="parameter"><code>const <span class="type">gchar</span> *buffer_name</code></em>);</pre>
+<p>Retrieves the specified buffer's image type.</p>
+<p>This procedure retrieves the specified named buffer's image type.</p>
+<div class="refsect3">
+<a name="gimp-buffer-get-image-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>buffer_name</p></td>
+<td class="parameter_description"><p>The buffer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-buffer-get-image-type.returns"></a><h4>Returns</h4>
+<p> The buffer image type.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

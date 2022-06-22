@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimptexttool: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimptextlayer.html" title="gimptextlayer">
+<link rel="next" href="libgimp-gimptile.html" title="gimptile">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimptexttool.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimptextlayer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimptile.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimptexttool"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimptexttool.top_of_page"></a>gimptexttool</span></h2>
+<p>gimptexttool — Functions for controlling the text tool.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimptexttool.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptexttool.html#gimp-text-fontname" title="gimp_text_fontname ()">gimp_text_fontname</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptexttool.html#gimp-text-get-extents-fontname" title="gimp_text_get_extents_fontname ()">gimp_text_get_extents_fontname</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptexttool.html#gimp-text" title="gimp_text ()">gimp_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptexttool.html#gimp-text-get-extents" title="gimp_text_get_extents ()">gimp_text_get_extents</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimptexttool.description"></a><h2>Description</h2>
+<p>Functions for controlling the text tool.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimptexttool.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-text-fontname"></a><h3>gimp_text_fontname ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_text_fontname (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                    <em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                    <em class="parameter"><code><span class="type">gdouble</span> x</code></em>,
+                    <em class="parameter"><code><span class="type">gdouble</span> y</code></em>,
+                    <em class="parameter"><code>const <span class="type">gchar</span> *text</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> border</code></em>,
+                    <em class="parameter"><code><span class="type">gboolean</span> antialias</code></em>,
+                    <em class="parameter"><code><span class="type">gdouble</span> size</code></em>,
+                    <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpSizeType"><span class="type">GimpSizeType</span></a> size_type</code></em>,
+                    <em class="parameter"><code>const <span class="type">gchar</span> *fontname</code></em>);</pre>
+<p>Add text at the specified location as a floating selection or a new
+layer.</p>
+<p>This tool requires a fontname matching an installed PangoFT2 font.
+You can specify the fontsize in units of pixels or points, and the
+appropriate metric is specified using the size_type argument. The x
+and y parameters together control the placement of the new text by
+specifying the upper left corner of the text bounding box. If the
+specified drawable parameter is valid, the text will be created as a
+floating selection attached to the drawable. If the drawable
+parameter is not valid (-1), the text will appear as a new layer.
+Finally, a border can be specified around the final rendered text.
+The border is measured in pixels. Parameter size-type is not used
+and is currently ignored. If you need to display a font in points,
+divide the size in points by 72.0 and multiply it by the image's
+vertical resolution.</p>
+<div class="refsect3">
+<a name="gimp-text-fontname.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The affected drawable: (-1 for a new text layer).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The x coordinate for the left of the text bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>The y coordinate for the top of the text bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>The text to generate (in UTF-8 encoding).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>border</p></td>
+<td class="parameter_description"><p>The size of the border.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>antialias</p></td>
+<td class="parameter_description"><p>Antialiasing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of text in either pixels or points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size_type</p></td>
+<td class="parameter_description"><p>The units of specified size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fontname</p></td>
+<td class="parameter_description"><p>The name of the font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-text-fontname.returns"></a><h4>Returns</h4>
+<p> The new text layer or -1 if no layer was created.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-text-get-extents-fontname"></a><h3>gimp_text_get_extents_fontname ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_text_get_extents_fontname (<em class="parameter"><code>const <span class="type">gchar</span> *text</code></em>,
+                                <em class="parameter"><code><span class="type">gdouble</span> size</code></em>,
+                                <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpSizeType"><span class="type">GimpSizeType</span></a> size_type</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *fontname</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> *ascent</code></em>,
+                                <em class="parameter"><code><span class="type">gint</span> *descent</code></em>);</pre>
+<p>Get extents of the bounding box for the specified text.</p>
+<p>This tool returns the width and height of a bounding box for the
+specified text string with the specified font information. Ascent
+and descent for the specified font are returned as well. Parameter
+size-type is not used and is currently ignored. If you need to
+display a font in points, divide the size in points by 72.0 and
+multiply it by the vertical resolution of the image you are taking
+into account.</p>
+<div class="refsect3">
+<a name="gimp-text-get-extents-fontname.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>The text to generate (in UTF-8 encoding).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of text in either pixels or points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size_type</p></td>
+<td class="parameter_description"><p>The units of specified size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fontname</p></td>
+<td class="parameter_description"><p>The name of the font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The width of the specified font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The height of the specified font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ascent</p></td>
+<td class="parameter_description"><p>The ascent of the specified font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>descent</p></td>
+<td class="parameter_description"><p>The descent of the specified font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-text-get-extents-fontname.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-text"></a><h3>gimp_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_text (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+           <em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+           <em class="parameter"><code><span class="type">gdouble</span> x</code></em>,
+           <em class="parameter"><code><span class="type">gdouble</span> y</code></em>,
+           <em class="parameter"><code>const <span class="type">gchar</span> *text</code></em>,
+           <em class="parameter"><code><span class="type">gint</span> border</code></em>,
+           <em class="parameter"><code><span class="type">gboolean</span> antialias</code></em>,
+           <em class="parameter"><code><span class="type">gdouble</span> size</code></em>,
+           <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpSizeType"><span class="type">GimpSizeType</span></a> size_type</code></em>,
+           <em class="parameter"><code>const <span class="type">gchar</span> *foundry</code></em>,
+           <em class="parameter"><code>const <span class="type">gchar</span> *family</code></em>,
+           <em class="parameter"><code>const <span class="type">gchar</span> *weight</code></em>,
+           <em class="parameter"><code>const <span class="type">gchar</span> *slant</code></em>,
+           <em class="parameter"><code>const <span class="type">gchar</span> *set_width</code></em>,
+           <em class="parameter"><code>const <span class="type">gchar</span> *spacing</code></em>,
+           <em class="parameter"><code>const <span class="type">gchar</span> *registry</code></em>,
+           <em class="parameter"><code>const <span class="type">gchar</span> *encoding</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_text</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimptexttool.html#gimp-text-fontname" title="gimp_text_fontname ()"><code class="function">gimp_text_fontname()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The affected drawable: (-1 for a new text layer).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The x coordinate for the left of the text bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>The y coordinate for the top of the text bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>The text to generate (in UTF-8 encoding).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>border</p></td>
+<td class="parameter_description"><p>The size of the border.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>antialias</p></td>
+<td class="parameter_description"><p>Antialiasing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of text in either pixels or points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size_type</p></td>
+<td class="parameter_description"><p>The units of specified size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>foundry</p></td>
+<td class="parameter_description"><p>The font foundry.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>family</p></td>
+<td class="parameter_description"><p>The font family.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>weight</p></td>
+<td class="parameter_description"><p>The font weight.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>slant</p></td>
+<td class="parameter_description"><p>The font slant.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_width</p></td>
+<td class="parameter_description"><p>The font set-width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spacing</p></td>
+<td class="parameter_description"><p>The font spacing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>registry</p></td>
+<td class="parameter_description"><p>The font registry.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>encoding</p></td>
+<td class="parameter_description"><p>The font encoding.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-text.returns"></a><h4>Returns</h4>
+<p> The new text layer or -1 if no layer was created.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-text-get-extents"></a><h3>gimp_text_get_extents ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_text_get_extents (<em class="parameter"><code>const <span class="type">gchar</span> *text</code></em>,
+                       <em class="parameter"><code><span class="type">gdouble</span> size</code></em>,
+                       <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpSizeType"><span class="type">GimpSizeType</span></a> size_type</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *foundry</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *family</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *weight</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *slant</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *set_width</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *spacing</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *registry</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *encoding</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *ascent</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *descent</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_text_get_extents</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimptexttool.html#gimp-text-get-extents-fontname" title="gimp_text_get_extents_fontname ()"><code class="function">gimp_text_get_extents_fontname()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-text-get-extents.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>The text to generate (in UTF-8 encoding).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of text in either pixels or points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size_type</p></td>
+<td class="parameter_description"><p>The units of specified size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>foundry</p></td>
+<td class="parameter_description"><p>The font foundry.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>family</p></td>
+<td class="parameter_description"><p>The font family.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>weight</p></td>
+<td class="parameter_description"><p>The font weight.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>slant</p></td>
+<td class="parameter_description"><p>The font slant.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_width</p></td>
+<td class="parameter_description"><p>The font set-width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spacing</p></td>
+<td class="parameter_description"><p>The font spacing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>registry</p></td>
+<td class="parameter_description"><p>The font registry.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>encoding</p></td>
+<td class="parameter_description"><p>The font encoding.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The width of the specified font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The height of the specified font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ascent</p></td>
+<td class="parameter_description"><p>The ascent of the specified font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>descent</p></td>
+<td class="parameter_description"><p>The descent of the specified font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-text-get-extents.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

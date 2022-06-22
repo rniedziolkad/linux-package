@@ -1,0 +1,2286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpdrawable: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpdisplay.html" title="gimpdisplay">
+<link rel="next" href="libgimp-gimpdrawablecolor.html" title="gimpdrawablecolor">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpdrawable.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpdisplay.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpdrawablecolor.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpdrawable"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpdrawable.top_of_page"></a>gimpdrawable</span></h2>
+<p>gimpdrawable — Functions to manipulate drawables.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpdrawable.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GeglBuffer</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-buffer" title="gimp_drawable_get_buffer ()">gimp_drawable_get_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GeglBuffer</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-shadow-buffer" title="gimp_drawable_get_shadow_buffer ()">gimp_drawable_get_shadow_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">Babl</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-format" title="gimp_drawable_get_format ()">gimp_drawable_get_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">Babl</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-thumbnail-format" title="gimp_drawable_get_thumbnail_format ()">gimp_drawable_get_thumbnail_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="returnvalue">GimpDrawable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get" title="gimp_drawable_get ()">gimp_drawable_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-detach" title="gimp_drawable_detach ()">gimp_drawable_detach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-flush" title="gimp_drawable_flush ()">gimp_drawable_flush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-delete" title="gimp_drawable_delete ()">gimp_drawable_delete</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-is-valid" title="gimp_drawable_is_valid ()">gimp_drawable_is_valid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-name" title="gimp_drawable_get_name ()">gimp_drawable_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-set-name" title="gimp_drawable_set_name ()">gimp_drawable_set_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-visible" title="gimp_drawable_get_visible ()">gimp_drawable_get_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-set-visible" title="gimp_drawable_set_visible ()">gimp_drawable_set_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-linked" title="gimp_drawable_get_linked ()">gimp_drawable_get_linked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-set-linked" title="gimp_drawable_set_linked ()">gimp_drawable_set_linked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-tattoo" title="gimp_drawable_get_tattoo ()">gimp_drawable_get_tattoo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-set-tattoo" title="gimp_drawable_set_tattoo ()">gimp_drawable_set_tattoo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint8</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-pixel" title="gimp_drawable_get_pixel ()">gimp_drawable_get_pixel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-set-pixel" title="gimp_drawable_set_pixel ()">gimp_drawable_set_pixel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimptile.html#GimpTile" title="GimpTile"><span class="returnvalue">GimpTile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-tile" title="gimp_drawable_get_tile ()">gimp_drawable_get_tile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimptile.html#GimpTile" title="GimpTile"><span class="returnvalue">GimpTile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-tile2" title="gimp_drawable_get_tile2 ()">gimp_drawable_get_tile2</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-thumbnail-data" title="gimp_drawable_get_thumbnail_data ()">gimp_drawable_get_thumbnail_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-sub-thumbnail-data" title="gimp_drawable_get_sub_thumbnail_data ()">gimp_drawable_get_sub_thumbnail_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-color-uchar" title="gimp_drawable_get_color_uchar ()">gimp_drawable_get_color_uchar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-merge-shadow" title="gimp_drawable_merge_shadow ()">gimp_drawable_merge_shadow</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-free-shadow" title="gimp_drawable_free_shadow ()">gimp_drawable_free_shadow</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-fill" title="gimp_drawable_fill ()">gimp_drawable_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-update" title="gimp_drawable_update ()">gimp_drawable_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-mask-bounds" title="gimp_drawable_mask_bounds ()">gimp_drawable_mask_bounds</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-mask-intersect" title="gimp_drawable_mask_intersect ()">gimp_drawable_mask_intersect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-image" title="gimp_drawable_get_image ()">gimp_drawable_get_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-set-image" title="gimp_drawable_set_image ()">gimp_drawable_set_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-has-alpha" title="gimp_drawable_has_alpha ()">gimp_drawable_has_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpImageType"><span class="returnvalue">GimpImageType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-type-with-alpha" title="gimp_drawable_type_with_alpha ()">gimp_drawable_type_with_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpImageType"><span class="returnvalue">GimpImageType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-type" title="gimp_drawable_type ()">gimp_drawable_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-is-rgb" title="gimp_drawable_is_rgb ()">gimp_drawable_is_rgb</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-is-gray" title="gimp_drawable_is_gray ()">gimp_drawable_is_gray</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-is-indexed" title="gimp_drawable_is_indexed ()">gimp_drawable_is_indexed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-bpp" title="gimp_drawable_bpp ()">gimp_drawable_bpp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-width" title="gimp_drawable_width ()">gimp_drawable_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-height" title="gimp_drawable_height ()">gimp_drawable_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-offsets" title="gimp_drawable_offsets ()">gimp_drawable_offsets</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-is-channel" title="gimp_drawable_is_channel ()">gimp_drawable_is_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-is-layer" title="gimp_drawable_is_layer ()">gimp_drawable_is_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-is-layer-mask" title="gimp_drawable_is_layer_mask ()">gimp_drawable_is_layer_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-is-text-layer" title="gimp_drawable_is_text_layer ()">gimp_drawable_is_text_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-offset" title="gimp_drawable_offset ()">gimp_drawable_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-foreground-extract" title="gimp_drawable_foreground_extract ()">gimp_drawable_foreground_extract</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-GimpParasite.html#GimpParasite"><span class="returnvalue">GimpParasite</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-parasite-find" title="gimp_drawable_parasite_find ()">gimp_drawable_parasite_find</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-parasite-list" title="gimp_drawable_parasite_list ()">gimp_drawable_parasite_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-parasite-attach" title="gimp_drawable_parasite_attach ()">gimp_drawable_parasite_attach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-parasite-detach" title="gimp_drawable_parasite_detach ()">gimp_drawable_parasite_detach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-attach-new-parasite" title="gimp_drawable_attach_new_parasite ()">gimp_drawable_attach_new_parasite</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdrawable.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable">GimpDrawable</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdrawable.description"></a><h2>Description</h2>
+<p>Functions to manipulate drawables.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdrawable.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-drawable-get-buffer"></a><h3>gimp_drawable_get_buffer ()</h3>
+<pre class="programlisting"><span class="returnvalue">GeglBuffer</span> *
+gimp_drawable_get_buffer (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns a <span class="type">GeglBuffer</span> of a specified drawable. The buffer can be used
+like any other GEGL buffer. Its data will we synced back with the core
+drawable when the buffer gets destroyed, or when <code class="function">gegl_buffer_flush()</code>
+is called.</p>
+<div class="refsect3">
+<a name="gimp-drawable-get-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>the ID of the <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> to get the buffer for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-buffer.returns"></a><h4>Returns</h4>
+<p> The <span class="type">GeglBuffer</span>.</p>
+<p>See Also: <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-shadow-buffer" title="gimp_drawable_get_shadow_buffer ()"><code class="function">gimp_drawable_get_shadow_buffer()</code></a></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-shadow-buffer"></a><h3>gimp_drawable_get_shadow_buffer ()</h3>
+<pre class="programlisting"><span class="returnvalue">GeglBuffer</span> *
+gimp_drawable_get_shadow_buffer (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns a <span class="type">GeglBuffer</span> of a specified drawable's shadow tiles. The
+buffer can be used like any other GEGL buffer. Its data will we
+synced back with the core drawable's shadow tiles when the buffer
+gets destroyed, or when <code class="function">gegl_buffer_flush()</code> is called.</p>
+<div class="refsect3">
+<a name="gimp-drawable-get-shadow-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>the ID of the <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> to get the buffer for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-shadow-buffer.returns"></a><h4>Returns</h4>
+<p> The <span class="type">GeglBuffer</span>.</p>
+<p>See Also: <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-shadow-buffer" title="gimp_drawable_get_shadow_buffer ()"><code class="function">gimp_drawable_get_shadow_buffer()</code></a></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-format"></a><h3>gimp_drawable_get_format ()</h3>
+<pre class="programlisting">const <span class="returnvalue">Babl</span> *
+gimp_drawable_get_format (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns the <span class="type">Babl</span> format of the drawable.</p>
+<div class="refsect3">
+<a name="gimp-drawable-get-format.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>the ID of the <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> to get the format for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-format.returns"></a><h4>Returns</h4>
+<p> The <span class="type">Babl</span> format.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-thumbnail-format"></a><h3>gimp_drawable_get_thumbnail_format ()</h3>
+<pre class="programlisting">const <span class="returnvalue">Babl</span> *
+gimp_drawable_get_thumbnail_format (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns the <span class="type">Babl</span> thumbnail format of the drawable.</p>
+<div class="refsect3">
+<a name="gimp-drawable-get-thumbnail-format.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>the ID of the <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> to get the thumbnail format for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-thumbnail-format.returns"></a><h4>Returns</h4>
+<p> The <span class="type">Babl</span> thumbnail format.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10-14.html#api-index-2.10.14">2.10.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get"></a><h3>gimp_drawable_get ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="returnvalue">GimpDrawable</span></a> *
+gimp_drawable_get (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_drawable_get</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This function creates a <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> structure for the core
+drawable identified by <em class="parameter"><code>drawable_ID</code></em>
+. The returned structure
+contains some basic information about the drawable and can also
+hold tile data for transfer to and from the core.</p>
+<p>Note that the name of this function is somewhat misleading, because
+it suggests that it simply returns a handle.  This is not the case:
+if the function is called multiple times, it creates separate tile
+lists each time, which will usually produce undesired results.</p>
+<p>When a plug-in has finished working with a drawable, before exiting
+it should call <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-detach" title="gimp_drawable_detach ()"><code class="function">gimp_drawable_detach()</code></a> to make sure that all tile data is
+transferred back to the core.</p>
+<div class="refsect3">
+<a name="gimp-drawable-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>the ID of the drawable</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> wrapper</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-detach"></a><h3>gimp_drawable_detach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_drawable_detach (<em class="parameter"><code><a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> *drawable</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_drawable_detach</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This function is called when a plug-in is finished working
+with a drawable.  It forces all tile data held in the tile
+list of the <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> to be transferred to the core, and
+then frees all associated memory. You must not access the
+<em class="parameter"><code>drawable</code></em>
+ after having called <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-detach" title="gimp_drawable_detach ()"><code class="function">gimp_drawable_detach()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-drawable-detach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>The <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> to detach from the core</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-flush"></a><h3>gimp_drawable_flush ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_drawable_flush (<em class="parameter"><code><a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> *drawable</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_drawable_flush</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This function causes all tile data in the tile list of <em class="parameter"><code>drawable</code></em>
+ to be
+transferred to the core.  It is usually called in situations where a
+plug-in acts on a drawable, and then needs to read the results of its
+actions.  Data transferred back from the core will not generally be valid
+unless <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-flush" title="gimp_drawable_flush ()"><code class="function">gimp_drawable_flush()</code></a> has been called beforehand.</p>
+<div class="refsect3">
+<a name="gimp-drawable-flush.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>The <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> whose tile data is to be transferred
+to the core.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-delete"></a><h3>gimp_drawable_delete ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_delete (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_delete</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-delete" title="gimp_item_delete ()"><code class="function">gimp_item_delete()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-delete.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable to delete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-delete.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-is-valid"></a><h3>gimp_drawable_is_valid ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_is_valid (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_is_valid</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-is-valid" title="gimp_item_is_valid ()"><code class="function">gimp_item_is_valid()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-valid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable to check.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-valid.returns"></a><h4>Returns</h4>
+<p> Whether the drawable ID is valid.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-name"></a><h3>gimp_drawable_get_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_drawable_get_name (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_get_name</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-get-name" title="gimp_item_get_name ()"><code class="function">gimp_item_get_name()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-name.returns"></a><h4>Returns</h4>
+<p> The drawable name.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-set-name"></a><h3>gimp_drawable_set_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_set_name (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                        <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_set_name</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-set-name" title="gimp_item_set_name ()"><code class="function">gimp_item_set_name()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The new drawable name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-name.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-visible"></a><h3>gimp_drawable_get_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_get_visible (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_get_visible</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-get-visible" title="gimp_item_get_visible ()"><code class="function">gimp_item_get_visible()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-visible.returns"></a><h4>Returns</h4>
+<p> The drawable visibility.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-set-visible"></a><h3>gimp_drawable_set_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_set_visible (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                           <em class="parameter"><code><span class="type">gboolean</span> visible</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_set_visible</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-set-visible" title="gimp_item_set_visible ()"><code class="function">gimp_item_set_visible()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>visible</p></td>
+<td class="parameter_description"><p>The new drawable visibility.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-visible.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-linked"></a><h3>gimp_drawable_get_linked ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_get_linked (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_get_linked</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-get-linked" title="gimp_item_get_linked ()"><code class="function">gimp_item_get_linked()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-linked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-linked.returns"></a><h4>Returns</h4>
+<p> The drawable linked state (for moves).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-set-linked"></a><h3>gimp_drawable_set_linked ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_set_linked (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                          <em class="parameter"><code><span class="type">gboolean</span> linked</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_set_linked</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-set-linked" title="gimp_item_set_linked ()"><code class="function">gimp_item_set_linked()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-linked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>linked</p></td>
+<td class="parameter_description"><p>The new drawable linked state.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-linked.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-tattoo"></a><h3>gimp_drawable_get_tattoo ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_drawable_get_tattoo (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_get_tattoo</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-get-tattoo" title="gimp_item_get_tattoo ()"><code class="function">gimp_item_get_tattoo()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-tattoo.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-tattoo.returns"></a><h4>Returns</h4>
+<p> The drawable tattoo.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-set-tattoo"></a><h3>gimp_drawable_set_tattoo ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_set_tattoo (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                          <em class="parameter"><code><span class="type">gint</span> tattoo</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_set_tattoo</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-set-tattoo" title="gimp_item_set_tattoo ()"><code class="function">gimp_item_set_tattoo()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-tattoo.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tattoo</p></td>
+<td class="parameter_description"><p>The new drawable tattoo.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-tattoo.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-pixel"></a><h3>gimp_drawable_get_pixel ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint8</span> *
+gimp_drawable_get_pixel (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> x_coord</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> y_coord</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> *num_channels</code></em>);</pre>
+<p>Gets the value of the pixel at the specified coordinates.</p>
+<p>This procedure gets the pixel value at the specified coordinates.
+The 'num_channels' argument must always be equal to the
+bytes-per-pixel value for the specified drawable.</p>
+<div class="refsect3">
+<a name="gimp-drawable-get-pixel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_coord</p></td>
+<td class="parameter_description"><p>The x coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_coord</p></td>
+<td class="parameter_description"><p>The y coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_channels</p></td>
+<td class="parameter_description"><p>The number of channels for the pixel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-pixel.returns"></a><h4>Returns</h4>
+<p> The pixel value.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-set-pixel"></a><h3>gimp_drawable_set_pixel ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_set_pixel (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> x_coord</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> y_coord</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> num_channels</code></em>,
+                         <em class="parameter"><code>const <span class="type">guint8</span> *pixel</code></em>);</pre>
+<p>Sets the value of the pixel at the specified coordinates.</p>
+<p>This procedure sets the pixel value at the specified coordinates.
+The 'num_channels' argument must always be equal to the
+bytes-per-pixel value for the specified drawable. Note that this
+function is not undoable, you should use it only on drawables you
+just created yourself.</p>
+<div class="refsect3">
+<a name="gimp-drawable-set-pixel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_coord</p></td>
+<td class="parameter_description"><p>The x coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_coord</p></td>
+<td class="parameter_description"><p>The y coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_channels</p></td>
+<td class="parameter_description"><p>The number of channels for the pixel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pixel</p></td>
+<td class="parameter_description"><p>The pixel value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-pixel.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-tile"></a><h3>gimp_drawable_get_tile ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimptile.html#GimpTile" title="GimpTile"><span class="returnvalue">GimpTile</span></a> *
+gimp_drawable_get_tile (<em class="parameter"><code><a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> *drawable</code></em>,
+                        <em class="parameter"><code><span class="type">gboolean</span> shadow</code></em>,
+                        <em class="parameter"><code><span class="type">gint</span> row</code></em>,
+                        <em class="parameter"><code><span class="type">gint</span> col</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_drawable_get_tile</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-tile2"></a><h3>gimp_drawable_get_tile2 ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimptile.html#GimpTile" title="GimpTile"><span class="returnvalue">GimpTile</span></a> *
+gimp_drawable_get_tile2 (<em class="parameter"><code><a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> *drawable</code></em>,
+                         <em class="parameter"><code><span class="type">gboolean</span> shadow</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> y</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_drawable_get_tile2</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-thumbnail-data"></a><h3>gimp_drawable_get_thumbnail_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">guchar</span> *
+gimp_drawable_get_thumbnail_data (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                                  <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                                  <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
+                                  <em class="parameter"><code><span class="type">gint</span> *bpp</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-sub-thumbnail-data"></a><h3>gimp_drawable_get_sub_thumbnail_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">guchar</span> *
+gimp_drawable_get_sub_thumbnail_data (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                                      <em class="parameter"><code><span class="type">gint</span> src_x</code></em>,
+                                      <em class="parameter"><code><span class="type">gint</span> src_y</code></em>,
+                                      <em class="parameter"><code><span class="type">gint</span> src_width</code></em>,
+                                      <em class="parameter"><code><span class="type">gint</span> src_height</code></em>,
+                                      <em class="parameter"><code><span class="type">gint</span> *dest_width</code></em>,
+                                      <em class="parameter"><code><span class="type">gint</span> *dest_height</code></em>,
+                                      <em class="parameter"><code><span class="type">gint</span> *bpp</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-color-uchar"></a><h3>gimp_drawable_get_color_uchar ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_drawable_get_color_uchar (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                               <em class="parameter"><code>const <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *color</code></em>,
+                               <em class="parameter"><code><span class="type">guchar</span> *color_uchar</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_drawable_get_color_uchar</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-merge-shadow"></a><h3>gimp_drawable_merge_shadow ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_merge_shadow (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                            <em class="parameter"><code><span class="type">gboolean</span> undo</code></em>);</pre>
+<p>Merge the shadow buffer with the specified drawable.</p>
+<p>This procedure combines the contents of the drawable's shadow buffer
+(for temporary processing) with the specified drawable. The 'undo'
+parameter specifies whether to add an undo step for the operation.
+Requesting no undo is useful for such applications as 'auto-apply'.</p>
+<div class="refsect3">
+<a name="gimp-drawable-merge-shadow.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>undo</p></td>
+<td class="parameter_description"><p>Push merge to undo stack?</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-merge-shadow.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-free-shadow"></a><h3>gimp_drawable_free_shadow ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_free_shadow (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Free the specified drawable's shadow data (if it exists).</p>
+<p>This procedure is intended as a memory saving device. If any shadow
+memory has been allocated, it will be freed automatically when the
+drawable is removed from the image, or when the plug-in procedure
+which allocated it returns.</p>
+<div class="refsect3">
+<a name="gimp-drawable-free-shadow.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-free-shadow.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-fill"></a><h3>gimp_drawable_fill ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_fill (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                    <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpFillType"><span class="type">GimpFillType</span></a> fill_type</code></em>);</pre>
+<p>Fill the drawable with the specified fill mode.</p>
+<p>This procedure fills the drawable. If the fill mode is foreground
+the current foreground color is used. If the fill mode is
+background, the current background color is used. If the fill type
+is white, then white is used. Transparent fill only affects layers
+with an alpha channel, in which case the alpha channel is set to
+transparent. If the drawable has no alpha channel, it is filled to
+white. No fill leaves the drawable's contents undefined.
+This procedure is unlike <a class="link" href="libgimp-gimpedit.html#gimp-edit-fill" title="gimp_edit_fill ()"><code class="function">gimp_edit_fill()</code></a> or the bucket fill tool
+because it fills regardless of a selection. Its main purpose is to
+fill a newly created drawable before adding it to the image. This
+operation cannot be undone.</p>
+<div class="refsect3">
+<a name="gimp-drawable-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fill_type</p></td>
+<td class="parameter_description"><p>The type of fill.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-fill.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-update"></a><h3>gimp_drawable_update ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_update (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
+<p>Update the specified region of the drawable.</p>
+<p>This procedure updates the specified region of the drawable. The (x,
+y) coordinate pair is relative to the drawable's origin, not to the
+image origin. Therefore, the entire drawable can be updated using
+(0, 0, width, height).</p>
+<div class="refsect3">
+<a name="gimp-drawable-update.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>x coordinate of upper left corner of update region.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>y coordinate of upper left corner of update region.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Width of update region.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Height of update region.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-update.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-mask-bounds"></a><h3>gimp_drawable_mask_bounds ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_mask_bounds (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                           <em class="parameter"><code><span class="type">gint</span> *x1</code></em>,
+                           <em class="parameter"><code><span class="type">gint</span> *y1</code></em>,
+                           <em class="parameter"><code><span class="type">gint</span> *x2</code></em>,
+                           <em class="parameter"><code><span class="type">gint</span> *y2</code></em>);</pre>
+<p>Find the bounding box of the current selection in relation to the
+specified drawable.</p>
+<p>This procedure returns whether there is a selection. If there is
+one, the upper left and lower right-hand corners of its bounding box
+are returned. These coordinates are specified relative to the
+drawable's origin, and bounded by the drawable's extents. Please
+note that the pixel specified by the lower right-hand coordinate of
+the bounding box is not part of the selection. The selection ends at
+the upper left corner of this pixel. This means the width of the
+selection can be calculated as (x2 - x1), its height as (y2 - y1).
+Note that the returned boolean does NOT correspond with the returned
+region being empty or not, it always returns whether the selection
+is non_empty. See <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-mask-intersect" title="gimp_drawable_mask_intersect ()"><code class="function">gimp_drawable_mask_intersect()</code></a> for a boolean
+return value which is more useful in most cases.</p>
+<div class="refsect3">
+<a name="gimp-drawable-mask-bounds.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1</p></td>
+<td class="parameter_description"><p>x coordinate of the upper left corner of selection bounds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1</p></td>
+<td class="parameter_description"><p>y coordinate of the upper left corner of selection bounds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x2</p></td>
+<td class="parameter_description"><p>x coordinate of the lower right corner of selection bounds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y2</p></td>
+<td class="parameter_description"><p>y coordinate of the lower right corner of selection bounds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-mask-bounds.returns"></a><h4>Returns</h4>
+<p> TRUE if there is a selection.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-mask-intersect"></a><h3>gimp_drawable_mask_intersect ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_mask_intersect (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                              <em class="parameter"><code><span class="type">gint</span> *x</code></em>,
+                              <em class="parameter"><code><span class="type">gint</span> *y</code></em>,
+                              <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                              <em class="parameter"><code><span class="type">gint</span> *height</code></em>);</pre>
+<p>Find the bounding box of the current selection in relation to the
+specified drawable.</p>
+<p>This procedure returns whether there is an intersection between the
+drawable and the selection. Unlike <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-mask-bounds" title="gimp_drawable_mask_bounds ()"><code class="function">gimp_drawable_mask_bounds()</code></a>, the
+intersection's bounds are returned as x, y, width, height.
+If there is no selection this function returns TRUE and the returned
+bounds are the extents of the whole drawable.</p>
+<div class="refsect3">
+<a name="gimp-drawable-mask-intersect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>x coordinate of the upper left corner of the intersection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>y coordinate of the upper left corner of the intersection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>width of the intersection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>height of the intersection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-mask-intersect.returns"></a><h4>Returns</h4>
+<p> TRUE if the returned area is not empty.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-get-image"></a><h3>gimp_drawable_get_image ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_drawable_get_image (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_get_image</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-get-image" title="gimp_item_get_image ()"><code class="function">gimp_item_get_image()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-get-image.returns"></a><h4>Returns</h4>
+<p> The drawable's image.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-set-image"></a><h3>gimp_drawable_set_image ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_set_image (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                         <em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_set_image</code> is deprecated and should not be used in newly-written code.</p>
+<p>There is no replacement for this procedure.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-set-image.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-has-alpha"></a><h3>gimp_drawable_has_alpha ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_has_alpha (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns TRUE if the drawable has an alpha channel.</p>
+<p>This procedure returns whether the specified drawable has an alpha
+channel. This can only be true for layers, and the associated type
+will be one of: { RGBA , GRAYA, INDEXEDA }.</p>
+<div class="refsect3">
+<a name="gimp-drawable-has-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-has-alpha.returns"></a><h4>Returns</h4>
+<p> Does the drawable have an alpha channel?</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-type-with-alpha"></a><h3>gimp_drawable_type_with_alpha ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpImageType"><span class="returnvalue">GimpImageType</span></a>
+gimp_drawable_type_with_alpha (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns the drawable's type with alpha.</p>
+<p>This procedure returns the drawable's type as if had an alpha
+channel. If the type is currently Gray, for instance, the returned
+type would be GrayA. If the drawable already has an alpha channel,
+the drawable's type is simply returned.</p>
+<div class="refsect3">
+<a name="gimp-drawable-type-with-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-type-with-alpha.returns"></a><h4>Returns</h4>
+<p> The drawable's type with alpha.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-type"></a><h3>gimp_drawable_type ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpImageType"><span class="returnvalue">GimpImageType</span></a>
+gimp_drawable_type (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns the drawable's type.</p>
+<p>This procedure returns the drawable's type.</p>
+<div class="refsect3">
+<a name="gimp-drawable-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-type.returns"></a><h4>Returns</h4>
+<p> The drawable's type.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-is-rgb"></a><h3>gimp_drawable_is_rgb ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_is_rgb (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns whether the drawable is an RGB type.</p>
+<p>This procedure returns TRUE if the specified drawable is of type {
+RGB, RGBA }.</p>
+<div class="refsect3">
+<a name="gimp-drawable-is-rgb.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-rgb.returns"></a><h4>Returns</h4>
+<p> TRUE if the drawable is an RGB type.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-is-gray"></a><h3>gimp_drawable_is_gray ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_is_gray (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns whether the drawable is a grayscale type.</p>
+<p>This procedure returns TRUE if the specified drawable is of type {
+Gray, GrayA }.</p>
+<div class="refsect3">
+<a name="gimp-drawable-is-gray.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-gray.returns"></a><h4>Returns</h4>
+<p> TRUE if the drawable is a grayscale type.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-is-indexed"></a><h3>gimp_drawable_is_indexed ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_is_indexed (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns whether the drawable is an indexed type.</p>
+<p>This procedure returns TRUE if the specified drawable is of type {
+Indexed, IndexedA }.</p>
+<div class="refsect3">
+<a name="gimp-drawable-is-indexed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-indexed.returns"></a><h4>Returns</h4>
+<p> TRUE if the drawable is an indexed type.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-bpp"></a><h3>gimp_drawable_bpp ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_drawable_bpp (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns the bytes per pixel.</p>
+<p>This procedure returns the number of bytes per pixel, which
+corresponds to the number of components unless
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-enable-precision" title="gimp_plugin_enable_precision ()"><code class="function">gimp_plugin_enable_precision()</code></a> was called.</p>
+<div class="refsect3">
+<a name="gimp-drawable-bpp.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-bpp.returns"></a><h4>Returns</h4>
+<p> Bytes per pixel.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-width"></a><h3>gimp_drawable_width ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_drawable_width (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns the width of the drawable.</p>
+<p>This procedure returns the specified drawable's width in pixels.</p>
+<div class="refsect3">
+<a name="gimp-drawable-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-width.returns"></a><h4>Returns</h4>
+<p> Width of drawable.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-height"></a><h3>gimp_drawable_height ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_drawable_height (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Returns the height of the drawable.</p>
+<p>This procedure returns the specified drawable's height in pixels.</p>
+<div class="refsect3">
+<a name="gimp-drawable-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-height.returns"></a><h4>Returns</h4>
+<p> Height of drawable.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-offsets"></a><h3>gimp_drawable_offsets ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_offsets (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *offset_x</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *offset_y</code></em>);</pre>
+<p>Returns the offsets for the drawable.</p>
+<p>This procedure returns the specified drawable's offsets. This only
+makes sense if the drawable is a layer since channels are anchored.
+The offsets of a channel will be returned as 0.</p>
+<div class="refsect3">
+<a name="gimp-drawable-offsets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset_x</p></td>
+<td class="parameter_description"><p>x offset of drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset_y</p></td>
+<td class="parameter_description"><p>y offset of drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-offsets.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-is-channel"></a><h3>gimp_drawable_is_channel ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_is_channel (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_is_channel</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-is-channel" title="gimp_item_is_channel ()"><code class="function">gimp_item_is_channel()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-channel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-channel.returns"></a><h4>Returns</h4>
+<p> TRUE if the drawable is a channel, FALSE otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-is-layer"></a><h3>gimp_drawable_is_layer ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_is_layer (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_is_layer</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-is-layer" title="gimp_item_is_layer ()"><code class="function">gimp_item_is_layer()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-layer.returns"></a><h4>Returns</h4>
+<p> TRUE if the drawable is a layer, FALSE otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-is-layer-mask"></a><h3>gimp_drawable_is_layer_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_is_layer_mask (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_is_layer_mask</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-is-layer-mask" title="gimp_item_is_layer_mask ()"><code class="function">gimp_item_is_layer_mask()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-layer-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-layer-mask.returns"></a><h4>Returns</h4>
+<p> TRUE if the drawable is a layer mask, FALSE otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-is-text-layer"></a><h3>gimp_drawable_is_text_layer ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_is_text_layer (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_is_text_layer</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-is-text-layer" title="gimp_item_is_text_layer ()"><code class="function">gimp_item_is_text_layer()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-text-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-is-text-layer.returns"></a><h4>Returns</h4>
+<p> TRUE if the drawable is a text layer, FALSE otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-offset"></a><h3>gimp_drawable_offset ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_offset (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                      <em class="parameter"><code><span class="type">gboolean</span> wrap_around</code></em>,
+                      <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpOffsetType"><span class="type">GimpOffsetType</span></a> fill_type</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> offset_x</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> offset_y</code></em>);</pre>
+<p>Offset the drawable by the specified amounts in the X and Y
+directions</p>
+<p>This procedure offsets the specified drawable by the amounts
+specified by 'offset_x' and 'offset_y'. If 'wrap_around' is set to
+TRUE, then portions of the drawable which are offset out of bounds
+are wrapped around. Alternatively, the undefined regions of the
+drawable can be filled with transparency or the background color, as
+specified by the 'fill-type' parameter.</p>
+<div class="refsect3">
+<a name="gimp-drawable-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable to offset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wrap_around</p></td>
+<td class="parameter_description"><p>wrap image around or fill vacated regions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fill_type</p></td>
+<td class="parameter_description"><p>fill vacated regions of drawable with background or transparent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset_x</p></td>
+<td class="parameter_description"><p>offset by this amount in X direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset_y</p></td>
+<td class="parameter_description"><p>offset by this amount in Y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-offset.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-foreground-extract"></a><h3>gimp_drawable_foreground_extract ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_foreground_extract (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                                  <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpForegroundExtractMode"><span class="type">GimpForegroundExtractMode</span></a> mode</code></em>,
+                                  <em class="parameter"><code><span class="type">gint32</span> mask_ID</code></em>);</pre>
+<p>Extract the foreground of a drawable using a given trimap.</p>
+<p>Image Segmentation by Uniform Color Clustering, see
+https://www.inf.fu-berlin.de/inst/pubs/tr-b-05-07.pdf</p>
+<div class="refsect3">
+<a name="gimp-drawable-foreground-extract.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>The algorithm to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_ID</p></td>
+<td class="parameter_description"><p>Tri-Map.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-foreground-extract.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-parasite-find"></a><h3>gimp_drawable_parasite_find ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-GimpParasite.html#GimpParasite"><span class="returnvalue">GimpParasite</span></a> *
+gimp_drawable_parasite_find (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_parasite_find</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-get-parasite" title="gimp_item_get_parasite ()"><code class="function">gimp_item_get_parasite()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-parasite-find.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the parasite to find.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-parasite-find.returns"></a><h4>Returns</h4>
+<p> The found parasite.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-parasite-list"></a><h3>gimp_drawable_parasite_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_parasite_list (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                             <em class="parameter"><code><span class="type">gint</span> *num_parasites</code></em>,
+                             <em class="parameter"><code><span class="type">gchar</span> ***parasites</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_parasite_list</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-get-parasite-list" title="gimp_item_get_parasite_list ()"><code class="function">gimp_item_get_parasite_list()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-parasite-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_parasites</p></td>
+<td class="parameter_description"><p>The number of attached parasites.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parasites</p></td>
+<td class="parameter_description"><p>The names of currently attached parasites.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-parasite-list.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-parasite-attach"></a><h3>gimp_drawable_parasite_attach ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_parasite_attach (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                               <em class="parameter"><code>const <a href="../html/libgimpbase-GimpParasite.html#GimpParasite"><span class="type">GimpParasite</span></a> *parasite</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_parasite_attach</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-attach-parasite" title="gimp_item_attach_parasite ()"><code class="function">gimp_item_attach_parasite()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-parasite-attach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parasite</p></td>
+<td class="parameter_description"><p>The parasite to attach to a drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-parasite-attach.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-parasite-detach"></a><h3>gimp_drawable_parasite_detach ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_parasite_detach (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                               <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_parasite_detach</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitem.html#gimp-item-detach-parasite" title="gimp_item_detach_parasite ()"><code class="function">gimp_item_detach_parasite()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-parasite-detach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the parasite to detach from a drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-parasite-detach.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-attach-new-parasite"></a><h3>gimp_drawable_attach_new_parasite ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_attach_new_parasite (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                                   <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                                   <em class="parameter"><code><span class="type">gint</span> flags</code></em>,
+                                   <em class="parameter"><code><span class="type">gint</span> size</code></em>,
+                                   <em class="parameter"><code><span class="type">gconstpointer</span> data</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_drawable_attach_new_parasite</code> is deprecated and should not be used in newly-written code.</p>
+<p>use <a class="link" href="libgimp-gimpitem.html#gimp-item-attach-parasite" title="gimp_item_attach_parasite ()"><code class="function">gimp_item_attach_parasite()</code></a> instead.</p>
+</div>
+<p>Convenience function that creates a parasite and attaches it
+to GIMP.</p>
+<div class="refsect3">
+<a name="gimp-drawable-attach-new-parasite.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>the ID of the <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> to attach the <a href="../html/libgimpbase-GimpParasite.html#GimpParasite"><span class="type">GimpParasite</span></a> to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>the name of the <a href="../html/libgimpbase-GimpParasite.html#GimpParasite"><span class="type">GimpParasite</span></a> to create and attach.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>the flags set on the <a href="../html/libgimpbase-GimpParasite.html#GimpParasite"><span class="type">GimpParasite</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>the size of the parasite data in bytes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>a pointer to the data attached with the <a href="../html/libgimpbase-GimpParasite.html#GimpParasite"><span class="type">GimpParasite</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-attach-new-parasite.returns"></a><h4>Returns</h4>
+<p> TRUE on successful creation and attachment of
+the new parasite.</p>
+<p>See Also: <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-parasite-attach" title="gimp_drawable_parasite_attach ()"><code class="function">gimp_drawable_parasite_attach()</code></a></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdrawable.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpDrawable"></a><h3>GimpDrawable</h3>
+<pre class="programlisting">typedef struct {
+  gint32    drawable_id;   /* drawable ID */
+  guint     width;         /* width of drawble */
+  guint     height;        /* height of drawble */
+  guint     bpp;           /* bytes per pixel of drawable */
+  guint     ntile_rows;    /* # of tile rows */
+  guint     ntile_cols;    /* # of tile columns */
+  GimpTile *tiles;         /* the normal tiles */
+  GimpTile *shadow_tiles;  /* the shadow tiles */
+} GimpDrawable;
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

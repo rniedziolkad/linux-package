@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpbrushes: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-data.html" title="Data Objects">
+<link rel="prev" href="libgimp-gimpbrush.html" title="gimpbrush">
+<link rel="next" href="libgimp-gimpdynamics.html" title="gimpdynamics">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpbrushes.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-data.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpbrush.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpdynamics.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpbrushes"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpbrushes.top_of_page"></a>gimpbrushes</span></h2>
+<p>gimpbrushes — Functions for manipulating brushes.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpbrushes.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-refresh" title="gimp_brushes_refresh ()">gimp_brushes_refresh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> **
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-get-list" title="gimp_brushes_get_list ()">gimp_brushes_get_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-get-brush" title="gimp_brushes_get_brush ()">gimp_brushes_get_brush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-set-brush" title="gimp_brushes_set_brush ()">gimp_brushes_set_brush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-get-opacity" title="gimp_brushes_get_opacity ()">gimp_brushes_get_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-set-opacity" title="gimp_brushes_set_opacity ()">gimp_brushes_set_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="returnvalue">GimpLayerMode</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-get-paint-mode" title="gimp_brushes_get_paint_mode ()">gimp_brushes_get_paint_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-set-paint-mode" title="gimp_brushes_set_paint_mode ()">gimp_brushes_set_paint_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-get-spacing" title="gimp_brushes_get_spacing ()">gimp_brushes_get_spacing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-set-spacing" title="gimp_brushes_set_spacing ()">gimp_brushes_set_spacing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpbrushes.html#gimp-brushes-get-brush-data" title="gimp_brushes_get_brush_data ()">gimp_brushes_get_brush_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpbrushes.description"></a><h2>Description</h2>
+<p>Functions related to getting and setting brushes.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpbrushes.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-brushes-refresh"></a><h3>gimp_brushes_refresh ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_brushes_refresh (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Refresh current brushes. This function always succeeds.</p>
+<p>This procedure retrieves all brushes currently in the user's brush
+path and updates the brush dialogs accordingly.</p>
+<div class="refsect3">
+<a name="gimp-brushes-refresh.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-get-list"></a><h3>gimp_brushes_get_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> **
+gimp_brushes_get_list (<em class="parameter"><code>const <span class="type">gchar</span> *filter</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *num_brushes</code></em>);</pre>
+<p>Retrieve a complete listing of the available brushes.</p>
+<p>This procedure returns a complete listing of available GIMP brushes.
+Each name returned can be used as input to the
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush" title="gimp_context_set_brush ()"><code class="function">gimp_context_set_brush()</code></a> procedure.</p>
+<div class="refsect3">
+<a name="gimp-brushes-get-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filter</p></td>
+<td class="parameter_description"><p>An optional regular expression used to filter the list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_brushes</p></td>
+<td class="parameter_description"><p>The number of brushes in the brush list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-get-list.returns"></a><h4>Returns</h4>
+<p> The list of brush names. The returned value must be freed
+with <code class="function">g_strfreev()</code>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-get-brush"></a><h3>gimp_brushes_get_brush ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_brushes_get_brush (<em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                        <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
+                        <em class="parameter"><code><span class="type">gint</span> *spacing</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_brushes_get_brush</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush" title="gimp_context_get_brush ()"><code class="function">gimp_context_get_brush()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-get-brush.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The brush width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The brush height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spacing</p></td>
+<td class="parameter_description"><p>The brush spacing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-get-brush.returns"></a><h4>Returns</h4>
+<p> The brush name.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-set-brush"></a><h3>gimp_brushes_set_brush ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_brushes_set_brush (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_brushes_set_brush</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This procedure is deprecated! Use <a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush" title="gimp_context_set_brush ()"><code class="function">gimp_context_set_brush()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gimp-brushes-set-brush.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The brush name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-set-brush.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-get-opacity"></a><h3>gimp_brushes_get_opacity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_brushes_get_opacity (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_brushes_get_opacity</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This procedure is deprecated! Use <a class="link" href="libgimp-gimpcontext.html#gimp-context-get-opacity" title="gimp_context_get_opacity ()"><code class="function">gimp_context_get_opacity()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gimp-brushes-get-opacity.returns"></a><h4>Returns</h4>
+<p> The brush opacity.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-set-opacity"></a><h3>gimp_brushes_set_opacity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_brushes_set_opacity (<em class="parameter"><code><span class="type">gdouble</span> opacity</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_brushes_set_opacity</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This procedure is deprecated! Use <a class="link" href="libgimp-gimpcontext.html#gimp-context-set-opacity" title="gimp_context_set_opacity ()"><code class="function">gimp_context_set_opacity()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gimp-brushes-set-opacity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>opacity</p></td>
+<td class="parameter_description"><p>The brush opacity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-set-opacity.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-get-paint-mode"></a><h3>gimp_brushes_get_paint_mode ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="returnvalue">GimpLayerMode</span></a>
+gimp_brushes_get_paint_mode (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_brushes_get_paint_mode</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This procedure is deprecated! Use <a class="link" href="libgimp-gimpcontext.html#gimp-context-get-paint-mode" title="gimp_context_get_paint_mode ()"><code class="function">gimp_context_get_paint_mode()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gimp-brushes-get-paint-mode.returns"></a><h4>Returns</h4>
+<p> The paint mode.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-set-paint-mode"></a><h3>gimp_brushes_set_paint_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_brushes_set_paint_mode (<em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="type">GimpLayerMode</span></a> paint_mode</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_brushes_set_paint_mode</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This procedure is deprecated! Use <a class="link" href="libgimp-gimpcontext.html#gimp-context-set-paint-mode" title="gimp_context_set_paint_mode ()"><code class="function">gimp_context_set_paint_mode()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gimp-brushes-set-paint-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>paint_mode</p></td>
+<td class="parameter_description"><p>The paint mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-set-paint-mode.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-get-spacing"></a><h3>gimp_brushes_get_spacing ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_brushes_get_spacing (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_brushes_get_spacing</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpbrush.html#gimp-brush-get-spacing" title="gimp_brush_get_spacing ()"><code class="function">gimp_brush_get_spacing()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-get-spacing.returns"></a><h4>Returns</h4>
+<p> The brush spacing.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-set-spacing"></a><h3>gimp_brushes_set_spacing ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_brushes_set_spacing (<em class="parameter"><code><span class="type">gint</span> spacing</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_brushes_set_spacing</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpbrush.html#gimp-brush-set-spacing" title="gimp_brush_set_spacing ()"><code class="function">gimp_brush_set_spacing()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-set-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spacing</p></td>
+<td class="parameter_description"><p>The brush spacing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-set-spacing.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-brushes-get-brush-data"></a><h3>gimp_brushes_get_brush_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_brushes_get_brush_data (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> *opacity</code></em>,
+                             <em class="parameter"><code><span class="type">gint</span> *spacing</code></em>,
+                             <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="type">GimpLayerMode</span></a> *paint_mode</code></em>,
+                             <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                             <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
+                             <em class="parameter"><code><span class="type">gint</span> *length</code></em>,
+                             <em class="parameter"><code><span class="type">guint8</span> **mask_data</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_brushes_get_brush_data</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpbrush.html#gimp-brush-get-pixels" title="gimp_brush_get_pixels ()"><code class="function">gimp_brush_get_pixels()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-get-brush-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The brush name (\"\" means current active brush).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>opacity</p></td>
+<td class="parameter_description"><p>The brush opacity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spacing</p></td>
+<td class="parameter_description"><p>The brush spacing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>paint_mode</p></td>
+<td class="parameter_description"><p>The paint mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The brush width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The brush height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>Length of brush mask data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_data</p></td>
+<td class="parameter_description"><p>The brush mask data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-brushes-get-brush-data.returns"></a><h4>Returns</h4>
+<p> The brush name.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

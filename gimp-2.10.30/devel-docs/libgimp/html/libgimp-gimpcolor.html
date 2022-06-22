@@ -1,0 +1,921 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpcolor: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpchannel.html" title="gimpchannel">
+<link rel="next" href="libgimp-gimpdisplay.html" title="gimpdisplay">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpcolor.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpchannel.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpdisplay.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpcolor"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpcolor.top_of_page"></a>gimpcolor</span></h2>
+<p>gimpcolor — Functions for manipulating color.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpcolor.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-brightness-contrast" title="gimp_brightness_contrast ()">gimp_brightness_contrast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-levels" title="gimp_levels ()">gimp_levels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-levels-auto" title="gimp_levels_auto ()">gimp_levels_auto</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-levels-stretch" title="gimp_levels_stretch ()">gimp_levels_stretch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-posterize" title="gimp_posterize ()">gimp_posterize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-desaturate" title="gimp_desaturate ()">gimp_desaturate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-desaturate-full" title="gimp_desaturate_full ()">gimp_desaturate_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-equalize" title="gimp_equalize ()">gimp_equalize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-invert" title="gimp_invert ()">gimp_invert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-curves-spline" title="gimp_curves_spline ()">gimp_curves_spline</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-curves-explicit" title="gimp_curves_explicit ()">gimp_curves_explicit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-color-balance" title="gimp_color_balance ()">gimp_color_balance</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-colorize" title="gimp_colorize ()">gimp_colorize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-histogram" title="gimp_histogram ()">gimp_histogram</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-hue-saturation" title="gimp_hue_saturation ()">gimp_hue_saturation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcolor.html#gimp-threshold" title="gimp_threshold ()">gimp_threshold</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpcolor.description"></a><h2>Description</h2>
+<p>Functions for manipulating color, including curves and histograms.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpcolor.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-brightness-contrast"></a><h3>gimp_brightness_contrast ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_brightness_contrast (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                          <em class="parameter"><code><span class="type">gint</span> brightness</code></em>,
+                          <em class="parameter"><code><span class="type">gint</span> contrast</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_brightness_contrast</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-brightness-contrast" title="gimp_drawable_brightness_contrast ()"><code class="function">gimp_drawable_brightness_contrast()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-brightness-contrast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>brightness</p></td>
+<td class="parameter_description"><p>Brightness adjustment.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>contrast</p></td>
+<td class="parameter_description"><p>Contrast adjustment.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-brightness-contrast.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-levels"></a><h3>gimp_levels ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_levels (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+             <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpHistogramChannel" title="enum GimpHistogramChannel"><span class="type">GimpHistogramChannel</span></a> channel</code></em>,
+             <em class="parameter"><code><span class="type">gint</span> low_input</code></em>,
+             <em class="parameter"><code><span class="type">gint</span> high_input</code></em>,
+             <em class="parameter"><code><span class="type">gdouble</span> gamma</code></em>,
+             <em class="parameter"><code><span class="type">gint</span> low_output</code></em>,
+             <em class="parameter"><code><span class="type">gint</span> high_output</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_levels</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-levels" title="gimp_drawable_levels ()"><code class="function">gimp_drawable_levels()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-levels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The channel to modify.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>low_input</p></td>
+<td class="parameter_description"><p>Intensity of lowest input.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>high_input</p></td>
+<td class="parameter_description"><p>Intensity of highest input.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gamma</p></td>
+<td class="parameter_description"><p>Gamma adjustment factor.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>low_output</p></td>
+<td class="parameter_description"><p>Intensity of lowest output.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>high_output</p></td>
+<td class="parameter_description"><p>Intensity of highest output.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-levels.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-levels-auto"></a><h3>gimp_levels_auto ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_levels_auto (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_levels_auto</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-levels-stretch" title="gimp_drawable_levels_stretch ()"><code class="function">gimp_drawable_levels_stretch()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-levels-auto.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-levels-auto.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-levels-stretch"></a><h3>gimp_levels_stretch ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_levels_stretch (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_levels_stretch</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-levels-stretch" title="gimp_drawable_levels_stretch ()"><code class="function">gimp_drawable_levels_stretch()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-levels-stretch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-levels-stretch.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-posterize"></a><h3>gimp_posterize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_posterize (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> levels</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_posterize</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-posterize" title="gimp_drawable_posterize ()"><code class="function">gimp_drawable_posterize()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-posterize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>levels</p></td>
+<td class="parameter_description"><p>Levels of posterization.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-posterize.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-desaturate"></a><h3>gimp_desaturate ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_desaturate (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_desaturate</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-desaturate" title="gimp_drawable_desaturate ()"><code class="function">gimp_drawable_desaturate()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-desaturate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-desaturate.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-desaturate-full"></a><h3>gimp_desaturate_full ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_desaturate_full (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                      <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpDesaturateMode"><span class="type">GimpDesaturateMode</span></a> desaturate_mode</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_desaturate_full</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-desaturate" title="gimp_drawable_desaturate ()"><code class="function">gimp_drawable_desaturate()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-desaturate-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desaturate_mode</p></td>
+<td class="parameter_description"><p>The formula to use to desaturate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-desaturate-full.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-equalize"></a><h3>gimp_equalize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_equalize (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+               <em class="parameter"><code><span class="type">gboolean</span> mask_only</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_equalize</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-equalize" title="gimp_drawable_equalize ()"><code class="function">gimp_drawable_equalize()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-equalize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_only</p></td>
+<td class="parameter_description"><p>Equalization option.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-equalize.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-invert"></a><h3>gimp_invert ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_invert (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_invert</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-invert" title="gimp_drawable_invert ()"><code class="function">gimp_drawable_invert()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-invert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-invert.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-curves-spline"></a><h3>gimp_curves_spline ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_curves_spline (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                    <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpHistogramChannel" title="enum GimpHistogramChannel"><span class="type">GimpHistogramChannel</span></a> channel</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> num_points</code></em>,
+                    <em class="parameter"><code>const <span class="type">guint8</span> *control_pts</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_curves_spline</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-curves-spline" title="gimp_drawable_curves_spline ()"><code class="function">gimp_drawable_curves_spline()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-curves-spline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The channel to modify.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_points</p></td>
+<td class="parameter_description"><p>The number of values in the control point array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>control_pts</p></td>
+<td class="parameter_description"><p>The spline control points: { cp1.x, cp1.y, cp2.x, cp2.y, ... }.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-curves-spline.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-curves-explicit"></a><h3>gimp_curves_explicit ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_curves_explicit (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpHistogramChannel" title="enum GimpHistogramChannel"><span class="type">GimpHistogramChannel</span></a> channel</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> num_bytes</code></em>,
+                      <em class="parameter"><code>const <span class="type">guint8</span> *curve</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_curves_explicit</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-curves-explicit" title="gimp_drawable_curves_explicit ()"><code class="function">gimp_drawable_curves_explicit()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-curves-explicit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The channel to modify.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_bytes</p></td>
+<td class="parameter_description"><p>The number of bytes in the new curve (always 256).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curve</p></td>
+<td class="parameter_description"><p>The explicit curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-curves-explicit.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-balance"></a><h3>gimp_color_balance ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_color_balance (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                    <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransferMode"><span class="type">GimpTransferMode</span></a> transfer_mode</code></em>,
+                    <em class="parameter"><code><span class="type">gboolean</span> preserve_lum</code></em>,
+                    <em class="parameter"><code><span class="type">gdouble</span> cyan_red</code></em>,
+                    <em class="parameter"><code><span class="type">gdouble</span> magenta_green</code></em>,
+                    <em class="parameter"><code><span class="type">gdouble</span> yellow_blue</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_color_balance</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <code class="function">gimp_drawable_color_color_balance()</code> instead.</p>
+</div>
+<p>Modify the color balance of the specified drawable.</p>
+<p>Modify the color balance of the specified drawable. There are three
+axis which can be modified: cyan-red, magenta-green, and
+yellow-blue. Negative values increase the amount of the former,
+positive values increase the amount of the latter. Color balance can
+be controlled with the 'transfer_mode' setting, which allows
+shadows, mid-tones, and highlights in an image to be affected
+differently. The 'preserve-lum' parameter, if TRUE, ensures that the
+luminosity of each pixel remains fixed.</p>
+<div class="refsect3">
+<a name="gimp-color-balance.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transfer_mode</p></td>
+<td class="parameter_description"><p>Transfer mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preserve_lum</p></td>
+<td class="parameter_description"><p>Preserve luminosity values at each pixel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cyan_red</p></td>
+<td class="parameter_description"><p>Cyan-Red color balance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>magenta_green</p></td>
+<td class="parameter_description"><p>Magenta-Green color balance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yellow_blue</p></td>
+<td class="parameter_description"><p>Yellow-Blue color balance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-color-balance.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-colorize"></a><h3>gimp_colorize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_colorize (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+               <em class="parameter"><code><span class="type">gdouble</span> hue</code></em>,
+               <em class="parameter"><code><span class="type">gdouble</span> saturation</code></em>,
+               <em class="parameter"><code><span class="type">gdouble</span> lightness</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_colorize</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-colorize-hsl" title="gimp_drawable_colorize_hsl ()"><code class="function">gimp_drawable_colorize_hsl()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-colorize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hue</p></td>
+<td class="parameter_description"><p>Hue in degrees.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>saturation</p></td>
+<td class="parameter_description"><p>Saturation in percent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lightness</p></td>
+<td class="parameter_description"><p>Lightness in percent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-colorize.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-histogram"></a><h3>gimp_histogram ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_histogram (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpHistogramChannel" title="enum GimpHistogramChannel"><span class="type">GimpHistogramChannel</span></a> channel</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> start_range</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> end_range</code></em>,
+                <em class="parameter"><code><span class="type">gdouble</span> *mean</code></em>,
+                <em class="parameter"><code><span class="type">gdouble</span> *std_dev</code></em>,
+                <em class="parameter"><code><span class="type">gdouble</span> *median</code></em>,
+                <em class="parameter"><code><span class="type">gdouble</span> *pixels</code></em>,
+                <em class="parameter"><code><span class="type">gdouble</span> *count</code></em>,
+                <em class="parameter"><code><span class="type">gdouble</span> *percentile</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_histogram</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-histogram" title="gimp_drawable_histogram ()"><code class="function">gimp_drawable_histogram()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-histogram.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The channel to modify.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start_range</p></td>
+<td class="parameter_description"><p>Start of the intensity measurement range.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end_range</p></td>
+<td class="parameter_description"><p>End of the intensity measurement range.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mean</p></td>
+<td class="parameter_description"><p>Mean intensity value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>std_dev</p></td>
+<td class="parameter_description"><p>Standard deviation of intensity values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>median</p></td>
+<td class="parameter_description"><p>Median intensity value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pixels</p></td>
+<td class="parameter_description"><p>Alpha-weighted pixel count for entire image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>Alpha-weighted pixel count for range.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>percentile</p></td>
+<td class="parameter_description"><p>Percentile that range falls under.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-histogram.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-hue-saturation"></a><h3>gimp_hue_saturation ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_hue_saturation (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                     <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpHueRange"><span class="type">GimpHueRange</span></a> hue_range</code></em>,
+                     <em class="parameter"><code><span class="type">gdouble</span> hue_offset</code></em>,
+                     <em class="parameter"><code><span class="type">gdouble</span> lightness</code></em>,
+                     <em class="parameter"><code><span class="type">gdouble</span> saturation</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_hue_saturation</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-hue-saturation" title="gimp_drawable_hue_saturation ()"><code class="function">gimp_drawable_hue_saturation()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-hue-saturation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hue_range</p></td>
+<td class="parameter_description"><p>Range of affected hues.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hue_offset</p></td>
+<td class="parameter_description"><p>Hue offset in degrees.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lightness</p></td>
+<td class="parameter_description"><p>Lightness modification.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>saturation</p></td>
+<td class="parameter_description"><p>Saturation modification.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-hue-saturation.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-threshold"></a><h3>gimp_threshold ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_threshold (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> low_threshold</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> high_threshold</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_threshold</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-threshold" title="gimp_drawable_threshold ()"><code class="function">gimp_drawable_threshold()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-threshold.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>low_threshold</p></td>
+<td class="parameter_description"><p>The low threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>high_threshold</p></td>
+<td class="parameter_description"><p>The high threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-threshold.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

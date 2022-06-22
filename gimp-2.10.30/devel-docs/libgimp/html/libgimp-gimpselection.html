@@ -1,0 +1,882 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpselection: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpregioniterator.html" title="gimpregioniterator">
+<link rel="next" href="libgimp-gimptextlayer.html" title="gimptextlayer">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpselection.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpregioniterator.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimptextlayer.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpselection"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpselection.top_of_page"></a>gimpselection</span></h2>
+<p>gimpselection — Functions for manipulating selections.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpselection.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-bounds" title="gimp_selection_bounds ()">gimp_selection_bounds</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-all" title="gimp_selection_all ()">gimp_selection_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-none" title="gimp_selection_none ()">gimp_selection_none</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-clear" title="gimp_selection_clear ()">gimp_selection_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-is-empty" title="gimp_selection_is_empty ()">gimp_selection_is_empty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-float" title="gimp_selection_float ()">gimp_selection_float</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-load" title="gimp_selection_load ()">gimp_selection_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-save" title="gimp_selection_save ()">gimp_selection_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-value" title="gimp_selection_value ()">gimp_selection_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-grow" title="gimp_selection_grow ()">gimp_selection_grow</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-shrink" title="gimp_selection_shrink ()">gimp_selection_shrink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-invert" title="gimp_selection_invert ()">gimp_selection_invert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-feather" title="gimp_selection_feather ()">gimp_selection_feather</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-sharpen" title="gimp_selection_sharpen ()">gimp_selection_sharpen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-border" title="gimp_selection_border ()">gimp_selection_border</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-flood" title="gimp_selection_flood ()">gimp_selection_flood</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-translate" title="gimp_selection_translate ()">gimp_selection_translate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-layer-alpha" title="gimp_selection_layer_alpha ()">gimp_selection_layer_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpselection.html#gimp-selection-combine" title="gimp_selection_combine ()">gimp_selection_combine</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpselection.description"></a><h2>Description</h2>
+<p>Functions for manipulating selections.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpselection.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-selection-bounds"></a><h3>gimp_selection_bounds ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_bounds (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                       <em class="parameter"><code><span class="type">gboolean</span> *non_empty</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *x1</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *y1</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *x2</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *y2</code></em>);</pre>
+<p>Find the bounding box of the current selection.</p>
+<p>This procedure returns whether there is a selection for the
+specified image. If there is one, the upper left and lower right
+corners of the bounding box are returned. These coordinates are
+relative to the image. Please note that the pixel specified by the
+lower right coordinate of the bounding box is not part of the
+selection. The selection ends at the upper left corner of this
+pixel. This means the width of the selection can be calculated as
+(x2 - x1), its height as (y2 - y1).</p>
+<div class="refsect3">
+<a name="gimp-selection-bounds.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>non_empty</p></td>
+<td class="parameter_description"><p>TRUE if there is a selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1</p></td>
+<td class="parameter_description"><p>x coordinate of upper left corner of selection bounds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1</p></td>
+<td class="parameter_description"><p>y coordinate of upper left corner of selection bounds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x2</p></td>
+<td class="parameter_description"><p>x coordinate of lower right corner of selection bounds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y2</p></td>
+<td class="parameter_description"><p>y coordinate of lower right corner of selection bounds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-bounds.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-all"></a><h3>gimp_selection_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_all (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<p>Select all of the image.</p>
+<p>This procedure sets the selection mask to completely encompass the
+image. Every pixel in the selection channel is set to 255.</p>
+<div class="refsect3">
+<a name="gimp-selection-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-all.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-none"></a><h3>gimp_selection_none ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_none (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<p>Deselect the entire image.</p>
+<p>This procedure deselects the entire image. Every pixel in the
+selection channel is set to 0.</p>
+<div class="refsect3">
+<a name="gimp-selection-none.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-none.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-clear"></a><h3>gimp_selection_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_clear (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_selection_clear</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This procedure is deprecated! Use <a class="link" href="libgimp-gimpselection.html#gimp-selection-none" title="gimp_selection_none ()"><code class="function">gimp_selection_none()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gimp-selection-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-clear.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-is-empty"></a><h3>gimp_selection_is_empty ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_is_empty (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<p>Determine whether the selection is empty.</p>
+<p>This procedure returns TRUE if the selection for the specified image
+is empty.</p>
+<div class="refsect3">
+<a name="gimp-selection-is-empty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-is-empty.returns"></a><h4>Returns</h4>
+<p> Is the selection empty?</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-float"></a><h3>gimp_selection_float ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_selection_float (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                      <em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> offx</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> offy</code></em>);</pre>
+<p>Float the selection from the specified drawable with initial offsets
+as specified.</p>
+<p>This procedure determines the region of the specified drawable that
+lies beneath the current selection. The region is then cut from the
+drawable and the resulting data is made into a new layer which is
+instantiated as a floating selection. The offsets allow initial
+positioning of the new floating selection.</p>
+<div class="refsect3">
+<a name="gimp-selection-float.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>ignored</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable from which to float selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offx</p></td>
+<td class="parameter_description"><p>x offset for translation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offy</p></td>
+<td class="parameter_description"><p>y offset for translation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-float.returns"></a><h4>Returns</h4>
+<p> The floated layer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-load"></a><h3>gimp_selection_load ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_load (<em class="parameter"><code><span class="type">gint32</span> channel_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_selection_load</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-item" title="gimp_image_select_item ()"><code class="function">gimp_image_select_item()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>channel_ID</p></td>
+<td class="parameter_description"><p>The channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-load.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-save"></a><h3>gimp_selection_save ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_selection_save (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<p>Copy the selection mask to a new channel.</p>
+<p>This procedure copies the selection mask and stores the content in a
+new channel. The new channel is automatically inserted into the
+image's list of channels.</p>
+<div class="refsect3">
+<a name="gimp-selection-save.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-save.returns"></a><h4>Returns</h4>
+<p> The new channel.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-value"></a><h3>gimp_selection_value ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_selection_value (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> y</code></em>);</pre>
+<p>Find the value of the selection at the specified coordinates.</p>
+<p>This procedure returns the value of the selection at the specified
+coordinates. If the coordinates lie out of bounds, 0 is returned.</p>
+<div class="refsect3">
+<a name="gimp-selection-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>x coordinate of value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>y coordinate of value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-value.returns"></a><h4>Returns</h4>
+<p> Value of the selection.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-grow"></a><h3>gimp_selection_grow ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_grow (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> steps</code></em>);</pre>
+<p>Grow the image's selection</p>
+<p>This procedure grows the selection. Growing involves expanding the
+boundary in all directions by the specified pixel amount.</p>
+<div class="refsect3">
+<a name="gimp-selection-grow.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>steps</p></td>
+<td class="parameter_description"><p>Steps of grow (in pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-grow.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-shrink"></a><h3>gimp_selection_shrink ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_shrink (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> steps</code></em>);</pre>
+<p>Shrink the image's selection</p>
+<p>This procedure shrinks the selection. Shrinking involves trimming
+the existing selection boundary on all sides by the specified number
+of pixels.</p>
+<div class="refsect3">
+<a name="gimp-selection-shrink.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>steps</p></td>
+<td class="parameter_description"><p>Steps of shrink (in pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-shrink.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-invert"></a><h3>gimp_selection_invert ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_invert (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<p>Invert the selection mask.</p>
+<p>This procedure inverts the selection mask. For every pixel in the
+selection channel, its new value is calculated as (255 - old-value).</p>
+<div class="refsect3">
+<a name="gimp-selection-invert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-invert.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-feather"></a><h3>gimp_selection_feather ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_feather (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                        <em class="parameter"><code><span class="type">gdouble</span> radius</code></em>);</pre>
+<p>Feather the image's selection</p>
+<p>This procedure feathers the selection. Feathering is implemented
+using a gaussian blur.</p>
+<div class="refsect3">
+<a name="gimp-selection-feather.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>radius</p></td>
+<td class="parameter_description"><p>Radius of feather (in pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-feather.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-sharpen"></a><h3>gimp_selection_sharpen ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_sharpen (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<p>Sharpen the selection mask.</p>
+<p>This procedure sharpens the selection mask. For every pixel in the
+selection channel, if the value is &gt; 127, the new pixel is
+assigned a value of 255. This removes any \"anti-aliasing\" that
+might exist in the selection mask's boundary.</p>
+<div class="refsect3">
+<a name="gimp-selection-sharpen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-sharpen.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-border"></a><h3>gimp_selection_border ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_border (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> radius</code></em>);</pre>
+<p>Border the image's selection</p>
+<p>This procedure borders the selection. Bordering creates a new
+selection which is defined along the boundary of the previous
+selection at every point within the specified radius.</p>
+<div class="refsect3">
+<a name="gimp-selection-border.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>radius</p></td>
+<td class="parameter_description"><p>Radius of border (in pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-border.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-flood"></a><h3>gimp_selection_flood ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_flood (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<p>Remove holes from the image's selection</p>
+<p>This procedure removes holes from the selection, that can come from
+selecting a patchy area with the Fuzzy Select Tool. In technical
+terms this procedure floods the selection. See the Algorithms page
+in the developer wiki for details.</p>
+<div class="refsect3">
+<a name="gimp-selection-flood.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-flood.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-translate"></a><h3>gimp_selection_translate ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_translate (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                          <em class="parameter"><code><span class="type">gint</span> offx</code></em>,
+                          <em class="parameter"><code><span class="type">gint</span> offy</code></em>);</pre>
+<p>Translate the selection by the specified offsets.</p>
+<p>This procedure actually translates the selection for the specified
+image by the specified offsets. Regions that are translated from
+beyond the bounds of the image are set to empty. Valid regions of
+the selection which are translated beyond the bounds of the image
+because of this call are lost.</p>
+<div class="refsect3">
+<a name="gimp-selection-translate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offx</p></td>
+<td class="parameter_description"><p>x offset for translation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offy</p></td>
+<td class="parameter_description"><p>y offset for translation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-translate.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-layer-alpha"></a><h3>gimp_selection_layer_alpha ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_layer_alpha (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_selection_layer_alpha</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-item" title="gimp_image_select_item ()"><code class="function">gimp_image_select_item()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-layer-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>Layer with alpha.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-layer-alpha.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-selection-combine"></a><h3>gimp_selection_combine ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_selection_combine (<em class="parameter"><code><span class="type">gint32</span> channel_ID</code></em>,
+                        <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpChannelOps"><span class="type">GimpChannelOps</span></a> operation</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_selection_combine</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-item" title="gimp_image_select_item ()"><code class="function">gimp_image_select_item()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-combine.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>channel_ID</p></td>
+<td class="parameter_description"><p>The channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operation</p></td>
+<td class="parameter_description"><p>The selection operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-selection-combine.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

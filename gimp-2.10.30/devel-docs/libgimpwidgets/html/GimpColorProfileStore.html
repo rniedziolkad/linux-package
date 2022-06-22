@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpColorProfileStore: GIMP Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Widgets Library Reference Manual">
+<link rel="up" href="libgimpwidgets-widgets.html" title="Part I. GIMP Widgets">
+<link rel="prev" href="GimpColorProfileChooserDialog.html" title="GimpColorProfileChooserDialog">
+<link rel="next" href="GimpColorProfileComboBox.html" title="GimpColorProfileComboBox">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GimpColorProfileStore.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GimpColorProfileStore.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GimpColorProfileStore.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GimpColorProfileStore.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpwidgets-widgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GimpColorProfileChooserDialog.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GimpColorProfileComboBox.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GimpColorProfileStore"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GimpColorProfileStore.top_of_page"></a>GimpColorProfileStore</span></h2>
+<p>GimpColorProfileStore — A <span class="type">GtkListStore</span> subclass that keep color profiles.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GimpColorProfileStore.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GtkListStore</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorProfileStore.html#gimp-color-profile-store-new" title="gimp_color_profile_store_new ()">gimp_color_profile_store_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorProfileStore.html#gimp-color-profile-store-add" title="gimp_color_profile_store_add ()">gimp_color_profile_store_add</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorProfileStore.html#gimp-color-profile-store-add-file" title="gimp_color_profile_store_add_file ()">gimp_color_profile_store_add_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpColorProfileStore.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GimpColorProfileStore.html#GimpColorProfileStore--history" title="The “history” property">history</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpColorProfileStore.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GimpColorProfileStore.html#GimpColorProfileStore-struct" title="GimpColorProfileStore">GimpColorProfileStore</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpColorProfileStore.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GtkListStore
+        <span class="lineart">╰──</span> GimpColorProfileStore
+</pre>
+</div>
+<div class="refsect1">
+<a name="GimpColorProfileStore.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GimpColorProfileStore implements
+ GtkTreeModel,  GtkTreeDragSource,  GtkTreeDragDest,  GtkTreeSortable and  GtkBuildable.</p>
+</div>
+<div class="refsect1">
+<a name="GimpColorProfileStore.description"></a><h2>Description</h2>
+<p>A <span class="type">GtkListStore</span> subclass that keep color profiles.</p>
+</div>
+<div class="refsect1">
+<a name="GimpColorProfileStore.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-color-profile-store-new"></a><h3>gimp_color_profile_store_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkListStore</span> *
+gimp_color_profile_store_new (<em class="parameter"><code>const <span class="type">gchar</span> *history</code></em>);</pre>
+<p>Creates a new <a class="link" href="GimpColorProfileStore.html" title="GimpColorProfileStore"><span class="type">GimpColorProfileStore</span></a> object and populates it with
+last used profiles read from the file <em class="parameter"><code>history</code></em>
+. The updated history
+is written back to disk when the store is disposed.</p>
+<p>The filename passed as <em class="parameter"><code>history</code></em>
+ is typically created using the
+following code snippet:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">gchar</span> <span class="o">*</span><span class="n">history</span> <span class="o">=</span> <span class="n">gimp_personal_rc_file</span> <span class="p">(</span><span class="s">&quot;profilerc&quot;</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="refsect3">
+<a name="gimp-color-profile-store-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>history</p></td>
+<td class="parameter_description"><p>filename of the profilerc (or <code class="literal">NULL</code> for no history)</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-color-profile-store-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GimpColorProfileStore.html" title="GimpColorProfileStore"><span class="type">GimpColorProfileStore</span></a></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-profile-store-add"></a><h3>gimp_color_profile_store_add ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_color_profile_store_add (<em class="parameter"><code><a class="link" href="GimpColorProfileStore.html" title="GimpColorProfileStore"><span class="type">GimpColorProfileStore</span></a> *store</code></em>,
+                              <em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>,
+                              <em class="parameter"><code>const <span class="type">gchar</span> *label</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_color_profile_store_add</code> is deprecated and should not be used in newly-written code.</p>
+<p>use <a class="link" href="GimpColorProfileStore.html#gimp-color-profile-store-add-file" title="gimp_color_profile_store_add_file ()"><code class="function">gimp_color_profile_store_add_file()</code></a> instead.</p>
+</div>
+<p>Adds a color profile item to the <a class="link" href="GimpColorProfileStore.html" title="GimpColorProfileStore"><span class="type">GimpColorProfileStore</span></a>. Items
+added with this function will be kept at the top, separated from
+the history of last used color profiles.</p>
+<p>This function is often used to add a selectable item for the <code class="literal">NULL</code>
+filename. If you pass <code class="literal">NULL</code> for both <em class="parameter"><code>filename</code></em>
+ and <em class="parameter"><code>label</code></em>
+, the
+<em class="parameter"><code>label</code></em>
+ will be set to the string "None" for you (and translated for
+the user).</p>
+<div class="refsect3">
+<a name="gimp-color-profile-store-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorProfileStore.html" title="GimpColorProfileStore"><span class="type">GimpColorProfileStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>filename of the profile to add (or <code class="literal">NULL</code>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>label to use for the profile
+(may only be <code class="literal">NULL</code> if <em class="parameter"><code>filename</code></em>
+is <code class="literal">NULL</code>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-profile-store-add-file"></a><h3>gimp_color_profile_store_add_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_color_profile_store_add_file (<em class="parameter"><code><a class="link" href="GimpColorProfileStore.html" title="GimpColorProfileStore"><span class="type">GimpColorProfileStore</span></a> *store</code></em>,
+                                   <em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                                   <em class="parameter"><code>const <span class="type">gchar</span> *label</code></em>);</pre>
+<p>Adds a color profile item to the <a class="link" href="GimpColorProfileStore.html" title="GimpColorProfileStore"><span class="type">GimpColorProfileStore</span></a>. Items
+added with this function will be kept at the top, separated from
+the history of last used color profiles.</p>
+<p>This function is often used to add a selectable item for the <code class="literal">NULL</code>
+file. If you pass <code class="literal">NULL</code> for both <em class="parameter"><code>file</code></em>
+ and <em class="parameter"><code>label</code></em>
+, the <em class="parameter"><code>label</code></em>
+ will
+be set to the string "None" for you (and translated for the user).</p>
+<div class="refsect3">
+<a name="gimp-color-profile-store-add-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>store</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorProfileStore.html" title="GimpColorProfileStore"><span class="type">GimpColorProfileStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>file of the profile to add (or <code class="literal">NULL</code>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>label to use for the profile
+(may only be <code class="literal">NULL</code> if <em class="parameter"><code>filename</code></em>
+is <code class="literal">NULL</code>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpColorProfileStore.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpColorProfileStore-struct"></a><h3>GimpColorProfileStore</h3>
+<pre class="programlisting">typedef struct _GimpColorProfileStore GimpColorProfileStore;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpColorProfileStore.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GimpColorProfileStore--history"></a><h3>The <code class="literal">“history”</code> property</h3>
+<pre class="programlisting">  “history”                  <span class="type">char</span> *</pre>
+<p>Filename of the color history used to populate the profile store.</p>
+<p>Owner: GimpColorProfileStore</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

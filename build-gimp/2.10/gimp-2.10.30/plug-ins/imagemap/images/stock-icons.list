@@ -1,0 +1,16 @@
+stock_circle
+  ./stock-circle.png
+stock_coord
+  ./stock-coord.png
+stock_dimension
+  ./stock-dimension.png
+stock_java
+  ./stock-java.png
+stock_polygon
+  ./stock-polygon.png
+stock_rectangle
+  ./stock-rectangle.png
+stock_to_back
+  ./stock-to-back.png
+stock_to_front
+  ./stock-to-front.png

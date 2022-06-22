@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpZoomPreview: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimpui.html" title="Part II. GIMP User Interface Library">
+<link rel="prev" href="GimpAspectPreview.html" title="GimpAspectPreview">
+<link rel="next" href="libgimp-GimpItemComboBox.html" title="GimpItemComboBox">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GimpZoomPreview.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GimpZoomPreview.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GimpZoomPreview.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GimpZoomPreview.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpui.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GimpAspectPreview.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-GimpItemComboBox.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GimpZoomPreview"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GimpZoomPreview.top_of_page"></a>GimpZoomPreview</span></h2>
+<p>GimpZoomPreview — A drawable preview with zooming capabilities.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GimpZoomPreview.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GtkWidget</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new" title="gimp_zoom_preview_new ()">gimp_zoom_preview_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GtkWidget</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new-from-drawable-id" title="gimp_zoom_preview_new_from_drawable_id ()">gimp_zoom_preview_new_from_drawable_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GtkWidget</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new-with-model-from-drawable-id" title="gimp_zoom_preview_new_with_model_from_drawable_id ()">gimp_zoom_preview_new_with_model_from_drawable_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GtkWidget</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new-with-model" title="gimp_zoom_preview_new_with_model ()">gimp_zoom_preview_new_with_model</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-get-source" title="gimp_zoom_preview_get_source ()">gimp_zoom_preview_get_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="returnvalue">GimpDrawable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-get-drawable" title="gimp_zoom_preview_get_drawable ()">gimp_zoom_preview_get_drawable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-get-drawable-id" title="gimp_zoom_preview_get_drawable_id ()">gimp_zoom_preview_get_drawable_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-get-factor" title="gimp_zoom_preview_get_factor ()">gimp_zoom_preview_get_factor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="returnvalue">GimpZoomModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-get-model" title="gimp_zoom_preview_get_model ()">gimp_zoom_preview_get_model</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpZoomPreview.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><span class="type">gpointer</span></td>
+<td class="property_name"><a class="link" href="GimpZoomPreview.html#GimpZoomPreview--drawable" title="The “drawable” property">drawable</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">int</span></td>
+<td class="property_name"><a class="link" href="GimpZoomPreview.html#GimpZoomPreview--drawable-id" title="The “drawable-id” property">drawable-id</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="type">GimpZoomModel</span></a> *</td>
+<td class="property_name"><a class="link" href="GimpZoomPreview.html#GimpZoomPreview--model" title="The “model” property">model</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpZoomPreview.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GimpZoomPreview.html#GimpZoomPreview-struct" title="GimpZoomPreview">GimpZoomPreview</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpZoomPreview.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
+        <span class="lineart">╰──</span> GtkObject
+            <span class="lineart">╰──</span> GtkWidget
+                <span class="lineart">╰──</span> GtkContainer
+                    <span class="lineart">╰──</span> GtkBox
+                        <span class="lineart">╰──</span> <a href="../html/GimpPreview.html#GimpPreview-struct">GimpPreview</a>
+                            <span class="lineart">╰──</span> <a href="../html/GimpScrolledPreview.html#GimpScrolledPreview-struct">GimpScrolledPreview</a>
+                                <span class="lineart">╰──</span> GimpZoomPreview
+</pre>
+</div>
+<div class="refsect1">
+<a name="GimpZoomPreview.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GimpZoomPreview implements
+ AtkImplementorIface,  GtkBuildable and  GtkOrientable.</p>
+</div>
+<div class="refsect1">
+<a name="GimpZoomPreview.description"></a><h2>Description</h2>
+<p>A drawable preview with zooming capabilities.</p>
+</div>
+<div class="refsect1">
+<a name="GimpZoomPreview.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-zoom-preview-new"></a><h3>gimp_zoom_preview_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *
+gimp_zoom_preview_new (<em class="parameter"><code><a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> *drawable</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_zoom_preview_new</code> has been deprecated since version 2.10 and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new-from-drawable-id" title="gimp_zoom_preview_new_from_drawable_id ()"><code class="function">gimp_zoom_preview_new_from_drawable_id()</code></a> instead.</p>
+</div>
+<p>Creates a new <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> widget for <em class="parameter"><code>drawable</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-zoom-preview-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-zoom-preview-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-zoom-preview-new-from-drawable-id"></a><h3>gimp_zoom_preview_new_from_drawable_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *
+gimp_zoom_preview_new_from_drawable_id
+                               (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Creates a new <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> widget for <em class="parameter"><code>drawable_ID</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-zoom-preview-new-from-drawable-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>a drawable ID</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-zoom-preview-new-from-drawable-id.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-zoom-preview-new-with-model-from-drawable-id"></a><h3>gimp_zoom_preview_new_with_model_from_drawable_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *
+gimp_zoom_preview_new_with_model_from_drawable_id
+                               (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                                <em class="parameter"><code><a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="type">GimpZoomModel</span></a> *model</code></em>);</pre>
+<p>Creates a new <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> widget for <em class="parameter"><code>drawable_ID</code></em>
+ using the
+given <em class="parameter"><code>model</code></em>
+.</p>
+<p>This variant of <a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new-from-drawable-id" title="gimp_zoom_preview_new_from_drawable_id ()"><code class="function">gimp_zoom_preview_new_from_drawable_id()</code></a> allows you
+to create a preview using an existing zoom model. This may be
+useful if for example you want to have two zoom previews that keep
+their zoom factor in sync.</p>
+<div class="refsect3">
+<a name="gimp-zoom-preview-new-with-model-from-drawable-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>a drawable ID</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>a <a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="type">GimpZoomModel</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-zoom-preview-new-with-model-from-drawable-id.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-zoom-preview-new-with-model"></a><h3>gimp_zoom_preview_new_with_model ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *
+gimp_zoom_preview_new_with_model (<em class="parameter"><code><a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> *drawable</code></em>,
+                                  <em class="parameter"><code><a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="type">GimpZoomModel</span></a> *model</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_zoom_preview_new_with_model</code> has been deprecated since version 2.10 and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new-with-model-from-drawable-id" title="gimp_zoom_preview_new_with_model_from_drawable_id ()"><code class="function">gimp_zoom_preview_new_with_model_from_drawable_id()</code></a>
+instead.</p>
+</div>
+<p>Creates a new <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> widget for <em class="parameter"><code>drawable</code></em>
+ using the
+given <em class="parameter"><code>model</code></em>
+.</p>
+<p>This variant of <a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new" title="gimp_zoom_preview_new ()"><code class="function">gimp_zoom_preview_new()</code></a> allows you to create a
+preview using an existing zoom model. This may be useful if for
+example you want to have two zoom previews that keep their zoom
+factor in sync.</p>
+<div class="refsect3">
+<a name="gimp-zoom-preview-new-with-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>a <a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="type">GimpZoomModel</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-zoom-preview-new-with-model.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-zoom-preview-get-source"></a><h3>gimp_zoom_preview_get_source ()</h3>
+<pre class="programlisting"><span class="returnvalue">guchar</span> *
+gimp_zoom_preview_get_source (<em class="parameter"><code><a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> *preview</code></em>,
+                              <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                              <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
+                              <em class="parameter"><code><span class="type">gint</span> *bpp</code></em>);</pre>
+<p>Returns the scaled image data of the part of the drawable the
+<a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> is currently showing, as a newly allocated array of guchar.
+This function also allow to get the current width, height and bpp of the
+<a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a>.</p>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-source.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> widget</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>a pointer to an int where the current width of the zoom widget
+will be put.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>a pointer to an int where the current width of the zoom widget
+will be put.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bpp</p></td>
+<td class="parameter_description"><p>return location for the number of bytes per pixel</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-source.returns"></a><h4>Returns</h4>
+<p> newly allocated data that should be released using <code class="function">g_free()</code>
+when it is not any longer needed</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-zoom-preview-get-drawable"></a><h3>gimp_zoom_preview_get_drawable ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="returnvalue">GimpDrawable</span></a> *
+gimp_zoom_preview_get_drawable (<em class="parameter"><code><a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> *preview</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_zoom_preview_get_drawable</code> has been deprecated since version 2.10 and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-get-drawable-id" title="gimp_zoom_preview_get_drawable_id ()"><code class="function">gimp_zoom_preview_get_drawable_id()</code></a> instead.</p>
+</div>
+<p>Returns the <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> the <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> is attached to.</p>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-drawable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> widget</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-drawable.returns"></a><h4>Returns</h4>
+<p> the <a class="link" href="libgimp-gimpdrawable.html#GimpDrawable" title="GimpDrawable"><span class="type">GimpDrawable</span></a> that was passed to <a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new" title="gimp_zoom_preview_new ()"><code class="function">gimp_zoom_preview_new()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-zoom-preview-get-drawable-id"></a><h3>gimp_zoom_preview_get_drawable_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_zoom_preview_get_drawable_id (<em class="parameter"><code><a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> *preview</code></em>);</pre>
+<p>Returns the drawable_ID the <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> is attached to.</p>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-drawable-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> widget</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-drawable-id.returns"></a><h4>Returns</h4>
+<p> the drawable_ID that was passed to
+<a class="link" href="GimpZoomPreview.html#gimp-zoom-preview-new-from-drawable-id" title="gimp_zoom_preview_new_from_drawable_id ()"><code class="function">gimp_zoom_preview_new_from_drawable_id()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-zoom-preview-get-factor"></a><h3>gimp_zoom_preview_get_factor ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_zoom_preview_get_factor (<em class="parameter"><code><a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> *preview</code></em>);</pre>
+<p>Returns the zoom factor the preview is currently using.</p>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-factor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> widget</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-factor.returns"></a><h4>Returns</h4>
+<p> the current zoom factor</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-zoom-preview-get-model"></a><h3>gimp_zoom_preview_get_model ()</h3>
+<pre class="programlisting"><a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="returnvalue">GimpZoomModel</span></a> *
+gimp_zoom_preview_get_model (<em class="parameter"><code><a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> *preview</code></em>);</pre>
+<p>Returns the <a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="type">GimpZoomModel</span></a> the preview is using.</p>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> widget</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-zoom-preview-get-model.returns"></a><h4>Returns</h4>
+<p> a pointer to the <a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="type">GimpZoomModel</span></a> owned by the <em class="parameter"><code>preview</code></em>
+</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpZoomPreview.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpZoomPreview-struct"></a><h3>GimpZoomPreview</h3>
+<pre class="programlisting">typedef struct _GimpZoomPreview GimpZoomPreview;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpZoomPreview.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GimpZoomPreview--drawable"></a><h3>The <code class="literal">“drawable”</code> property</h3>
+<pre class="programlisting">  “drawable”                 <span class="type">gpointer</span></pre>
+<p>The drawable the <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> is attached to.</p>
+<div class="warning">
+<p><code class="literal">GimpZoomPreview:drawable</code> is deprecated and should not be used in newly-written code.</p>
+<p>use the drawable-id property instead.</p>
+</div>
+<p>Owner: GimpZoomPreview</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpZoomPreview--drawable-id"></a><h3>The <code class="literal">“drawable-id”</code> property</h3>
+<pre class="programlisting">  “drawable-id”              <span class="type">int</span></pre>
+<p>The drawable the <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a> is attached to.</p>
+<p>Owner: GimpZoomPreview</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: -1</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpZoomPreview--model"></a><h3>The <code class="literal">“model”</code> property</h3>
+<pre class="programlisting">  “model”                    <a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="type">GimpZoomModel</span></a> *</pre>
+<p>The <a href="../html/GimpZoomModel.html#GimpZoomModel-struct"><span class="type">GimpZoomModel</span></a> used by this <a class="link" href="GimpZoomPreview.html" title="GimpZoomPreview"><span class="type">GimpZoomPreview</span></a>.</p>
+<p>Owner: GimpZoomPreview</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

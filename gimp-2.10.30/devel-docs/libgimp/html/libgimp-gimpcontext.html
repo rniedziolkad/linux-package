@@ -1,0 +1,3583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpcontext: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-general.html" title="Functions not Related to Specific Images">
+<link rel="prev" href="libgimp-gimpbuffer.html" title="gimpbuffer">
+<link rel="next" href="libgimp-gimpgimprc.html" title="gimpgimprc">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpcontext.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-general.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpbuffer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpgimprc.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpcontext"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpcontext.top_of_page"></a>gimpcontext</span></h2>
+<p>gimpcontext — Functions to manipulate a plug-in's context.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpcontext.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-push" title="gimp_context_push ()">gimp_context_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-pop" title="gimp_context_pop ()">gimp_context_pop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-defaults" title="gimp_context_set_defaults ()">gimp_context_set_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-foreground" title="gimp_context_get_foreground ()">gimp_context_get_foreground</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-foreground" title="gimp_context_set_foreground ()">gimp_context_set_foreground</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-background" title="gimp_context_get_background ()">gimp_context_get_background</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-background" title="gimp_context_set_background ()">gimp_context_set_background</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-default-colors" title="gimp_context_set_default_colors ()">gimp_context_set_default_colors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-swap-colors" title="gimp_context_swap_colors ()">gimp_context_swap_colors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-opacity" title="gimp_context_get_opacity ()">gimp_context_get_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-opacity" title="gimp_context_set_opacity ()">gimp_context_set_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="returnvalue">GimpLayerMode</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-paint-mode" title="gimp_context_get_paint_mode ()">gimp_context_get_paint_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-paint-mode" title="gimp_context_set_paint_mode ()">gimp_context_set_paint_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-list-paint-methods" title="gimp_context_list_paint_methods ()">gimp_context_list_paint_methods</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-paint-method" title="gimp_context_get_paint_method ()">gimp_context_get_paint_method</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-paint-method" title="gimp_context_set_paint_method ()">gimp_context_set_paint_method</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpStrokeMethod"><span class="returnvalue">GimpStrokeMethod</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-stroke-method" title="gimp_context_get_stroke_method ()">gimp_context_get_stroke_method</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-stroke-method" title="gimp_context_set_stroke_method ()">gimp_context_set_stroke_method</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-line-width" title="gimp_context_get_line_width ()">gimp_context_get_line_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-line-width" title="gimp_context_set_line_width ()">gimp_context_set_line_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpunit.html#GimpUnit"><span class="returnvalue">GimpUnit</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-line-width-unit" title="gimp_context_get_line_width_unit ()">gimp_context_get_line_width_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-line-width-unit" title="gimp_context_set_line_width_unit ()">gimp_context_set_line_width_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpCapStyle"><span class="returnvalue">GimpCapStyle</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-line-cap-style" title="gimp_context_get_line_cap_style ()">gimp_context_get_line_cap_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-line-cap-style" title="gimp_context_set_line_cap_style ()">gimp_context_set_line_cap_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpJoinStyle"><span class="returnvalue">GimpJoinStyle</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-line-join-style" title="gimp_context_get_line_join_style ()">gimp_context_get_line_join_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-line-join-style" title="gimp_context_set_line_join_style ()">gimp_context_set_line_join_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-line-miter-limit" title="gimp_context_get_line_miter_limit ()">gimp_context_get_line_miter_limit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-line-miter-limit" title="gimp_context_set_line_miter_limit ()">gimp_context_set_line_miter_limit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-line-dash-offset" title="gimp_context_get_line_dash_offset ()">gimp_context_get_line_dash_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-line-dash-offset" title="gimp_context_set_line_dash_offset ()">gimp_context_set_line_dash_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-line-dash-pattern" title="gimp_context_get_line_dash_pattern ()">gimp_context_get_line_dash_pattern</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-line-dash-pattern" title="gimp_context_set_line_dash_pattern ()">gimp_context_set_line_dash_pattern</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush" title="gimp_context_get_brush ()">gimp_context_get_brush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush" title="gimp_context_set_brush ()">gimp_context_set_brush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush-size" title="gimp_context_get_brush_size ()">gimp_context_get_brush_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-size" title="gimp_context_set_brush_size ()">gimp_context_set_brush_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-default-size" title="gimp_context_set_brush_default_size ()">gimp_context_set_brush_default_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush-aspect-ratio" title="gimp_context_get_brush_aspect_ratio ()">gimp_context_get_brush_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-aspect-ratio" title="gimp_context_set_brush_aspect_ratio ()">gimp_context_set_brush_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush-angle" title="gimp_context_get_brush_angle ()">gimp_context_get_brush_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-angle" title="gimp_context_set_brush_angle ()">gimp_context_set_brush_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush-spacing" title="gimp_context_get_brush_spacing ()">gimp_context_get_brush_spacing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-spacing" title="gimp_context_set_brush_spacing ()">gimp_context_set_brush_spacing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-default-spacing" title="gimp_context_set_brush_default_spacing ()">gimp_context_set_brush_default_spacing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush-hardness" title="gimp_context_get_brush_hardness ()">gimp_context_get_brush_hardness</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-hardness" title="gimp_context_set_brush_hardness ()">gimp_context_set_brush_hardness</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-default-hardness" title="gimp_context_set_brush_default_hardness ()">gimp_context_set_brush_default_hardness</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush-force" title="gimp_context_get_brush_force ()">gimp_context_get_brush_force</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-force" title="gimp_context_set_brush_force ()">gimp_context_set_brush_force</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-dynamics" title="gimp_context_get_dynamics ()">gimp_context_get_dynamics</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-dynamics" title="gimp_context_set_dynamics ()">gimp_context_set_dynamics</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-mypaint-brush" title="gimp_context_get_mypaint_brush ()">gimp_context_get_mypaint_brush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-mypaint-brush" title="gimp_context_set_mypaint_brush ()">gimp_context_set_mypaint_brush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-pattern" title="gimp_context_get_pattern ()">gimp_context_get_pattern</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-pattern" title="gimp_context_set_pattern ()">gimp_context_set_pattern</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-gradient" title="gimp_context_get_gradient ()">gimp_context_get_gradient</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-gradient" title="gimp_context_set_gradient ()">gimp_context_set_gradient</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-gradient-fg-bg-hsv-ccw" title="gimp_context_set_gradient_fg_bg_hsv_ccw ()">gimp_context_set_gradient_fg_bg_hsv_ccw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-gradient-fg-bg-hsv-cw" title="gimp_context_set_gradient_fg_bg_hsv_cw ()">gimp_context_set_gradient_fg_bg_hsv_cw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-gradient-fg-bg-rgb" title="gimp_context_set_gradient_fg_bg_rgb ()">gimp_context_set_gradient_fg_bg_rgb</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-gradient-fg-transparent" title="gimp_context_set_gradient_fg_transparent ()">gimp_context_set_gradient_fg_transparent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpGradientBlendColorSpace"><span class="returnvalue">GimpGradientBlendColorSpace</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-gradient-blend-color-space" title="gimp_context_get_gradient_blend_color_space ()">gimp_context_get_gradient_blend_color_space</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-gradient-blend-color-space" title="gimp_context_set_gradient_blend_color_space ()">gimp_context_set_gradient_blend_color_space</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpRepeatMode"><span class="returnvalue">GimpRepeatMode</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-gradient-repeat-mode" title="gimp_context_get_gradient_repeat_mode ()">gimp_context_get_gradient_repeat_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-gradient-repeat-mode" title="gimp_context_set_gradient_repeat_mode ()">gimp_context_set_gradient_repeat_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-gradient-reverse" title="gimp_context_get_gradient_reverse ()">gimp_context_get_gradient_reverse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-gradient-reverse" title="gimp_context_set_gradient_reverse ()">gimp_context_set_gradient_reverse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-palette" title="gimp_context_get_palette ()">gimp_context_get_palette</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-palette" title="gimp_context_set_palette ()">gimp_context_set_palette</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-font" title="gimp_context_get_font ()">gimp_context_get_font</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-font" title="gimp_context_set_font ()">gimp_context_set_font</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-antialias" title="gimp_context_get_antialias ()">gimp_context_get_antialias</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-antialias" title="gimp_context_set_antialias ()">gimp_context_set_antialias</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-feather" title="gimp_context_get_feather ()">gimp_context_get_feather</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-feather" title="gimp_context_set_feather ()">gimp_context_set_feather</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-feather-radius" title="gimp_context_get_feather_radius ()">gimp_context_get_feather_radius</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-feather-radius" title="gimp_context_set_feather_radius ()">gimp_context_set_feather_radius</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-merged" title="gimp_context_get_sample_merged ()">gimp_context_get_sample_merged</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-merged" title="gimp_context_set_sample_merged ()">gimp_context_set_sample_merged</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpSelectCriterion"><span class="returnvalue">GimpSelectCriterion</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-criterion" title="gimp_context_get_sample_criterion ()">gimp_context_get_sample_criterion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-criterion" title="gimp_context_set_sample_criterion ()">gimp_context_set_sample_criterion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-threshold" title="gimp_context_get_sample_threshold ()">gimp_context_get_sample_threshold</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-threshold" title="gimp_context_set_sample_threshold ()">gimp_context_set_sample_threshold</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-threshold-int" title="gimp_context_get_sample_threshold_int ()">gimp_context_get_sample_threshold_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-threshold-int" title="gimp_context_set_sample_threshold_int ()">gimp_context_set_sample_threshold_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-transparent" title="gimp_context_get_sample_transparent ()">gimp_context_get_sample_transparent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-transparent" title="gimp_context_set_sample_transparent ()">gimp_context_set_sample_transparent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-diagonal-neighbors" title="gimp_context_get_diagonal_neighbors ()">gimp_context_get_diagonal_neighbors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-diagonal-neighbors" title="gimp_context_set_diagonal_neighbors ()">gimp_context_set_diagonal_neighbors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GeglDistanceMetric</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-distance-metric" title="gimp_context_get_distance_metric ()">gimp_context_get_distance_metric</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-distance-metric" title="gimp_context_set_distance_metric ()">gimp_context_set_distance_metric</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpInterpolationType"><span class="returnvalue">GimpInterpolationType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-interpolation" title="gimp_context_get_interpolation ()">gimp_context_get_interpolation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()">gimp_context_set_interpolation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformDirection"><span class="returnvalue">GimpTransformDirection</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-transform-direction" title="gimp_context_get_transform_direction ()">gimp_context_get_transform_direction</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-direction" title="gimp_context_set_transform_direction ()">gimp_context_set_transform_direction</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformResize"><span class="returnvalue">GimpTransformResize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-transform-resize" title="gimp_context_get_transform_resize ()">gimp_context_get_transform_resize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()">gimp_context_set_transform_resize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-transform-recursion" title="gimp_context_get_transform_recursion ()">gimp_context_get_transform_recursion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-recursion" title="gimp_context_set_transform_recursion ()">gimp_context_set_transform_recursion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-angle" title="gimp_context_get_ink_angle ()">gimp_context_get_ink_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-angle" title="gimp_context_set_ink_angle ()">gimp_context_set_ink_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-blob-angle" title="gimp_context_get_ink_blob_angle ()">gimp_context_get_ink_blob_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-blob-angle" title="gimp_context_set_ink_blob_angle ()">gimp_context_set_ink_blob_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-blob-aspect-ratio" title="gimp_context_get_ink_blob_aspect_ratio ()">gimp_context_get_ink_blob_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-blob-aspect-ratio" title="gimp_context_set_ink_blob_aspect_ratio ()">gimp_context_set_ink_blob_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpInkBlobType"><span class="returnvalue">GimpInkBlobType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-blob-type" title="gimp_context_get_ink_blob_type ()">gimp_context_get_ink_blob_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-blob-type" title="gimp_context_set_ink_blob_type ()">gimp_context_set_ink_blob_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-size" title="gimp_context_get_ink_size ()">gimp_context_get_ink_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-size" title="gimp_context_set_ink_size ()">gimp_context_set_ink_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-size-sensitivity" title="gimp_context_get_ink_size_sensitivity ()">gimp_context_get_ink_size_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-size-sensitivity" title="gimp_context_set_ink_size_sensitivity ()">gimp_context_set_ink_size_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-speed-sensitivity" title="gimp_context_get_ink_speed_sensitivity ()">gimp_context_get_ink_speed_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-speed-sensitivity" title="gimp_context_set_ink_speed_sensitivity ()">gimp_context_set_ink_speed_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-tilt-sensitivity" title="gimp_context_get_ink_tilt_sensitivity ()">gimp_context_get_ink_tilt_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-tilt-sensitivity" title="gimp_context_set_ink_tilt_sensitivity ()">gimp_context_set_ink_tilt_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpcontext.description"></a><h2>Description</h2>
+<p>Functions to manipulate a plug-in's context.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpcontext.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-context-push"></a><h3>gimp_context_push ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_push (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Pushes a context to the top of the plug-in's context stack.</p>
+<p>This procedure creates a new context by copying the current context.
+This copy becomes the new current context for the calling plug-in
+until it is popped again using <a class="link" href="libgimp-gimpcontext.html#gimp-context-pop" title="gimp_context_pop ()"><code class="function">gimp_context_pop()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-push.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-pop"></a><h3>gimp_context_pop ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_pop (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Pops the topmost context from the plug-in's context stack.</p>
+<p>This procedure removes the topmost context from the plug-in's
+context stack. The context that was active before the corresponding
+call to <a class="link" href="libgimp-gimpcontext.html#gimp-context-push" title="gimp_context_push ()"><code class="function">gimp_context_push()</code></a> becomes the new current context of the
+plug-in.</p>
+<div class="refsect3">
+<a name="gimp-context-pop.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-defaults"></a><h3>gimp_context_set_defaults ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_defaults (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Reset context settings to their default values.</p>
+<p>This procedure resets context settings used by various procedures to
+their default value. This procedure will usually be called after a
+context push so that a script which calls procedures affected by
+context settings will not be affected by changes in the global
+context.</p>
+<div class="refsect3">
+<a name="gimp-context-set-defaults.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-foreground"></a><h3>gimp_context_get_foreground ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_foreground (<em class="parameter"><code><a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *foreground</code></em>);</pre>
+<p>Get the current GIMP foreground color.</p>
+<p>This procedure returns the current GIMP foreground color. The
+foreground color is used in a variety of tools such as paint tools,
+blending, and bucket fill.</p>
+<div class="refsect3">
+<a name="gimp-context-get-foreground.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>foreground</p></td>
+<td class="parameter_description"><p>The foreground color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-get-foreground.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-foreground"></a><h3>gimp_context_set_foreground ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_foreground (<em class="parameter"><code>const <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *foreground</code></em>);</pre>
+<p>Set the current GIMP foreground color.</p>
+<p>This procedure sets the current GIMP foreground color. After this is
+set, operations which use foreground such as paint tools, blending,
+and bucket fill will use the new value.</p>
+<div class="refsect3">
+<a name="gimp-context-set-foreground.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>foreground</p></td>
+<td class="parameter_description"><p>The foreground color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-foreground.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-background"></a><h3>gimp_context_get_background ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_background (<em class="parameter"><code><a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *background</code></em>);</pre>
+<p>Get the current GIMP background color.</p>
+<p>This procedure returns the current GIMP background color. The
+background color is used in a variety of tools such as blending,
+erasing (with non-alpha images), and image filling.</p>
+<div class="refsect3">
+<a name="gimp-context-get-background.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>background</p></td>
+<td class="parameter_description"><p>The background color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-get-background.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-background"></a><h3>gimp_context_set_background ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_background (<em class="parameter"><code>const <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *background</code></em>);</pre>
+<p>Set the current GIMP background color.</p>
+<p>This procedure sets the current GIMP background color. After this is
+set, operations which use background such as blending, filling
+images, clearing, and erasing (in non-alpha images) will use the new
+value.</p>
+<div class="refsect3">
+<a name="gimp-context-set-background.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>background</p></td>
+<td class="parameter_description"><p>The background color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-background.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-default-colors"></a><h3>gimp_context_set_default_colors ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_default_colors (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Set the current GIMP foreground and background colors to black and
+white.</p>
+<p>This procedure sets the current GIMP foreground and background
+colors to their initial default values, black and white.</p>
+<div class="refsect3">
+<a name="gimp-context-set-default-colors.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-swap-colors"></a><h3>gimp_context_swap_colors ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_swap_colors (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Swap the current GIMP foreground and background colors.</p>
+<p>This procedure swaps the current GIMP foreground and background
+colors, so that the new foreground color becomes the old background
+color and vice versa.</p>
+<div class="refsect3">
+<a name="gimp-context-swap-colors.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-opacity"></a><h3>gimp_context_get_opacity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_opacity (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the opacity.</p>
+<p>This procedure returns the opacity setting. The return value is a
+floating point number between 0 and 100.</p>
+<div class="refsect3">
+<a name="gimp-context-get-opacity.returns"></a><h4>Returns</h4>
+<p> The opacity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-opacity"></a><h3>gimp_context_set_opacity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_opacity (<em class="parameter"><code><span class="type">gdouble</span> opacity</code></em>);</pre>
+<p>Set the opacity.</p>
+<p>This procedure modifies the opacity setting. The value should be a
+floating point number between 0 and 100.</p>
+<div class="refsect3">
+<a name="gimp-context-set-opacity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>opacity</p></td>
+<td class="parameter_description"><p>The opacity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-opacity.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-paint-mode"></a><h3>gimp_context_get_paint_mode ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="returnvalue">GimpLayerMode</span></a>
+gimp_context_get_paint_mode (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the paint mode.</p>
+<p>This procedure returns the paint-mode setting. The return value is
+an integer which corresponds to the values listed in the argument
+description.</p>
+<div class="refsect3">
+<a name="gimp-context-get-paint-mode.returns"></a><h4>Returns</h4>
+<p> The paint mode.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-paint-mode"></a><h3>gimp_context_set_paint_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_paint_mode (<em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="type">GimpLayerMode</span></a> paint_mode</code></em>);</pre>
+<p>Set the paint mode.</p>
+<p>This procedure modifies the paint_mode setting.</p>
+<div class="refsect3">
+<a name="gimp-context-set-paint-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>paint_mode</p></td>
+<td class="parameter_description"><p>The paint mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-paint-mode.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-list-paint-methods"></a><h3>gimp_context_list_paint_methods ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_list_paint_methods (<em class="parameter"><code><span class="type">gint</span> *num_paint_methods</code></em>,
+                                 <em class="parameter"><code><span class="type">gchar</span> ***paint_methods</code></em>);</pre>
+<p>Lists the available paint methods.</p>
+<p>This procedure lists the names of the available paint methods. Any
+of the results can be used for <a class="link" href="libgimp-gimpcontext.html#gimp-context-set-paint-method" title="gimp_context_set_paint_method ()"><code class="function">gimp_context_set_paint_method()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-list-paint-methods.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>num_paint_methods</p></td>
+<td class="parameter_description"><p>The number of the available paint methods.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>paint_methods</p></td>
+<td class="parameter_description"><p>The names of the available paint methods.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-list-paint-methods.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-paint-method"></a><h3>gimp_context_get_paint_method ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_context_get_paint_method (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieve the currently active paint method.</p>
+<p>This procedure returns the name of the currently active paint
+method.</p>
+<div class="refsect3">
+<a name="gimp-context-get-paint-method.returns"></a><h4>Returns</h4>
+<p> The name of the active paint method.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-paint-method"></a><h3>gimp_context_set_paint_method ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_paint_method (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set the specified paint method as the active paint method.</p>
+<p>This procedure allows the active paint method to be set by
+specifying its name. The name is simply a string which corresponds
+to one of the names of the available paint methods. If there is no
+matching method found, this procedure will return an error.
+Otherwise, the specified method becomes active and will be used in
+all subsequent paint operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-paint-method.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the paint method.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-paint-method.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-stroke-method"></a><h3>gimp_context_get_stroke_method ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpStrokeMethod"><span class="returnvalue">GimpStrokeMethod</span></a>
+gimp_context_get_stroke_method (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieve the currently active stroke method.</p>
+<p>This procedure returns the currently active stroke method.</p>
+<div class="refsect3">
+<a name="gimp-context-get-stroke-method.returns"></a><h4>Returns</h4>
+<p> The active stroke method.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-stroke-method"></a><h3>gimp_context_set_stroke_method ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_stroke_method (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpStrokeMethod"><span class="type">GimpStrokeMethod</span></a> stroke_method</code></em>);</pre>
+<p>Set the specified stroke method as the active stroke method.</p>
+<p>This procedure set the specified stroke method as the active stroke
+method. The new method will be used in all subsequent stroke
+operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-stroke-method.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stroke_method</p></td>
+<td class="parameter_description"><p>The new stroke method.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-stroke-method.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-line-width"></a><h3>gimp_context_get_line_width ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_line_width (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the line width setting.</p>
+<p>This procedure returns the line width setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-line-width.returns"></a><h4>Returns</h4>
+<p> The line width setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-line-width"></a><h3>gimp_context_set_line_width ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_line_width (<em class="parameter"><code><span class="type">gdouble</span> line_width</code></em>);</pre>
+<p>Set the line width setting.</p>
+<p>This procedure modifies the line width setting for stroking lines.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-selection" title="gimp_drawable_edit_stroke_selection ()"><code class="function">gimp_drawable_edit_stroke_selection()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-item" title="gimp_drawable_edit_stroke_item ()"><code class="function">gimp_drawable_edit_stroke_item()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-line-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>line_width</p></td>
+<td class="parameter_description"><p>The line width setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-line-width.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-line-width-unit"></a><h3>gimp_context_get_line_width_unit ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpunit.html#GimpUnit"><span class="returnvalue">GimpUnit</span></a>
+gimp_context_get_line_width_unit (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the line width unit setting.</p>
+<p>This procedure returns the line width unit setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-line-width-unit.returns"></a><h4>Returns</h4>
+<p> The line width unit setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-line-width-unit"></a><h3>gimp_context_set_line_width_unit ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_line_width_unit (<em class="parameter"><code><a href="../html/libgimpbase-gimpunit.html#GimpUnit"><span class="type">GimpUnit</span></a> line_width_unit</code></em>);</pre>
+<p>Set the line width unit setting.</p>
+<p>This procedure modifies the line width unit setting for stroking
+lines.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-selection" title="gimp_drawable_edit_stroke_selection ()"><code class="function">gimp_drawable_edit_stroke_selection()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-item" title="gimp_drawable_edit_stroke_item ()"><code class="function">gimp_drawable_edit_stroke_item()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-line-width-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>line_width_unit</p></td>
+<td class="parameter_description"><p>The line width setting unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-line-width-unit.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-line-cap-style"></a><h3>gimp_context_get_line_cap_style ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpCapStyle"><span class="returnvalue">GimpCapStyle</span></a>
+gimp_context_get_line_cap_style (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the line cap style setting.</p>
+<p>This procedure returns the line cap style setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-line-cap-style.returns"></a><h4>Returns</h4>
+<p> The line cap style setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-line-cap-style"></a><h3>gimp_context_set_line_cap_style ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_line_cap_style (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpCapStyle"><span class="type">GimpCapStyle</span></a> cap_style</code></em>);</pre>
+<p>Set the line cap style setting.</p>
+<p>This procedure modifies the line cap style setting for stroking
+lines.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-selection" title="gimp_drawable_edit_stroke_selection ()"><code class="function">gimp_drawable_edit_stroke_selection()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-item" title="gimp_drawable_edit_stroke_item ()"><code class="function">gimp_drawable_edit_stroke_item()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-line-cap-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>cap_style</p></td>
+<td class="parameter_description"><p>The line cap style setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-line-cap-style.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-line-join-style"></a><h3>gimp_context_get_line_join_style ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpJoinStyle"><span class="returnvalue">GimpJoinStyle</span></a>
+gimp_context_get_line_join_style (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the line join style setting.</p>
+<p>This procedure returns the line join style setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-line-join-style.returns"></a><h4>Returns</h4>
+<p> The line join style setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-line-join-style"></a><h3>gimp_context_set_line_join_style ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_line_join_style (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpJoinStyle"><span class="type">GimpJoinStyle</span></a> join_style</code></em>);</pre>
+<p>Set the line join style setting.</p>
+<p>This procedure modifies the line join style setting for stroking
+lines.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-selection" title="gimp_drawable_edit_stroke_selection ()"><code class="function">gimp_drawable_edit_stroke_selection()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-item" title="gimp_drawable_edit_stroke_item ()"><code class="function">gimp_drawable_edit_stroke_item()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-line-join-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>join_style</p></td>
+<td class="parameter_description"><p>The line join style setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-line-join-style.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-line-miter-limit"></a><h3>gimp_context_get_line_miter_limit ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_line_miter_limit (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the line miter limit setting.</p>
+<p>This procedure returns the line miter limit setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-line-miter-limit.returns"></a><h4>Returns</h4>
+<p> The line miter limit setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-line-miter-limit"></a><h3>gimp_context_set_line_miter_limit ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_line_miter_limit (<em class="parameter"><code><span class="type">gdouble</span> miter_limit</code></em>);</pre>
+<p>Set the line miter limit setting.</p>
+<p>This procedure modifies the line miter limit setting for stroking
+lines.
+A mitered join is converted to a bevelled join if the miter would
+extend to a distance of more than (miter-limit * line-width) from
+the actual join point.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-selection" title="gimp_drawable_edit_stroke_selection ()"><code class="function">gimp_drawable_edit_stroke_selection()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-item" title="gimp_drawable_edit_stroke_item ()"><code class="function">gimp_drawable_edit_stroke_item()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-line-miter-limit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>miter_limit</p></td>
+<td class="parameter_description"><p>The line miter limit setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-line-miter-limit.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-line-dash-offset"></a><h3>gimp_context_get_line_dash_offset ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_line_dash_offset (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the line dash offset setting.</p>
+<p>This procedure returns the line dash offset setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-line-dash-offset.returns"></a><h4>Returns</h4>
+<p> The line dash offset setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-line-dash-offset"></a><h3>gimp_context_set_line_dash_offset ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_line_dash_offset (<em class="parameter"><code><span class="type">gdouble</span> dash_offset</code></em>);</pre>
+<p>Set the line dash offset setting.</p>
+<p>This procedure modifies the line dash offset setting for stroking
+lines.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-selection" title="gimp_drawable_edit_stroke_selection ()"><code class="function">gimp_drawable_edit_stroke_selection()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-item" title="gimp_drawable_edit_stroke_item ()"><code class="function">gimp_drawable_edit_stroke_item()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-line-dash-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dash_offset</p></td>
+<td class="parameter_description"><p>The line dash offset setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-line-dash-offset.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-line-dash-pattern"></a><h3>gimp_context_get_line_dash_pattern ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_line_dash_pattern (<em class="parameter"><code><span class="type">gint</span> *num_dashes</code></em>,
+                                    <em class="parameter"><code><span class="type">gdouble</span> **dashes</code></em>);</pre>
+<p>Get the line dash pattern setting.</p>
+<p>This procedure returns the line dash pattern setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-line-dash-pattern.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>num_dashes</p></td>
+<td class="parameter_description"><p>The number of dashes in the dash_pattern array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dashes</p></td>
+<td class="parameter_description"><p>The line dash pattern setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-get-line-dash-pattern.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-line-dash-pattern"></a><h3>gimp_context_set_line_dash_pattern ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_line_dash_pattern (<em class="parameter"><code><span class="type">gint</span> num_dashes</code></em>,
+                                    <em class="parameter"><code>const <span class="type">gdouble</span> *dashes</code></em>);</pre>
+<p>Set the line dash pattern setting.</p>
+<p>This procedure modifies the line dash pattern setting for stroking
+lines.</p>
+<p>The unit of the dash pattern segments is the actual line width used
+for the stroke operation, in other words a segment length of 1.0
+results in a square segment shape (or gap shape).</p>
+<p>This setting affects the following procedures:
+<code class="function">gimp_drawable_edit_stroke_selection_()</code>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-item" title="gimp_drawable_edit_stroke_item ()"><code class="function">gimp_drawable_edit_stroke_item()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-line-dash-pattern.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>num_dashes</p></td>
+<td class="parameter_description"><p>The number of dashes in the dash_pattern array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dashes</p></td>
+<td class="parameter_description"><p>The line dash pattern setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-line-dash-pattern.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush"></a><h3>gimp_context_get_brush ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_context_get_brush (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieve the currently active brush.</p>
+<p>This procedure returns the name of the currently active brush. All
+paint operations and stroke operations use this brush to control the
+application of paint to the image.</p>
+<div class="refsect3">
+<a name="gimp-context-get-brush.returns"></a><h4>Returns</h4>
+<p> The name of the active brush.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush"></a><h3>gimp_context_set_brush ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set the specified brush as the active brush.</p>
+<p>This procedure allows the active brush to be set by specifying its
+name. The name is simply a string which corresponds to one of the
+names of the installed brushes. If there is no matching brush found,
+this procedure will return an error. Otherwise, the specified brush
+becomes active and will be used in all subsequent paint operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the brush.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-brush.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush-size"></a><h3>gimp_context_get_brush_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_brush_size (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get brush size in pixels.</p>
+<p>Get the brush size in pixels for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-get-brush-size.returns"></a><h4>Returns</h4>
+<p> Brush size in pixels.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-size"></a><h3>gimp_context_set_brush_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush_size (<em class="parameter"><code><span class="type">gdouble</span> size</code></em>);</pre>
+<p>Set brush size in pixels.</p>
+<p>Set the brush size in pixels for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Brush size in pixels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-brush-size.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-default-size"></a><h3>gimp_context_set_brush_default_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush_default_size (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Set brush size to its default.</p>
+<p>Set the brush size to the default (max of width and height) for
+paintbrush, airbrush, or pencil tools.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush-default-size.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush-aspect-ratio"></a><h3>gimp_context_get_brush_aspect_ratio ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_brush_aspect_ratio (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get brush aspect ratio.</p>
+<p>Set the aspect ratio for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-get-brush-aspect-ratio.returns"></a><h4>Returns</h4>
+<p> Aspect ratio.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-aspect-ratio"></a><h3>gimp_context_set_brush_aspect_ratio ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush_aspect_ratio (<em class="parameter"><code><span class="type">gdouble</span> aspect</code></em>);</pre>
+<p>Set brush aspect ratio.</p>
+<p>Set the aspect ratio for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush-aspect-ratio.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>aspect</p></td>
+<td class="parameter_description"><p>Aspect ratio.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-brush-aspect-ratio.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush-angle"></a><h3>gimp_context_get_brush_angle ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_brush_angle (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get brush angle in degrees.</p>
+<p>Set the angle in degrees for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-get-brush-angle.returns"></a><h4>Returns</h4>
+<p> Angle in degrees.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-angle"></a><h3>gimp_context_set_brush_angle ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush_angle (<em class="parameter"><code><span class="type">gdouble</span> angle</code></em>);</pre>
+<p>Set brush angle in degrees.</p>
+<p>Set the angle in degrees for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush-angle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>angle</p></td>
+<td class="parameter_description"><p>Angle in degrees.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-brush-angle.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush-spacing"></a><h3>gimp_context_get_brush_spacing ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_brush_spacing (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get brush spacing as percent of size.</p>
+<p>Get the brush spacing as percent of size for brush based paint
+tools.</p>
+<div class="refsect3">
+<a name="gimp-context-get-brush-spacing.returns"></a><h4>Returns</h4>
+<p> Brush spacing as fraction of size.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-spacing"></a><h3>gimp_context_set_brush_spacing ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush_spacing (<em class="parameter"><code><span class="type">gdouble</span> spacing</code></em>);</pre>
+<p>Set brush spacing as percent of size.</p>
+<p>Set the brush spacing as percent of size for brush based paint
+tools.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spacing</p></td>
+<td class="parameter_description"><p>Brush spacing as fraction of size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-brush-spacing.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-default-spacing"></a><h3>gimp_context_set_brush_default_spacing ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush_default_spacing
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Set brush spacing to its default.</p>
+<p>Set the brush spacing to the default for paintbrush, airbrush, or
+pencil tools.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush-default-spacing.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush-hardness"></a><h3>gimp_context_get_brush_hardness ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_brush_hardness (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get brush hardness in paint options.</p>
+<p>Get the brush hardness for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-get-brush-hardness.returns"></a><h4>Returns</h4>
+<p> Brush hardness.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-hardness"></a><h3>gimp_context_set_brush_hardness ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush_hardness (<em class="parameter"><code><span class="type">gdouble</span> hardness</code></em>);</pre>
+<p>Set brush hardness.</p>
+<p>Set the brush hardness for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush-hardness.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>hardness</p></td>
+<td class="parameter_description"><p>Brush hardness.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-brush-hardness.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-default-hardness"></a><h3>gimp_context_set_brush_default_hardness ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush_default_hardness
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Set brush spacing to its default.</p>
+<p>Set the brush spacing to the default for paintbrush, airbrush, or
+pencil tools.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush-default-hardness.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush-force"></a><h3>gimp_context_get_brush_force ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_brush_force (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get brush force in paint options.</p>
+<p>Get the brush application force for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-get-brush-force.returns"></a><h4>Returns</h4>
+<p> Brush application force.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-force"></a><h3>gimp_context_set_brush_force ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_brush_force (<em class="parameter"><code><span class="type">gdouble</span> force</code></em>);</pre>
+<p>Set brush application force.</p>
+<p>Set the brush application force for brush based paint tools.</p>
+<div class="refsect3">
+<a name="gimp-context-set-brush-force.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>force</p></td>
+<td class="parameter_description"><p>Brush application force.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-brush-force.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-dynamics"></a><h3>gimp_context_get_dynamics ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_context_get_dynamics (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieve the currently active paint dynamics.</p>
+<p>This procedure returns the name of the currently active paint
+dynamics. All paint operations and stroke operations use this paint
+dynamics to control the application of paint to the image.</p>
+<div class="refsect3">
+<a name="gimp-context-get-dynamics.returns"></a><h4>Returns</h4>
+<p> The name of the active paint dynamics.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-dynamics"></a><h3>gimp_context_set_dynamics ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_dynamics (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set the specified paint dynamics as the active paint dynamics.</p>
+<p>This procedure allows the active paint dynamics to be set by
+specifying its name. The name is simply a string which corresponds
+to one of the names of the installed paint dynamics. If there is no
+matching paint dynamics found, this procedure will return an error.
+Otherwise, the specified paint dynamics becomes active and will be
+used in all subsequent paint operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-dynamics.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the paint dynamics.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-dynamics.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-mypaint-brush"></a><h3>gimp_context_get_mypaint_brush ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_context_get_mypaint_brush (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieve the currently active MyPaint brush.</p>
+<p>This procedure returns the name of the currently active MyPaint
+brush.</p>
+<div class="refsect3">
+<a name="gimp-context-get-mypaint-brush.returns"></a><h4>Returns</h4>
+<p> The name of the active MyPaint brush.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-mypaint-brush"></a><h3>gimp_context_set_mypaint_brush ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_mypaint_brush (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set the specified MyPaint brush as the active MyPaint brush.</p>
+<p>This procedure allows the active MyPaint brush to be set by
+specifying its name. The name is simply a string which corresponds
+to one of the names of the installed MyPaint brushes. If there is no
+matching MyPaint brush found, this procedure will return an error.
+Otherwise, the specified MyPaint brush becomes active and will be
+used in all subsequent MyPaint paint operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-mypaint-brush.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the MyPaint brush.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-mypaint-brush.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-pattern"></a><h3>gimp_context_get_pattern ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_context_get_pattern (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieve the currently active pattern.</p>
+<p>This procedure returns name of the the currently active pattern. All
+clone and bucket-fill operations with patterns will use this pattern
+to control the application of paint to the image.</p>
+<div class="refsect3">
+<a name="gimp-context-get-pattern.returns"></a><h4>Returns</h4>
+<p> The name of the active pattern.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-pattern"></a><h3>gimp_context_set_pattern ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_pattern (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set the specified pattern as the active pattern.</p>
+<p>This procedure allows the active pattern to be set by specifying its
+name. The name is simply a string which corresponds to one of the
+names of the installed patterns. If there is no matching pattern
+found, this procedure will return an error. Otherwise, the specified
+pattern becomes active and will be used in all subsequent paint
+operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-pattern.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the pattern.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-pattern.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-gradient"></a><h3>gimp_context_get_gradient ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_context_get_gradient (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieve the currently active gradient.</p>
+<p>This procedure returns the name of the currently active gradient.</p>
+<div class="refsect3">
+<a name="gimp-context-get-gradient.returns"></a><h4>Returns</h4>
+<p> The name of the active gradient.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-gradient"></a><h3>gimp_context_set_gradient ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_gradient (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Sets the specified gradient as the active gradient.</p>
+<p>This procedure lets you set the specified gradient as the active or
+\"current\" one. The name is simply a string which corresponds to
+one of the loaded gradients. If no matching gradient is found, this
+procedure will return an error. Otherwise, the specified gradient
+will become active and will be used for subsequent custom gradient
+operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-gradient.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-gradient.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-gradient-fg-bg-hsv-ccw"></a><h3>gimp_context_set_gradient_fg_bg_hsv_ccw ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_gradient_fg_bg_hsv_ccw
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Sets the built-in FG-BG HSV (ccw) gradient as the active gradient.</p>
+<p>This procedure sets the built-in FG-BG HSV (ccw) gradient as the
+active gradient. The gradient will be used for subsequent gradient
+operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-fg-bg-hsv-ccw.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-gradient-fg-bg-hsv-cw"></a><h3>gimp_context_set_gradient_fg_bg_hsv_cw ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_gradient_fg_bg_hsv_cw
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Sets the built-in FG-BG HSV (cw) gradient as the active gradient.</p>
+<p>This procedure sets the built-in FG-BG HSV (cw) gradient as the
+active gradient. The gradient will be used for subsequent gradient
+operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-fg-bg-hsv-cw.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-gradient-fg-bg-rgb"></a><h3>gimp_context_set_gradient_fg_bg_rgb ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_gradient_fg_bg_rgb (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Sets the built-in FG-BG RGB gradient as the active gradient.</p>
+<p>This procedure sets the built-in FG-BG RGB gradient as the active
+gradient. The gradient will be used for subsequent gradient
+operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-fg-bg-rgb.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-gradient-fg-transparent"></a><h3>gimp_context_set_gradient_fg_transparent ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_gradient_fg_transparent
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Sets the built-in FG-Transparent gradient as the active gradient.</p>
+<p>This procedure sets the built-in FG-Transparent gradient as the
+active gradient. The gradient will be used for subsequent gradient
+operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-fg-transparent.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-gradient-blend-color-space"></a><h3>gimp_context_get_gradient_blend_color_space ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpGradientBlendColorSpace"><span class="returnvalue">GimpGradientBlendColorSpace</span></a>
+gimp_context_get_gradient_blend_color_space
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the gradient blend color space.</p>
+<p>Get the gradient blend color space for paint tools and the gradient
+tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-gradient-blend-color-space.returns"></a><h4>Returns</h4>
+<p> Color blend space.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-gradient-blend-color-space"></a><h3>gimp_context_set_gradient_blend_color_space ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_gradient_blend_color_space
+                               (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpGradientBlendColorSpace"><span class="type">GimpGradientBlendColorSpace</span></a> blend_color_space</code></em>);</pre>
+<p>Set the gradient blend color space.</p>
+<p>Set the gradient blend color space for paint tools and the gradient
+tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-blend-color-space.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>blend_color_space</p></td>
+<td class="parameter_description"><p>Blend color space.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-blend-color-space.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-gradient-repeat-mode"></a><h3>gimp_context_get_gradient_repeat_mode ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpRepeatMode"><span class="returnvalue">GimpRepeatMode</span></a>
+gimp_context_get_gradient_repeat_mode (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the gradient repeat mode.</p>
+<p>Get the gradient repeat mode for paint tools and the gradient tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-gradient-repeat-mode.returns"></a><h4>Returns</h4>
+<p> Repeat mode.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-gradient-repeat-mode"></a><h3>gimp_context_set_gradient_repeat_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_gradient_repeat_mode (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpRepeatMode"><span class="type">GimpRepeatMode</span></a> repeat_mode</code></em>);</pre>
+<p>Set the gradient repeat mode.</p>
+<p>Set the gradient repeat mode for paint tools and the gradient tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-repeat-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>repeat_mode</p></td>
+<td class="parameter_description"><p>Repeat mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-repeat-mode.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-gradient-reverse"></a><h3>gimp_context_get_gradient_reverse ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_gradient_reverse (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the gradient reverse setting.</p>
+<p>Get the gradient reverse setting for paint tools and the gradient
+tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-gradient-reverse.returns"></a><h4>Returns</h4>
+<p> Reverse.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-gradient-reverse"></a><h3>gimp_context_set_gradient_reverse ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_gradient_reverse (<em class="parameter"><code><span class="type">gboolean</span> reverse</code></em>);</pre>
+<p>Set the gradient reverse setting.</p>
+<p>Set the gradient reverse setting for paint tools and the gradient
+tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-reverse.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>reverse</p></td>
+<td class="parameter_description"><p>Reverse.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-gradient-reverse.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-palette"></a><h3>gimp_context_get_palette ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_context_get_palette (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieve the currently active palette.</p>
+<p>This procedure returns the name of the the currently active palette.</p>
+<div class="refsect3">
+<a name="gimp-context-get-palette.returns"></a><h4>Returns</h4>
+<p> The name of the active palette.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-palette"></a><h3>gimp_context_set_palette ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_palette (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set the specified palette as the active palette.</p>
+<p>This procedure allows the active palette to be set by specifying its
+name. The name is simply a string which corresponds to one of the
+names of the installed palettes. If no matching palette is found,
+this procedure will return an error. Otherwise, the specified
+palette becomes active and will be used in all subsequent palette
+operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-palette.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the palette.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-palette.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-font"></a><h3>gimp_context_get_font ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_context_get_font (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieve the currently active font.</p>
+<p>This procedure returns the name of the currently active font.</p>
+<div class="refsect3">
+<a name="gimp-context-get-font.returns"></a><h4>Returns</h4>
+<p> The name of the active font.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-font"></a><h3>gimp_context_set_font ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_font (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Set the specified font as the active font.</p>
+<p>This procedure allows the active font to be set by specifying its
+name. The name is simply a string which corresponds to one of the
+names of the installed fonts. If no matching font is found, this
+procedure will return an error. Otherwise, the specified font
+becomes active and will be used in all subsequent font operations.</p>
+<div class="refsect3">
+<a name="gimp-context-set-font.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the font.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-font.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-antialias"></a><h3>gimp_context_get_antialias ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_antialias (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the antialias setting.</p>
+<p>This procedure returns the antialias setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-antialias.returns"></a><h4>Returns</h4>
+<p> The antialias setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-antialias"></a><h3>gimp_context_set_antialias ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_antialias (<em class="parameter"><code><span class="type">gboolean</span> antialias</code></em>);</pre>
+<p>Set the antialias setting.</p>
+<p>This procedure modifies the antialias setting. If antialiasing is
+turned on, the edges of selected region will contain intermediate
+values which give the appearance of a sharper, less pixelized edge.
+This should be set as TRUE most of the time unless a binary-only
+selection is wanted.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-color" title="gimp_image_select_color ()"><code class="function">gimp_image_select_color()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-contiguous-color" title="gimp_image_select_contiguous_color ()"><code class="function">gimp_image_select_contiguous_color()</code></a>,
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-round-rectangle" title="gimp_image_select_round_rectangle ()"><code class="function">gimp_image_select_round_rectangle()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-ellipse" title="gimp_image_select_ellipse ()"><code class="function">gimp_image_select_ellipse()</code></a>,
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-polygon" title="gimp_image_select_polygon ()"><code class="function">gimp_image_select_polygon()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-item" title="gimp_image_select_item ()"><code class="function">gimp_image_select_item()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-bucket-fill" title="gimp_drawable_edit_bucket_fill ()"><code class="function">gimp_drawable_edit_bucket_fill()</code></a>, <a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-item" title="gimp_drawable_edit_stroke_item ()"><code class="function">gimp_drawable_edit_stroke_item()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-stroke-selection" title="gimp_drawable_edit_stroke_selection ()"><code class="function">gimp_drawable_edit_stroke_selection()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-antialias.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>antialias</p></td>
+<td class="parameter_description"><p>The antialias setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-antialias.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-feather"></a><h3>gimp_context_get_feather ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_feather (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the feather setting.</p>
+<p>This procedure returns the feather setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-feather.returns"></a><h4>Returns</h4>
+<p> The feather setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-feather"></a><h3>gimp_context_set_feather ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_feather (<em class="parameter"><code><span class="type">gboolean</span> feather</code></em>);</pre>
+<p>Set the feather setting.</p>
+<p>This procedure modifies the feather setting. If the feather option
+is enabled, selections will be blurred before combining. The blur is
+a gaussian blur; its radii can be controlled using
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-feather-radius" title="gimp_context_set_feather_radius ()"><code class="function">gimp_context_set_feather_radius()</code></a>.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-color" title="gimp_image_select_color ()"><code class="function">gimp_image_select_color()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-contiguous-color" title="gimp_image_select_contiguous_color ()"><code class="function">gimp_image_select_contiguous_color()</code></a>,
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-rectangle" title="gimp_image_select_rectangle ()"><code class="function">gimp_image_select_rectangle()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-round-rectangle" title="gimp_image_select_round_rectangle ()"><code class="function">gimp_image_select_round_rectangle()</code></a>,
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-ellipse" title="gimp_image_select_ellipse ()"><code class="function">gimp_image_select_ellipse()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-polygon" title="gimp_image_select_polygon ()"><code class="function">gimp_image_select_polygon()</code></a>,
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-item" title="gimp_image_select_item ()"><code class="function">gimp_image_select_item()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-feather.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>feather</p></td>
+<td class="parameter_description"><p>The feather setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-feather.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-feather-radius"></a><h3>gimp_context_get_feather_radius ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_feather_radius (<em class="parameter"><code><span class="type">gdouble</span> *feather_radius_x</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> *feather_radius_y</code></em>);</pre>
+<p>Get the feather radius setting.</p>
+<p>This procedure returns the feather radius setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-feather-radius.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>feather_radius_x</p></td>
+<td class="parameter_description"><p>The horizontal feather radius.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>feather_radius_y</p></td>
+<td class="parameter_description"><p>The vertical feather radius.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-get-feather-radius.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-feather-radius"></a><h3>gimp_context_set_feather_radius ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_feather_radius (<em class="parameter"><code><span class="type">gdouble</span> feather_radius_x</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> feather_radius_y</code></em>);</pre>
+<p>Set the feather radius setting.</p>
+<p>This procedure modifies the feather radius setting.</p>
+<p>This setting affects all procedures that are affected by
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-feather" title="gimp_context_set_feather ()"><code class="function">gimp_context_set_feather()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-feather-radius.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>feather_radius_x</p></td>
+<td class="parameter_description"><p>The horizontal feather radius.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>feather_radius_y</p></td>
+<td class="parameter_description"><p>The vertical feather radius.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-feather-radius.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-merged"></a><h3>gimp_context_get_sample_merged ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_sample_merged (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the sample merged setting.</p>
+<p>This procedure returns the sample merged setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-sample-merged.returns"></a><h4>Returns</h4>
+<p> The sample merged setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-merged"></a><h3>gimp_context_set_sample_merged ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_sample_merged (<em class="parameter"><code><span class="type">gboolean</span> sample_merged</code></em>);</pre>
+<p>Set the sample merged setting.</p>
+<p>This procedure modifies the sample merged setting. If an operation
+depends on the colors of the pixels present in a drawable, like when
+doing a seed fill, this setting controls whether the pixel data from
+the specified drawable is used ('sample-merged' is FALSE), or the
+pixel data from the composite image ('sample-merged' is TRUE. This
+is equivalent to sampling for colors after merging all visible
+layers).</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-color" title="gimp_image_select_color ()"><code class="function">gimp_image_select_color()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-contiguous-color" title="gimp_image_select_contiguous_color ()"><code class="function">gimp_image_select_contiguous_color()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-bucket-fill" title="gimp_drawable_edit_bucket_fill ()"><code class="function">gimp_drawable_edit_bucket_fill()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-sample-merged.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sample_merged</p></td>
+<td class="parameter_description"><p>The sample merged setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-sample-merged.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-criterion"></a><h3>gimp_context_get_sample_criterion ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpSelectCriterion"><span class="returnvalue">GimpSelectCriterion</span></a>
+gimp_context_get_sample_criterion (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the sample criterion setting.</p>
+<p>This procedure returns the sample criterion setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-sample-criterion.returns"></a><h4>Returns</h4>
+<p> The sample criterion setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-criterion"></a><h3>gimp_context_set_sample_criterion ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_sample_criterion (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpSelectCriterion"><span class="type">GimpSelectCriterion</span></a> sample_criterion</code></em>);</pre>
+<p>Set the sample criterion setting.</p>
+<p>This procedure modifies the sample criterion setting. If an
+operation depends on the colors of the pixels present in a drawable,
+like when doing a seed fill, this setting controls how color
+similarity is determined. SELECT_CRITERION_COMPOSITE is the default
+value.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-color" title="gimp_image_select_color ()"><code class="function">gimp_image_select_color()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-contiguous-color" title="gimp_image_select_contiguous_color ()"><code class="function">gimp_image_select_contiguous_color()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-bucket-fill" title="gimp_drawable_edit_bucket_fill ()"><code class="function">gimp_drawable_edit_bucket_fill()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-sample-criterion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sample_criterion</p></td>
+<td class="parameter_description"><p>The sample criterion setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-sample-criterion.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-threshold"></a><h3>gimp_context_get_sample_threshold ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_sample_threshold (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the sample threshold setting.</p>
+<p>This procedure returns the sample threshold setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-sample-threshold.returns"></a><h4>Returns</h4>
+<p> The sample threshold setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-threshold"></a><h3>gimp_context_set_sample_threshold ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_sample_threshold (<em class="parameter"><code><span class="type">gdouble</span> sample_threshold</code></em>);</pre>
+<p>Set the sample threshold setting.</p>
+<p>This procedure modifies the sample threshold setting. If an
+operation depends on the colors of the pixels present in a drawable,
+like when doing a seed fill, this setting controls what is
+\"sufficiently close\" to be considered a similar color. If the
+sample threshold has not been set explicitly, the default threshold
+set in gimprc will be used.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-color" title="gimp_image_select_color ()"><code class="function">gimp_image_select_color()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-contiguous-color" title="gimp_image_select_contiguous_color ()"><code class="function">gimp_image_select_contiguous_color()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-bucket-fill" title="gimp_drawable_edit_bucket_fill ()"><code class="function">gimp_drawable_edit_bucket_fill()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-sample-threshold.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sample_threshold</p></td>
+<td class="parameter_description"><p>The sample threshold setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-sample-threshold.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-threshold-int"></a><h3>gimp_context_get_sample_threshold_int ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_context_get_sample_threshold_int (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the sample threshold setting as an integer value.</p>
+<p>This procedure returns the sample threshold setting as an integer
+value. See <a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-threshold" title="gimp_context_get_sample_threshold ()"><code class="function">gimp_context_get_sample_threshold()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-get-sample-threshold-int.returns"></a><h4>Returns</h4>
+<p> The sample threshold setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-threshold-int"></a><h3>gimp_context_set_sample_threshold_int ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_sample_threshold_int (<em class="parameter"><code><span class="type">gint</span> sample_threshold</code></em>);</pre>
+<p>Set the sample threshold setting as an integer value.</p>
+<p>This procedure modifies the sample threshold setting as an integer
+value. See <a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-threshold" title="gimp_context_set_sample_threshold ()"><code class="function">gimp_context_set_sample_threshold()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-sample-threshold-int.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sample_threshold</p></td>
+<td class="parameter_description"><p>The sample threshold setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-sample-threshold-int.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-transparent"></a><h3>gimp_context_get_sample_transparent ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_sample_transparent (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the sample transparent setting.</p>
+<p>This procedure returns the sample transparent setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-sample-transparent.returns"></a><h4>Returns</h4>
+<p> The sample transparent setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-transparent"></a><h3>gimp_context_set_sample_transparent ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_sample_transparent (<em class="parameter"><code><span class="type">gboolean</span> sample_transparent</code></em>);</pre>
+<p>Set the sample transparent setting.</p>
+<p>This procedure modifies the sample transparent setting. If an
+operation depends on the colors of the pixels present in a drawable,
+like when doing a seed fill, this setting controls whether
+transparency is considered to be a unique selectable color. When
+this setting is TRUE, transparent areas can be selected or filled.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-color" title="gimp_image_select_color ()"><code class="function">gimp_image_select_color()</code></a>, <a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-contiguous-color" title="gimp_image_select_contiguous_color ()"><code class="function">gimp_image_select_contiguous_color()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-bucket-fill" title="gimp_drawable_edit_bucket_fill ()"><code class="function">gimp_drawable_edit_bucket_fill()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-sample-transparent.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>sample_transparent</p></td>
+<td class="parameter_description"><p>The sample transparent setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-sample-transparent.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-diagonal-neighbors"></a><h3>gimp_context_get_diagonal_neighbors ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_get_diagonal_neighbors (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the diagonal neighbors setting.</p>
+<p>This procedure returns the diagonal neighbors setting.</p>
+<div class="refsect3">
+<a name="gimp-context-get-diagonal-neighbors.returns"></a><h4>Returns</h4>
+<p> The diagonal neighbors setting.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-diagonal-neighbors"></a><h3>gimp_context_set_diagonal_neighbors ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_diagonal_neighbors (<em class="parameter"><code><span class="type">gboolean</span> diagonal_neighbors</code></em>);</pre>
+<p>Set the diagonal neighbors setting.</p>
+<p>This procedure modifies the diagonal neighbors setting. If the
+affected region of an operation is based on a seed point, like when
+doing a seed fill, then, when this setting is TRUE, all eight
+neighbors of each pixel are considered when calculating the affected
+region; in contrast, when this setting is FALSE, only the four
+orthogonal neighbors of each pixel are considered.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpimageselect.html#gimp-image-select-contiguous-color" title="gimp_image_select_contiguous_color ()"><code class="function">gimp_image_select_contiguous_color()</code></a>,
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-bucket-fill" title="gimp_drawable_edit_bucket_fill ()"><code class="function">gimp_drawable_edit_bucket_fill()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-diagonal-neighbors.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>diagonal_neighbors</p></td>
+<td class="parameter_description"><p>The diagonal neighbors setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-diagonal-neighbors.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-distance-metric"></a><h3>gimp_context_get_distance_metric ()</h3>
+<pre class="programlisting"><span class="returnvalue">GeglDistanceMetric</span>
+gimp_context_get_distance_metric (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the distance metric used in some computations.</p>
+<p>This procedure returns the distance metric in the current context.
+See <a class="link" href="libgimp-gimpcontext.html#gimp-context-set-distance-metric" title="gimp_context_set_distance_metric ()"><code class="function">gimp_context_set_distance_metric()</code></a> to know more about its usage.</p>
+<div class="refsect3">
+<a name="gimp-context-get-distance-metric.returns"></a><h4>Returns</h4>
+<p> The distance metric.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-distance-metric"></a><h3>gimp_context_set_distance_metric ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_distance_metric (<em class="parameter"><code><span class="type">GeglDistanceMetric</span> metric</code></em>);</pre>
+<p>Set the distance metric used in some computations.</p>
+<p>This procedure modifies the distance metric used in some
+computations, such as <a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-gradient-fill" title="gimp_drawable_edit_gradient_fill ()"><code class="function">gimp_drawable_edit_gradient_fill()</code></a>. In
+particular, it does not change the metric used in generic distance
+computation on canvas, as in the Measure tool.</p>
+<p>This setting affects the following procedures:
+<a class="link" href="libgimp-gimpdrawableedit.html#gimp-drawable-edit-gradient-fill" title="gimp_drawable_edit_gradient_fill ()"><code class="function">gimp_drawable_edit_gradient_fill()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-distance-metric.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>metric</p></td>
+<td class="parameter_description"><p>The distance metric.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-distance-metric.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-interpolation"></a><h3>gimp_context_get_interpolation ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpInterpolationType"><span class="returnvalue">GimpInterpolationType</span></a>
+gimp_context_get_interpolation (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the interpolation type.</p>
+<p>This procedure returns the interpolation setting. The return value
+is an integer which corresponds to the values listed in the argument
+description. If the interpolation has not been set explicitly by
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()"><code class="function">gimp_context_set_interpolation()</code></a>, the default interpolation set in
+gimprc will be used.</p>
+<div class="refsect3">
+<a name="gimp-context-get-interpolation.returns"></a><h4>Returns</h4>
+<p> The interpolation type.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-interpolation"></a><h3>gimp_context_set_interpolation ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_interpolation (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpInterpolationType"><span class="type">GimpInterpolationType</span></a> interpolation</code></em>);</pre>
+<p>Set the interpolation type.</p>
+<p>This procedure modifies the interpolation setting.</p>
+<p>This setting affects affects the following procedures:
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-flip" title="gimp_item_transform_flip ()"><code class="function">gimp_item_transform_flip()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-perspective" title="gimp_item_transform_perspective ()"><code class="function">gimp_item_transform_perspective()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-rotate" title="gimp_item_transform_rotate ()"><code class="function">gimp_item_transform_rotate()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-scale" title="gimp_item_transform_scale ()"><code class="function">gimp_item_transform_scale()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-shear" title="gimp_item_transform_shear ()"><code class="function">gimp_item_transform_shear()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-2d" title="gimp_item_transform_2d ()"><code class="function">gimp_item_transform_2d()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-matrix" title="gimp_item_transform_matrix ()"><code class="function">gimp_item_transform_matrix()</code></a>, <a class="link" href="libgimp-gimpimagetransform.html#gimp-image-scale" title="gimp_image_scale ()"><code class="function">gimp_image_scale()</code></a>,
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-scale" title="gimp_layer_scale ()"><code class="function">gimp_layer_scale()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-interpolation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>The interpolation type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-interpolation.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-transform-direction"></a><h3>gimp_context_get_transform_direction ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformDirection"><span class="returnvalue">GimpTransformDirection</span></a>
+gimp_context_get_transform_direction (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the transform direction.</p>
+<p>This procedure returns the transform direction. The return value is
+an integer which corresponds to the values listed in the argument
+description.</p>
+<div class="refsect3">
+<a name="gimp-context-get-transform-direction.returns"></a><h4>Returns</h4>
+<p> The transform direction.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-transform-direction"></a><h3>gimp_context_set_transform_direction ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_transform_direction (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformDirection"><span class="type">GimpTransformDirection</span></a> transform_direction</code></em>);</pre>
+<p>Set the transform direction.</p>
+<p>This procedure modifies the transform direction setting.</p>
+<p>This setting affects affects the following procedures:
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-flip" title="gimp_item_transform_flip ()"><code class="function">gimp_item_transform_flip()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-perspective" title="gimp_item_transform_perspective ()"><code class="function">gimp_item_transform_perspective()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-rotate" title="gimp_item_transform_rotate ()"><code class="function">gimp_item_transform_rotate()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-scale" title="gimp_item_transform_scale ()"><code class="function">gimp_item_transform_scale()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-shear" title="gimp_item_transform_shear ()"><code class="function">gimp_item_transform_shear()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-2d" title="gimp_item_transform_2d ()"><code class="function">gimp_item_transform_2d()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-matrix" title="gimp_item_transform_matrix ()"><code class="function">gimp_item_transform_matrix()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-transform-direction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>transform_direction</p></td>
+<td class="parameter_description"><p>The transform direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-transform-direction.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-transform-resize"></a><h3>gimp_context_get_transform_resize ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformResize"><span class="returnvalue">GimpTransformResize</span></a>
+gimp_context_get_transform_resize (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the transform resize type.</p>
+<p>This procedure returns the transform resize setting. The return
+value is an integer which corresponds to the values listed in the
+argument description.</p>
+<div class="refsect3">
+<a name="gimp-context-get-transform-resize.returns"></a><h4>Returns</h4>
+<p> The transform resize type.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-transform-resize"></a><h3>gimp_context_set_transform_resize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_transform_resize (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformResize"><span class="type">GimpTransformResize</span></a> transform_resize</code></em>);</pre>
+<p>Set the transform resize type.</p>
+<p>This procedure modifies the transform resize setting. When
+transforming pixels, if the result of a transform operation has a
+different size than the original area, this setting determines how
+the resulting area is sized.</p>
+<p>This setting affects affects the following procedures:
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-flip" title="gimp_item_transform_flip ()"><code class="function">gimp_item_transform_flip()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-flip-simple" title="gimp_item_transform_flip_simple ()"><code class="function">gimp_item_transform_flip_simple()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-perspective" title="gimp_item_transform_perspective ()"><code class="function">gimp_item_transform_perspective()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-rotate" title="gimp_item_transform_rotate ()"><code class="function">gimp_item_transform_rotate()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-rotate-simple" title="gimp_item_transform_rotate_simple ()"><code class="function">gimp_item_transform_rotate_simple()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-scale" title="gimp_item_transform_scale ()"><code class="function">gimp_item_transform_scale()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-shear" title="gimp_item_transform_shear ()"><code class="function">gimp_item_transform_shear()</code></a>, <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-2d" title="gimp_item_transform_2d ()"><code class="function">gimp_item_transform_2d()</code></a>,
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-matrix" title="gimp_item_transform_matrix ()"><code class="function">gimp_item_transform_matrix()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-context-set-transform-resize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>transform_resize</p></td>
+<td class="parameter_description"><p>The transform resize type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-transform-resize.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-transform-recursion"></a><h3>gimp_context_get_transform_recursion ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_context_get_transform_recursion (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_context_get_transform_recursion</code> is deprecated and should not be used in newly-written code.</p>
+<p>There is no replacement for this procedure.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-context-get-transform-recursion.returns"></a><h4>Returns</h4>
+<p> This returns always 3 and is meaningless.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-transform-recursion"></a><h3>gimp_context_set_transform_recursion ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_transform_recursion (<em class="parameter"><code><span class="type">gint</span> transform_recursion</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_context_set_transform_recursion</code> is deprecated and should not be used in newly-written code.</p>
+<p>There is no replacement for this procedure.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-transform-recursion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>transform_recursion</p></td>
+<td class="parameter_description"><p>This parameter is ignored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-transform-recursion.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-angle"></a><h3>gimp_context_get_ink_angle ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_ink_angle (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get ink angle in degrees.</p>
+<p>Get the ink angle in degrees for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-ink-angle.returns"></a><h4>Returns</h4>
+<p> ink angle in degrees.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-angle"></a><h3>gimp_context_set_ink_angle ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_ink_angle (<em class="parameter"><code><span class="type">gdouble</span> angle</code></em>);</pre>
+<p>Set ink angle in degrees.</p>
+<p>Set the ink angle in degrees for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-ink-angle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>angle</p></td>
+<td class="parameter_description"><p>ink angle in degrees.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-ink-angle.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-blob-angle"></a><h3>gimp_context_get_ink_blob_angle ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_ink_blob_angle (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get ink blob angle in degrees.</p>
+<p>Get the ink blob angle in degrees for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-ink-blob-angle.returns"></a><h4>Returns</h4>
+<p> ink blob angle in degrees.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-blob-angle"></a><h3>gimp_context_set_ink_blob_angle ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_ink_blob_angle (<em class="parameter"><code><span class="type">gdouble</span> angle</code></em>);</pre>
+<p>Set ink blob angle in degrees.</p>
+<p>Set the ink blob angle in degrees for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-ink-blob-angle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>angle</p></td>
+<td class="parameter_description"><p>ink blob angle in degrees.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-ink-blob-angle.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-blob-aspect-ratio"></a><h3>gimp_context_get_ink_blob_aspect_ratio ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_ink_blob_aspect_ratio
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get ink blob aspect ratio.</p>
+<p>Get the ink blob aspect ratio for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-ink-blob-aspect-ratio.returns"></a><h4>Returns</h4>
+<p> ink blob aspect ratio.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-blob-aspect-ratio"></a><h3>gimp_context_set_ink_blob_aspect_ratio ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_ink_blob_aspect_ratio
+                               (<em class="parameter"><code><span class="type">gdouble</span> aspect</code></em>);</pre>
+<p>Set ink blob aspect ratio.</p>
+<p>Set the ink blob aspect ratio for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-ink-blob-aspect-ratio.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>aspect</p></td>
+<td class="parameter_description"><p>ink blob aspect ratio.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-ink-blob-aspect-ratio.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-blob-type"></a><h3>gimp_context_get_ink_blob_type ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpInkBlobType"><span class="returnvalue">GimpInkBlobType</span></a>
+gimp_context_get_ink_blob_type (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get ink blob type.</p>
+<p>Get the ink blob type for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-ink-blob-type.returns"></a><h4>Returns</h4>
+<p> Ink blob type.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-blob-type"></a><h3>gimp_context_set_ink_blob_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_ink_blob_type (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpInkBlobType"><span class="type">GimpInkBlobType</span></a> type</code></em>);</pre>
+<p>Set ink blob type.</p>
+<p>Set the ink blob type for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-ink-blob-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>Ink blob type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-ink-blob-type.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-size"></a><h3>gimp_context_get_ink_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_ink_size (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get ink blob size in pixels.</p>
+<p>Get the ink blob size in pixels for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-ink-size.returns"></a><h4>Returns</h4>
+<p> ink blob size in pixels.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-size"></a><h3>gimp_context_set_ink_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_ink_size (<em class="parameter"><code><span class="type">gdouble</span> size</code></em>);</pre>
+<p>Set ink blob size in pixels.</p>
+<p>Set the ink blob size in pixels for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-ink-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>ink blob size in pixels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-ink-size.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-size-sensitivity"></a><h3>gimp_context_get_ink_size_sensitivity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_ink_size_sensitivity (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get ink size sensitivity.</p>
+<p>Get the ink size sensitivity for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-ink-size-sensitivity.returns"></a><h4>Returns</h4>
+<p> ink size sensitivity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-size-sensitivity"></a><h3>gimp_context_set_ink_size_sensitivity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_ink_size_sensitivity (<em class="parameter"><code><span class="type">gdouble</span> size</code></em>);</pre>
+<p>Set ink size sensitivity.</p>
+<p>Set the ink size sensitivity for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-ink-size-sensitivity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>ink size sensitivity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-ink-size-sensitivity.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-speed-sensitivity"></a><h3>gimp_context_get_ink_speed_sensitivity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_ink_speed_sensitivity
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get ink speed sensitivity.</p>
+<p>Get the ink speed sensitivity for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-ink-speed-sensitivity.returns"></a><h4>Returns</h4>
+<p> ink speed sensitivity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-speed-sensitivity"></a><h3>gimp_context_set_ink_speed_sensitivity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_ink_speed_sensitivity
+                               (<em class="parameter"><code><span class="type">gdouble</span> speed</code></em>);</pre>
+<p>Set ink speed sensitivity.</p>
+<p>Set the ink speed sensitivity for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-ink-speed-sensitivity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>speed</p></td>
+<td class="parameter_description"><p>ink speed sensitivity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-ink-speed-sensitivity.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-tilt-sensitivity"></a><h3>gimp_context_get_ink_tilt_sensitivity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_context_get_ink_tilt_sensitivity (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get ink tilt sensitivity.</p>
+<p>Get the ink tilt sensitivity for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-get-ink-tilt-sensitivity.returns"></a><h4>Returns</h4>
+<p> ink tilt sensitivity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-tilt-sensitivity"></a><h3>gimp_context_set_ink_tilt_sensitivity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_context_set_ink_tilt_sensitivity (<em class="parameter"><code><span class="type">gdouble</span> tilt</code></em>);</pre>
+<p>Set ink tilt sensitivity.</p>
+<p>Set the ink tilt sensitivity for ink tool.</p>
+<div class="refsect3">
+<a name="gimp-context-set-ink-tilt-sensitivity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tilt</p></td>
+<td class="parameter_description"><p>ink tilt sensitivity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-context-set-ink-tilt-sensitivity.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

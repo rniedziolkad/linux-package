@@ -1,0 +1,926 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpdrawablecolor: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpdrawable.html" title="gimpdrawable">
+<link rel="next" href="libgimp-gimpdrawableedit.html" title="gimpdrawableedit">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpdrawablecolor.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpdrawable.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpdrawableedit.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpdrawablecolor"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpdrawablecolor.top_of_page"></a>gimpdrawablecolor</span></h2>
+<p>gimpdrawablecolor — Functions for manipulating a drawable's color.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpdrawablecolor.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-brightness-contrast" title="gimp_drawable_brightness_contrast ()">gimp_drawable_brightness_contrast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-color-balance" title="gimp_drawable_color_balance ()">gimp_drawable_color_balance</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-colorize-hsl" title="gimp_drawable_colorize_hsl ()">gimp_drawable_colorize_hsl</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-curves-explicit" title="gimp_drawable_curves_explicit ()">gimp_drawable_curves_explicit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-curves-spline" title="gimp_drawable_curves_spline ()">gimp_drawable_curves_spline</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-desaturate" title="gimp_drawable_desaturate ()">gimp_drawable_desaturate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-equalize" title="gimp_drawable_equalize ()">gimp_drawable_equalize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-histogram" title="gimp_drawable_histogram ()">gimp_drawable_histogram</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-hue-saturation" title="gimp_drawable_hue_saturation ()">gimp_drawable_hue_saturation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-invert" title="gimp_drawable_invert ()">gimp_drawable_invert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-levels" title="gimp_drawable_levels ()">gimp_drawable_levels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-levels-stretch" title="gimp_drawable_levels_stretch ()">gimp_drawable_levels_stretch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-posterize" title="gimp_drawable_posterize ()">gimp_drawable_posterize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-threshold" title="gimp_drawable_threshold ()">gimp_drawable_threshold</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdrawablecolor.description"></a><h2>Description</h2>
+<p>Functions for manipulating a drawable's color, including curves and
+histograms.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdrawablecolor.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-drawable-brightness-contrast"></a><h3>gimp_drawable_brightness_contrast ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_brightness_contrast (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                                   <em class="parameter"><code><span class="type">gdouble</span> brightness</code></em>,
+                                   <em class="parameter"><code><span class="type">gdouble</span> contrast</code></em>);</pre>
+<p>Modify brightness/contrast in the specified drawable.</p>
+<p>This procedures allows the brightness and contrast of the specified
+drawable to be modified. Both 'brightness' and 'contrast' parameters
+are defined between -0.5 and 0.5.</p>
+<div class="refsect3">
+<a name="gimp-drawable-brightness-contrast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>brightness</p></td>
+<td class="parameter_description"><p>Brightness adjustment.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>contrast</p></td>
+<td class="parameter_description"><p>Contrast adjustment.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-brightness-contrast.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-color-balance"></a><h3>gimp_drawable_color_balance ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_color_balance (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                             <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransferMode"><span class="type">GimpTransferMode</span></a> transfer_mode</code></em>,
+                             <em class="parameter"><code><span class="type">gboolean</span> preserve_lum</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> cyan_red</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> magenta_green</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> yellow_blue</code></em>);</pre>
+<p>Modify the color balance of the specified drawable.</p>
+<p>Modify the color balance of the specified drawable. There are three
+axis which can be modified: cyan-red, magenta-green, and
+yellow-blue. Negative values increase the amount of the former,
+positive values increase the amount of the latter. Color balance can
+be controlled with the 'transfer_mode' setting, which allows
+shadows, mid-tones, and highlights in an image to be affected
+differently. The 'preserve-lum' parameter, if TRUE, ensures that the
+luminosity of each pixel remains fixed.</p>
+<div class="refsect3">
+<a name="gimp-drawable-color-balance.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>transfer_mode</p></td>
+<td class="parameter_description"><p>Transfer mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preserve_lum</p></td>
+<td class="parameter_description"><p>Preserve luminosity values at each pixel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cyan_red</p></td>
+<td class="parameter_description"><p>Cyan-Red color balance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>magenta_green</p></td>
+<td class="parameter_description"><p>Magenta-Green color balance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yellow_blue</p></td>
+<td class="parameter_description"><p>Yellow-Blue color balance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-color-balance.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-colorize-hsl"></a><h3>gimp_drawable_colorize_hsl ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_colorize_hsl (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> hue</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> saturation</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> lightness</code></em>);</pre>
+<p>Render the drawable as a grayscale image seen through a colored
+glass.</p>
+<p>Desaturates the drawable, then tints it with the specified color.
+This tool is only valid on RGB color images. It will not operate on
+grayscale drawables.</p>
+<div class="refsect3">
+<a name="gimp-drawable-colorize-hsl.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hue</p></td>
+<td class="parameter_description"><p>Hue in degrees.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>saturation</p></td>
+<td class="parameter_description"><p>Saturation in percent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lightness</p></td>
+<td class="parameter_description"><p>Lightness in percent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-colorize-hsl.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-curves-explicit"></a><h3>gimp_drawable_curves_explicit ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_curves_explicit (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                               <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpHistogramChannel" title="enum GimpHistogramChannel"><span class="type">GimpHistogramChannel</span></a> channel</code></em>,
+                               <em class="parameter"><code><span class="type">gint</span> num_values</code></em>,
+                               <em class="parameter"><code>const <span class="type">gdouble</span> *values</code></em>);</pre>
+<p>Modifies the intensity curve(s) for specified drawable.</p>
+<p>Modifies the intensity mapping for one channel in the specified
+drawable. The channel can be either an intensity component, or the
+value. The 'values' parameter is an array of doubles which
+explicitly defines how each pixel value in the drawable will be
+modified. Use the <a class="link" href="libgimp-gimpcolor.html#gimp-curves-spline" title="gimp_curves_spline ()"><code class="function">gimp_curves_spline()</code></a> function to modify intensity
+levels with Catmull Rom splines.</p>
+<div class="refsect3">
+<a name="gimp-drawable-curves-explicit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The channel to modify.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_values</p></td>
+<td class="parameter_description"><p>The number of values in the new curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>The explicit curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-curves-explicit.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-curves-spline"></a><h3>gimp_drawable_curves_spline ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_curves_spline (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                             <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpHistogramChannel" title="enum GimpHistogramChannel"><span class="type">GimpHistogramChannel</span></a> channel</code></em>,
+                             <em class="parameter"><code><span class="type">gint</span> num_points</code></em>,
+                             <em class="parameter"><code>const <span class="type">gdouble</span> *points</code></em>);</pre>
+<p>Modifies the intensity curve(s) for specified drawable.</p>
+<p>Modifies the intensity mapping for one channel in the specified
+drawable. The channel can be either an intensity component, or the
+value. The 'points' parameter is an array of doubles which define a
+set of control points which describe a Catmull Rom spline which
+yields the final intensity curve. Use the <a class="link" href="libgimp-gimpcolor.html#gimp-curves-explicit" title="gimp_curves_explicit ()"><code class="function">gimp_curves_explicit()</code></a>
+function to explicitly modify intensity levels.</p>
+<div class="refsect3">
+<a name="gimp-drawable-curves-spline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The channel to modify.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_points</p></td>
+<td class="parameter_description"><p>The number of values in the control point array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>The spline control points: { cp1.x, cp1.y, cp2.x, cp2.y, ... }.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-curves-spline.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-desaturate"></a><h3>gimp_drawable_desaturate ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_desaturate (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                          <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpDesaturateMode"><span class="type">GimpDesaturateMode</span></a> desaturate_mode</code></em>);</pre>
+<p>Desaturate the contents of the specified drawable, with the
+specified formula.</p>
+<p>This procedure desaturates the contents of the specified drawable,
+with the specified formula. This procedure only works on drawables
+of type RGB color.</p>
+<div class="refsect3">
+<a name="gimp-drawable-desaturate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desaturate_mode</p></td>
+<td class="parameter_description"><p>The formula to use to desaturate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-desaturate.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-equalize"></a><h3>gimp_drawable_equalize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_equalize (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                        <em class="parameter"><code><span class="type">gboolean</span> mask_only</code></em>);</pre>
+<p>Equalize the contents of the specified drawable.</p>
+<p>This procedure equalizes the contents of the specified drawable.
+Each intensity channel is equalized independently. The equalized
+intensity is given as inten' = (255 - inten). The 'mask_only' option
+specifies whether to adjust only the area of the image within the
+selection bounds, or the entire image based on the histogram of the
+selected area. If there is no selection, the entire image is
+adjusted based on the histogram for the entire image.</p>
+<div class="refsect3">
+<a name="gimp-drawable-equalize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_only</p></td>
+<td class="parameter_description"><p>Equalization option.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-equalize.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-histogram"></a><h3>gimp_drawable_histogram ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_histogram (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                         <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpHistogramChannel" title="enum GimpHistogramChannel"><span class="type">GimpHistogramChannel</span></a> channel</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> start_range</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> end_range</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> *mean</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> *std_dev</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> *median</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> *pixels</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> *count</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> *percentile</code></em>);</pre>
+<p>Returns information on the intensity histogram for the specified
+drawable.</p>
+<p>This tool makes it possible to gather information about the
+intensity histogram of a drawable. A channel to examine is first
+specified. This can be either value, red, green, or blue, depending
+on whether the drawable is of type color or grayscale. Second, a
+range of intensities are specified. The <a class="link" href="libgimp-gimpdrawablecolor.html#gimp-drawable-histogram" title="gimp_drawable_histogram ()"><code class="function">gimp_drawable_histogram()</code></a>
+function returns statistics based on the pixels in the drawable that
+fall under this range of values. Mean, standard deviation, median,
+number of pixels, and percentile are all returned. Additionally, the
+total count of pixels in the image is returned. Counts of pixels are
+weighted by any associated alpha values and by the current selection
+mask. That is, pixels that lie outside an active selection mask will
+not be counted. Similarly, pixels with transparent alpha values will
+not be counted. The returned mean, std_dev and median are in the
+range (0..255) for 8-bit images or if the plug-in is not
+precision-aware, and in the range (0.0..1.0) otherwise.</p>
+<div class="refsect3">
+<a name="gimp-drawable-histogram.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The channel to query.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start_range</p></td>
+<td class="parameter_description"><p>Start of the intensity measurement range.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end_range</p></td>
+<td class="parameter_description"><p>End of the intensity measurement range.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mean</p></td>
+<td class="parameter_description"><p>Mean intensity value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>std_dev</p></td>
+<td class="parameter_description"><p>Standard deviation of intensity values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>median</p></td>
+<td class="parameter_description"><p>Median intensity value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pixels</p></td>
+<td class="parameter_description"><p>Alpha-weighted pixel count for entire image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>Alpha-weighted pixel count for range.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>percentile</p></td>
+<td class="parameter_description"><p>Percentile that range falls under.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-histogram.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-hue-saturation"></a><h3>gimp_drawable_hue_saturation ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_hue_saturation (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                              <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpHueRange"><span class="type">GimpHueRange</span></a> hue_range</code></em>,
+                              <em class="parameter"><code><span class="type">gdouble</span> hue_offset</code></em>,
+                              <em class="parameter"><code><span class="type">gdouble</span> lightness</code></em>,
+                              <em class="parameter"><code><span class="type">gdouble</span> saturation</code></em>,
+                              <em class="parameter"><code><span class="type">gdouble</span> overlap</code></em>);</pre>
+<p>Modify hue, lightness, and saturation in the specified drawable.</p>
+<p>This procedure allows the hue, lightness, and saturation in the
+specified drawable to be modified. The 'hue-range' parameter
+provides the capability to limit range of affected hues. The
+'overlap' parameter provides blending into neighboring hue channels
+when rendering.</p>
+<div class="refsect3">
+<a name="gimp-drawable-hue-saturation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hue_range</p></td>
+<td class="parameter_description"><p>Range of affected hues.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hue_offset</p></td>
+<td class="parameter_description"><p>Hue offset in degrees.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lightness</p></td>
+<td class="parameter_description"><p>Lightness modification.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>saturation</p></td>
+<td class="parameter_description"><p>Saturation modification.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>overlap</p></td>
+<td class="parameter_description"><p>Overlap other hue channels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-hue-saturation.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-invert"></a><h3>gimp_drawable_invert ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_invert (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                      <em class="parameter"><code><span class="type">gboolean</span> linear</code></em>);</pre>
+<p>Invert the contents of the specified drawable.</p>
+<p>This procedure inverts the contents of the specified drawable. Each
+intensity channel is inverted independently. The inverted intensity
+is given as inten' = (255 - inten). If 'linear' is TRUE, the
+drawable is inverted in linear space.</p>
+<div class="refsect3">
+<a name="gimp-drawable-invert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>linear</p></td>
+<td class="parameter_description"><p>Whether to invert in linear space.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-invert.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-levels"></a><h3>gimp_drawable_levels ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_levels (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpHistogramChannel" title="enum GimpHistogramChannel"><span class="type">GimpHistogramChannel</span></a> channel</code></em>,
+                      <em class="parameter"><code><span class="type">gdouble</span> low_input</code></em>,
+                      <em class="parameter"><code><span class="type">gdouble</span> high_input</code></em>,
+                      <em class="parameter"><code><span class="type">gboolean</span> clamp_input</code></em>,
+                      <em class="parameter"><code><span class="type">gdouble</span> gamma</code></em>,
+                      <em class="parameter"><code><span class="type">gdouble</span> low_output</code></em>,
+                      <em class="parameter"><code><span class="type">gdouble</span> high_output</code></em>,
+                      <em class="parameter"><code><span class="type">gboolean</span> clamp_output</code></em>);</pre>
+<p>Modifies intensity levels in the specified drawable.</p>
+<p>This tool allows intensity levels in the specified drawable to be
+remapped according to a set of parameters. The low/high input levels
+specify an initial mapping from the source intensities. The gamma
+value determines how intensities between the low and high input
+intensities are interpolated. A gamma value of 1.0 results in a
+linear interpolation. Higher gamma values result in more high-level
+intensities. Lower gamma values result in more low-level
+intensities. The low/high output levels constrain the final
+intensity mapping--that is, no final intensity will be lower than
+the low output level and no final intensity will be higher than the
+high output level. This tool is only valid on RGB color and
+grayscale images.</p>
+<div class="refsect3">
+<a name="gimp-drawable-levels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The channel to modify.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>low_input</p></td>
+<td class="parameter_description"><p>Intensity of lowest input.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>high_input</p></td>
+<td class="parameter_description"><p>Intensity of highest input.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>clamp_input</p></td>
+<td class="parameter_description"><p>Clamp input values before applying output levels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gamma</p></td>
+<td class="parameter_description"><p>Gamma adjustment factor.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>low_output</p></td>
+<td class="parameter_description"><p>Intensity of lowest output.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>high_output</p></td>
+<td class="parameter_description"><p>Intensity of highest output.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>clamp_output</p></td>
+<td class="parameter_description"><p>Clamp final output values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-levels.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-levels-stretch"></a><h3>gimp_drawable_levels_stretch ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_levels_stretch (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>);</pre>
+<p>Automatically modifies intensity levels in the specified drawable.</p>
+<p>This procedure allows intensity levels in the specified drawable to
+be remapped according to a set of guessed parameters. It is
+equivalent to clicking the \"Auto\" button in the Levels tool.</p>
+<div class="refsect3">
+<a name="gimp-drawable-levels-stretch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-levels-stretch.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-posterize"></a><h3>gimp_drawable_posterize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_posterize (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> levels</code></em>);</pre>
+<p>Posterize the specified drawable.</p>
+<p>This procedures reduces the number of shades allows in each
+intensity channel to the specified 'levels' parameter.</p>
+<div class="refsect3">
+<a name="gimp-drawable-posterize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>levels</p></td>
+<td class="parameter_description"><p>Levels of posterization.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-posterize.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-drawable-threshold"></a><h3>gimp_drawable_threshold ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_drawable_threshold (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                         <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpHistogramChannel" title="enum GimpHistogramChannel"><span class="type">GimpHistogramChannel</span></a> channel</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> low_threshold</code></em>,
+                         <em class="parameter"><code><span class="type">gdouble</span> high_threshold</code></em>);</pre>
+<p>Threshold the specified drawable.</p>
+<p>This procedures generates a threshold map of the specified drawable.
+All pixels between the values of 'low_threshold' and
+'high_threshold', on the scale of 'channel' are replaced with white,
+and all other pixels with black.</p>
+<div class="refsect3">
+<a name="gimp-drawable-threshold.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>The channel to base the threshold on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>low_threshold</p></td>
+<td class="parameter_description"><p>The low threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>high_threshold</p></td>
+<td class="parameter_description"><p>The high threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-drawable-threshold.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

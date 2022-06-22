@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpColorTransform: GIMP Color Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Color Library Reference Manual">
+<link rel="up" href="pt01.html" title="Part I. GIMP Color Library">
+<link rel="prev" href="libgimpcolor-GimpColorProfile.html" title="GimpColorProfile">
+<link rel="next" href="libgimpcolor-GimpAdaptiveSupersample.html" title="GimpAdaptiveSupersample">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpcolor-GimpColorTransform.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="pt01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpcolor-GimpColorProfile.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpcolor-GimpAdaptiveSupersample.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpcolor-GimpColorTransform"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpcolor-GimpColorTransform.top_of_page"></a>GimpColorTransform</span></h2>
+<p>GimpColorTransform — Definitions and Functions relating to LCMS.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpColorTransform.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GimpColorTransform</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpcolor-GimpColorTransform.html#gimp-color-transform-new" title="gimp_color_transform_new ()">gimp_color_transform_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GimpColorTransform</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpcolor-GimpColorTransform.html#gimp-color-transform-new-proofing" title="gimp_color_transform_new_proofing ()">gimp_color_transform_new_proofing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpcolor-GimpColorTransform.html#gimp-color-transform-process-pixels" title="gimp_color_transform_process_pixels ()">gimp_color_transform_process_pixels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpcolor-GimpColorTransform.html#gimp-color-transform-process-buffer" title="gimp_color_transform_process_buffer ()">gimp_color_transform_process_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpcolor-GimpColorTransform.html#gimp-color-transform-can-gegl-copy" title="gimp_color_transform_can_gegl_copy ()">gimp_color_transform_can_gegl_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpColorTransform.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgimpcolor-GimpColorTransform.html#GimpColorTransformFlags" title="enum GimpColorTransformFlags">GimpColorTransformFlags</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpColorTransform.description"></a><h2>Description</h2>
+<p>Definitions and Functions relating to LCMS.</p>
+</div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpColorTransform.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-color-transform-new"></a><h3>gimp_color_transform_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">GimpColorTransform</span> *
+gimp_color_transform_new (<em class="parameter"><code><span class="type">GimpColorProfile</span> *src_profile</code></em>,
+                          <em class="parameter"><code>const <span class="type">Babl</span> *src_format</code></em>,
+                          <em class="parameter"><code><span class="type">GimpColorProfile</span> *dest_profile</code></em>,
+                          <em class="parameter"><code>const <span class="type">Babl</span> *dest_format</code></em>,
+                          <em class="parameter"><code><span class="type">GimpColorRenderingIntent</span> rendering_intent</code></em>,
+                          <em class="parameter"><code><a class="link" href="libgimpcolor-GimpColorTransform.html#GimpColorTransformFlags" title="enum GimpColorTransformFlags"><span class="type">GimpColorTransformFlags</span></a> flags</code></em>);</pre>
+<p>This function creates an color transform.</p>
+<div class="refsect3">
+<a name="gimp-color-transform-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src_profile</p></td>
+<td class="parameter_description"><p>the source <span class="type">GimpColorProfile</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src_format</p></td>
+<td class="parameter_description"><p>the source <span class="type">Babl</span> format</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_profile</p></td>
+<td class="parameter_description"><p>the destination <span class="type">GimpColorProfile</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_format</p></td>
+<td class="parameter_description"><p>the destination <span class="type">Babl</span> format</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rendering_intent</p></td>
+<td class="parameter_description"><p>the rendering intent</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>transform flags</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-color-transform-new.returns"></a><h4>Returns</h4>
+<p> the <span class="type">GimpColorTransform</span>, or <code class="literal">NULL</code> if no transform is needed
+to convert between pixels of <em class="parameter"><code>src_profile</code></em>
+and <em class="parameter"><code>dest_profile</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-transform-new-proofing"></a><h3>gimp_color_transform_new_proofing ()</h3>
+<pre class="programlisting"><span class="returnvalue">GimpColorTransform</span> *
+gimp_color_transform_new_proofing (<em class="parameter"><code><span class="type">GimpColorProfile</span> *src_profile</code></em>,
+                                   <em class="parameter"><code>const <span class="type">Babl</span> *src_format</code></em>,
+                                   <em class="parameter"><code><span class="type">GimpColorProfile</span> *dest_profile</code></em>,
+                                   <em class="parameter"><code>const <span class="type">Babl</span> *dest_format</code></em>,
+                                   <em class="parameter"><code><span class="type">GimpColorProfile</span> *proof_profile</code></em>,
+                                   <em class="parameter"><code><span class="type">GimpColorRenderingIntent</span> proof_intent</code></em>,
+                                   <em class="parameter"><code><span class="type">GimpColorRenderingIntent</span> display_intent</code></em>,
+                                   <em class="parameter"><code><a class="link" href="libgimpcolor-GimpColorTransform.html#GimpColorTransformFlags" title="enum GimpColorTransformFlags"><span class="type">GimpColorTransformFlags</span></a> flags</code></em>);</pre>
+<p>This function creates a simulation / proofing color transform.</p>
+<div class="refsect3">
+<a name="gimp-color-transform-new-proofing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src_profile</p></td>
+<td class="parameter_description"><p>the source <span class="type">GimpColorProfile</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src_format</p></td>
+<td class="parameter_description"><p>the source <span class="type">Babl</span> format</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_profile</p></td>
+<td class="parameter_description"><p>the destination <span class="type">GimpColorProfile</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_format</p></td>
+<td class="parameter_description"><p>the destination <span class="type">Babl</span> format</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>proof_profile</p></td>
+<td class="parameter_description"><p>the proof <span class="type">GimpColorProfile</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>proof_intent</p></td>
+<td class="parameter_description"><p>the proof intent</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>display_intent</p></td>
+<td class="parameter_description"><p>the display intent</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>transform flags</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-color-transform-new-proofing.returns"></a><h4>Returns</h4>
+<p> the <span class="type">GimpColorTransform</span>, or <code class="literal">NULL</code>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-transform-process-pixels"></a><h3>gimp_color_transform_process_pixels ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_color_transform_process_pixels (<em class="parameter"><code><span class="type">GimpColorTransform</span> *transform</code></em>,
+                                     <em class="parameter"><code>const <span class="type">Babl</span> *src_format</code></em>,
+                                     <em class="parameter"><code><span class="type">gconstpointer</span> src_pixels</code></em>,
+                                     <em class="parameter"><code>const <span class="type">Babl</span> *dest_format</code></em>,
+                                     <em class="parameter"><code><span class="type">gpointer</span> dest_pixels</code></em>,
+                                     <em class="parameter"><code><span class="type">gsize</span> length</code></em>);</pre>
+<p>This function transforms a contiguous line of pixels.</p>
+<div class="refsect3">
+<a name="gimp-color-transform-process-pixels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>transform</p></td>
+<td class="parameter_description"><p>a <span class="type">GimpColorTransform</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src_format</p></td>
+<td class="parameter_description"><p><span class="type">Babl</span> format of <em class="parameter"><code>src_pixels</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src_pixels</p></td>
+<td class="parameter_description"><p>pointer to the source pixels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_format</p></td>
+<td class="parameter_description"><p><span class="type">Babl</span> format of <em class="parameter"><code>dest_pixels</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_pixels</p></td>
+<td class="parameter_description"><p>pointer to the destination pixels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>number of pixels to process</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-transform-process-buffer"></a><h3>gimp_color_transform_process_buffer ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_color_transform_process_buffer (<em class="parameter"><code><span class="type">GimpColorTransform</span> *transform</code></em>,
+                                     <em class="parameter"><code><span class="type">GeglBuffer</span> *src_buffer</code></em>,
+                                     <em class="parameter"><code>const <span class="type">GeglRectangle</span> *src_rect</code></em>,
+                                     <em class="parameter"><code><span class="type">GeglBuffer</span> *dest_buffer</code></em>,
+                                     <em class="parameter"><code>const <span class="type">GeglRectangle</span> *dest_rect</code></em>);</pre>
+<p>This function transforms buffer into another buffer.</p>
+<div class="refsect3">
+<a name="gimp-color-transform-process-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>transform</p></td>
+<td class="parameter_description"><p>a <span class="type">GimpColorTransform</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src_buffer</p></td>
+<td class="parameter_description"><p>source <span class="type">GeglBuffer</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src_rect</p></td>
+<td class="parameter_description"><p>rectangle in <em class="parameter"><code>src_buffer</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_buffer</p></td>
+<td class="parameter_description"><p>destination <span class="type">GeglBuffer</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_rect</p></td>
+<td class="parameter_description"><p>rectangle in <em class="parameter"><code>dest_buffer</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-transform-can-gegl-copy"></a><h3>gimp_color_transform_can_gegl_copy ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_color_transform_can_gegl_copy (<em class="parameter"><code><span class="type">GimpColorProfile</span> *src_profile</code></em>,
+                                    <em class="parameter"><code><span class="type">GimpColorProfile</span> *dest_profile</code></em>);</pre>
+<p>This function checks if a GimpColorTransform is needed at all.</p>
+<div class="refsect3">
+<a name="gimp-color-transform-can-gegl-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src_profile</p></td>
+<td class="parameter_description"><p>source <span class="type">GimpColorProfile</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_profile</p></td>
+<td class="parameter_description"><p>destination <span class="type">GimpColorProfile</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-color-transform-can-gegl-copy.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> if pixels can be correctly converted between
+<em class="parameter"><code>src_profile</code></em>
+and <em class="parameter"><code>dest_profile</code></em>
+by simply using
+<code class="function">gegl_buffer_copy()</code>, <code class="function">babl_process()</code> or similar.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpColorTransform.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpColorTransformFlags"></a><h3>enum GimpColorTransformFlags</h3>
+<p>Flags for modifying <span class="type">GimpColorTransform</span>'s behavior.</p>
+<div class="refsect3">
+<a name="GimpColorTransformFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-TRANSFORM-FLAGS-NOOPTIMIZE:CAPS"></a>GIMP_COLOR_TRANSFORM_FLAGS_NOOPTIMIZE</p></td>
+<td class="enum_member_description">
+<p>optimize for accuracy rather
+than for speed</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-TRANSFORM-FLAGS-GAMUT-CHECK:CAPS"></a>GIMP_COLOR_TRANSFORM_FLAGS_GAMUT_CHECK</p></td>
+<td class="enum_member_description">
+<p>mark out of gamut colors in the
+transform result</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-TRANSFORM-FLAGS-BLACK-POINT-COMPENSATION:CAPS"></a>GIMP_COLOR_TRANSFORM_FLAGS_BLACK_POINT_COMPENSATION</p></td>
+<td class="enum_member_description">
+<p>do black point
+compensation</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

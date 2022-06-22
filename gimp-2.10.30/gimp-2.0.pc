@@ -1,0 +1,17 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+
+gimpdatadir=${datarootdir}/gimp/2.0
+gimplibdir=${exec_prefix}/lib/gimp/2.0
+gimpsysconfdir=${prefix}/etc/gimp/2.0
+gimplocaledir=${datarootdir}/locale
+
+Name: GIMP
+Description: GIMP Library
+Version: 2.10.30
+Requires: gdk-pixbuf-2.0 >= 2.30.8 cairo >= 1.12.2 gegl-0.4 >= 0.4.34
+Libs: -L${libdir} -lgimp-2.0 -lgimpmath-2.0  -lgimpconfig-2.0 -lgimpcolor-2.0 -lgimpbase-2.0 
+Cflags: -I${includedir}/gimp-2.0

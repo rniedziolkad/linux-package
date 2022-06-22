@@ -1,0 +1,30 @@
+#BABL_0_1_80-5-gaab3029 BABL_PATH_LENGTH=2 BABL_TOLERANCE=0.000005
+Y' u8
+Y u16
+	pixels=0 cost=130 error=0.0000000000
+	/usr/lib/i386-linux-gnu/babl-0.1/gimp-8bit.so 0: Y' u8 to Y float
+	/usr/lib/i386-linux-gnu/babl-0.1/gggl-lies.so 0: Y float to Y u16
+----
+Y u16
+Y' u8
+	pixels=0 cost=593 error=0.0000000000
+	/usr/lib/i386-linux-gnu/babl-0.1/gggl-table-lies.so 0: Y u16 to Y float
+	/usr/lib/i386-linux-gnu/babl-0.1/float.so 0: Y float to Y' float
+	/usr/lib/i386-linux-gnu/babl-0.1/gggl.so 0: Y' float to Y' u8
+----
+R'G'B'A float
+R'G'B'A u16
+	pixels=0 cost=442 error=0.0000000000
+	/usr/lib/i386-linux-gnu/babl-0.1/gggl.so 0: R'G'B'A float to R'G'B'A u16
+----
+R'G'B'A u8
+R'G'B'A float
+	pixels=0 cost=59 error=0.0000000000
+	/usr/lib/i386-linux-gnu/babl-0.1/gggl-table.so 0: R'G'B'A u8 to R'G'B'A float
+----
+Y' u8-space-0.3127,0.3290_0.6400,0.3300_0.1500,0.0600_0.3000,0.6000_2.199978,2.199978,2.199978
+R'G'B'A float
+	pixels=0 cost=1577 error=0.0000000253
+	 Y' u8-space-0.3127,0.3290_0.6400,0.3300_0.1500,0.0600_0.3000,0.6000_2.199978,2.199978,2.199978 to RGBA float-space-0.3127,0.3290_0.6400,0.3300_0.1500,0.0600_0.3000,0.6000_2.199978,2.199978,2.199978 0
+	 RGBA float-space-0.3127,0.3290_0.6400,0.3300_0.1500,0.0600_0.3000,0.6000_2.199978,2.199978,2.199978 to R'G'B'A float 0
+----

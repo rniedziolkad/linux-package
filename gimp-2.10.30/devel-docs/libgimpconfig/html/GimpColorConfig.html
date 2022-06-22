@@ -1,0 +1,876 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpColorConfig: GIMP Config Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Config Library Reference Manual">
+<link rel="up" href="pt01.html" title="Part I. GIMP Config Library">
+<link rel="prev" href="libgimpconfig-GimpScanner.html" title="GimpScanner">
+<link rel="next" href="api-index-full.html" title="Index">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GimpColorConfig.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GimpColorConfig.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GimpColorConfig.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="pt01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpconfig-GimpScanner.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GimpColorConfig"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GimpColorConfig.top_of_page"></a>GimpColorConfig</span></h2>
+<p>GimpColorConfig — Color management settings.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GimpColorConfig.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GimpColorConfig.html#GimpColorManagementMode" title="enum GimpColorManagementMode"><span class="returnvalue">GimpColorManagementMode</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-mode" title="gimp_color_config_get_mode ()">gimp_color_config_get_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GimpColorConfig.html#GimpColorRenderingIntent" title="enum GimpColorRenderingIntent"><span class="returnvalue">GimpColorRenderingIntent</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-display-intent" title="gimp_color_config_get_display_intent ()">gimp_color_config_get_display_intent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-display-bpc" title="gimp_color_config_get_display_bpc ()">gimp_color_config_get_display_bpc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-display-optimize" title="gimp_color_config_get_display_optimize ()">gimp_color_config_get_display_optimize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-display-profile-from-gdk" title="gimp_color_config_get_display_profile_from_gdk ()">gimp_color_config_get_display_profile_from_gdk</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GimpColorConfig.html#GimpColorRenderingIntent" title="enum GimpColorRenderingIntent"><span class="returnvalue">GimpColorRenderingIntent</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-simulation-intent" title="gimp_color_config_get_simulation_intent ()">gimp_color_config_get_simulation_intent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-simulation-bpc" title="gimp_color_config_get_simulation_bpc ()">gimp_color_config_get_simulation_bpc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-simulation-optimize" title="gimp_color_config_get_simulation_optimize ()">gimp_color_config_get_simulation_optimize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-simulation-gamut-check" title="gimp_color_config_get_simulation_gamut_check ()">gimp_color_config_get_simulation_gamut_check</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GimpColorProfile</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-rgb-color-profile" title="gimp_color_config_get_rgb_color_profile ()">gimp_color_config_get_rgb_color_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GimpColorProfile</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-gray-color-profile" title="gimp_color_config_get_gray_color_profile ()">gimp_color_config_get_gray_color_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GimpColorProfile</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-cmyk-color-profile" title="gimp_color_config_get_cmyk_color_profile ()">gimp_color_config_get_cmyk_color_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GimpColorProfile</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-display-color-profile" title="gimp_color_config_get_display_color_profile ()">gimp_color_config_get_display_color_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GimpColorProfile</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpColorConfig.html#gimp-color-config-get-simulation-color-profile" title="gimp_color_config_get_simulation_color_profile ()">gimp_color_config_get_simulation_color_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpColorConfig.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--cmyk-profile" title="The “cmyk-profile” property">cmyk-profile</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--display-module" title="The “display-module” property">display-module</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--display-optimize" title="The “display-optimize” property">display-optimize</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--display-profile" title="The “display-profile” property">display-profile</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--display-profile-from-gdk" title="The “display-profile-from-gdk” property">display-profile-from-gdk</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="GimpColorConfig.html#GimpColorRenderingIntent" title="enum GimpColorRenderingIntent"><span class="type">GimpColorRenderingIntent</span></a></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--display-rendering-intent" title="The “display-rendering-intent” property">display-rendering-intent</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--display-use-black-point-compensation" title="The “display-use-black-point-compensation” property">display-use-black-point-compensation</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--gray-profile" title="The “gray-profile” property">gray-profile</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="GimpColorConfig.html#GimpColorManagementMode" title="enum GimpColorManagementMode"><span class="type">GimpColorManagementMode</span></a></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--mode" title="The “mode” property">mode</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *</td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--out-of-gamut-color" title="The “out-of-gamut-color” property">out-of-gamut-color</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--printer-profile" title="The “printer-profile” property">printer-profile</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--rgb-profile" title="The “rgb-profile” property">rgb-profile</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--simulation-gamut-check" title="The “simulation-gamut-check” property">simulation-gamut-check</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--simulation-optimize" title="The “simulation-optimize” property">simulation-optimize</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="GimpColorConfig.html#GimpColorRenderingIntent" title="enum GimpColorRenderingIntent"><span class="type">GimpColorRenderingIntent</span></a></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--simulation-rendering-intent" title="The “simulation-rendering-intent” property">simulation-rendering-intent</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">gboolean</span></td>
+<td class="property_name"><a class="link" href="GimpColorConfig.html#GimpColorConfig--simulation-use-black-point-compensation" title="The “simulation-use-black-point-compensation” property">simulation-use-black-point-compensation</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpColorConfig.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GimpColorConfig.html#GimpColorManagementMode" title="enum GimpColorManagementMode">GimpColorManagementMode</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GimpColorConfig.html#GimpColorRenderingIntent" title="enum GimpColorRenderingIntent">GimpColorRenderingIntent</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpColorConfig.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GimpColorConfig
+</pre>
+</div>
+<div class="refsect1">
+<a name="GimpColorConfig.description"></a><h2>Description</h2>
+<p>Color management settings.</p>
+</div>
+<div class="refsect1">
+<a name="GimpColorConfig.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-color-config-get-mode"></a><h3>gimp_color_config_get_mode ()</h3>
+<pre class="programlisting"><a class="link" href="GimpColorConfig.html#GimpColorManagementMode" title="enum GimpColorManagementMode"><span class="returnvalue">GimpColorManagementMode</span></a>
+gimp_color_config_get_mode (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-display-intent"></a><h3>gimp_color_config_get_display_intent ()</h3>
+<pre class="programlisting"><a class="link" href="GimpColorConfig.html#GimpColorRenderingIntent" title="enum GimpColorRenderingIntent"><span class="returnvalue">GimpColorRenderingIntent</span></a>
+gimp_color_config_get_display_intent (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-display-intent.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-display-bpc"></a><h3>gimp_color_config_get_display_bpc ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_color_config_get_display_bpc (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-display-bpc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-display-optimize"></a><h3>gimp_color_config_get_display_optimize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_color_config_get_display_optimize
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-display-optimize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-display-profile-from-gdk"></a><h3>gimp_color_config_get_display_profile_from_gdk ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_color_config_get_display_profile_from_gdk
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-display-profile-from-gdk.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-simulation-intent"></a><h3>gimp_color_config_get_simulation_intent ()</h3>
+<pre class="programlisting"><a class="link" href="GimpColorConfig.html#GimpColorRenderingIntent" title="enum GimpColorRenderingIntent"><span class="returnvalue">GimpColorRenderingIntent</span></a>
+gimp_color_config_get_simulation_intent
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-simulation-intent.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-simulation-bpc"></a><h3>gimp_color_config_get_simulation_bpc ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_color_config_get_simulation_bpc (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-simulation-bpc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-simulation-optimize"></a><h3>gimp_color_config_get_simulation_optimize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_color_config_get_simulation_optimize
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-simulation-optimize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-simulation-gamut-check"></a><h3>gimp_color_config_get_simulation_gamut_check ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_color_config_get_simulation_gamut_check
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-simulation-gamut-check.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-rgb-color-profile"></a><h3>gimp_color_config_get_rgb_color_profile ()</h3>
+<pre class="programlisting"><span class="returnvalue">GimpColorProfile</span> *
+gimp_color_config_get_rgb_color_profile
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-rgb-color-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <span class="type">GError</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-gray-color-profile"></a><h3>gimp_color_config_get_gray_color_profile ()</h3>
+<pre class="programlisting"><span class="returnvalue">GimpColorProfile</span> *
+gimp_color_config_get_gray_color_profile
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-gray-color-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <span class="type">GError</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-cmyk-color-profile"></a><h3>gimp_color_config_get_cmyk_color_profile ()</h3>
+<pre class="programlisting"><span class="returnvalue">GimpColorProfile</span> *
+gimp_color_config_get_cmyk_color_profile
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-cmyk-color-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <span class="type">GError</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-display-color-profile"></a><h3>gimp_color_config_get_display_color_profile ()</h3>
+<pre class="programlisting"><span class="returnvalue">GimpColorProfile</span> *
+gimp_color_config_get_display_color_profile
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-display-color-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <span class="type">GError</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-color-config-get-simulation-color-profile"></a><h3>gimp_color_config_get_simulation_color_profile ()</h3>
+<pre class="programlisting"><span class="returnvalue">GimpColorProfile</span> *
+gimp_color_config_get_simulation_color_profile
+                               (<em class="parameter"><code><a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a> *config</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-color-config-get-simulation-color-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>config</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpColorConfig.html" title="GimpColorConfig"><span class="type">GimpColorConfig</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for a <span class="type">GError</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpColorConfig.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpColorManagementMode"></a><h3>enum GimpColorManagementMode</h3>
+<p>Modes of color management.</p>
+<div class="refsect3">
+<a name="GimpColorManagementMode.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-MANAGEMENT-OFF:CAPS"></a>GIMP_COLOR_MANAGEMENT_OFF</p></td>
+<td class="enum_member_description">
+<p>Color management is off</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-MANAGEMENT-DISPLAY:CAPS"></a>GIMP_COLOR_MANAGEMENT_DISPLAY</p></td>
+<td class="enum_member_description">
+<p>Color managed display</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-MANAGEMENT-SOFTPROOF:CAPS"></a>GIMP_COLOR_MANAGEMENT_SOFTPROOF</p></td>
+<td class="enum_member_description">
+<p>Soft-proofing</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorRenderingIntent"></a><h3>enum GimpColorRenderingIntent</h3>
+<p>Intents for color management.</p>
+<div class="refsect3">
+<a name="GimpColorRenderingIntent.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-RENDERING-INTENT-PERCEPTUAL:CAPS"></a>GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL</p></td>
+<td class="enum_member_description">
+<p>Preceptual</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-RENDERING-INTENT-RELATIVE-COLORIMETRIC:CAPS"></a>GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC</p></td>
+<td class="enum_member_description">
+<p>Relative colorimetric</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-RENDERING-INTENT-SATURATION:CAPS"></a>GIMP_COLOR_RENDERING_INTENT_SATURATION</p></td>
+<td class="enum_member_description">
+<p>Saturation</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-COLOR-RENDERING-INTENT-ABSOLUTE-COLORIMETRIC:CAPS"></a>GIMP_COLOR_RENDERING_INTENT_ABSOLUTE_COLORIMETRIC</p></td>
+<td class="enum_member_description">
+<p>Absolute colorimetric</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpColorConfig.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GimpColorConfig--cmyk-profile"></a><h3>The <code class="literal">“cmyk-profile”</code> property</h3>
+<pre class="programlisting">  “cmyk-profile”             <a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></pre>
+<p>The CMYK color profile used to convert between RGB and CMYK.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--display-module"></a><h3>The <code class="literal">“display-module”</code> property</h3>
+<pre class="programlisting">  “display-module”           <span class="type">char</span> *</pre>
+<p>This property is deprecated and its value ignored.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: "CdisplayLcms"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--display-optimize"></a><h3>The <code class="literal">“display-optimize”</code> property</h3>
+<pre class="programlisting">  “display-optimize”         <span class="type">gboolean</span></pre>
+<p>When disabled, image display might be of better quality at the cost of speed.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--display-profile"></a><h3>The <code class="literal">“display-profile”</code> property</h3>
+<pre class="programlisting">  “display-profile”          <a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></pre>
+<p>The color profile of your (primary) monitor.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--display-profile-from-gdk"></a><h3>The <code class="literal">“display-profile-from-gdk”</code> property</h3>
+<pre class="programlisting">  “display-profile-from-gdk” <span class="type">gboolean</span></pre>
+<p>When enabled, GIMP will try to use the display color profile from the windowing system.  The configured monitor profile is then only used as a fallback.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--display-rendering-intent"></a><h3>The <code class="literal">“display-rendering-intent”</code> property</h3>
+<pre class="programlisting">  “display-rendering-intent” <a class="link" href="GimpColorConfig.html#GimpColorRenderingIntent" title="enum GimpColorRenderingIntent"><span class="type">GimpColorRenderingIntent</span></a></pre>
+<p>How colors are converted from your image's color space to your display device. Relative colorimetric is usually the best choice. Unless you use a LUT monitor profile (most monitor profiles are matrix), choosing perceptual intent really gives you relative colorimetric.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: GIMP_COLOR_RENDERING_INTENT_RELATIVE_COLORIMETRIC</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--display-use-black-point-compensation"></a><h3>The <code class="literal">“display-use-black-point-compensation”</code> property</h3>
+<pre class="programlisting">  “display-use-black-point-compensation” <span class="type">gboolean</span></pre>
+<p>Do use black point compensation (unless you know you have a reason not to).</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--gray-profile"></a><h3>The <code class="literal">“gray-profile”</code> property</h3>
+<pre class="programlisting">  “gray-profile”             <a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></pre>
+<p>The preferred grayscale working space color profile. It will be offered next to the built-in grayscale profile when a color profile can be chosen.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--mode"></a><h3>The <code class="literal">“mode”</code> property</h3>
+<pre class="programlisting">  “mode”                     <a class="link" href="GimpColorConfig.html#GimpColorManagementMode" title="enum GimpColorManagementMode"><span class="type">GimpColorManagementMode</span></a></pre>
+<p>How images are displayed on screen.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: GIMP_COLOR_MANAGEMENT_DISPLAY</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--out-of-gamut-color"></a><h3>The <code class="literal">“out-of-gamut-color”</code> property</h3>
+<pre class="programlisting">  “out-of-gamut-color”       <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *</pre>
+<p>The color to use for marking colors which are out of gamut.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--printer-profile"></a><h3>The <code class="literal">“printer-profile”</code> property</h3>
+<pre class="programlisting">  “printer-profile”          <a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></pre>
+<p>The color profile to use for soft-proofing from your image's color space to some other color space, including soft-proofing to a printer or other output device profile. .</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--rgb-profile"></a><h3>The <code class="literal">“rgb-profile”</code> property</h3>
+<pre class="programlisting">  “rgb-profile”              <a class="link" href="libgimpconfig-GimpConfig-path.html#GimpConfigPath" title="GimpConfigPath"><span class="type">GimpConfigPath</span></a></pre>
+<p>The preferred RGB working space color profile. It will be offered next to the built-in RGB profile when a color profile can be chosen.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--simulation-gamut-check"></a><h3>The <code class="literal">“simulation-gamut-check”</code> property</h3>
+<pre class="programlisting">  “simulation-gamut-check”   <span class="type">gboolean</span></pre>
+<p>When enabled, the soft-proofing will mark colors which can not be represented in the target color space.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--simulation-optimize"></a><h3>The <code class="literal">“simulation-optimize”</code> property</h3>
+<pre class="programlisting">  “simulation-optimize”      <span class="type">gboolean</span></pre>
+<p>When disabled, soft-proofing might be of better quality at the cost of speed.</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--simulation-rendering-intent"></a><h3>The <code class="literal">“simulation-rendering-intent”</code> property</h3>
+<pre class="programlisting">  “simulation-rendering-intent” <a class="link" href="GimpColorConfig.html#GimpColorRenderingIntent" title="enum GimpColorRenderingIntent"><span class="type">GimpColorRenderingIntent</span></a></pre>
+<p>How colors are converted from your image's color space to the output simulation device (usually your monitor). Try them all and choose what looks the best. .</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: GIMP_COLOR_RENDERING_INTENT_PERCEPTUAL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpColorConfig--simulation-use-black-point-compensation"></a><h3>The <code class="literal">“simulation-use-black-point-compensation”</code> property</h3>
+<pre class="programlisting">  “simulation-use-black-point-compensation” <span class="type">gboolean</span></pre>
+<p>Try with and without black point compensation and choose what looks best. .</p>
+<p>Owner: GimpColorConfig</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

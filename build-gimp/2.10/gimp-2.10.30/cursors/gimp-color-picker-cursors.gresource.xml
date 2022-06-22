@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gimp/color-picker-cursors">
+    <file preprocess="to-pixdata">cursor-color-picker.png</file>
+    <file preprocess="to-pixdata">cursor-color-picker-x2.png</file>
+  </gresource>
+  <gresource prefix="/org/gimp/color-picker-cursors-raw">
+    <file>cursor-color-picker.png</file>
+    <file>cursor-color-picker-x2.png</file>
+  </gresource>
+</gresources>

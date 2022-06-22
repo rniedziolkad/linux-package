@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gimp/icons">
+    <file preprocess="to-pixdata">64/gimp-question.png</file>
+  </gresource>
+</gresources>

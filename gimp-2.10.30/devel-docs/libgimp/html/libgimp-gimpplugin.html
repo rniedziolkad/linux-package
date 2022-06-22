@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpplugin: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-general.html" title="Functions not Related to Specific Images">
+<link rel="prev" href="libgimp-gimpmessage.html" title="gimpmessage">
+<link rel="next" href="libgimp-gimpproceduraldb.html" title="gimpproceduraldb">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpplugin.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-general.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpmessage.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpproceduraldb.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpplugin"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpplugin.top_of_page"></a>gimpplugin</span></h2>
+<p>gimpplugin — Functions useful for plug-ins, e.g. registration and progress indicators.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpplugin.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-domain-register" title="gimp_plugin_domain_register ()">gimp_plugin_domain_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-help-register" title="gimp_plugin_help_register ()">gimp_plugin_help_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-icon-register" title="gimp_plugin_icon_register ()">gimp_plugin_icon_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-menu-register" title="gimp_plugin_menu_register ()">gimp_plugin_menu_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-menu-branch-register" title="gimp_plugin_menu_branch_register ()">gimp_plugin_menu_branch_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-set-pdb-error-handler" title="gimp_plugin_set_pdb_error_handler ()">gimp_plugin_set_pdb_error_handler</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpPDBErrorHandler"><span class="returnvalue">GimpPDBErrorHandler</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-get-pdb-error-handler" title="gimp_plugin_get_pdb_error_handler ()">gimp_plugin_get_pdb_error_handler</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-enable-precision" title="gimp_plugin_enable_precision ()">gimp_plugin_enable_precision</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-precision-enabled" title="gimp_plugin_precision_enabled ()">gimp_plugin_precision_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpplugin.description"></a><h2>Description</h2>
+<p>Functions useful for plug-ins, e.g. registration and progress
+indicators.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpplugin.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-plugin-domain-register"></a><h3>gimp_plugin_domain_register ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_plugin_domain_register (<em class="parameter"><code>const <span class="type">gchar</span> *domain_name</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *domain_path</code></em>);</pre>
+<p>Registers a textdomain for localisation.</p>
+<p>This procedure adds a textdomain to the list of domains Gimp
+searches for strings when translating its menu entries. There is no
+need to call this function for plug-ins that have their strings
+included in the 'gimp-std-plugins' domain as that is used by
+default. If the compiled message catalog is not in the standard
+location, you may specify an absolute path to another location. This
+procedure can only be called in the query function of a plug-in and
+it has to be called before any procedure is installed.</p>
+<div class="refsect3">
+<a name="gimp-plugin-domain-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>domain_name</p></td>
+<td class="parameter_description"><p>The name of the textdomain (must be unique).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>domain_path</p></td>
+<td class="parameter_description"><p>The absolute path to the compiled message catalog (may be NULL).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-plugin-domain-register.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-plugin-help-register"></a><h3>gimp_plugin_help_register ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_plugin_help_register (<em class="parameter"><code>const <span class="type">gchar</span> *domain_name</code></em>,
+                           <em class="parameter"><code>const <span class="type">gchar</span> *domain_uri</code></em>);</pre>
+<p>Register a help path for a plug-in.</p>
+<p>This procedure registers user documentation for the calling plug-in
+with the GIMP help system. The domain_uri parameter points to the
+root directory where the plug-in help is installed. For each
+supported language there should be a file called 'gimp-help.xml'
+that maps the help IDs to the actual help files.</p>
+<div class="refsect3">
+<a name="gimp-plugin-help-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>domain_name</p></td>
+<td class="parameter_description"><p>The XML namespace of the plug-in's help pages.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>domain_uri</p></td>
+<td class="parameter_description"><p>The root URI of the plug-in's help pages.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-plugin-help-register.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-plugin-icon-register"></a><h3>gimp_plugin_icon_register ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_plugin_icon_register (<em class="parameter"><code>const <span class="type">gchar</span> *procedure_name</code></em>,
+                           <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpIconType"><span class="type">GimpIconType</span></a> icon_type</code></em>,
+                           <em class="parameter"><code>const <span class="type">guint8</span> *icon_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-plugin-menu-register"></a><h3>gimp_plugin_menu_register ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_plugin_menu_register (<em class="parameter"><code>const <span class="type">gchar</span> *procedure_name</code></em>,
+                           <em class="parameter"><code>const <span class="type">gchar</span> *menu_path</code></em>);</pre>
+<p>Register an additional menu path for a plug-in procedure.</p>
+<p>This procedure installs an additional menu entry for the given
+procedure.</p>
+<div class="refsect3">
+<a name="gimp-plugin-menu-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>procedure_name</p></td>
+<td class="parameter_description"><p>The procedure for which to install the menu path.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>menu_path</p></td>
+<td class="parameter_description"><p>The procedure's additional menu path.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-plugin-menu-register.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-plugin-menu-branch-register"></a><h3>gimp_plugin_menu_branch_register ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_plugin_menu_branch_register (<em class="parameter"><code>const <span class="type">gchar</span> *menu_path</code></em>,
+                                  <em class="parameter"><code>const <span class="type">gchar</span> *menu_name</code></em>);</pre>
+<p>Register a sub-menu.</p>
+<p>This procedure installs a sub-menu which does not belong to any
+procedure. The menu-name should be the untranslated menu label. GIMP
+will look up the translation in the textdomain registered for the
+plug-in.</p>
+<div class="refsect3">
+<a name="gimp-plugin-menu-branch-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>menu_path</p></td>
+<td class="parameter_description"><p>The sub-menu's menu path.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>menu_name</p></td>
+<td class="parameter_description"><p>The name of the sub-menu.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-plugin-menu-branch-register.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-plugin-set-pdb-error-handler"></a><h3>gimp_plugin_set_pdb_error_handler ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_plugin_set_pdb_error_handler (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpPDBErrorHandler"><span class="type">GimpPDBErrorHandler</span></a> handler</code></em>);</pre>
+<p>Sets an error handler for procedure calls.</p>
+<p>This procedure changes the way that errors in procedure calls are
+handled. By default GIMP will raise an error dialog if a procedure
+call made by a plug-in fails. Using this procedure the plug-in can
+change this behavior. If the error handler is set to
+<a href="../html/libgimpbase-gimpbaseenums.html#GIMP-PDB-ERROR-HANDLER-PLUGIN:CAPS"><code class="literal">GIMP_PDB_ERROR_HANDLER_PLUGIN</code></a>, then the plug-in is responsible for
+calling <a class="link" href="libgimp-gimp.html#gimp-get-pdb-error" title="gimp_get_pdb_error ()"><code class="function">gimp_get_pdb_error()</code></a> and handling the error whenever one if
+its procedure calls fails. It can do this by displaying the error
+message or by forwarding it in its own return values.</p>
+<div class="refsect3">
+<a name="gimp-plugin-set-pdb-error-handler.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>handler</p></td>
+<td class="parameter_description"><p>Who is responsible for handling procedure call errors.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-plugin-set-pdb-error-handler.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-plugin-get-pdb-error-handler"></a><h3>gimp_plugin_get_pdb_error_handler ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpPDBErrorHandler"><span class="returnvalue">GimpPDBErrorHandler</span></a>
+gimp_plugin_get_pdb_error_handler (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieves the active error handler for procedure calls.</p>
+<p>This procedure retrieves the currently active error handler for
+procedure calls made by the calling plug-in. See
+<a class="link" href="libgimp-gimpplugin.html#gimp-plugin-set-pdb-error-handler" title="gimp_plugin_set_pdb_error_handler ()"><code class="function">gimp_plugin_set_pdb_error_handler()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gimp-plugin-get-pdb-error-handler.returns"></a><h4>Returns</h4>
+<p> Who is responsible for handling procedure call errors.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-plugin-enable-precision"></a><h3>gimp_plugin_enable_precision ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_plugin_enable_precision (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Switches this plug-in to using the real bit depth of drawables.</p>
+<p>Switches this plug-in to using the real bit depth of drawables. This
+setting can only be enabled, and not disabled again during the
+lifetime of the plug-in. Using <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-buffer" title="gimp_drawable_get_buffer ()"><code class="function">gimp_drawable_get_buffer()</code></a>,
+<a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-shadow-buffer" title="gimp_drawable_get_shadow_buffer ()"><code class="function">gimp_drawable_get_shadow_buffer()</code></a> or <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-get-format" title="gimp_drawable_get_format ()"><code class="function">gimp_drawable_get_format()</code></a> will
+automatically call this function.</p>
+<div class="refsect3">
+<a name="gimp-plugin-enable-precision.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-plugin-precision-enabled"></a><h3>gimp_plugin_precision_enabled ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_plugin_precision_enabled (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Whether this plug-in is using the real bit depth of drawables.</p>
+<p>Returns whether this plug-in is using the real bit depth of
+drawables, which can be more than 8 bits per channel.</p>
+<div class="refsect3">
+<a name="gimp-plugin-precision-enabled.returns"></a><h4>Returns</h4>
+<p> Whether precision is enabled.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

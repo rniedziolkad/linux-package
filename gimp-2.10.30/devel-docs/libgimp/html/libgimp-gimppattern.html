@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimppattern: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-data.html" title="Data Objects">
+<link rel="prev" href="libgimp-gimppalettes.html" title="gimppalettes">
+<link rel="next" href="libgimp-gimppatterns.html" title="gimppatterns">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimppattern.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-data.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimppalettes.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimppatterns.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimppattern"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimppattern.top_of_page"></a>gimppattern</span></h2>
+<p>gimppattern — Functions operating on a single pattern.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimppattern.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimppattern.html#gimp-pattern-get-info" title="gimp_pattern_get_info ()">gimp_pattern_get_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimppattern.html#gimp-pattern-get-pixels" title="gimp_pattern_get_pixels ()">gimp_pattern_get_pixels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimppattern.description"></a><h2>Description</h2>
+<p>Functions operating on a single pattern.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimppattern.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-pattern-get-info"></a><h3>gimp_pattern_get_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_pattern_get_info (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *bpp</code></em>);</pre>
+<p>Retrieve information about the specified pattern.</p>
+<p>This procedure retrieves information about the specified pattern.
+This includes the pattern extents (width and height).</p>
+<div class="refsect3">
+<a name="gimp-pattern-get-info.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The pattern name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The pattern width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The pattern height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bpp</p></td>
+<td class="parameter_description"><p>The pattern bpp.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-pattern-get-info.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-pattern-get-pixels"></a><h3>gimp_pattern_get_pixels ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_pattern_get_pixels (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> *width</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> *height</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> *bpp</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> *num_color_bytes</code></em>,
+                         <em class="parameter"><code><span class="type">guint8</span> **color_bytes</code></em>);</pre>
+<p>Retrieve information about the specified pattern (including pixels).</p>
+<p>This procedure retrieves information about the specified. This
+includes the pattern extents (width and height), its bpp and its
+pixel data.</p>
+<div class="refsect3">
+<a name="gimp-pattern-get-pixels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The pattern name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The pattern width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The pattern height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bpp</p></td>
+<td class="parameter_description"><p>The pattern bpp.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_color_bytes</p></td>
+<td class="parameter_description"><p>Number of pattern bytes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>color_bytes</p></td>
+<td class="parameter_description"><p>The pattern data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-pattern-get-pixels.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

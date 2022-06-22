@@ -1,0 +1,20 @@
+stock_intensity_ambient_high
+  ./stock-intensity-ambient-high.png
+stock_intensity_ambient_low
+  ./stock-intensity-ambient-low.png
+stock_intensity_diffuse_high
+  ./stock-intensity-diffuse-high.png
+stock_intensity_diffuse_low
+  ./stock-intensity-diffuse-low.png
+stock_reflectivity_diffuse_high
+  ./stock-reflectivity-diffuse-high.png
+stock_reflectivity_diffuse_low
+  ./stock-reflectivity-diffuse-low.png
+stock_reflectivity_specular_high
+  ./stock-reflectivity-specular-high.png
+stock_reflectivity_specular_low
+  ./stock-reflectivity-specular-low.png
+stock_reflectivity_highlight_high
+  ./stock-reflectivity-highlight-high.png
+stock_reflectivity_highlight_low
+  ./stock-reflectivity-highlight-low.png

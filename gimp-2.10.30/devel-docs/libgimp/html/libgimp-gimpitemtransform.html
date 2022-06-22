@@ -1,0 +1,885 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpitemtransform: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpitem.html" title="gimpitem">
+<link rel="next" href="libgimp-gimplayer.html" title="gimplayer">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpitemtransform.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpitem.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimplayer.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpitemtransform"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpitemtransform.top_of_page"></a>gimpitemtransform</span></h2>
+<p>gimpitemtransform — Functions to perform transformations on items.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpitemtransform.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-translate" title="gimp_item_transform_translate ()">gimp_item_transform_translate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-flip-simple" title="gimp_item_transform_flip_simple ()">gimp_item_transform_flip_simple</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-flip" title="gimp_item_transform_flip ()">gimp_item_transform_flip</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-perspective" title="gimp_item_transform_perspective ()">gimp_item_transform_perspective</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-rotate-simple" title="gimp_item_transform_rotate_simple ()">gimp_item_transform_rotate_simple</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-rotate" title="gimp_item_transform_rotate ()">gimp_item_transform_rotate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-scale" title="gimp_item_transform_scale ()">gimp_item_transform_scale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-shear" title="gimp_item_transform_shear ()">gimp_item_transform_shear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-2d" title="gimp_item_transform_2d ()">gimp_item_transform_2d</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-matrix" title="gimp_item_transform_matrix ()">gimp_item_transform_matrix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpitemtransform.description"></a><h2>Description</h2>
+<p>Functions to perform transformations on items.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpitemtransform.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-item-transform-translate"></a><h3>gimp_item_transform_translate ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_translate (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                               <em class="parameter"><code><span class="type">gdouble</span> off_x</code></em>,
+                               <em class="parameter"><code><span class="type">gdouble</span> off_y</code></em>);</pre>
+<p>Translate the item by the specified offsets.</p>
+<p>This procedure translates the item by the amounts specified in the
+off_x and off_y arguments. These can be negative, and are considered
+offsets from the current position. The offsets will be rounded to
+the nearest pixel unless the item is a path.</p>
+<p>If the item is attached to an image and has its linked flag set to
+TRUE, all additional items contained in the image which have the
+linked flag set to TRUE will also be translated by the specified
+offsets.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-translate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>off_x</p></td>
+<td class="parameter_description"><p>Offset in x direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>off_y</p></td>
+<td class="parameter_description"><p>Offset in y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-translate.returns"></a><h4>Returns</h4>
+<p> The translated item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-item-transform-flip-simple"></a><h3>gimp_item_transform_flip_simple ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_flip_simple (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                                 <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpOrientationType"><span class="type">GimpOrientationType</span></a> flip_type</code></em>,
+                                 <em class="parameter"><code><span class="type">gboolean</span> auto_center</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> axis</code></em>);</pre>
+<p>Flip the specified item either vertically or horizontally.</p>
+<p>This procedure flips the specified item.</p>
+<p>If a selection exists and the item is a drawable, the portion of the
+drawable which lies under the selection is cut from the drawable and
+made into a floating selection which is then flipped. If auto_center
+is set to TRUE, the flip is around the selection's center.
+Otherwise, the coordinate of the axis needs to be specified. The
+return value is the ID of the flipped floating selection.</p>
+<p>If there is no selection or the item is not a drawable, the entire
+item will be flipped around its center if auto_center is set to
+TRUE, otherwise the coordinate of the axis needs to be specified.
+Additionally, if the item has its linked flag set to TRUE, all
+additional items contained in the image which have the linked flag
+set to TRUE will also be flipped around the same axis. The return
+value will be equal to the item ID supplied as input.</p>
+<p>This procedure is affected by the following context setters:
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()"><code class="function">gimp_context_set_transform_resize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-flip-simple.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The affected item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flip_type</p></td>
+<td class="parameter_description"><p>Type of flip.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>auto_center</p></td>
+<td class="parameter_description"><p>Whether to automatically position the axis in the selection center.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>coord. of flip axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-flip-simple.returns"></a><h4>Returns</h4>
+<p> The flipped item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-item-transform-flip"></a><h3>gimp_item_transform_flip ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_flip (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                          <em class="parameter"><code><span class="type">gdouble</span> x0</code></em>,
+                          <em class="parameter"><code><span class="type">gdouble</span> y0</code></em>,
+                          <em class="parameter"><code><span class="type">gdouble</span> x1</code></em>,
+                          <em class="parameter"><code><span class="type">gdouble</span> y1</code></em>);</pre>
+<p>Flip the specified item around a given line.</p>
+<p>This procedure flips the specified item.</p>
+<p>If a selection exists and the item is a drawable, the portion of the
+drawable which lies under the selection is cut from the drawable and
+made into a floating selection which is then flipped. The axis to
+flip around is specified by specifying two points from that line.
+The return value is the ID of the flipped floating selection.</p>
+<p>If there is no selection or the item is not a drawable, the entire
+item will be flipped around the specified axis. Additionally, if the
+item has its linked flag set to TRUE, all additional items contained
+in the image which have the linked flag set to TRUE will also be
+flipped around the same axis. The return value will be equal to the
+item ID supplied as input.</p>
+<p>This procedure is affected by the following context setters:
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()"><code class="function">gimp_context_set_interpolation()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-direction" title="gimp_context_set_transform_direction ()"><code class="function">gimp_context_set_transform_direction()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()"><code class="function">gimp_context_set_transform_resize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-flip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The affected item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x0</p></td>
+<td class="parameter_description"><p>horz. coord. of one end of axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y0</p></td>
+<td class="parameter_description"><p>vert. coord. of one end of axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1</p></td>
+<td class="parameter_description"><p>horz. coord. of other end of axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1</p></td>
+<td class="parameter_description"><p>vert. coord. of other end of axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-flip.returns"></a><h4>Returns</h4>
+<p> The flipped item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-item-transform-perspective"></a><h3>gimp_item_transform_perspective ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_perspective (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> x0</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> y0</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> x1</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> y1</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> x2</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> y2</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> x3</code></em>,
+                                 <em class="parameter"><code><span class="type">gdouble</span> y3</code></em>);</pre>
+<p>Perform a possibly non-affine transformation on the specified item.</p>
+<p>This procedure performs a possibly non-affine transformation on the
+specified item by allowing the corners of the original bounding box
+to be arbitrarily remapped to any values.</p>
+<p>The 4 coordinates specify the new locations of each corner of the
+original bounding box. By specifying these values, any affine
+transformation (rotation, scaling, translation) can be affected.
+Additionally, these values can be specified such that the resulting
+transformed item will appear to have been projected via a
+perspective transform.</p>
+<p>If a selection exists and the item is a drawable, the portion of the
+drawable which lies under the selection is cut from the drawable and
+made into a floating selection which is then transformed as
+specified. The return value is the ID of the transformed floating
+selection.</p>
+<p>If there is no selection or the item is not a drawable, the entire
+item will be transformed according to the specified mapping.
+Additionally, if the item has its linked flag set to TRUE, all
+additional items contained in the image which have the linked flag
+set to TRUE will also be transformed the same way. The return value
+will be equal to the item ID supplied as input.</p>
+<p>This procedure is affected by the following context setters:
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()"><code class="function">gimp_context_set_interpolation()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-direction" title="gimp_context_set_transform_direction ()"><code class="function">gimp_context_set_transform_direction()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()"><code class="function">gimp_context_set_transform_resize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-perspective.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The affected item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x0</p></td>
+<td class="parameter_description"><p>The new x coordinate of upper-left corner of original bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y0</p></td>
+<td class="parameter_description"><p>The new y coordinate of upper-left corner of original bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1</p></td>
+<td class="parameter_description"><p>The new x coordinate of upper-right corner of original bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1</p></td>
+<td class="parameter_description"><p>The new y coordinate of upper-right corner of original bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x2</p></td>
+<td class="parameter_description"><p>The new x coordinate of lower-left corner of original bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y2</p></td>
+<td class="parameter_description"><p>The new y coordinate of lower-left corner of original bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x3</p></td>
+<td class="parameter_description"><p>The new x coordinate of lower-right corner of original bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y3</p></td>
+<td class="parameter_description"><p>The new y coordinate of lower-right corner of original bounding box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-perspective.returns"></a><h4>Returns</h4>
+<p> The transformed item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-item-transform-rotate-simple"></a><h3>gimp_item_transform_rotate_simple ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_rotate_simple (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                                   <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpRotationType"><span class="type">GimpRotationType</span></a> rotate_type</code></em>,
+                                   <em class="parameter"><code><span class="type">gboolean</span> auto_center</code></em>,
+                                   <em class="parameter"><code><span class="type">gdouble</span> center_x</code></em>,
+                                   <em class="parameter"><code><span class="type">gdouble</span> center_y</code></em>);</pre>
+<p>Rotate the specified item about given coordinates through the
+specified angle.</p>
+<p>This function rotates the specified item.</p>
+<p>If a selection exists and the item is a drawable, the portion of the
+drawable which lies under the selection is cut from the drawable and
+made into a floating selection which is then rotated by the
+specified amount. If auto_center is set to TRUE, the rotation is
+around the selection's center. Otherwise, the coordinate of the
+center point needs to be specified. The return value is the ID of
+the rotated floating selection.</p>
+<p>If there is no selection or the item is not a drawable, the entire
+item will be rotated around its center if auto_center is set to
+TRUE, otherwise the coordinate of the center point needs to be
+specified. Additionally, if the item has its linked flag set to
+TRUE, all additional items contained in the image which have the
+linked flag set to TRUE will also be rotated around the same center
+point. The return value will be equal to the item ID supplied as
+input.</p>
+<p>This procedure is affected by the following context setters:
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()"><code class="function">gimp_context_set_transform_resize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-rotate-simple.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The affected item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rotate_type</p></td>
+<td class="parameter_description"><p>Type of rotation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>auto_center</p></td>
+<td class="parameter_description"><p>Whether to automatically rotate around the selection center.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>center_x</p></td>
+<td class="parameter_description"><p>The hor. coordinate of the center of rotation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>center_y</p></td>
+<td class="parameter_description"><p>The vert. coordinate of the center of rotation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-rotate-simple.returns"></a><h4>Returns</h4>
+<p> The rotated item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-item-transform-rotate"></a><h3>gimp_item_transform_rotate ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_rotate (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> angle</code></em>,
+                            <em class="parameter"><code><span class="type">gboolean</span> auto_center</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> center_x</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> center_y</code></em>);</pre>
+<p>Rotate the specified item about given coordinates through the
+specified angle.</p>
+<p>This function rotates the specified item.</p>
+<p>If a selection exists and the item is a drawable, the portion of the
+drawable which lies under the selection is cut from the drawable and
+made into a floating selection which is then rotated by the
+specified amount. If auto_center is set to TRUE, the rotation is
+around the selection's center. Otherwise, the coordinate of the
+center point needs to be specified. The return value is the ID of
+the rotated floating selection.</p>
+<p>If there is no selection or the item is not a drawable, the entire
+item will be rotated around its center if auto_center is set to
+TRUE, otherwise the coordinate of the center point needs to be
+specified. Additionally, if the item has its linked flag set to
+TRUE, all additional items contained in the image which have the
+linked flag set to TRUE will also be rotated around the same center
+point. The return value will be equal to the item ID supplied as
+input.</p>
+<p>This procedure is affected by the following context setters:
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()"><code class="function">gimp_context_set_interpolation()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-direction" title="gimp_context_set_transform_direction ()"><code class="function">gimp_context_set_transform_direction()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()"><code class="function">gimp_context_set_transform_resize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-rotate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The affected item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>angle</p></td>
+<td class="parameter_description"><p>The angle of rotation (radians).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>auto_center</p></td>
+<td class="parameter_description"><p>Whether to automatically rotate around the selection center.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>center_x</p></td>
+<td class="parameter_description"><p>The hor. coordinate of the center of rotation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>center_y</p></td>
+<td class="parameter_description"><p>The vert. coordinate of the center of rotation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-rotate.returns"></a><h4>Returns</h4>
+<p> The rotated item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-item-transform-scale"></a><h3>gimp_item_transform_scale ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_scale (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                           <em class="parameter"><code><span class="type">gdouble</span> x0</code></em>,
+                           <em class="parameter"><code><span class="type">gdouble</span> y0</code></em>,
+                           <em class="parameter"><code><span class="type">gdouble</span> x1</code></em>,
+                           <em class="parameter"><code><span class="type">gdouble</span> y1</code></em>);</pre>
+<p>Scale the specified item.</p>
+<p>This procedure scales the specified item.</p>
+<p>The 2 coordinates specify the new locations of the top-left and
+bottom-roght corners of the original bounding box.</p>
+<p>If a selection exists and the item is a drawable, the portion of the
+drawable which lies under the selection is cut from the drawable and
+made into a floating selection which is then scaled as specified.
+The return value is the ID of the scaled floating selection.</p>
+<p>If there is no selection or the item is not a drawable, the entire
+item will be scaled according to the specified coordinates.
+Additionally, if the item has its linked flag set to TRUE, all
+additional items contained in the image which have the linked flag
+set to TRUE will also be scaled the same way. The return value will
+be equal to the item ID supplied as input.</p>
+<p>This procedure is affected by the following context setters:
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()"><code class="function">gimp_context_set_interpolation()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-direction" title="gimp_context_set_transform_direction ()"><code class="function">gimp_context_set_transform_direction()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()"><code class="function">gimp_context_set_transform_resize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-scale.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The affected item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x0</p></td>
+<td class="parameter_description"><p>The new x coordinate of the upper-left corner of the scaled region.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y0</p></td>
+<td class="parameter_description"><p>The new y coordinate of the upper-left corner of the scaled region.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1</p></td>
+<td class="parameter_description"><p>The new x coordinate of the lower-right corner of the scaled region.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1</p></td>
+<td class="parameter_description"><p>The new y coordinate of the lower-right corner of the scaled region.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-scale.returns"></a><h4>Returns</h4>
+<p> The scaled item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-item-transform-shear"></a><h3>gimp_item_transform_shear ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_shear (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                           <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpOrientationType"><span class="type">GimpOrientationType</span></a> shear_type</code></em>,
+                           <em class="parameter"><code><span class="type">gdouble</span> magnitude</code></em>);</pre>
+<p>Shear the specified item about its center by the specified
+magnitude.</p>
+<p>This procedure shears the specified item.</p>
+<p>The shear type parameter indicates whether the shear will be applied
+horizontally or vertically. The magnitude can be either positive or
+negative and indicates the extent (in pixels) to shear by.</p>
+<p>If a selection exists and the item is a drawable, the portion of the
+drawable which lies under the selection is cut from the drawable and
+made into a floating selection which is then sheared as specified.
+The return value is the ID of the sheared floating selection.</p>
+<p>If there is no selection or the item is not a drawable, the entire
+item will be sheared according to the specified parameters.
+Additionally, if the item has its linked flag set to TRUE, all
+additional items contained in the image which have the linked flag
+set to TRUE will also be sheared the same way. The return value will
+be equal to the item ID supplied as input.</p>
+<p>This procedure is affected by the following context setters:
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()"><code class="function">gimp_context_set_interpolation()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-direction" title="gimp_context_set_transform_direction ()"><code class="function">gimp_context_set_transform_direction()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()"><code class="function">gimp_context_set_transform_resize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-shear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The affected item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>shear_type</p></td>
+<td class="parameter_description"><p>Type of shear.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>magnitude</p></td>
+<td class="parameter_description"><p>The magnitude of the shear.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-shear.returns"></a><h4>Returns</h4>
+<p> The sheared item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-item-transform-2d"></a><h3>gimp_item_transform_2d ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_2d (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                        <em class="parameter"><code><span class="type">gdouble</span> source_x</code></em>,
+                        <em class="parameter"><code><span class="type">gdouble</span> source_y</code></em>,
+                        <em class="parameter"><code><span class="type">gdouble</span> scale_x</code></em>,
+                        <em class="parameter"><code><span class="type">gdouble</span> scale_y</code></em>,
+                        <em class="parameter"><code><span class="type">gdouble</span> angle</code></em>,
+                        <em class="parameter"><code><span class="type">gdouble</span> dest_x</code></em>,
+                        <em class="parameter"><code><span class="type">gdouble</span> dest_y</code></em>);</pre>
+<p>Transform the specified item in 2d.</p>
+<p>This procedure transforms the specified item.</p>
+<p>The transformation is done by scaling by the x and y scale factors
+about the point (source_x, source_y), then rotating around the same
+point, then translating that point to the new position (dest_x,
+dest_y).</p>
+<p>If a selection exists and the item is a drawable, the portion of the
+drawable which lies under the selection is cut from the drawable and
+made into a floating selection which is then transformed as
+specified. The return value is the ID of the transformed floating
+selection.</p>
+<p>If there is no selection or the item is not a drawable, the entire
+item will be transformed according to the specified parameters.
+Additionally, if the item has its linked flag set to TRUE, all
+additional items contained in the image which have the linked flag
+set to TRUE will also be transformed the same way. The return value
+will be equal to the item ID supplied as input.</p>
+<p>This procedure is affected by the following context setters:
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()"><code class="function">gimp_context_set_interpolation()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-direction" title="gimp_context_set_transform_direction ()"><code class="function">gimp_context_set_transform_direction()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()"><code class="function">gimp_context_set_transform_resize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-2d.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The affected item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_x</p></td>
+<td class="parameter_description"><p>X coordinate of the transformation center.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_y</p></td>
+<td class="parameter_description"><p>Y coordinate of the transformation center.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>scale_x</p></td>
+<td class="parameter_description"><p>Amount to scale in x direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>scale_y</p></td>
+<td class="parameter_description"><p>Amount to scale in y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>angle</p></td>
+<td class="parameter_description"><p>The angle of rotation (radians).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_x</p></td>
+<td class="parameter_description"><p>X coordinate of where the center goes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_y</p></td>
+<td class="parameter_description"><p>Y coordinate of where the center goes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-2d.returns"></a><h4>Returns</h4>
+<p> The transformed item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-item-transform-matrix"></a><h3>gimp_item_transform_matrix ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_item_transform_matrix (<em class="parameter"><code><span class="type">gint32</span> item_ID</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> coeff_0_0</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> coeff_0_1</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> coeff_0_2</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> coeff_1_0</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> coeff_1_1</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> coeff_1_2</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> coeff_2_0</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> coeff_2_1</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> coeff_2_2</code></em>);</pre>
+<p>Transform the specified item in 2d.</p>
+<p>This procedure transforms the specified item.</p>
+<p>The transformation is done by assembling a 3x3 matrix from the
+coefficients passed.</p>
+<p>If a selection exists and the item is a drawable, the portion of the
+drawable which lies under the selection is cut from the drawable and
+made into a floating selection which is then transformed as
+specified. The return value is the ID of the transformed floating
+selection.</p>
+<p>If there is no selection or the item is not a drawable, the entire
+item will be transformed according to the specified matrix.
+Additionally, if the item has its linked flag set to TRUE, all
+additional items contained in the image which have the linked flag
+set to TRUE will also be transformed the same way. The return value
+will be equal to the item ID supplied as input.</p>
+<p>This procedure is affected by the following context setters:
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()"><code class="function">gimp_context_set_interpolation()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-direction" title="gimp_context_set_transform_direction ()"><code class="function">gimp_context_set_transform_direction()</code></a>,
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()"><code class="function">gimp_context_set_transform_resize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-item-transform-matrix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>item_ID</p></td>
+<td class="parameter_description"><p>The affected item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff_0_0</p></td>
+<td class="parameter_description"><p>coefficient (0,0) of the transformation matrix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff_0_1</p></td>
+<td class="parameter_description"><p>coefficient (0,1) of the transformation matrix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff_0_2</p></td>
+<td class="parameter_description"><p>coefficient (0,2) of the transformation matrix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff_1_0</p></td>
+<td class="parameter_description"><p>coefficient (1,0) of the transformation matrix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff_1_1</p></td>
+<td class="parameter_description"><p>coefficient (1,1) of the transformation matrix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff_1_2</p></td>
+<td class="parameter_description"><p>coefficient (1,2) of the transformation matrix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff_2_0</p></td>
+<td class="parameter_description"><p>coefficient (2,0) of the transformation matrix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff_2_1</p></td>
+<td class="parameter_description"><p>coefficient (2,1) of the transformation matrix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff_2_2</p></td>
+<td class="parameter_description"><p>coefficient (2,2) of the transformation matrix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-item-transform-matrix.returns"></a><h4>Returns</h4>
+<p> The transformed item.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

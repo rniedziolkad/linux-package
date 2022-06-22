@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="GIMP Widgets Library Reference Manual" link="index.html" author="" name="libgimpwidgets" version="2" language="c">
+  <chapters>
+    <sub name="GIMP Widgets" link="libgimpwidgets-widgets.html">
+      <sub name="Object Hierarchy" link="libgimpwidgets-hierarchy.html"/>
+      <sub name="Widget Gallery" link="libgimpwidgets-gallery.html"/>
+      <sub name="GimpBrowser" link="GimpBrowser.html"/>
+      <sub name="GimpButton" link="GimpButton.html"/>
+      <sub name="GimpChainButton" link="GimpChainButton.html"/>
+      <sub name="GimpColorArea" link="GimpColorArea.html"/>
+      <sub name="GimpColorButton" link="GimpColorButton.html"/>
+      <sub name="GimpColorHexEntry" link="GimpColorHexEntry.html"/>
+      <sub name="GimpColorScale" link="GimpColorScale.html"/>
+      <sub name="GimpColorSelection" link="GimpColorSelection.html"/>
+      <sub name="GimpColorProfileChooserDialog" link="GimpColorProfileChooserDialog.html"/>
+      <sub name="GimpColorProfileStore" link="GimpColorProfileStore.html"/>
+      <sub name="GimpColorProfileComboBox" link="GimpColorProfileComboBox.html"/>
+      <sub name="GimpColorProfileView" link="GimpColorProfileView.html"/>
+      <sub name="GimpDialog" link="GimpDialog.html"/>
+      <sub name="GimpEnumStore" link="GimpEnumStore.html"/>
+      <sub name="GimpEnumComboBox" link="GimpEnumComboBox.html"/>
+      <sub name="GimpEnumLabel" link="GimpEnumLabel.html"/>
+      <sub name="GimpFileEntry" link="GimpFileEntry.html"/>
+      <sub name="GimpFrame" link="GimpFrame.html"/>
+      <sub name="GimpHintBox" link="GimpHintBox.html"/>
+      <sub name="GimpIntComboBox" link="GimpIntComboBox.html"/>
+      <sub name="GimpIntStore" link="GimpIntStore.html"/>
+      <sub name="GimpMemSizeEntry" link="GimpMemsizeEntry.html"/>
+      <sub name="GimpNumberPairEntry" link="GimpNumberPairEntry.html"/>
+      <sub name="GimpOffsetArea" link="GimpOffsetArea.html"/>
+      <sub name="GimpPageSelector" link="GimpPageSelector.html"/>
+      <sub name="GimpPathEditor" link="GimpPathEditor.html"/>
+      <sub name="GimpPickButton" link="GimpPickButton.html"/>
+      <sub name="GimpPreviewArea" link="GimpPreviewArea.html"/>
+      <sub name="GimpPreview" link="GimpPreview.html"/>
+      <sub name="GimpRuler" link="GimpRuler.html"/>
+      <sub name="GimpScrolledPreview" link="GimpScrolledPreview.html"/>
+      <sub name="GimpSizeEntry" link="GimpSizeEntry.html"/>
+      <sub name="GimpStringComboBox" link="GimpStringComboBox.html"/>
+      <sub name="GimpUnitStore" link="GimpUnitStore.html"/>
+      <sub name="GimpUnitComboBox" link="GimpUnitComboBox.html"/>
+      <sub name="GimpZoomModel" link="GimpZoomModel.html"/>
+    </sub>
+    <sub name="Cell Renderers for GtkTreeView" link="libgimpwidgets-cell-renderers.html">
+      <sub name="GimpCellRendererColor" link="GimpCellRendererColor.html"/>
+      <sub name="GimpCellRendererToggle" link="GimpCellRendererToggle.html"/>
+    </sub>
+    <sub name="GIMP Display Filters" link="libgimpwidgets-colordisplay.html">
+      <sub name="GimpColorDisplay" link="GimpColorDisplay.html"/>
+      <sub name="GimpColorDisplayStack" link="GimpColorDisplayStack.html"/>
+    </sub>
+    <sub name="GIMP Color Selectors" link="libgimpwidgets-colorselector.html">
+      <sub name="GimpColorSelector" link="GimpColorSelector.html"/>
+      <sub name="GimpColorNotebook" link="GimpColorNotebook.html"/>
+      <sub name="GimpColorScales" link="GimpColorScales.html"/>
+      <sub name="GimpColorSelect" link="GimpColorSelect.html"/>
+    </sub>
+    <sub name="GIMP Controllers" link="libgimpwidgets-controller.html">
+      <sub name="GimpController" link="GimpController.html"/>
+    </sub>
+    <sub name="GIMP Widgets Utilities" link="libgimpwidgets-utils.html">
+      <sub name="GimpCairo-utils" link="libgimpwidgets-GimpCairoUtils.html"/>
+      <sub name="GimpHelpUI" link="libgimpwidgets-GimpHelpUI.html"/>
+      <sub name="GimpQueryBox" link="libgimpwidgets-GimpQueryBox.html"/>
+      <sub name="GimpIcons" link="libgimpwidgets-GimpIcons.html"/>
+      <sub name="GimpEnumWidgets" link="libgimpwidgets-GimpEnumWidgets.html"/>
+      <sub name="GimpPropWidgets" link="libgimpwidgets-GimpPropWidgets.html"/>
+      <sub name="GimpWidgets" link="libgimpwidgets-GimpWidgets.html"/>
+      <sub name="GimpWidgetsUtils" link="libgimpwidgets-GimpWidgetsUtils.html"/>
+    </sub>
+    <sub name="Deprecated API" link="libgimpwidgets-deprecated.html">
+      <sub name="GimpOldWidgets" link="libgimpwidgets-GimpOldWidgets.html"/>
+      <sub name="GimpPixmap" link="GimpPixmap.html"/>
+      <sub name="GimpUnitMenu" link="GimpUnitMenu.html"/>
+    </sub>
+    <sub name="Index" link="api-index-full.html"/>
+    <sub name="Index of new symbols in GIMP 2.2" link="api-index-2-2.html"/>
+    <sub name="Index of new symbols in GIMP 2.4" link="api-index-2-4.html"/>
+    <sub name="Index of new symbols in GIMP 2.6" link="api-index-2-6.html"/>
+    <sub name="Index of new symbols in GIMP 2.8" link="api-index-2-8.html"/>
+    <sub name="Index of new symbols in GIMP 2.10" link="api-index-2-10.html"/>
+    <sub name="Index of new symbols in GIMP 2.10.4" link="api-index-2-10-4.html"/>
+    <sub name="Index of new symbols in GIMP 2.10.10" link="api-index-2-10-10.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprecated.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gimp_browser_new ()" link="GimpBrowser.html#gimp-browser-new" since="2.4"/>
+    <keyword type="function" name="gimp_browser_add_search_types ()" link="GimpBrowser.html#gimp-browser-add-search-types" since="2.4"/>
+    <keyword type="function" name="gimp_browser_set_widget ()" link="GimpBrowser.html#gimp-browser-set-widget" since="2.4"/>
+    <keyword type="function" name="gimp_browser_show_message ()" link="GimpBrowser.html#gimp-browser-show-message" since="2.4"/>
+    <keyword type="struct" name="GimpBrowser" link="GimpBrowser.html#GimpBrowser-struct"/>
+    <keyword type="signal" name="The “search” signal" link="GimpBrowser.html#GimpBrowser-search"/>
+    <keyword type="function" name="gimp_button_new ()" link="GimpButton.html#gimp-button-new"/>
+    <keyword type="function" name="gimp_button_extended_clicked ()" link="GimpButton.html#gimp-button-extended-clicked"/>
+    <keyword type="struct" name="GimpButton" link="GimpButton.html#GimpButton-struct"/>
+    <keyword type="signal" name="The “extended-clicked” signal" link="GimpButton.html#GimpButton-extended-clicked"/>
+    <keyword type="function" name="gimp_chain_button_new ()" link="GimpChainButton.html#gimp-chain-button-new"/>
+    <keyword type="function" name="gimp_chain_button_get_icon_size ()" link="GimpChainButton.html#gimp-chain-button-get-icon-size" since="2.10.10"/>
+    <keyword type="function" name="gimp_chain_button_set_icon_size ()" link="GimpChainButton.html#gimp-chain-button-set-icon-size" since="2.10.10"/>
+    <keyword type="function" name="gimp_chain_button_set_active ()" link="GimpChainButton.html#gimp-chain-button-set-active"/>
+    <keyword type="function" name="gimp_chain_button_get_active ()" link="GimpChainButton.html#gimp-chain-button-get-active"/>
+    <keyword type="struct" name="GimpChainButton" link="GimpChainButton.html#GimpChainButton-struct"/>
+    <keyword type="enum" name="enum GimpChainPosition" link="GimpChainButton.html#GimpChainPosition"/>
+    <keyword type="property" name="The “active” property" link="GimpChainButton.html#GimpChainButton--active"/>
+    <keyword type="property" name="The “icon-size” property" link="GimpChainButton.html#GimpChainButton--icon-size"/>
+    <keyword type="property" name="The “position” property" link="GimpChainButton.html#GimpChainButton--position"/>
+    <keyword type="signal" name="The “toggled” signal" link="GimpChainButton.html#GimpChainButton-toggled"/>
+    <keyword type="function" name="gimp_color_area_new ()" link="GimpColorArea.html#gimp-color-area-new"/>
+    <keyword type="function" name="gimp_color_area_set_color ()" link="GimpColorArea.html#gimp-color-area-set-color"/>
+    <keyword type="function" name="gimp_color_area_get_color ()" link="GimpColorArea.html#gimp-color-area-get-color"/>
+    <keyword type="function" name="gimp_color_area_has_alpha ()" link="GimpColorArea.html#gimp-color-area-has-alpha"/>
+    <keyword type="function" name="gimp_color_area_set_type ()" link="GimpColorArea.html#gimp-color-area-set-type"/>
+    <keyword type="function" name="gimp_color_area_set_draw_border ()" link="GimpColorArea.html#gimp-color-area-set-draw-border"/>
+    <keyword type="function" name="gimp_color_area_set_color_config ()" link="GimpColorArea.html#gimp-color-area-set-color-config" since="2.10"/>
+    <keyword type="struct" name="GimpColorArea" link="GimpColorArea.html#GimpColorArea-struct"/>
+    <keyword type="enum" name="enum GimpColorAreaType" link="GimpColorArea.html#GimpColorAreaType"/>
+    <keyword type="property" name="The “color” property" link="GimpColorArea.html#GimpColorArea--color"/>
+    <keyword type="property" name="The “drag-mask” property" link="GimpColorArea.html#GimpColorArea--drag-mask"/>
+    <keyword type="property" name="The “draw-border” property" link="GimpColorArea.html#GimpColorArea--draw-border"/>
+    <keyword type="property" name="The “type” property" link="GimpColorArea.html#GimpColorArea--type"/>
+    <keyword type="signal" name="The “color-changed” signal" link="GimpColorArea.html#GimpColorArea-color-changed"/>
+    <keyword type="function" name="gimp_color_button_new ()" link="GimpColorButton.html#gimp-color-button-new"/>
+    <keyword type="function" name="gimp_color_button_set_title ()" link="GimpColorButton.html#gimp-color-button-set-title" since="2.10"/>
+    <keyword type="function" name="gimp_color_button_get_title ()" link="GimpColorButton.html#gimp-color-button-get-title" since="2.10"/>
+    <keyword type="function" name="gimp_color_button_set_color ()" link="GimpColorButton.html#gimp-color-button-set-color"/>
+    <keyword type="function" name="gimp_color_button_get_color ()" link="GimpColorButton.html#gimp-color-button-get-color"/>
+    <keyword type="function" name="gimp_color_button_set_update ()" link="GimpColorButton.html#gimp-color-button-set-update"/>
+    <keyword type="function" name="gimp_color_button_get_update ()" link="GimpColorButton.html#gimp-color-button-get-update"/>
+    <keyword type="function" name="gimp_color_button_has_alpha ()" link="GimpColorButton.html#gimp-color-button-has-alpha"/>
+    <keyword type="function" name="gimp_color_button_set_type ()" link="GimpColorButton.html#gimp-color-button-set-type"/>
+    <keyword type="function" name="gimp_color_button_set_color_config ()" link="GimpColorButton.html#gimp-color-button-set-color-config" since="2.10"/>
+    <keyword type="function" name="gimp_color_button_get_ui_manager ()" link="GimpColorButton.html#gimp-color-button-get-ui-manager" since="2.10"/>
+    <keyword type="struct" name="GimpColorButton" link="GimpColorButton.html#GimpColorButton-struct"/>
+    <keyword type="property" name="The “area-height” property" link="GimpColorButton.html#GimpColorButton--area-height"/>
+    <keyword type="property" name="The “area-width” property" link="GimpColorButton.html#GimpColorButton--area-width"/>
+    <keyword type="property" name="The “color” property" link="GimpColorButton.html#GimpColorButton--color"/>
+    <keyword type="property" name="The “color-config” property" link="GimpColorButton.html#GimpColorButton--color-config"/>
+    <keyword type="property" name="The “continuous-update” property" link="GimpColorButton.html#GimpColorButton--continuous-update"/>
+    <keyword type="property" name="The “title” property" link="GimpColorButton.html#GimpColorButton--title"/>
+    <keyword type="property" name="The “type” property" link="GimpColorButton.html#GimpColorButton--type"/>
+    <keyword type="signal" name="The “color-changed” signal" link="GimpColorButton.html#GimpColorButton-color-changed"/>
+    <keyword type="function" name="gimp_color_hex_entry_new ()" link="GimpColorHexEntry.html#gimp-color-hex-entry-new" since="2.2"/>
+    <keyword type="function" name="gimp_color_hex_entry_set_color ()" link="GimpColorHexEntry.html#gimp-color-hex-entry-set-color" since="2.2"/>
+    <keyword type="function" name="gimp_color_hex_entry_get_color ()" link="GimpColorHexEntry.html#gimp-color-hex-entry-get-color" since="2.2"/>
+    <keyword type="struct" name="GimpColorHexEntry" link="GimpColorHexEntry.html#GimpColorHexEntry-struct"/>
+    <keyword type="signal" name="The “color-changed” signal" link="GimpColorHexEntry.html#GimpColorHexEntry-color-changed"/>
+    <keyword type="function" name="gimp_color_scale_new ()" link="GimpColorScale.html#gimp-color-scale-new"/>
+    <keyword type="function" name="gimp_color_scale_set_channel ()" link="GimpColorScale.html#gimp-color-scale-set-channel"/>
+    <keyword type="function" name="gimp_color_scale_set_color ()" link="GimpColorScale.html#gimp-color-scale-set-color"/>
+    <keyword type="function" name="gimp_color_scale_set_color_config ()" link="GimpColorScale.html#gimp-color-scale-set-color-config" since="2.10"/>
+    <keyword type="struct" name="GimpColorScale" link="GimpColorScale.html#GimpColorScale-struct"/>
+    <keyword type="property" name="The “channel” property" link="GimpColorScale.html#GimpColorScale--channel"/>
+    <keyword type="function" name="gimp_color_selection_new ()" link="GimpColorSelection.html#gimp-color-selection-new"/>
+    <keyword type="function" name="gimp_color_selection_set_show_alpha ()" link="GimpColorSelection.html#gimp-color-selection-set-show-alpha"/>
+    <keyword type="function" name="gimp_color_selection_get_show_alpha ()" link="GimpColorSelection.html#gimp-color-selection-get-show-alpha"/>
+    <keyword type="function" name="gimp_color_selection_set_color ()" link="GimpColorSelection.html#gimp-color-selection-set-color"/>
+    <keyword type="function" name="gimp_color_selection_get_color ()" link="GimpColorSelection.html#gimp-color-selection-get-color"/>
+    <keyword type="function" name="gimp_color_selection_set_old_color ()" link="GimpColorSelection.html#gimp-color-selection-set-old-color"/>
+    <keyword type="function" name="gimp_color_selection_get_old_color ()" link="GimpColorSelection.html#gimp-color-selection-get-old-color"/>
+    <keyword type="function" name="gimp_color_selection_reset ()" link="GimpColorSelection.html#gimp-color-selection-reset"/>
+    <keyword type="function" name="gimp_color_selection_color_changed ()" link="GimpColorSelection.html#gimp-color-selection-color-changed"/>
+    <keyword type="function" name="gimp_color_selection_set_config ()" link="GimpColorSelection.html#gimp-color-selection-set-config" since="2.4"/>
+    <keyword type="struct" name="GimpColorSelection" link="GimpColorSelection.html#GimpColorSelection-struct"/>
+    <keyword type="property" name="The “config” property" link="GimpColorSelection.html#GimpColorSelection--config"/>
+    <keyword type="signal" name="The “color-changed” signal" link="GimpColorSelection.html#GimpColorSelection-color-changed"/>
+    <keyword type="function" name="gimp_color_profile_chooser_dialog_new ()" link="GimpColorProfileChooserDialog.html#gimp-color-profile-chooser-dialog-new"/>
+    <keyword type="function" name="gimp_color_profile_store_new ()" link="GimpColorProfileStore.html#gimp-color-profile-store-new" since="2.4"/>
+    <keyword type="function" name="gimp_color_profile_store_add ()" link="GimpColorProfileStore.html#gimp-color-profile-store-add" deprecated="use gimp_color_profile_store_add_file() instead." since="2.4"/>
+    <keyword type="function" name="gimp_color_profile_store_add_file ()" link="GimpColorProfileStore.html#gimp-color-profile-store-add-file" since="2.10"/>
+    <keyword type="struct" name="GimpColorProfileStore" link="GimpColorProfileStore.html#GimpColorProfileStore-struct"/>
+    <keyword type="property" name="The “history” property" link="GimpColorProfileStore.html#GimpColorProfileStore--history"/>
+    <keyword type="function" name="gimp_color_profile_combo_box_new ()" link="GimpColorProfileComboBox.html#gimp-color-profile-combo-box-new" since="2.4"/>
+    <keyword type="function" name="gimp_color_profile_combo_box_new_with_model ()" link="GimpColorProfileComboBox.html#gimp-color-profile-combo-box-new-with-model" since="2.4"/>
+    <keyword type="function" name="gimp_color_profile_combo_box_add ()" link="GimpColorProfileComboBox.html#gimp-color-profile-combo-box-add" deprecated="use gimp_color_profile_combo_box_add_file() instead." since="2.4"/>
+    <keyword type="function" name="gimp_color_profile_combo_box_add_file ()" link="GimpColorProfileComboBox.html#gimp-color-profile-combo-box-add-file" since="2.10"/>
+    <keyword type="function" name="gimp_color_profile_combo_box_set_active ()" link="GimpColorProfileComboBox.html#gimp-color-profile-combo-box-set-active" deprecated="use gimp_color_profile_combo_box_set_active_file() instead." since="2.4"/>
+    <keyword type="function" name="gimp_color_profile_combo_box_set_active_file ()" link="GimpColorProfileComboBox.html#gimp-color-profile-combo-box-set-active-file" since="2.10"/>
+    <keyword type="function" name="gimp_color_profile_combo_box_get_active ()" link="GimpColorProfileComboBox.html#gimp-color-profile-combo-box-get-active" deprecated="use gimp_color_profile_combo_box_get_active_file() instead." since="2.4"/>
+    <keyword type="function" name="gimp_color_profile_combo_box_get_active_file ()" link="GimpColorProfileComboBox.html#gimp-color-profile-combo-box-get-active-file" since="2.10"/>
+    <keyword type="struct" name="GimpColorProfileComboBox" link="GimpColorProfileComboBox.html#GimpColorProfileComboBox-struct"/>
+    <keyword type="property" name="The “dialog” property" link="GimpColorProfileComboBox.html#GimpColorProfileComboBox--dialog"/>
+    <keyword type="property" name="The “model” property" link="GimpColorProfileComboBox.html#GimpColorProfileComboBox--model"/>
+    <keyword type="function" name="gimp_color_profile_view_new ()" link="GimpColorProfileView.html#gimp-color-profile-view-new"/>
+    <keyword type="function" name="gimp_color_profile_view_set_profile ()" link="GimpColorProfileView.html#gimp-color-profile-view-set-profile"/>
+    <keyword type="function" name="gimp_color_profile_view_set_error ()" link="GimpColorProfileView.html#gimp-color-profile-view-set-error"/>
+    <keyword type="function" name="gimp_dialog_new ()" link="GimpDialog.html#gimp-dialog-new"/>
+    <keyword type="function" name="gimp_dialog_new_valist ()" link="GimpDialog.html#gimp-dialog-new-valist"/>
+    <keyword type="function" name="gimp_dialog_add_button ()" link="GimpDialog.html#gimp-dialog-add-button"/>
+    <keyword type="function" name="gimp_dialog_add_buttons ()" link="GimpDialog.html#gimp-dialog-add-buttons"/>
+    <keyword type="function" name="gimp_dialog_add_buttons_valist ()" link="GimpDialog.html#gimp-dialog-add-buttons-valist"/>
+    <keyword type="function" name="gimp_dialog_run ()" link="GimpDialog.html#gimp-dialog-run"/>
+    <keyword type="function" name="gimp_dialogs_show_help_button ()" link="GimpDialog.html#gimp-dialogs-show-help-button" since="2.2"/>
+    <keyword type="struct" name="GimpDialog" link="GimpDialog.html#GimpDialog-struct"/>
+    <keyword type="property" name="The “help-func” property" link="GimpDialog.html#GimpDialog--help-func"/>
+    <keyword type="property" name="The “help-id” property" link="GimpDialog.html#GimpDialog--help-id"/>
+    <keyword type="property" name="The “parent” property" link="GimpDialog.html#GimpDialog--parent"/>
+    <keyword type="function" name="gimp_enum_store_new ()" link="GimpEnumStore.html#gimp-enum-store-new" since="2.4"/>
+    <keyword type="function" name="gimp_enum_store_new_with_range ()" link="GimpEnumStore.html#gimp-enum-store-new-with-range" since="2.4"/>
+    <keyword type="function" name="gimp_enum_store_new_with_values ()" link="GimpEnumStore.html#gimp-enum-store-new-with-values" since="2.4"/>
+    <keyword type="function" name="gimp_enum_store_new_with_values_valist ()" link="GimpEnumStore.html#gimp-enum-store-new-with-values-valist" since="2.4"/>
+    <keyword type="function" name="gimp_enum_store_set_stock_prefix ()" link="GimpEnumStore.html#gimp-enum-store-set-stock-prefix" deprecated="GIMP 2.10" since="2.4"/>
+    <keyword type="function" name="gimp_enum_store_set_icon_prefix ()" link="GimpEnumStore.html#gimp-enum-store-set-icon-prefix" since="2.10"/>
+    <keyword type="struct" name="GimpEnumStore" link="GimpEnumStore.html#GimpEnumStore-struct"/>
+    <keyword type="property" name="The “enum-type” property" link="GimpEnumStore.html#GimpEnumStore--enum-type"/>
+    <keyword type="function" name="gimp_enum_combo_box_new ()" link="GimpEnumComboBox.html#gimp-enum-combo-box-new" since="2.4"/>
+    <keyword type="function" name="gimp_enum_combo_box_new_with_model ()" link="GimpEnumComboBox.html#gimp-enum-combo-box-new-with-model" since="2.4"/>
+    <keyword type="function" name="gimp_enum_combo_box_set_stock_prefix ()" link="GimpEnumComboBox.html#gimp-enum-combo-box-set-stock-prefix" deprecated="GIMP 2.10" since="2.4"/>
+    <keyword type="function" name="gimp_enum_combo_box_set_icon_prefix ()" link="GimpEnumComboBox.html#gimp-enum-combo-box-set-icon-prefix" since="2.10"/>
+    <keyword type="struct" name="GimpEnumComboBox" link="GimpEnumComboBox.html#GimpEnumComboBox-struct"/>
+    <keyword type="property" name="The “model” property" link="GimpEnumComboBox.html#GimpEnumComboBox--model"/>
+    <keyword type="function" name="gimp_enum_label_new ()" link="GimpEnumLabel.html#gimp-enum-label-new" since="2.4"/>
+    <keyword type="function" name="gimp_enum_label_set_value ()" link="GimpEnumLabel.html#gimp-enum-label-set-value" since="2.4"/>
+    <keyword type="struct" name="GimpEnumLabel" link="GimpEnumLabel.html#GimpEnumLabel-struct"/>
+    <keyword type="property" name="The “enum-type” property" link="GimpEnumLabel.html#GimpEnumLabel--enum-type"/>
+    <keyword type="property" name="The “enum-value” property" link="GimpEnumLabel.html#GimpEnumLabel--enum-value"/>
+    <keyword type="function" name="gimp_file_entry_new ()" link="GimpFileEntry.html#gimp-file-entry-new" deprecated=""/>
+    <keyword type="function" name="gimp_file_entry_get_filename ()" link="GimpFileEntry.html#gimp-file-entry-get-filename" deprecated=""/>
+    <keyword type="function" name="gimp_file_entry_set_filename ()" link="GimpFileEntry.html#gimp-file-entry-set-filename" deprecated=""/>
+    <keyword type="struct" name="GimpFileEntry" link="GimpFileEntry.html#GimpFileEntry-struct"/>
+    <keyword type="signal" name="The “filename-changed” signal" link="GimpFileEntry.html#GimpFileEntry-filename-changed"/>
+    <keyword type="function" name="gimp_frame_new ()" link="GimpFrame.html#gimp-frame-new" since="2.2"/>
+    <keyword type="struct" name="GimpFrame" link="GimpFrame.html#GimpFrame-struct"/>
+    <keyword type="property" name="The “label-bold” style property" link="GimpFrame.html#GimpFrame--s-label-bold"/>
+    <keyword type="property" name="The “label-spacing” style property" link="GimpFrame.html#GimpFrame--s-label-spacing"/>
+    <keyword type="function" name="gimp_hint_box_new ()" link="GimpHintBox.html#gimp-hint-box-new"/>
+    <keyword type="struct" name="GimpHintBox" link="GimpHintBox.html#GimpHintBox-struct"/>
+    <keyword type="property" name="The “hint” property" link="GimpHintBox.html#GimpHintBox--hint"/>
+    <keyword type="property" name="The “icon-name” property" link="GimpHintBox.html#GimpHintBox--icon-name"/>
+    <keyword type="property" name="The “stock-id” property" link="GimpHintBox.html#GimpHintBox--stock-id"/>
+    <keyword type="function" name="GimpIntSensitivityFunc ()" link="GimpIntComboBox.html#GimpIntSensitivityFunc"/>
+    <keyword type="function" name="gimp_int_combo_box_new ()" link="GimpIntComboBox.html#gimp-int-combo-box-new" since="2.2"/>
+    <keyword type="function" name="gimp_int_combo_box_new_valist ()" link="GimpIntComboBox.html#gimp-int-combo-box-new-valist" since="2.2"/>
+    <keyword type="function" name="gimp_int_combo_box_new_array ()" link="GimpIntComboBox.html#gimp-int-combo-box-new-array" since="2.2"/>
+    <keyword type="function" name="gimp_int_combo_box_prepend ()" link="GimpIntComboBox.html#gimp-int-combo-box-prepend" since="2.2"/>
+    <keyword type="function" name="gimp_int_combo_box_append ()" link="GimpIntComboBox.html#gimp-int-combo-box-append" since="2.2"/>
+    <keyword type="function" name="gimp_int_combo_box_set_active ()" link="GimpIntComboBox.html#gimp-int-combo-box-set-active" since="2.2"/>
+    <keyword type="function" name="gimp_int_combo_box_get_active ()" link="GimpIntComboBox.html#gimp-int-combo-box-get-active" since="2.2"/>
+    <keyword type="function" name="gimp_int_combo_box_set_active_by_user_data ()" link="GimpIntComboBox.html#gimp-int-combo-box-set-active-by-user-data" since="2.10"/>
+    <keyword type="function" name="gimp_int_combo_box_get_active_user_data ()" link="GimpIntComboBox.html#gimp-int-combo-box-get-active-user-data" since="2.10"/>
+    <keyword type="function" name="gimp_int_combo_box_set_label ()" link="GimpIntComboBox.html#gimp-int-combo-box-set-label" since="2.10"/>
+    <keyword type="function" name="gimp_int_combo_box_get_label ()" link="GimpIntComboBox.html#gimp-int-combo-box-get-label" since="2.10"/>
+    <keyword type="function" name="gimp_int_combo_box_set_layout ()" link="GimpIntComboBox.html#gimp-int-combo-box-set-layout" since="2.10"/>
+    <keyword type="function" name="gimp_int_combo_box_get_layout ()" link="GimpIntComboBox.html#gimp-int-combo-box-get-layout" since="2.10"/>
+    <keyword type="function" name="gimp_int_combo_box_connect ()" link="GimpIntComboBox.html#gimp-int-combo-box-connect" since="2.2"/>
+    <keyword type="function" name="gimp_int_combo_box_set_sensitivity ()" link="GimpIntComboBox.html#gimp-int-combo-box-set-sensitivity" since="2.4"/>
+    <keyword type="struct" name="GimpIntComboBox" link="GimpIntComboBox.html#GimpIntComboBox-struct"/>
+    <keyword type="enum" name="enum GimpIntComboBoxLayout" link="GimpIntComboBox.html#GimpIntComboBoxLayout" since="2.10"/>
+    <keyword type="property" name="The “ellipsize” property" link="GimpIntComboBox.html#GimpIntComboBox--ellipsize"/>
+    <keyword type="property" name="The “label” property" link="GimpIntComboBox.html#GimpIntComboBox--label"/>
+    <keyword type="property" name="The “layout” property" link="GimpIntComboBox.html#GimpIntComboBox--layout"/>
+    <keyword type="function" name="gimp_int_store_new ()" link="GimpIntStore.html#gimp-int-store-new" since="2.2"/>
+    <keyword type="function" name="gimp_int_store_lookup_by_value ()" link="GimpIntStore.html#gimp-int-store-lookup-by-value" since="2.2"/>
+    <keyword type="function" name="gimp_int_store_lookup_by_user_data ()" link="GimpIntStore.html#gimp-int-store-lookup-by-user-data" since="2.10"/>
+    <keyword type="struct" name="GimpIntStore" link="GimpIntStore.html#GimpIntStore-struct"/>
+    <keyword type="enum" name="enum GimpIntStoreColumns" link="GimpIntStore.html#GimpIntStoreColumns"/>
+    <keyword type="property" name="The “user-data-type” property" link="GimpIntStore.html#GimpIntStore--user-data-type"/>
+    <keyword type="function" name="gimp_memsize_entry_new ()" link="GimpMemsizeEntry.html#gimp-memsize-entry-new"/>
+    <keyword type="function" name="gimp_memsize_entry_set_value ()" link="GimpMemsizeEntry.html#gimp-memsize-entry-set-value"/>
+    <keyword type="function" name="gimp_memsize_entry_get_value ()" link="GimpMemsizeEntry.html#gimp-memsize-entry-get-value"/>
+    <keyword type="struct" name="GimpMemsizeEntry" link="GimpMemsizeEntry.html#GimpMemsizeEntry-struct"/>
+    <keyword type="signal" name="The “value-changed” signal" link="GimpMemsizeEntry.html#GimpMemsizeEntry-value-changed"/>
+    <keyword type="function" name="gimp_number_pair_entry_new ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-new" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_set_default_values ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-set-default-values" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_get_default_values ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-get-default-values" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_set_values ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-set-values" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_get_values ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-get-values" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_get_aspect ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-get-aspect" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_set_aspect ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-set-aspect" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_get_ratio ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-get-ratio" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_set_ratio ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-set-ratio" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_get_user_override ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-get-user-override" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_set_user_override ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-set-user-override" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_get_default_text ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-get-default-text" since="2.4"/>
+    <keyword type="function" name="gimp_number_pair_entry_set_default_text ()" link="GimpNumberPairEntry.html#gimp-number-pair-entry-set-default-text" since="2.4"/>
+    <keyword type="struct" name="GimpNumberPairEntry" link="GimpNumberPairEntry.html#GimpNumberPairEntry-struct"/>
+    <keyword type="enum" name="enum GimpAspectType" link="GimpNumberPairEntry.html#GimpAspectType"/>
+    <keyword type="property" name="The “allow-simplification” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--allow-simplification"/>
+    <keyword type="property" name="The “aspect” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--aspect"/>
+    <keyword type="property" name="The “default-left-number” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--default-left-number"/>
+    <keyword type="property" name="The “default-right-number” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--default-right-number"/>
+    <keyword type="property" name="The “default-text” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--default-text"/>
+    <keyword type="property" name="The “left-number” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--left-number"/>
+    <keyword type="property" name="The “max-valid-value” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--max-valid-value"/>
+    <keyword type="property" name="The “min-valid-value” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--min-valid-value"/>
+    <keyword type="property" name="The “ratio” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--ratio"/>
+    <keyword type="property" name="The “right-number” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--right-number"/>
+    <keyword type="property" name="The “separators” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--separators"/>
+    <keyword type="property" name="The “user-override” property" link="GimpNumberPairEntry.html#GimpNumberPairEntry--user-override"/>
+    <keyword type="signal" name="The “numbers-changed” signal" link="GimpNumberPairEntry.html#GimpNumberPairEntry-numbers-changed"/>
+    <keyword type="signal" name="The “ratio-changed” signal" link="GimpNumberPairEntry.html#GimpNumberPairEntry-ratio-changed"/>
+    <keyword type="function" name="gimp_offset_area_new ()" link="GimpOffsetArea.html#gimp-offset-area-new"/>
+    <keyword type="function" name="gimp_offset_area_set_size ()" link="GimpOffsetArea.html#gimp-offset-area-set-size"/>
+    <keyword type="function" name="gimp_offset_area_set_offsets ()" link="GimpOffsetArea.html#gimp-offset-area-set-offsets"/>
+    <keyword type="function" name="gimp_offset_area_set_pixbuf ()" link="GimpOffsetArea.html#gimp-offset-area-set-pixbuf" since="2.2"/>
+    <keyword type="struct" name="GimpOffsetArea" link="GimpOffsetArea.html#GimpOffsetArea-struct"/>
+    <keyword type="signal" name="The “offsets-changed” signal" link="GimpOffsetArea.html#GimpOffsetArea-offsets-changed"/>
+    <keyword type="function" name="gimp_page_selector_new ()" link="GimpPageSelector.html#gimp-page-selector-new" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_set_n_pages ()" link="GimpPageSelector.html#gimp-page-selector-set-n-pages" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_get_n_pages ()" link="GimpPageSelector.html#gimp-page-selector-get-n-pages" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_set_target ()" link="GimpPageSelector.html#gimp-page-selector-set-target" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_get_target ()" link="GimpPageSelector.html#gimp-page-selector-get-target" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_set_page_thumbnail ()" link="GimpPageSelector.html#gimp-page-selector-set-page-thumbnail" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_get_page_thumbnail ()" link="GimpPageSelector.html#gimp-page-selector-get-page-thumbnail" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_set_page_label ()" link="GimpPageSelector.html#gimp-page-selector-set-page-label" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_get_page_label ()" link="GimpPageSelector.html#gimp-page-selector-get-page-label" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_select_all ()" link="GimpPageSelector.html#gimp-page-selector-select-all" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_unselect_all ()" link="GimpPageSelector.html#gimp-page-selector-unselect-all" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_select_page ()" link="GimpPageSelector.html#gimp-page-selector-select-page" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_unselect_page ()" link="GimpPageSelector.html#gimp-page-selector-unselect-page" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_page_is_selected ()" link="GimpPageSelector.html#gimp-page-selector-page-is-selected" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_get_selected_pages ()" link="GimpPageSelector.html#gimp-page-selector-get-selected-pages" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_select_range ()" link="GimpPageSelector.html#gimp-page-selector-select-range" since="2.4"/>
+    <keyword type="function" name="gimp_page_selector_get_selected_range ()" link="GimpPageSelector.html#gimp-page-selector-get-selected-range" since="2.4"/>
+    <keyword type="struct" name="GimpPageSelector" link="GimpPageSelector.html#GimpPageSelector-struct"/>
+    <keyword type="enum" name="enum GimpPageSelectorTarget" link="GimpPageSelector.html#GimpPageSelectorTarget"/>
+    <keyword type="property" name="The “n-pages” property" link="GimpPageSelector.html#GimpPageSelector--n-pages"/>
+    <keyword type="property" name="The “target” property" link="GimpPageSelector.html#GimpPageSelector--target"/>
+    <keyword type="signal" name="The “activate” signal" link="GimpPageSelector.html#GimpPageSelector-activate"/>
+    <keyword type="signal" name="The “selection-changed” signal" link="GimpPageSelector.html#GimpPageSelector-selection-changed"/>
+    <keyword type="function" name="gimp_path_editor_new ()" link="GimpPathEditor.html#gimp-path-editor-new"/>
+    <keyword type="function" name="gimp_path_editor_get_path ()" link="GimpPathEditor.html#gimp-path-editor-get-path"/>
+    <keyword type="function" name="gimp_path_editor_set_path ()" link="GimpPathEditor.html#gimp-path-editor-set-path"/>
+    <keyword type="function" name="gimp_path_editor_get_writable_path ()" link="GimpPathEditor.html#gimp-path-editor-get-writable-path"/>
+    <keyword type="function" name="gimp_path_editor_set_writable_path ()" link="GimpPathEditor.html#gimp-path-editor-set-writable-path"/>
+    <keyword type="function" name="gimp_path_editor_get_dir_writable ()" link="GimpPathEditor.html#gimp-path-editor-get-dir-writable"/>
+    <keyword type="function" name="gimp_path_editor_set_dir_writable ()" link="GimpPathEditor.html#gimp-path-editor-set-dir-writable"/>
+    <keyword type="struct" name="GimpPathEditor" link="GimpPathEditor.html#GimpPathEditor-struct"/>
+    <keyword type="signal" name="The “path-changed” signal" link="GimpPathEditor.html#GimpPathEditor-path-changed"/>
+    <keyword type="signal" name="The “writable-changed” signal" link="GimpPathEditor.html#GimpPathEditor-writable-changed"/>
+    <keyword type="function" name="gimp_pick_button_new ()" link="GimpPickButton.html#gimp-pick-button-new"/>
+    <keyword type="struct" name="GimpPickButton" link="GimpPickButton.html#GimpPickButton-struct"/>
+    <keyword type="signal" name="The “color-picked” signal" link="GimpPickButton.html#GimpPickButton-color-picked"/>
+    <keyword type="function" name="gimp_preview_area_new ()" link="GimpPreviewArea.html#gimp-preview-area-new"/>
+    <keyword type="function" name="gimp_preview_area_draw ()" link="GimpPreviewArea.html#gimp-preview-area-draw"/>
+    <keyword type="function" name="gimp_preview_area_fill ()" link="GimpPreviewArea.html#gimp-preview-area-fill"/>
+    <keyword type="function" name="gimp_preview_area_blend ()" link="GimpPreviewArea.html#gimp-preview-area-blend"/>
+    <keyword type="function" name="gimp_preview_area_mask ()" link="GimpPreviewArea.html#gimp-preview-area-mask"/>
+    <keyword type="function" name="gimp_preview_area_set_offsets ()" link="GimpPreviewArea.html#gimp-preview-area-set-offsets" since="2.2"/>
+    <keyword type="function" name="gimp_preview_area_set_colormap ()" link="GimpPreviewArea.html#gimp-preview-area-set-colormap"/>
+    <keyword type="function" name="gimp_preview_area_set_max_size ()" link="GimpPreviewArea.html#gimp-preview-area-set-max-size" since="2.2"/>
+    <keyword type="function" name="gimp_preview_area_menu_popup ()" link="GimpPreviewArea.html#gimp-preview-area-menu-popup" since="2.2"/>
+    <keyword type="function" name="gimp_preview_area_set_color_config ()" link="GimpPreviewArea.html#gimp-preview-area-set-color-config" since="2.10"/>
+    <keyword type="struct" name="GimpPreviewArea" link="GimpPreviewArea.html#GimpPreviewArea-struct"/>
+    <keyword type="property" name="The “check-size” property" link="GimpPreviewArea.html#GimpPreviewArea--check-size"/>
+    <keyword type="property" name="The “check-type” property" link="GimpPreviewArea.html#GimpPreviewArea--check-type"/>
+    <keyword type="function" name="gimp_preview_get_update ()" link="GimpPreview.html#gimp-preview-get-update" since="2.2"/>
+    <keyword type="function" name="gimp_preview_set_update ()" link="GimpPreview.html#gimp-preview-set-update" since="2.2"/>
+    <keyword type="function" name="gimp_preview_set_bounds ()" link="GimpPreview.html#gimp-preview-set-bounds" since="2.2"/>
+    <keyword type="function" name="gimp_preview_get_size ()" link="GimpPreview.html#gimp-preview-get-size" since="2.2"/>
+    <keyword type="function" name="gimp_preview_get_position ()" link="GimpPreview.html#gimp-preview-get-position" since="2.2"/>
+    <keyword type="function" name="gimp_preview_transform ()" link="GimpPreview.html#gimp-preview-transform" since="2.4"/>
+    <keyword type="function" name="gimp_preview_untransform ()" link="GimpPreview.html#gimp-preview-untransform" since="2.4"/>
+    <keyword type="function" name="gimp_preview_get_area ()" link="GimpPreview.html#gimp-preview-get-area" since="2.4"/>
+    <keyword type="function" name="gimp_preview_draw ()" link="GimpPreview.html#gimp-preview-draw" since="2.2"/>
+    <keyword type="function" name="gimp_preview_draw_buffer ()" link="GimpPreview.html#gimp-preview-draw-buffer" since="2.2"/>
+    <keyword type="function" name="gimp_preview_invalidate ()" link="GimpPreview.html#gimp-preview-invalidate" since="2.2"/>
+    <keyword type="function" name="gimp_preview_set_default_cursor ()" link="GimpPreview.html#gimp-preview-set-default-cursor" since="2.2"/>
+    <keyword type="function" name="gimp_preview_get_controls ()" link="GimpPreview.html#gimp-preview-get-controls" since="2.4"/>
+    <keyword type="struct" name="GimpPreview" link="GimpPreview.html#GimpPreview-struct"/>
+    <keyword type="property" name="The “update” property" link="GimpPreview.html#GimpPreview--update"/>
+    <keyword type="property" name="The “size” style property" link="GimpPreview.html#GimpPreview--s-size"/>
+    <keyword type="signal" name="The “invalidated” signal" link="GimpPreview.html#GimpPreview-invalidated"/>
+    <keyword type="function" name="gimp_ruler_new ()" link="GimpRuler.html#gimp-ruler-new" since="2.8"/>
+    <keyword type="function" name="gimp_ruler_set_unit ()" link="GimpRuler.html#gimp-ruler-set-unit" since="2.8"/>
+    <keyword type="function" name="gimp_ruler_get_unit ()" link="GimpRuler.html#gimp-ruler-get-unit" since="2.8"/>
+    <keyword type="function" name="gimp_ruler_set_position ()" link="GimpRuler.html#gimp-ruler-set-position" since="2.8"/>
+    <keyword type="function" name="gimp_ruler_get_position ()" link="GimpRuler.html#gimp-ruler-get-position" since="2.8"/>
+    <keyword type="function" name="gimp_ruler_set_range ()" link="GimpRuler.html#gimp-ruler-set-range" since="2.8"/>
+    <keyword type="function" name="gimp_ruler_get_range ()" link="GimpRuler.html#gimp-ruler-get-range" since="2.8"/>
+    <keyword type="function" name="gimp_ruler_add_track_widget ()" link="GimpRuler.html#gimp-ruler-add-track-widget" since="2.8"/>
+    <keyword type="function" name="gimp_ruler_remove_track_widget ()" link="GimpRuler.html#gimp-ruler-remove-track-widget" since="2.8"/>
+    <keyword type="struct" name="GimpRuler" link="GimpRuler.html#GimpRuler-struct"/>
+    <keyword type="property" name="The “lower” property" link="GimpRuler.html#GimpRuler--lower"/>
+    <keyword type="property" name="The “max-size” property" link="GimpRuler.html#GimpRuler--max-size"/>
+    <keyword type="property" name="The “orientation” property" link="GimpRuler.html#GimpRuler--orientation"/>
+    <keyword type="property" name="The “position” property" link="GimpRuler.html#GimpRuler--position"/>
+    <keyword type="property" name="The “unit” property" link="GimpRuler.html#GimpRuler--unit"/>
+    <keyword type="property" name="The “upper” property" link="GimpRuler.html#GimpRuler--upper"/>
+    <keyword type="property" name="The “font-scale” style property" link="GimpRuler.html#GimpRuler--s-font-scale"/>
+    <keyword type="function" name="gimp_scrolled_preview_set_position ()" link="GimpScrolledPreview.html#gimp-scrolled-preview-set-position" since="2.4"/>
+    <keyword type="function" name="gimp_scrolled_preview_set_policy ()" link="GimpScrolledPreview.html#gimp-scrolled-preview-set-policy" since="2.4"/>
+    <keyword type="function" name="gimp_scrolled_preview_freeze ()" link="GimpScrolledPreview.html#gimp-scrolled-preview-freeze" since="2.4"/>
+    <keyword type="function" name="gimp_scrolled_preview_thaw ()" link="GimpScrolledPreview.html#gimp-scrolled-preview-thaw" since="2.4"/>
+    <keyword type="struct" name="GimpScrolledPreview" link="GimpScrolledPreview.html#GimpScrolledPreview-struct"/>
+    <keyword type="function" name="gimp_size_entry_new ()" link="GimpSizeEntry.html#gimp-size-entry-new"/>
+    <keyword type="function" name="gimp_size_entry_add_field ()" link="GimpSizeEntry.html#gimp-size-entry-add-field"/>
+    <keyword type="function" name="gimp_size_entry_attach_label ()" link="GimpSizeEntry.html#gimp-size-entry-attach-label"/>
+    <keyword type="function" name="gimp_size_entry_set_resolution ()" link="GimpSizeEntry.html#gimp-size-entry-set-resolution"/>
+    <keyword type="function" name="gimp_size_entry_set_size ()" link="GimpSizeEntry.html#gimp-size-entry-set-size"/>
+    <keyword type="function" name="gimp_size_entry_set_value_boundaries ()" link="GimpSizeEntry.html#gimp-size-entry-set-value-boundaries"/>
+    <keyword type="function" name="gimp_size_entry_get_value ()" link="GimpSizeEntry.html#gimp-size-entry-get-value"/>
+    <keyword type="function" name="gimp_size_entry_set_value ()" link="GimpSizeEntry.html#gimp-size-entry-set-value"/>
+    <keyword type="function" name="gimp_size_entry_set_refval_boundaries ()" link="GimpSizeEntry.html#gimp-size-entry-set-refval-boundaries"/>
+    <keyword type="function" name="gimp_size_entry_set_refval_digits ()" link="GimpSizeEntry.html#gimp-size-entry-set-refval-digits"/>
+    <keyword type="function" name="gimp_size_entry_get_refval ()" link="GimpSizeEntry.html#gimp-size-entry-get-refval"/>
+    <keyword type="function" name="gimp_size_entry_set_refval ()" link="GimpSizeEntry.html#gimp-size-entry-set-refval"/>
+    <keyword type="function" name="gimp_size_entry_get_unit ()" link="GimpSizeEntry.html#gimp-size-entry-get-unit"/>
+    <keyword type="function" name="gimp_size_entry_set_unit ()" link="GimpSizeEntry.html#gimp-size-entry-set-unit"/>
+    <keyword type="function" name="gimp_size_entry_set_pixel_digits ()" link="GimpSizeEntry.html#gimp-size-entry-set-pixel-digits"/>
+    <keyword type="function" name="gimp_size_entry_show_unit_menu ()" link="GimpSizeEntry.html#gimp-size-entry-show-unit-menu" since="2.4"/>
+    <keyword type="function" name="gimp_size_entry_grab_focus ()" link="GimpSizeEntry.html#gimp-size-entry-grab-focus"/>
+    <keyword type="function" name="gimp_size_entry_set_activates_default ()" link="GimpSizeEntry.html#gimp-size-entry-set-activates-default" since="2.4"/>
+    <keyword type="function" name="gimp_size_entry_get_help_widget ()" link="GimpSizeEntry.html#gimp-size-entry-get-help-widget"/>
+    <keyword type="struct" name="GimpSizeEntry" link="GimpSizeEntry.html#GimpSizeEntry-struct"/>
+    <keyword type="struct" name="GimpSizeEntryField" link="GimpSizeEntry.html#GimpSizeEntryField"/>
+    <keyword type="enum" name="enum GimpSizeEntryUpdatePolicy" link="GimpSizeEntry.html#GimpSizeEntryUpdatePolicy"/>
+    <keyword type="signal" name="The “refval-changed” signal" link="GimpSizeEntry.html#GimpSizeEntry-refval-changed"/>
+    <keyword type="signal" name="The “unit-changed” signal" link="GimpSizeEntry.html#GimpSizeEntry-unit-changed"/>
+    <keyword type="signal" name="The “value-changed” signal" link="GimpSizeEntry.html#GimpSizeEntry-value-changed"/>
+    <keyword type="function" name="gimp_string_combo_box_new ()" link="GimpStringComboBox.html#gimp-string-combo-box-new" since="2.4"/>
+    <keyword type="function" name="gimp_string_combo_box_set_active ()" link="GimpStringComboBox.html#gimp-string-combo-box-set-active" since="2.4"/>
+    <keyword type="function" name="gimp_string_combo_box_get_active ()" link="GimpStringComboBox.html#gimp-string-combo-box-get-active" since="2.4"/>
+    <keyword type="struct" name="GimpStringComboBox" link="GimpStringComboBox.html#GimpStringComboBox-struct"/>
+    <keyword type="property" name="The “ellipsize” property" link="GimpStringComboBox.html#GimpStringComboBox--ellipsize"/>
+    <keyword type="property" name="The “id-column” property" link="GimpStringComboBox.html#GimpStringComboBox--id-column"/>
+    <keyword type="property" name="The “label-column” property" link="GimpStringComboBox.html#GimpStringComboBox--label-column"/>
+    <keyword type="function" name="gimp_unit_store_new ()" link="GimpUnitStore.html#gimp-unit-store-new"/>
+    <keyword type="function" name="gimp_unit_store_set_has_pixels ()" link="GimpUnitStore.html#gimp-unit-store-set-has-pixels"/>
+    <keyword type="function" name="gimp_unit_store_get_has_pixels ()" link="GimpUnitStore.html#gimp-unit-store-get-has-pixels"/>
+    <keyword type="function" name="gimp_unit_store_set_has_percent ()" link="GimpUnitStore.html#gimp-unit-store-set-has-percent"/>
+    <keyword type="function" name="gimp_unit_store_get_has_percent ()" link="GimpUnitStore.html#gimp-unit-store-get-has-percent"/>
+    <keyword type="function" name="gimp_unit_store_set_pixel_value ()" link="GimpUnitStore.html#gimp-unit-store-set-pixel-value"/>
+    <keyword type="function" name="gimp_unit_store_set_pixel_values ()" link="GimpUnitStore.html#gimp-unit-store-set-pixel-values"/>
+    <keyword type="function" name="gimp_unit_store_set_resolution ()" link="GimpUnitStore.html#gimp-unit-store-set-resolution"/>
+    <keyword type="function" name="gimp_unit_store_set_resolutions ()" link="GimpUnitStore.html#gimp-unit-store-set-resolutions"/>
+    <keyword type="function" name="gimp_unit_store_get_value ()" link="GimpUnitStore.html#gimp-unit-store-get-value"/>
+    <keyword type="function" name="gimp_unit_store_get_values ()" link="GimpUnitStore.html#gimp-unit-store-get-values"/>
+    <keyword type="struct" name="GimpUnitStore" link="GimpUnitStore.html#GimpUnitStore-struct"/>
+    <keyword type="property" name="The “has-percent” property" link="GimpUnitStore.html#GimpUnitStore--has-percent"/>
+    <keyword type="property" name="The “has-pixels” property" link="GimpUnitStore.html#GimpUnitStore--has-pixels"/>
+    <keyword type="property" name="The “long-format” property" link="GimpUnitStore.html#GimpUnitStore--long-format"/>
+    <keyword type="property" name="The “num-values” property" link="GimpUnitStore.html#GimpUnitStore--num-values"/>
+    <keyword type="property" name="The “short-format” property" link="GimpUnitStore.html#GimpUnitStore--short-format"/>
+    <keyword type="function" name="gimp_unit_combo_box_new ()" link="GimpUnitComboBox.html#gimp-unit-combo-box-new"/>
+    <keyword type="function" name="gimp_unit_combo_box_new_with_model ()" link="GimpUnitComboBox.html#gimp-unit-combo-box-new-with-model"/>
+    <keyword type="function" name="gimp_unit_combo_box_get_active ()" link="GimpUnitComboBox.html#gimp-unit-combo-box-get-active"/>
+    <keyword type="function" name="gimp_unit_combo_box_set_active ()" link="GimpUnitComboBox.html#gimp-unit-combo-box-set-active"/>
+    <keyword type="struct" name="GimpUnitComboBox" link="GimpUnitComboBox.html#GimpUnitComboBox-struct"/>
+    <keyword type="property" name="The “label-scale” style property" link="GimpUnitComboBox.html#GimpUnitComboBox--s-label-scale"/>
+    <keyword type="function" name="gimp_zoom_model_new ()" link="GimpZoomModel.html#gimp-zoom-model-new"/>
+    <keyword type="function" name="gimp_zoom_model_set_range ()" link="GimpZoomModel.html#gimp-zoom-model-set-range"/>
+    <keyword type="function" name="gimp_zoom_model_zoom ()" link="GimpZoomModel.html#gimp-zoom-model-zoom"/>
+    <keyword type="function" name="gimp_zoom_model_get_factor ()" link="GimpZoomModel.html#gimp-zoom-model-get-factor"/>
+    <keyword type="function" name="gimp_zoom_model_get_fraction ()" link="GimpZoomModel.html#gimp-zoom-model-get-fraction"/>
+    <keyword type="function" name="gimp_zoom_button_new ()" link="GimpZoomModel.html#gimp-zoom-button-new"/>
+    <keyword type="function" name="gimp_zoom_model_zoom_step ()" link="GimpZoomModel.html#gimp-zoom-model-zoom-step"/>
+    <keyword type="struct" name="GimpZoomModel" link="GimpZoomModel.html#GimpZoomModel-struct"/>
+    <keyword type="enum" name="enum GimpZoomType" link="GimpZoomModel.html#GimpZoomType"/>
+    <keyword type="property" name="The “fraction” property" link="GimpZoomModel.html#GimpZoomModel--fraction"/>
+    <keyword type="property" name="The “maximum” property" link="GimpZoomModel.html#GimpZoomModel--maximum"/>
+    <keyword type="property" name="The “minimum” property" link="GimpZoomModel.html#GimpZoomModel--minimum"/>
+    <keyword type="property" name="The “percentage” property" link="GimpZoomModel.html#GimpZoomModel--percentage"/>
+    <keyword type="property" name="The “value” property" link="GimpZoomModel.html#GimpZoomModel--value"/>
+    <keyword type="signal" name="The “zoomed” signal" link="GimpZoomModel.html#GimpZoomModel-zoomed"/>
+    <keyword type="function" name="gimp_cell_renderer_color_new ()" link="GimpCellRendererColor.html#gimp-cell-renderer-color-new" since="2.2"/>
+    <keyword type="struct" name="GimpCellRendererColor" link="GimpCellRendererColor.html#GimpCellRendererColor-struct"/>
+    <keyword type="property" name="The “color” property" link="GimpCellRendererColor.html#GimpCellRendererColor--color"/>
+    <keyword type="property" name="The “icon-size” property" link="GimpCellRendererColor.html#GimpCellRendererColor--icon-size"/>
+    <keyword type="property" name="The “opaque” property" link="GimpCellRendererColor.html#GimpCellRendererColor--opaque"/>
+    <keyword type="function" name="gimp_cell_renderer_toggle_new ()" link="GimpCellRendererToggle.html#gimp-cell-renderer-toggle-new" since="2.2"/>
+    <keyword type="function" name="gimp_cell_renderer_toggle_clicked ()" link="GimpCellRendererToggle.html#gimp-cell-renderer-toggle-clicked" since="2.2"/>
+    <keyword type="struct" name="GimpCellRendererToggle" link="GimpCellRendererToggle.html#GimpCellRendererToggle-struct"/>
+    <keyword type="property" name="The “icon-name” property" link="GimpCellRendererToggle.html#GimpCellRendererToggle--icon-name"/>
+    <keyword type="property" name="The “override-background” property" link="GimpCellRendererToggle.html#GimpCellRendererToggle--override-background"/>
+    <keyword type="property" name="The “stock-id” property" link="GimpCellRendererToggle.html#GimpCellRendererToggle--stock-id"/>
+    <keyword type="property" name="The “stock-size” property" link="GimpCellRendererToggle.html#GimpCellRendererToggle--stock-size"/>
+    <keyword type="signal" name="The “clicked” signal" link="GimpCellRendererToggle.html#GimpCellRendererToggle-clicked"/>
+    <keyword type="function" name="gimp_color_display_new ()" link="GimpColorDisplay.html#gimp-color-display-new" deprecated=""/>
+    <keyword type="function" name="gimp_color_display_clone ()" link="GimpColorDisplay.html#gimp-color-display-clone"/>
+    <keyword type="function" name="gimp_color_display_set_enabled ()" link="GimpColorDisplay.html#gimp-color-display-set-enabled"/>
+    <keyword type="function" name="gimp_color_display_get_enabled ()" link="GimpColorDisplay.html#gimp-color-display-get-enabled"/>
+    <keyword type="function" name="gimp_color_display_get_config ()" link="GimpColorDisplay.html#gimp-color-display-get-config" since="2.4"/>
+    <keyword type="function" name="gimp_color_display_get_managed ()" link="GimpColorDisplay.html#gimp-color-display-get-managed" since="2.4"/>
+    <keyword type="function" name="gimp_color_display_convert ()" link="GimpColorDisplay.html#gimp-color-display-convert" deprecated="GIMP 2.8: Use gimp_color_display_convert_buffer() instead."/>
+    <keyword type="function" name="gimp_color_display_convert_surface ()" link="GimpColorDisplay.html#gimp-color-display-convert-surface" deprecated="GIMP 2.8: Use gimp_color_display_convert_buffer() instead." since="2.8"/>
+    <keyword type="function" name="gimp_color_display_convert_buffer ()" link="GimpColorDisplay.html#gimp-color-display-convert-buffer" since="2.10"/>
+    <keyword type="function" name="gimp_color_display_load_state ()" link="GimpColorDisplay.html#gimp-color-display-load-state"/>
+    <keyword type="function" name="gimp_color_display_save_state ()" link="GimpColorDisplay.html#gimp-color-display-save-state"/>
+    <keyword type="function" name="gimp_color_display_configure ()" link="GimpColorDisplay.html#gimp-color-display-configure"/>
+    <keyword type="function" name="gimp_color_display_configure_reset ()" link="GimpColorDisplay.html#gimp-color-display-configure-reset"/>
+    <keyword type="function" name="gimp_color_display_changed ()" link="GimpColorDisplay.html#gimp-color-display-changed"/>
+    <keyword type="struct" name="GimpColorDisplay" link="GimpColorDisplay.html#GimpColorDisplay-struct"/>
+    <keyword type="property" name="The “color-config” property" link="GimpColorDisplay.html#GimpColorDisplay--color-config"/>
+    <keyword type="property" name="The “color-managed” property" link="GimpColorDisplay.html#GimpColorDisplay--color-managed"/>
+    <keyword type="property" name="The “enabled” property" link="GimpColorDisplay.html#GimpColorDisplay--enabled"/>
+    <keyword type="signal" name="The “changed” signal" link="GimpColorDisplay.html#GimpColorDisplay-changed"/>
+    <keyword type="function" name="gimp_color_display_stack_new ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-new"/>
+    <keyword type="function" name="gimp_color_display_stack_clone ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-clone"/>
+    <keyword type="function" name="gimp_color_display_stack_changed ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-changed"/>
+    <keyword type="function" name="gimp_color_display_stack_add ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-add"/>
+    <keyword type="function" name="gimp_color_display_stack_remove ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-remove"/>
+    <keyword type="function" name="gimp_color_display_stack_reorder_up ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-reorder-up"/>
+    <keyword type="function" name="gimp_color_display_stack_reorder_down ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-reorder-down"/>
+    <keyword type="function" name="gimp_color_display_stack_convert ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-convert" deprecated="GIMP 2.8: Use gimp_color_display_stack_convert_buffer() instead."/>
+    <keyword type="function" name="gimp_color_display_stack_convert_surface ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-convert-surface" deprecated="GIMP 2.10: Use gimp_color_display_stack_convert_buffer() instead." since="2.8"/>
+    <keyword type="function" name="gimp_color_display_stack_convert_buffer ()" link="GimpColorDisplayStack.html#gimp-color-display-stack-convert-buffer" since="2.10"/>
+    <keyword type="struct" name="GimpColorDisplayStack" link="GimpColorDisplayStack.html#GimpColorDisplayStack-struct"/>
+    <keyword type="signal" name="The “added” signal" link="GimpColorDisplayStack.html#GimpColorDisplayStack-added"/>
+    <keyword type="signal" name="The “changed” signal" link="GimpColorDisplayStack.html#GimpColorDisplayStack-changed"/>
+    <keyword type="signal" name="The “removed” signal" link="GimpColorDisplayStack.html#GimpColorDisplayStack-removed"/>
+    <keyword type="signal" name="The “reordered” signal" link="GimpColorDisplayStack.html#GimpColorDisplayStack-reordered"/>
+    <keyword type="function" name="gimp_color_selector_new ()" link="GimpColorSelector.html#gimp-color-selector-new"/>
+    <keyword type="function" name="gimp_color_selector_set_toggles_visible ()" link="GimpColorSelector.html#gimp-color-selector-set-toggles-visible"/>
+    <keyword type="function" name="gimp_color_selector_get_toggles_visible ()" link="GimpColorSelector.html#gimp-color-selector-get-toggles-visible" since="2.10"/>
+    <keyword type="function" name="gimp_color_selector_set_toggles_sensitive ()" link="GimpColorSelector.html#gimp-color-selector-set-toggles-sensitive"/>
+    <keyword type="function" name="gimp_color_selector_get_toggles_sensitive ()" link="GimpColorSelector.html#gimp-color-selector-get-toggles-sensitive" since="2.10"/>
+    <keyword type="function" name="gimp_color_selector_set_show_alpha ()" link="GimpColorSelector.html#gimp-color-selector-set-show-alpha"/>
+    <keyword type="function" name="gimp_color_selector_get_show_alpha ()" link="GimpColorSelector.html#gimp-color-selector-get-show-alpha" since="2.10"/>
+    <keyword type="function" name="gimp_color_selector_set_color ()" link="GimpColorSelector.html#gimp-color-selector-set-color"/>
+    <keyword type="function" name="gimp_color_selector_get_color ()" link="GimpColorSelector.html#gimp-color-selector-get-color" since="2.10"/>
+    <keyword type="function" name="gimp_color_selector_set_channel ()" link="GimpColorSelector.html#gimp-color-selector-set-channel"/>
+    <keyword type="function" name="gimp_color_selector_get_channel ()" link="GimpColorSelector.html#gimp-color-selector-get-channel" since="2.10"/>
+    <keyword type="function" name="gimp_color_selector_set_model_visible ()" link="GimpColorSelector.html#gimp-color-selector-set-model-visible" since="2.10"/>
+    <keyword type="function" name="gimp_color_selector_get_model_visible ()" link="GimpColorSelector.html#gimp-color-selector-get-model-visible" since="2.10"/>
+    <keyword type="function" name="gimp_color_selector_color_changed ()" link="GimpColorSelector.html#gimp-color-selector-color-changed"/>
+    <keyword type="function" name="gimp_color_selector_channel_changed ()" link="GimpColorSelector.html#gimp-color-selector-channel-changed"/>
+    <keyword type="function" name="gimp_color_selector_model_visible_changed ()" link="GimpColorSelector.html#gimp-color-selector-model-visible-changed" since="2.10"/>
+    <keyword type="function" name="gimp_color_selector_set_config ()" link="GimpColorSelector.html#gimp-color-selector-set-config" since="2.4"/>
+    <keyword type="struct" name="GimpColorSelector" link="GimpColorSelector.html#GimpColorSelector-struct"/>
+    <keyword type="macro" name="GIMP_COLOR_SELECTOR_SIZE" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-SIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_COLOR_SELECTOR_BAR_SIZE" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-BAR-SIZE:CAPS"/>
+    <keyword type="enum" name="enum GimpColorSelectorChannel" link="GimpColorSelector.html#GimpColorSelectorChannel"/>
+    <keyword type="enum" name="enum GimpColorSelectorModel" link="GimpColorSelector.html#GimpColorSelectorModel" since="2.10"/>
+    <keyword type="signal" name="The “channel-changed” signal" link="GimpColorSelector.html#GimpColorSelector-channel-changed"/>
+    <keyword type="signal" name="The “color-changed” signal" link="GimpColorSelector.html#GimpColorSelector-color-changed"/>
+    <keyword type="signal" name="The “model-visible-changed” signal" link="GimpColorSelector.html#GimpColorSelector-model-visible-changed"/>
+    <keyword type="function" name="gimp_color_notebook_set_has_page ()" link="GimpColorNotebook.html#gimp-color-notebook-set-has-page"/>
+    <keyword type="struct" name="GimpColorNotebook" link="GimpColorNotebook.html#GimpColorNotebook-struct"/>
+    <keyword type="property" name="The “tab-border” style property" link="GimpColorNotebook.html#GimpColorNotebook--s-tab-border"/>
+    <keyword type="property" name="The “tab-icon-size” style property" link="GimpColorNotebook.html#GimpColorNotebook--s-tab-icon-size"/>
+    <keyword type="function" name="gimp_color_scales_set_show_rgb_u8 ()" link="GimpColorScales.html#gimp-color-scales-set-show-rgb-u8"/>
+    <keyword type="function" name="gimp_color_scales_get_show_rgb_u8 ()" link="GimpColorScales.html#gimp-color-scales-get-show-rgb-u8"/>
+    <keyword type="struct" name="GimpColorScales" link="GimpColorScales.html#GimpColorScales-struct"/>
+    <keyword type="property" name="The “show-rgb-u8” property" link="GimpColorScales.html#GimpColorScales--show-rgb-u8"/>
+    <keyword type="struct" name="GimpColorSelect" link="GimpColorSelect.html#GimpColorSelect-struct"/>
+    <keyword type="function" name="gimp_controller_new ()" link="GimpController.html#gimp-controller-new"/>
+    <keyword type="function" name="gimp_controller_get_n_events ()" link="GimpController.html#gimp-controller-get-n-events"/>
+    <keyword type="function" name="gimp_controller_get_event_name ()" link="GimpController.html#gimp-controller-get-event-name"/>
+    <keyword type="function" name="gimp_controller_get_event_blurb ()" link="GimpController.html#gimp-controller-get-event-blurb"/>
+    <keyword type="function" name="gimp_controller_event ()" link="GimpController.html#gimp-controller-event"/>
+    <keyword type="enum" name="enum GimpControllerEventType" link="GimpController.html#GimpControllerEventType"/>
+    <keyword type="struct" name="struct GimpControllerEventAny" link="GimpController.html#GimpControllerEventAny"/>
+    <keyword type="struct" name="struct GimpControllerEventTrigger" link="GimpController.html#GimpControllerEventTrigger"/>
+    <keyword type="struct" name="struct GimpControllerEventValue" link="GimpController.html#GimpControllerEventValue"/>
+    <keyword type="union" name="union GimpControllerEvent" link="GimpController.html#GimpControllerEvent"/>
+    <keyword type="struct" name="GimpController" link="GimpController.html#GimpController-struct"/>
+    <keyword type="property" name="The “name” property" link="GimpController.html#GimpController--name"/>
+    <keyword type="property" name="The “state” property" link="GimpController.html#GimpController--state"/>
+    <keyword type="signal" name="The “event” signal" link="GimpController.html#GimpController-event"/>
+    <keyword type="function" name="gimp_cairo_set_focus_line_pattern ()" link="libgimpwidgets-GimpCairoUtils.html#gimp-cairo-set-focus-line-pattern" since="2.6"/>
+    <keyword type="function" name="gimp_cairo_surface_create_from_pixbuf ()" link="libgimpwidgets-GimpCairoUtils.html#gimp-cairo-surface-create-from-pixbuf" since="2.6"/>
+    <keyword type="function" name="GimpHelpFunc ()" link="libgimpwidgets-GimpHelpUI.html#GimpHelpFunc"/>
+    <keyword type="function" name="gimp_help_enable_tooltips ()" link="libgimpwidgets-GimpHelpUI.html#gimp-help-enable-tooltips"/>
+    <keyword type="function" name="gimp_help_disable_tooltips ()" link="libgimpwidgets-GimpHelpUI.html#gimp-help-disable-tooltips"/>
+    <keyword type="function" name="gimp_standard_help_func ()" link="libgimpwidgets-GimpHelpUI.html#gimp-standard-help-func"/>
+    <keyword type="function" name="gimp_help_connect ()" link="libgimpwidgets-GimpHelpUI.html#gimp-help-connect"/>
+    <keyword type="function" name="gimp_help_set_help_data ()" link="libgimpwidgets-GimpHelpUI.html#gimp-help-set-help-data"/>
+    <keyword type="function" name="gimp_help_set_help_data_with_markup ()" link="libgimpwidgets-GimpHelpUI.html#gimp-help-set-help-data-with-markup" since="2.6"/>
+    <keyword type="function" name="gimp_context_help ()" link="libgimpwidgets-GimpHelpUI.html#gimp-context-help"/>
+    <keyword type="macro" name="GIMP_HELP_ID" link="libgimpwidgets-GimpHelpUI.html#GIMP-HELP-ID:CAPS" since="2.2"/>
+    <keyword type="function" name="GimpQueryStringCallback ()" link="libgimpwidgets-GimpQueryBox.html#GimpQueryStringCallback"/>
+    <keyword type="function" name="GimpQueryIntCallback ()" link="libgimpwidgets-GimpQueryBox.html#GimpQueryIntCallback"/>
+    <keyword type="function" name="GimpQueryDoubleCallback ()" link="libgimpwidgets-GimpQueryBox.html#GimpQueryDoubleCallback"/>
+    <keyword type="function" name="GimpQuerySizeCallback ()" link="libgimpwidgets-GimpQueryBox.html#GimpQuerySizeCallback"/>
+    <keyword type="function" name="GimpQueryBooleanCallback ()" link="libgimpwidgets-GimpQueryBox.html#GimpQueryBooleanCallback"/>
+    <keyword type="function" name="gimp_query_string_box ()" link="libgimpwidgets-GimpQueryBox.html#gimp-query-string-box"/>
+    <keyword type="function" name="gimp_query_int_box ()" link="libgimpwidgets-GimpQueryBox.html#gimp-query-int-box"/>
+    <keyword type="function" name="gimp_query_double_box ()" link="libgimpwidgets-GimpQueryBox.html#gimp-query-double-box"/>
+    <keyword type="function" name="gimp_query_size_box ()" link="libgimpwidgets-GimpQueryBox.html#gimp-query-size-box"/>
+    <keyword type="function" name="gimp_query_boolean_box ()" link="libgimpwidgets-GimpQueryBox.html#gimp-query-boolean-box"/>
+    <keyword type="macro" name="GIMP_QUERY_BOX_VBOX()" link="libgimpwidgets-GimpQueryBox.html#GIMP-QUERY-BOX-VBOX:CAPS"/>
+    <keyword type="function" name="gimp_stock_init ()" link="libgimpwidgets-GimpIcons.html#gimp-stock-init" deprecated="2.10: Use gimp_icons_init() instead."/>
+    <keyword type="function" name="gimp_icons_init ()" link="libgimpwidgets-GimpIcons.html#gimp-icons-init"/>
+    <keyword type="function" name="gimp_icons_set_icon_theme ()" link="libgimpwidgets-GimpIcons.html#gimp-icons-set-icon-theme"/>
+    <keyword type="macro" name="GIMP_ICON_ATTACH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-ATTACH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DETACH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DETACH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_INVERT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-INVERT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_RECORD" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-RECORD:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_RESET" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-RESET:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SHRED" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SHRED:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_BUSINESS_CARD" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-BUSINESS-CARD:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHAR_PICKER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHAR-PICKER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CURSOR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CURSOR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DISPLAY" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DISPLAY:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GEGL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GEGL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LINKED" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LINKED:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_MARKER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-MARKER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SMARTPHONE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SMARTPHONE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TRANSPARENCY" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TRANSPARENCY:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_VIDEO" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-VIDEO:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_VISIBLE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-VISIBLE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_WEB" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-WEB:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_BRUSH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-BRUSH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_BUFFER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-BUFFER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLORMAP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLORMAP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DYNAMICS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DYNAMICS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FILE_MANAGER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FILE-MANAGER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FONT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FONT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRID" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRID:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_INPUT_DEVICE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-INPUT-DEVICE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_MYPAINT_BRUSH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-MYPAINT-BRUSH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PALETTE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PALETTE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PATTERN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PATTERN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PLUGIN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PLUGIN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SAMPLE_POINT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SAMPLE-POINT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SYMMETRY" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SYMMETRY:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TEMPLATE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TEMPLATE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_PRESET" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-PRESET:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FRAME" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FRAME:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TEXTURE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TEXTURE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_APPLICATION_EXIT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-APPLICATION-EXIT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_ASPECT_PORTRAIT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-ASPECT-PORTRAIT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_ASPECT_LANDSCAPE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-ASPECT-LANDSCAPE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CAP_BUTT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CAP-BUTT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CAP_ROUND" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CAP-ROUND:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CAP_SQUARE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CAP-SQUARE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CENTER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CENTER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CENTER_HORIZONTAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CENTER-HORIZONTAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CENTER_VERTICAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CENTER-VERTICAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHAIN_HORIZONTAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHAIN-HORIZONTAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHAIN_HORIZONTAL_BROKEN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHAIN-HORIZONTAL-BROKEN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHAIN_VERTICAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHAIN-VERTICAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHAIN_VERTICAL_BROKEN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHAIN-VERTICAL-BROKEN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHANNEL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHANNEL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHANNEL_ALPHA" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHANNEL-ALPHA:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHANNEL_BLUE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHANNEL-BLUE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHANNEL_GRAY" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHANNEL-GRAY:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHANNEL_GREEN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHANNEL-GREEN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHANNEL_INDEXED" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHANNEL-INDEXED:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CHANNEL_RED" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CHANNEL-RED:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CLOSE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CLOSE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CLOSE_ALL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CLOSE-ALL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_PICKER_BLACK" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-PICKER-BLACK:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_PICKER_GRAY" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-PICKER-GRAY:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_PICKER_WHITE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-PICKER-WHITE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_PICK_FROM_SCREEN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-PICK-FROM-SCREEN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_SELECTOR_CMYK" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-SELECTOR-CMYK:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_SELECTOR_TRIANGLE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-SELECTOR-TRIANGLE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_SELECTOR_WATER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-SELECTOR-WATER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_SPACE_LINEAR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-SPACE-LINEAR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_SPACE_NON_LINEAR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-SPACE-NON-LINEAR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLOR_SPACE_PERCEPTUAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLOR-SPACE-PERCEPTUAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLORS_DEFAULT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLORS-DEFAULT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_COLORS_SWAP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-COLORS-SWAP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONTROLLER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONTROLLER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONTROLLER_KEYBOARD" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONTROLLER-KEYBOARD:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONTROLLER_LINUX_INPUT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONTROLLER-LINUX-INPUT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONTROLLER_MIDI" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONTROLLER-MIDI:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONTROLLER_MOUSE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONTROLLER-MOUSE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONTROLLER_WHEEL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONTROLLER-WHEEL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONVERT_RGB" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONVERT-RGB:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONVERT_GRAYSCALE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONVERT-GRAYSCALE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONVERT_INDEXED" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONVERT-INDEXED:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CONVERT_PRECISION" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CONVERT-PRECISION:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CURVE_FREE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CURVE-FREE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_CURVE_SMOOTH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-CURVE-SMOOTH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_CHANNELS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-CHANNELS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_DASHBOARD" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-DASHBOARD:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_DEVICE_STATUS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-DEVICE-STATUS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_ERROR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-ERROR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_IMAGES" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-IMAGES:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_INFORMATION" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-INFORMATION:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_LAYERS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-LAYERS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_NAVIGATION" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-NAVIGATION:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_PATHS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-PATHS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_QUESTION" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-QUESTION:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_RESHOW_FILTER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-RESHOW-FILTER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_TOOLS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-TOOLS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_TOOL_OPTIONS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-TOOL-OPTIONS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_UNDO_HISTORY" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-UNDO-HISTORY:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DIALOG_WARNING" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DIALOG-WARNING:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DISPLAY_FILTER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DISPLAY-FILTER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DISPLAY_FILTER_CLIP_WARNING" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DISPLAY-FILTER-CLIP-WARNING:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DISPLAY_FILTER_COLORBLIND" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DISPLAY-FILTER-COLORBLIND:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DISPLAY_FILTER_CONTRAST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DISPLAY-FILTER-CONTRAST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DISPLAY_FILTER_GAMMA" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DISPLAY-FILTER-GAMMA:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DISPLAY_FILTER_LCMS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DISPLAY-FILTER-LCMS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DISPLAY_FILTER_PROOF" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DISPLAY-FILTER-PROOF:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_NEW" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-NEW:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_OPEN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-OPEN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_OPEN_RECENT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-OPEN-RECENT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_PAGE_SETUP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-PAGE-SETUP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_PRINT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-PRINT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_PRINT_RESOLUTION" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-PRINT-RESOLUTION:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_PROPERTIES" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-PROPERTIES:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_REVERT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-REVERT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_SAVE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-SAVE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_DOCUMENT_SAVE_AS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-DOCUMENT-SAVE-AS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_CLEAR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-CLEAR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_COPY" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-COPY:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_CUT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-CUT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_DELETE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-DELETE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_FIND" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-FIND:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_PASTE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-PASTE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_PASTE_AS_NEW" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-PASTE-AS-NEW:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_PASTE_INTO" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-PASTE-INTO:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_REDO" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-REDO:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_EDIT_UNDO" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-EDIT-UNDO:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FILL_HORIZONTAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FILL-HORIZONTAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FILL_VERTICAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FILL-VERTICAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FOLDER_NEW" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FOLDER-NEW:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_INDENT_MORE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-INDENT-MORE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_INDENT_LESS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-INDENT-LESS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_JUSTIFY_CENTER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-JUSTIFY-CENTER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_JUSTIFY_FILL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-JUSTIFY-FILL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_JUSTIFY_LEFT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-JUSTIFY-LEFT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_JUSTIFY_RIGHT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-JUSTIFY-RIGHT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_BOLD" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-BOLD:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_ITALIC" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-ITALIC:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_DIRECTION_LTR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-DIRECTION-LTR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_DIRECTION_RTL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-DIRECTION-RTL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_DIRECTION_TTB_LTR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-DIRECTION-TTB-LTR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_DIRECTION_TTB_LTR_UPRIGHT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-DIRECTION-TTB-LTR-UPRIGHT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_DIRECTION_TTB_RTL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-DIRECTION-TTB-RTL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_DIRECTION_TTB_RTL_UPRIGHT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-DIRECTION-TTB-RTL-UPRIGHT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_SPACING_LETTER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-SPACING-LETTER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_SPACING_LINE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-SPACING-LINE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_STRIKETHROUGH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-STRIKETHROUGH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_FORMAT_TEXT_UNDERLINE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-FORMAT-TEXT-UNDERLINE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_LINEAR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-LINEAR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_BILINEAR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-BILINEAR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_RADIAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-RADIAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_SQUARE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-SQUARE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_CONICAL_SYMMETRIC" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-CONICAL-SYMMETRIC:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_CONICAL_ASYMMETRIC" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-CONICAL-ASYMMETRIC:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_SHAPEBURST_ANGULAR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-SHAPEBURST-ANGULAR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_SHAPEBURST_SPHERICAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-SHAPEBURST-SPHERICAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_SHAPEBURST_DIMPLED" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-SHAPEBURST-DIMPLED:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_SPIRAL_CLOCKWISE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-SPIRAL-CLOCKWISE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRADIENT_SPIRAL_ANTICLOCKWISE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRADIENT-SPIRAL-ANTICLOCKWISE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRAVITY_EAST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRAVITY-EAST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRAVITY_NORTH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRAVITY-NORTH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRAVITY_NORTH_EAST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRAVITY-NORTH-EAST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRAVITY_NORTH_WEST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRAVITY-NORTH-WEST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRAVITY_SOUTH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRAVITY-SOUTH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRAVITY_SOUTH_EAST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRAVITY-SOUTH-EAST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRAVITY_SOUTH_WEST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRAVITY-SOUTH-WEST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GRAVITY_WEST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GRAVITY-WEST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GO_BOTTOM" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GO-BOTTOM:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GO_DOWN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GO-DOWN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GO_FIRST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GO-FIRST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GO_HOME" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GO-HOME:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GO_LAST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GO-LAST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GO_TOP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GO-TOP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GO_UP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GO-UP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GO_PREVIOUS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GO-PREVIOUS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_GO_NEXT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-GO-NEXT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_HELP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-HELP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_HELP_ABOUT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-HELP-ABOUT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_HELP_USER_MANUAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-HELP-USER-MANUAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_HISTOGRAM" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-HISTOGRAM:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_HISTOGRAM_LINEAR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-HISTOGRAM-LINEAR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_HISTOGRAM_LOGARITHMIC" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-HISTOGRAM-LOGARITHMIC:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_IMAGE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-IMAGE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_IMAGE_OPEN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-IMAGE-OPEN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_IMAGE_RELOAD" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-IMAGE-RELOAD:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_JOIN_MITER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-JOIN-MITER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_JOIN_ROUND" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-JOIN-ROUND:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_JOIN_BEVEL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-JOIN-BEVEL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LAYER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LAYER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LAYER_ANCHOR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LAYER-ANCHOR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LAYER_FLOATING_SELECTION" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LAYER-FLOATING-SELECTION:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LAYER_MASK" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LAYER-MASK:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LAYER_MERGE_DOWN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LAYER-MERGE-DOWN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LAYER_TEXT_LAYER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LAYER-TEXT-LAYER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LAYER_TO_IMAGESIZE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LAYER-TO-IMAGESIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LIST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LIST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LIST_ADD" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LIST-ADD:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_LIST_REMOVE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-LIST-REMOVE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_MENU_LEFT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-MENU-LEFT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_MENU_RIGHT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-MENU-RIGHT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_OBJECT_DUPLICATE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-OBJECT-DUPLICATE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_OBJECT_FLIP_HORIZONTAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-OBJECT-FLIP-HORIZONTAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_OBJECT_FLIP_VERTICAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-OBJECT-FLIP-VERTICAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_OBJECT_RESIZE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-OBJECT-RESIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_OBJECT_ROTATE_180" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-OBJECT-ROTATE-180:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_OBJECT_ROTATE_270" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-OBJECT-ROTATE-270:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_OBJECT_ROTATE_90" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-OBJECT-ROTATE-90:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_OBJECT_SCALE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-OBJECT-SCALE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PATH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PATH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PATH_STROKE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PATH-STROKE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PIVOT_CENTER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PIVOT-CENTER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PIVOT_EAST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PIVOT-EAST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PIVOT_NORTH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PIVOT-NORTH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PIVOT_NORTH_EAST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PIVOT-NORTH-EAST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PIVOT_NORTH_WEST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PIVOT-NORTH-WEST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PIVOT_SOUTH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PIVOT-SOUTH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PIVOT_SOUTH_EAST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PIVOT-SOUTH-EAST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PIVOT_SOUTH_WEST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PIVOT-SOUTH-WEST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PIVOT_WEST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PIVOT-WEST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PREFERENCES_SYSTEM" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PREFERENCES-SYSTEM:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_PROCESS_STOP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-PROCESS-STOP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_QUICK_MASK_OFF" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-QUICK-MASK-OFF:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_QUICK_MASK_ON" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-QUICK-MASK-ON:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_ADD" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-ADD:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_ALL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-ALL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_BORDER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-BORDER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_GROW" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-GROW:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_INTERSECT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-INTERSECT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_NONE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-NONE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_REPLACE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-REPLACE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_SHRINK" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-SHRINK:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_STROKE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-STROKE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_SUBTRACT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-SUBTRACT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_TO_CHANNEL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-TO-CHANNEL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SELECTION_TO_PATH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SELECTION-TO-PATH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SHAPE_CIRCLE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SHAPE-CIRCLE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SHAPE_DIAMOND" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SHAPE-DIAMOND:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SHAPE_SQUARE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SHAPE-SQUARE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_SYSTEM_RUN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-SYSTEM-RUN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_AIRBRUSH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-AIRBRUSH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_ALIGN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-ALIGN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_BLUR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-BLUR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_BRIGHTNESS_CONTRAST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-BRIGHTNESS-CONTRAST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_BUCKET_FILL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-BUCKET-FILL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_BY_COLOR_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-BY-COLOR-SELECT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_CAGE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-CAGE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_CLONE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-CLONE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_COLOR_TEMPERATURE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-COLOR-TEMPERATURE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_COLORIZE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-COLORIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_COLOR_BALANCE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-COLOR-BALANCE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_COLOR_PICKER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-COLOR-PICKER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_CROP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-CROP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_CURVES" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-CURVES:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_DESATURATE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-DESATURATE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_DODGE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-DODGE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_ELLIPSE_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-ELLIPSE-SELECT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_ERASER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-ERASER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_EXPOSURE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-EXPOSURE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_FLIP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-FLIP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_FOREGROUND_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-FOREGROUND-SELECT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_FREE_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-FREE-SELECT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_FUZZY_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-FUZZY-SELECT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_GRADIENT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-GRADIENT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_HANDLE_TRANSFORM" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-HANDLE-TRANSFORM:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_HEAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-HEAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_HUE_SATURATION" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-HUE-SATURATION:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_INK" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-INK:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_ISCISSORS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-ISCISSORS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_LEVELS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-LEVELS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_MEASURE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-MEASURE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_MOVE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-MOVE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_MYPAINT_BRUSH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-MYPAINT-BRUSH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_N_POINT_DEFORMATION" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-N-POINT-DEFORMATION:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_OFFSET" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-OFFSET:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_PAINTBRUSH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-PAINTBRUSH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_PATH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-PATH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_PENCIL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-PENCIL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_PERSPECTIVE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-PERSPECTIVE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_PERSPECTIVE_CLONE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-PERSPECTIVE-CLONE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_POSTERIZE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-POSTERIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_RECT_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-RECT-SELECT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_ROTATE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-ROTATE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_SCALE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-SCALE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_SEAMLESS_CLONE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-SEAMLESS-CLONE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_SHADOWS_HIGHLIGHTS" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-SHADOWS-HIGHLIGHTS:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_SHEAR" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-SHEAR:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_SMUDGE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-SMUDGE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_TEXT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-TEXT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_THRESHOLD" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-THRESHOLD:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_TRANSFORM_3D" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-TRANSFORM-3D:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_UNIFIED_TRANSFORM" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-UNIFIED-TRANSFORM:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_WARP" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-WARP:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TOOL_ZOOM" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TOOL-ZOOM:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TRANSFORM_3D_CAMERA" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TRANSFORM-3D-CAMERA:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TRANSFORM_3D_MOVE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TRANSFORM-3D-MOVE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_TRANSFORM_3D_ROTATE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-TRANSFORM-3D-ROTATE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_VIEW_REFRESH" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-VIEW-REFRESH:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_VIEW_FULLSCREEN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-VIEW-FULLSCREEN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_WILBER" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-WILBER:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_WILBER_EEK" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-WILBER-EEK:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_WINDOW_CLOSE" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-WINDOW-CLOSE:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_WINDOW_MOVE_TO_SCREEN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-WINDOW-MOVE-TO-SCREEN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_WINDOW_NEW" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-WINDOW-NEW:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_ZOOM_IN" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-ZOOM-IN:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_ZOOM_ORIGINAL" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-ZOOM-ORIGINAL:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_ZOOM_OUT" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-ZOOM-OUT:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_ZOOM_FIT_BEST" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-ZOOM-FIT-BEST:CAPS"/>
+    <keyword type="macro" name="GIMP_ICON_ZOOM_FOLLOW_WINDOW" link="libgimpwidgets-GimpIcons.html#GIMP-ICON-ZOOM-FOLLOW-WINDOW:CAPS"/>
+    <keyword type="macro" name="GIMP_STOCK_ANCHOR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-ANCHOR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CENTER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CENTER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DUPLICATE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DUPLICATE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_EDIT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-EDIT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_RESET" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-RESET:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CLOSE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CLOSE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_MENU_LEFT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-MENU-LEFT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_MENU_RIGHT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-MENU-RIGHT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_MOVE_TO_SCREEN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-MOVE-TO-SCREEN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_INVERT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-INVERT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_LAYER_TO_IMAGESIZE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-LAYER-TO-IMAGESIZE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_MERGE_DOWN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-MERGE-DOWN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_NAVIGATION" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-NAVIGATION:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PASTE_AS_NEW" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PASTE-AS-NEW:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PASTE_INTO" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PASTE-INTO:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PATH_STROKE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PATH-STROKE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PLUGIN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PLUGIN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_QUICK_MASK_OFF" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-QUICK-MASK-OFF:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_QUICK_MASK_ON" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-QUICK-MASK-ON:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_HISTOGRAM" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-HISTOGRAM:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_HISTOGRAM_LINEAR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-HISTOGRAM-LINEAR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_HISTOGRAM_LOGARITHMIC" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-HISTOGRAM-LOGARITHMIC:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_RESHOW_FILTER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-RESHOW-FILTER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_RESIZE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-RESIZE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_FLIP_HORIZONTAL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-FLIP-HORIZONTAL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_FLIP_VERTICAL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-FLIP-VERTICAL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_ROTATE_180" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-ROTATE-180:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_ROTATE_270" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-ROTATE-270:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_ROTATE_90" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-ROTATE-90:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SCALE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SCALE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_LINKED" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-LINKED:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_VISIBLE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-VISIBLE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_LIST" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-LIST:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRID" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRID:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PORTRAIT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PORTRAIT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_LANDSCAPE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-LANDSCAPE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_VIDEO" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-VIDEO:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_WEB" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-WEB:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_IMAGE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-IMAGE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_LAYER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-LAYER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_LAYER_MASK" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-LAYER-MASK:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CHANNEL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CHANNEL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CHANNEL_RED" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CHANNEL-RED:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CHANNEL_GREEN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CHANNEL-GREEN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CHANNEL_BLUE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CHANNEL-BLUE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CHANNEL_GRAY" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CHANNEL-GRAY:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CHANNEL_INDEXED" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CHANNEL-INDEXED:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CHANNEL_ALPHA" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CHANNEL-ALPHA:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PATH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PATH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TEXT_LAYER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TEXT-LAYER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_FLOATING_SELECTION" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-FLOATING-SELECTION:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TEMPLATE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TEMPLATE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_IMAGES" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-IMAGES:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_LAYERS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-LAYERS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CHANNELS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CHANNELS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PATHS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PATHS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_COLORMAP" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-COLORMAP:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_INDEXED_PALETTE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-INDEXED-PALETTE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CURSOR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CURSOR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SAMPLE_POINT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SAMPLE-POINT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SHAPE_CIRCLE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SHAPE-CIRCLE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SHAPE_SQUARE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SHAPE-SQUARE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SHAPE_DIAMOND" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SHAPE-DIAMOND:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CAP_BUTT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CAP-BUTT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CAP_ROUND" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CAP-ROUND:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CAP_SQUARE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CAP-SQUARE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_JOIN_MITER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-JOIN-MITER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_JOIN_ROUND" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-JOIN-ROUND:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_JOIN_BEVEL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-JOIN-BEVEL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_ALL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-ALL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_NONE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-NONE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_GROW" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-GROW:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_SHRINK" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-SHRINK:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_BORDER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-BORDER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_ADD" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-ADD:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_SUBTRACT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-SUBTRACT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_REPLACE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-REPLACE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_INTERSECT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-INTERSECT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_STROKE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-STROKE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_TO_CHANNEL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-TO-CHANNEL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SELECTION_TO_PATH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SELECTION-TO-PATH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_LINEAR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-LINEAR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_BILINEAR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-BILINEAR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_RADIAL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-RADIAL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_SQUARE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-SQUARE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_CONICAL_SYMMETRIC" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-CONICAL-SYMMETRIC:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_CONICAL_ASYMMETRIC" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-CONICAL-ASYMMETRIC:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_SHAPEBURST_SPHERICAL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-SHAPEBURST-SPHERICAL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_SHAPEBURST_ANGULAR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-SHAPEBURST-ANGULAR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_SHAPEBURST_DIMPLED" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-SHAPEBURST-DIMPLED:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_SPIRAL_CLOCKWISE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-SPIRAL-CLOCKWISE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT_SPIRAL_ANTICLOCKWISE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT-SPIRAL-ANTICLOCKWISE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRAVITY_NORTH_WEST" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRAVITY-NORTH-WEST:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRAVITY_NORTH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRAVITY-NORTH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRAVITY_NORTH_EAST" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRAVITY-NORTH-EAST:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRAVITY_WEST" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRAVITY-WEST:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRAVITY_EAST" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRAVITY-EAST:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRAVITY_SOUTH_WEST" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRAVITY-SOUTH-WEST:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRAVITY_SOUTH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRAVITY-SOUTH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRAVITY_SOUTH_EAST" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRAVITY-SOUTH-EAST:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_HCENTER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-HCENTER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_VCENTER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-VCENTER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CHAR_PICKER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CHAR-PICKER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_LETTER_SPACING" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-LETTER-SPACING:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_LINE_SPACING" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-LINE-SPACING:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TEXT_DIR_LTR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TEXT-DIR-LTR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TEXT_DIR_RTL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TEXT-DIR-RTL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PRINT_RESOLUTION" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PRINT-RESOLUTION:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOLS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOLS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_OPTIONS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-OPTIONS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DEVICE_STATUS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DEVICE-STATUS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_INPUT_DEVICE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-INPUT-DEVICE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DISPLAY_FILTER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DISPLAY-FILTER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CURVE_FREE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CURVE-FREE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CURVE_SMOOTH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CURVE-SMOOTH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_COLOR_PICKER_BLACK" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-COLOR-PICKER-BLACK:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_COLOR_PICKER_GRAY" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-COLOR-PICKER-GRAY:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_COLOR_PICKER_WHITE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-COLOR-PICKER-WHITE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_COLOR_TRIANGLE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-COLOR-TRIANGLE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_COLOR_PICK_FROM_SCREEN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-COLOR-PICK-FROM-SCREEN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CONVERT_GRAYSCALE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CONVERT-GRAYSCALE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CONVERT_INDEXED" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CONVERT-INDEXED:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CONVERT_RGB" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CONVERT-RGB:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TRANSPARENCY" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TRANSPARENCY:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DEFAULT_COLORS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DEFAULT-COLORS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_SWAP_COLORS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-SWAP-COLORS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_UNDO_HISTORY" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-UNDO-HISTORY:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_HCHAIN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-HCHAIN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_HCHAIN_BROKEN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-HCHAIN-BROKEN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_VCHAIN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-VCHAIN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_VCHAIN_BROKEN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-VCHAIN-BROKEN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TEXTURE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TEXTURE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_FRAME" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-FRAME:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_ERROR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-ERROR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_INFO" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-INFO:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_QUESTION" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-QUESTION:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_WARNING" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-WARNING:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GEGL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GEGL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_USER_MANUAL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-USER-MANUAL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_WILBER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-WILBER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_WILBER_EEK" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-WILBER-EEK:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_ZOOM_FOLLOW_WINDOW" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-ZOOM-FOLLOW-WINDOW:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_AIRBRUSH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-AIRBRUSH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_ALIGN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-ALIGN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_BLEND" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-BLEND:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_BLUR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-BLUR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_BRIGHTNESS_CONTRAST" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-BRIGHTNESS-CONTRAST:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_BUCKET_FILL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-BUCKET-FILL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_BY_COLOR_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-BY-COLOR-SELECT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_CAGE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-CAGE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_CLONE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-CLONE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_COLOR_BALANCE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-COLOR-BALANCE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_COLOR_PICKER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-COLOR-PICKER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_COLORIZE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-COLORIZE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_CROP" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-CROP:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_CURVES" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-CURVES:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_DESATURATE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-DESATURATE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_DODGE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-DODGE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_ELLIPSE_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-ELLIPSE-SELECT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_ERASER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-ERASER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_FLIP" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-FLIP:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_FOREGROUND_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-FOREGROUND-SELECT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_FREE_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-FREE-SELECT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_FUZZY_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-FUZZY-SELECT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_HEAL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-HEAL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_HUE_SATURATION" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-HUE-SATURATION:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_INK" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-INK:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_ISCISSORS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-ISCISSORS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_LEVELS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-LEVELS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_MEASURE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-MEASURE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_MOVE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-MOVE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_PAINTBRUSH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-PAINTBRUSH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_PATH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-PATH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_PENCIL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-PENCIL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_PERSPECTIVE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-PERSPECTIVE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_PERSPECTIVE_CLONE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-PERSPECTIVE-CLONE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_POSTERIZE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-POSTERIZE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_RECT_SELECT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-RECT-SELECT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_ROTATE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-ROTATE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_SCALE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-SCALE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_SHEAR" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-SHEAR:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_SMUDGE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-SMUDGE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_TEXT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-TEXT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_THRESHOLD" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-THRESHOLD:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_ZOOM" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-ZOOM:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CONTROLLER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CONTROLLER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CONTROLLER_KEYBOARD" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CONTROLLER-KEYBOARD:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CONTROLLER_LINUX_INPUT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CONTROLLER-LINUX-INPUT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CONTROLLER_MIDI" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CONTROLLER-MIDI:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CONTROLLER_MOUSE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CONTROLLER-MOUSE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_CONTROLLER_WHEEL" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-CONTROLLER-WHEEL:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DISPLAY_FILTER_COLORBLIND" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DISPLAY-FILTER-COLORBLIND:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DISPLAY_FILTER_CONTRAST" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DISPLAY-FILTER-CONTRAST:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DISPLAY_FILTER_GAMMA" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DISPLAY-FILTER-GAMMA:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DISPLAY_FILTER_LCMS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DISPLAY-FILTER-LCMS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DISPLAY_FILTER_PROOF" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DISPLAY-FILTER-PROOF:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_QMASK_ON" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-QMASK-ON:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_QMASK_OFF" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-QMASK-OFF:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_BRUSH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-BRUSH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DYNAMICS" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DYNAMICS:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_BUFFER" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-BUFFER:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_DETACH" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-DETACH:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_FONT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-FONT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_GRADIENT" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-GRADIENT:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PALETTE" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PALETTE:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_PATTERN" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-PATTERN:CAPS" deprecated=""/>
+    <keyword type="macro" name="GIMP_STOCK_TOOL_PRESET" link="libgimpwidgets-GimpIcons.html#GIMP-STOCK-TOOL-PRESET:CAPS" deprecated=""/>
+    <keyword type="function" name="gimp_enum_radio_box_new ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-radio-box-new" since="2.4"/>
+    <keyword type="function" name="gimp_enum_radio_box_new_with_range ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-radio-box-new-with-range" since="2.4"/>
+    <keyword type="function" name="gimp_enum_radio_frame_new ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-radio-frame-new" since="2.4"/>
+    <keyword type="function" name="gimp_enum_radio_frame_new_with_range ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-radio-frame-new-with-range" since="2.4"/>
+    <keyword type="function" name="gimp_enum_stock_box_new ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-stock-box-new" deprecated="GIMP 2.10" since="2.4"/>
+    <keyword type="function" name="gimp_enum_stock_box_new_with_range ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-stock-box-new-with-range" deprecated="GIMP 2.10" since="2.4"/>
+    <keyword type="function" name="gimp_enum_stock_box_set_child_padding ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-stock-box-set-child-padding" deprecated="GIMP 2.10" since="2.4"/>
+    <keyword type="function" name="gimp_enum_icon_box_new ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-icon-box-new" since="2.10"/>
+    <keyword type="function" name="gimp_enum_icon_box_new_with_range ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-icon-box-new-with-range" since="2.10"/>
+    <keyword type="function" name="gimp_enum_icon_box_set_child_padding ()" link="libgimpwidgets-GimpEnumWidgets.html#gimp-enum-icon-box-set-child-padding" since="2.10"/>
+    <keyword type="function" name="gimp_prop_boolean_combo_box_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-boolean-combo-box-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_boolean_radio_frame_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-boolean-radio-frame-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_check_button_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-check-button-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_color_area_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-color-area-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_coordinates_connect ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-coordinates-connect"/>
+    <keyword type="function" name="gimp_prop_coordinates_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-coordinates-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_entry_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-entry-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_pointer_combo_box_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-pointer-combo-box-new" since="2.10"/>
+    <keyword type="function" name="gimp_prop_enum_check_button_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-enum-check-button-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_enum_combo_box_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-enum-combo-box-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_enum_label_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-enum-label-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_enum_radio_box_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-enum-radio-box-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_enum_radio_frame_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-enum-radio-frame-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_enum_stock_box_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-enum-stock-box-new" deprecated="2.10" since="2.4"/>
+    <keyword type="function" name="gimp_prop_enum_icon_box_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-enum-icon-box-new" since="2.10"/>
+    <keyword type="function" name="gimp_prop_expander_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-expander-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_file_chooser_button_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-file-chooser-button-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_file_chooser_button_new_with_dialog ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-file-chooser-button-new-with-dialog" since="2.4"/>
+    <keyword type="function" name="gimp_prop_hscale_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-hscale-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_icon_image_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-icon-image-new" since="2.10"/>
+    <keyword type="function" name="gimp_prop_int_combo_box_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-int-combo-box-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_label_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-label-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_memsize_entry_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-memsize-entry-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_opacity_entry_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-opacity-entry-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_path_editor_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-path-editor-new"/>
+    <keyword type="function" name="gimp_prop_scale_entry_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-scale-entry-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_size_entry_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-size-entry-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_spin_button_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-spin-button-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_stock_image_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-stock-image-new" deprecated="2.10" since="2.4"/>
+    <keyword type="function" name="gimp_prop_string_combo_box_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-string-combo-box-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_text_buffer_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-text-buffer-new" since="2.4"/>
+    <keyword type="function" name="gimp_prop_unit_combo_box_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-unit-combo-box-new" since="2.8"/>
+    <keyword type="function" name="gimp_prop_unit_menu_new ()" link="libgimpwidgets-GimpPropWidgets.html#gimp-prop-unit-menu-new" deprecated="2.10" since="2.4"/>
+    <keyword type="function" name="gimp_radio_group_new ()" link="libgimpwidgets-GimpWidgets.html#gimp-radio-group-new"/>
+    <keyword type="function" name="gimp_radio_group_new2 ()" link="libgimpwidgets-GimpWidgets.html#gimp-radio-group-new2"/>
+    <keyword type="function" name="gimp_radio_group_set_active ()" link="libgimpwidgets-GimpWidgets.html#gimp-radio-group-set-active"/>
+    <keyword type="function" name="gimp_int_radio_group_new ()" link="libgimpwidgets-GimpWidgets.html#gimp-int-radio-group-new"/>
+    <keyword type="function" name="gimp_int_radio_group_set_active ()" link="libgimpwidgets-GimpWidgets.html#gimp-int-radio-group-set-active"/>
+    <keyword type="function" name="gimp_spin_button_new ()" link="libgimpwidgets-GimpWidgets.html#gimp-spin-button-new" deprecated="2.10: Use gtk_spin_button_new() instead." since="2.10.10"/>
+    <keyword type="macro" name="GIMP_SCALE_ENTRY_LABEL()" link="libgimpwidgets-GimpWidgets.html#GIMP-SCALE-ENTRY-LABEL:CAPS"/>
+    <keyword type="macro" name="GIMP_SCALE_ENTRY_SCALE()" link="libgimpwidgets-GimpWidgets.html#GIMP-SCALE-ENTRY-SCALE:CAPS"/>
+    <keyword type="macro" name="GIMP_SCALE_ENTRY_SCALE_ADJ()" link="libgimpwidgets-GimpWidgets.html#GIMP-SCALE-ENTRY-SCALE-ADJ:CAPS"/>
+    <keyword type="macro" name="GIMP_SCALE_ENTRY_SPINBUTTON()" link="libgimpwidgets-GimpWidgets.html#GIMP-SCALE-ENTRY-SPINBUTTON:CAPS"/>
+    <keyword type="macro" name="GIMP_SCALE_ENTRY_SPINBUTTON_ADJ()" link="libgimpwidgets-GimpWidgets.html#GIMP-SCALE-ENTRY-SPINBUTTON-ADJ:CAPS"/>
+    <keyword type="function" name="gimp_scale_entry_new ()" link="libgimpwidgets-GimpWidgets.html#gimp-scale-entry-new"/>
+    <keyword type="function" name="gimp_scale_entry_set_sensitive ()" link="libgimpwidgets-GimpWidgets.html#gimp-scale-entry-set-sensitive"/>
+    <keyword type="function" name="gimp_scale_entry_set_logarithmic ()" link="libgimpwidgets-GimpWidgets.html#gimp-scale-entry-set-logarithmic" since="2.2"/>
+    <keyword type="function" name="gimp_scale_entry_get_logarithmic ()" link="libgimpwidgets-GimpWidgets.html#gimp-scale-entry-get-logarithmic" since="2.2"/>
+    <keyword type="function" name="gimp_color_scale_entry_new ()" link="libgimpwidgets-GimpWidgets.html#gimp-color-scale-entry-new"/>
+    <keyword type="macro" name="GIMP_RANDOM_SEED_SPINBUTTON()" link="libgimpwidgets-GimpWidgets.html#GIMP-RANDOM-SEED-SPINBUTTON:CAPS"/>
+    <keyword type="macro" name="GIMP_RANDOM_SEED_SPINBUTTON_ADJ()" link="libgimpwidgets-GimpWidgets.html#GIMP-RANDOM-SEED-SPINBUTTON-ADJ:CAPS"/>
+    <keyword type="macro" name="GIMP_RANDOM_SEED_TOGGLE()" link="libgimpwidgets-GimpWidgets.html#GIMP-RANDOM-SEED-TOGGLE:CAPS"/>
+    <keyword type="function" name="gimp_random_seed_new ()" link="libgimpwidgets-GimpWidgets.html#gimp-random-seed-new"/>
+    <keyword type="macro" name="GIMP_COORDINATES_CHAINBUTTON()" link="libgimpwidgets-GimpWidgets.html#GIMP-COORDINATES-CHAINBUTTON:CAPS"/>
+    <keyword type="function" name="gimp_coordinates_new ()" link="libgimpwidgets-GimpWidgets.html#gimp-coordinates-new"/>
+    <keyword type="function" name="gimp_toggle_button_update ()" link="libgimpwidgets-GimpWidgets.html#gimp-toggle-button-update"/>
+    <keyword type="function" name="gimp_radio_button_update ()" link="libgimpwidgets-GimpWidgets.html#gimp-radio-button-update"/>
+    <keyword type="function" name="gimp_int_adjustment_update ()" link="libgimpwidgets-GimpWidgets.html#gimp-int-adjustment-update"/>
+    <keyword type="function" name="gimp_uint_adjustment_update ()" link="libgimpwidgets-GimpWidgets.html#gimp-uint-adjustment-update"/>
+    <keyword type="function" name="gimp_float_adjustment_update ()" link="libgimpwidgets-GimpWidgets.html#gimp-float-adjustment-update"/>
+    <keyword type="function" name="gimp_double_adjustment_update ()" link="libgimpwidgets-GimpWidgets.html#gimp-double-adjustment-update"/>
+    <keyword type="function" name="gimp_widgets_error_quark ()" link="libgimpwidgets-GimpWidgets.html#gimp-widgets-error-quark"/>
+    <keyword type="enum" name="enum GimpWidgetsError" link="libgimpwidgets-GimpWidgets.html#GimpWidgetsError"/>
+    <keyword type="macro" name="GIMP_WIDGETS_ERROR" link="libgimpwidgets-GimpWidgets.html#GIMP-WIDGETS-ERROR:CAPS" since="2.8"/>
+    <keyword type="function" name="gimp_table_attach_aligned ()" link="libgimpwidgets-GimpWidgetsUtils.html#gimp-table-attach-aligned"/>
+    <keyword type="function" name="gimp_label_set_attributes ()" link="libgimpwidgets-GimpWidgetsUtils.html#gimp-label-set-attributes" since="2.2"/>
+    <keyword type="function" name="gimp_widget_get_monitor ()" link="libgimpwidgets-GimpWidgetsUtils.html#gimp-widget-get-monitor"/>
+    <keyword type="function" name="gimp_get_monitor_at_pointer ()" link="libgimpwidgets-GimpWidgetsUtils.html#gimp-get-monitor-at-pointer"/>
+    <keyword type="function" name="gimp_widget_track_monitor ()" link="libgimpwidgets-GimpWidgetsUtils.html#gimp-widget-track-monitor" since="2.10"/>
+    <keyword type="function" name="gimp_screen_get_color_profile ()" link="libgimpwidgets-GimpWidgetsUtils.html#gimp-screen-get-color-profile" since="2.10"/>
+    <keyword type="function" name="gimp_widget_get_color_profile ()" link="libgimpwidgets-GimpWidgetsUtils.html#gimp-widget-get-color-profile"/>
+    <keyword type="function" name="gimp_widget_get_color_transform ()" link="libgimpwidgets-GimpWidgetsUtils.html#gimp-widget-get-color-transform"/>
+    <keyword type="function" name="gimp_int_option_menu_new ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-int-option-menu-new" deprecated=""/>
+    <keyword type="function" name="gimp_int_option_menu_set_history ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-int-option-menu-set-history" deprecated=""/>
+    <keyword type="function" name="GimpIntOptionMenuSensitivityCallback ()" link="libgimpwidgets-GimpOldWidgets.html#GimpIntOptionMenuSensitivityCallback" deprecated=""/>
+    <keyword type="function" name="gimp_int_option_menu_set_sensitive ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-int-option-menu-set-sensitive" deprecated=""/>
+    <keyword type="function" name="gimp_option_menu_new ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-option-menu-new" deprecated=""/>
+    <keyword type="function" name="gimp_option_menu_new2 ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-option-menu-new2" deprecated=""/>
+    <keyword type="function" name="gimp_option_menu_set_history ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-option-menu-set-history" deprecated=""/>
+    <keyword type="function" name="GimpOptionMenuSensitivityCallback ()" link="libgimpwidgets-GimpOldWidgets.html#GimpOptionMenuSensitivityCallback" deprecated=""/>
+    <keyword type="function" name="gimp_option_menu_set_sensitive ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-option-menu-set-sensitive" deprecated=""/>
+    <keyword type="function" name="gimp_menu_item_update ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-menu-item-update" deprecated=""/>
+    <keyword type="function" name="gimp_toggle_button_sensitive_update ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-toggle-button-sensitive-update" deprecated=""/>
+    <keyword type="function" name="gimp_pixmap_button_new ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-pixmap-button-new" deprecated=""/>
+    <keyword type="function" name="gimp_unit_menu_update ()" link="libgimpwidgets-GimpOldWidgets.html#gimp-unit-menu-update" deprecated="use #GimpUnitComboBox instead."/>
+    <keyword type="function" name="gimp_pixmap_new ()" link="GimpPixmap.html#gimp-pixmap-new" deprecated=""/>
+    <keyword type="function" name="gimp_pixmap_set ()" link="GimpPixmap.html#gimp-pixmap-set" deprecated=""/>
+    <keyword type="struct" name="GimpPixmap" link="GimpPixmap.html#GimpPixmap-struct"/>
+    <keyword type="function" name="gimp_unit_menu_new ()" link="GimpUnitMenu.html#gimp-unit-menu-new" deprecated=""/>
+    <keyword type="function" name="gimp_unit_menu_set_unit ()" link="GimpUnitMenu.html#gimp-unit-menu-set-unit" deprecated=""/>
+    <keyword type="function" name="gimp_unit_menu_get_unit ()" link="GimpUnitMenu.html#gimp-unit-menu-get-unit" deprecated=""/>
+    <keyword type="function" name="gimp_unit_menu_get_pixel_digits ()" link="GimpUnitMenu.html#gimp-unit-menu-get-pixel-digits" deprecated=""/>
+    <keyword type="function" name="gimp_unit_menu_set_pixel_digits ()" link="GimpUnitMenu.html#gimp-unit-menu-set-pixel-digits" deprecated=""/>
+    <keyword type="struct" name="GimpUnitMenu" link="GimpUnitMenu.html#GimpUnitMenu-struct"/>
+    <keyword type="signal" name="The “unit-changed” signal" link="GimpUnitMenu.html#GimpUnitMenu-unit-changed"/>
+    <keyword type="constant" name="GIMP_CHAIN_TOP" link="GimpChainButton.html#GIMP-CHAIN-TOP:CAPS"/>
+    <keyword type="constant" name="GIMP_CHAIN_LEFT" link="GimpChainButton.html#GIMP-CHAIN-LEFT:CAPS"/>
+    <keyword type="constant" name="GIMP_CHAIN_BOTTOM" link="GimpChainButton.html#GIMP-CHAIN-BOTTOM:CAPS"/>
+    <keyword type="constant" name="GIMP_CHAIN_RIGHT" link="GimpChainButton.html#GIMP-CHAIN-RIGHT:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_AREA_FLAT" link="GimpColorArea.html#GIMP-COLOR-AREA-FLAT:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_AREA_SMALL_CHECKS" link="GimpColorArea.html#GIMP-COLOR-AREA-SMALL-CHECKS:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_AREA_LARGE_CHECKS" link="GimpColorArea.html#GIMP-COLOR-AREA-LARGE-CHECKS:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_COMBO_BOX_LAYOUT_ICON_ONLY" link="GimpIntComboBox.html#GIMP-INT-COMBO-BOX-LAYOUT-ICON-ONLY:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_COMBO_BOX_LAYOUT_ABBREVIATED" link="GimpIntComboBox.html#GIMP-INT-COMBO-BOX-LAYOUT-ABBREVIATED:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_COMBO_BOX_LAYOUT_FULL" link="GimpIntComboBox.html#GIMP-INT-COMBO-BOX-LAYOUT-FULL:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_STORE_VALUE" link="GimpIntStore.html#GIMP-INT-STORE-VALUE:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_STORE_LABEL" link="GimpIntStore.html#GIMP-INT-STORE-LABEL:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_STORE_ICON_NAME" link="GimpIntStore.html#GIMP-INT-STORE-ICON-NAME:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_STORE_PIXBUF" link="GimpIntStore.html#GIMP-INT-STORE-PIXBUF:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_STORE_USER_DATA" link="GimpIntStore.html#GIMP-INT-STORE-USER-DATA:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_STORE_ABBREV" link="GimpIntStore.html#GIMP-INT-STORE-ABBREV:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_STORE_NUM_COLUMNS" link="GimpIntStore.html#GIMP-INT-STORE-NUM-COLUMNS:CAPS"/>
+    <keyword type="constant" name="GIMP_INT_STORE_STOCK_ID" link="GimpIntStore.html#GIMP-INT-STORE-STOCK-ID:CAPS"/>
+    <keyword type="constant" name="GIMP_ASPECT_SQUARE" link="GimpNumberPairEntry.html#GIMP-ASPECT-SQUARE:CAPS"/>
+    <keyword type="constant" name="GIMP_ASPECT_PORTRAIT" link="GimpNumberPairEntry.html#GIMP-ASPECT-PORTRAIT:CAPS"/>
+    <keyword type="constant" name="GIMP_ASPECT_LANDSCAPE" link="GimpNumberPairEntry.html#GIMP-ASPECT-LANDSCAPE:CAPS"/>
+    <keyword type="constant" name="GIMP_PAGE_SELECTOR_TARGET_LAYERS" link="GimpPageSelector.html#GIMP-PAGE-SELECTOR-TARGET-LAYERS:CAPS"/>
+    <keyword type="constant" name="GIMP_PAGE_SELECTOR_TARGET_IMAGES" link="GimpPageSelector.html#GIMP-PAGE-SELECTOR-TARGET-IMAGES:CAPS"/>
+    <keyword type="constant" name="GIMP_SIZE_ENTRY_UPDATE_NONE" link="GimpSizeEntry.html#GIMP-SIZE-ENTRY-UPDATE-NONE:CAPS"/>
+    <keyword type="constant" name="GIMP_SIZE_ENTRY_UPDATE_SIZE" link="GimpSizeEntry.html#GIMP-SIZE-ENTRY-UPDATE-SIZE:CAPS"/>
+    <keyword type="constant" name="GIMP_SIZE_ENTRY_UPDATE_RESOLUTION" link="GimpSizeEntry.html#GIMP-SIZE-ENTRY-UPDATE-RESOLUTION:CAPS"/>
+    <keyword type="constant" name="GIMP_ZOOM_IN" link="GimpZoomModel.html#GIMP-ZOOM-IN:CAPS"/>
+    <keyword type="constant" name="GIMP_ZOOM_OUT" link="GimpZoomModel.html#GIMP-ZOOM-OUT:CAPS"/>
+    <keyword type="constant" name="GIMP_ZOOM_IN_MORE" link="GimpZoomModel.html#GIMP-ZOOM-IN-MORE:CAPS"/>
+    <keyword type="constant" name="GIMP_ZOOM_OUT_MORE" link="GimpZoomModel.html#GIMP-ZOOM-OUT-MORE:CAPS"/>
+    <keyword type="constant" name="GIMP_ZOOM_IN_MAX" link="GimpZoomModel.html#GIMP-ZOOM-IN-MAX:CAPS"/>
+    <keyword type="constant" name="GIMP_ZOOM_OUT_MAX" link="GimpZoomModel.html#GIMP-ZOOM-OUT-MAX:CAPS"/>
+    <keyword type="constant" name="GIMP_ZOOM_TO" link="GimpZoomModel.html#GIMP-ZOOM-TO:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_HUE" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-HUE:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_SATURATION" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-SATURATION:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_VALUE" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-VALUE:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_RED" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-RED:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_GREEN" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-GREEN:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_BLUE" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-BLUE:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_ALPHA" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-ALPHA:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_LCH_LIGHTNESS" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-LCH-LIGHTNESS:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_LCH_CHROMA" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-LCH-CHROMA:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_LCH_HUE" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-LCH-HUE:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_MODEL_RGB" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-MODEL-RGB:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_MODEL_LCH" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-MODEL-LCH:CAPS"/>
+    <keyword type="constant" name="GIMP_COLOR_SELECTOR_MODEL_HSV" link="GimpColorSelector.html#GIMP-COLOR-SELECTOR-MODEL-HSV:CAPS"/>
+    <keyword type="constant" name="GIMP_CONTROLLER_EVENT_TRIGGER" link="GimpController.html#GIMP-CONTROLLER-EVENT-TRIGGER:CAPS"/>
+    <keyword type="constant" name="GIMP_CONTROLLER_EVENT_VALUE" link="GimpController.html#GIMP-CONTROLLER-EVENT-VALUE:CAPS"/>
+    <keyword type="constant" name="GIMP_WIDGETS_PARSE_ERROR" link="libgimpwidgets-GimpWidgets.html#GIMP-WIDGETS-PARSE-ERROR:CAPS"/>
+    <keyword type="member" name="GimpControllerEventAny.type" link="GimpController.html#GimpControllerEventAny.type"/>
+    <keyword type="member" name="GimpControllerEventAny.source" link="GimpController.html#GimpControllerEventAny.source"/>
+    <keyword type="member" name="GimpControllerEventAny.event-id" link="GimpController.html#GimpControllerEventAny.event-id"/>
+    <keyword type="member" name="GimpControllerEventTrigger.type" link="GimpController.html#GimpControllerEventTrigger.type"/>
+    <keyword type="member" name="GimpControllerEventTrigger.source" link="GimpController.html#GimpControllerEventTrigger.source"/>
+    <keyword type="member" name="GimpControllerEventTrigger.event-id" link="GimpController.html#GimpControllerEventTrigger.event-id"/>
+    <keyword type="member" name="GimpControllerEventValue.type" link="GimpController.html#GimpControllerEventValue.type"/>
+    <keyword type="member" name="GimpControllerEventValue.source" link="GimpController.html#GimpControllerEventValue.source"/>
+    <keyword type="member" name="GimpControllerEventValue.event-id" link="GimpController.html#GimpControllerEventValue.event-id"/>
+    <keyword type="member" name="GimpControllerEventValue.value" link="GimpController.html#GimpControllerEventValue.value"/>
+  </functions>
+</book>

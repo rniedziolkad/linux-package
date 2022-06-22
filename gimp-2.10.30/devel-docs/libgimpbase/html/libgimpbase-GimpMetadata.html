@@ -1,0 +1,1006 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpMetadata: GIMP Base Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Base Library Reference Manual">
+<link rel="up" href="pt01.html" title="Part I. GIMP Base Library">
+<link rel="prev" href="libgimpbase-gimpmemsize.html" title="gimpmemsize">
+<link rel="next" href="libgimpbase-gimprectangle.html" title="gimprectangle">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpbase-GimpMetadata.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="pt01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpbase-gimpmemsize.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpbase-gimprectangle.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpbase-GimpMetadata"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpbase-GimpMetadata.top_of_page"></a>GimpMetadata</span></h2>
+<p>GimpMetadata — Basic functions for handling <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> objects.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpbase-GimpMetadata.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-new" title="gimp_metadata_new ()">gimp_metadata_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-duplicate" title="gimp_metadata_duplicate ()">gimp_metadata_duplicate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-deserialize" title="gimp_metadata_deserialize ()">gimp_metadata_deserialize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-serialize" title="gimp_metadata_serialize ()">gimp_metadata_serialize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-get-guid" title="gimp_metadata_get_guid ()">gimp_metadata_get_guid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-add-xmp-history" title="gimp_metadata_add_xmp_history ()">gimp_metadata_add_xmp_history</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-load-from-file" title="gimp_metadata_load_from_file ()">gimp_metadata_load_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-save-to-file" title="gimp_metadata_save_to_file ()">gimp_metadata_save_to_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-set-from-exif" title="gimp_metadata_set_from_exif ()">gimp_metadata_set_from_exif</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-set-from-iptc" title="gimp_metadata_set_from_iptc ()">gimp_metadata_set_from_iptc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-set-from-xmp" title="gimp_metadata_set_from_xmp ()">gimp_metadata_set_from_xmp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-set-pixel-size" title="gimp_metadata_set_pixel_size ()">gimp_metadata_set_pixel_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-set-bits-per-sample" title="gimp_metadata_set_bits_per_sample ()">gimp_metadata_set_bits_per_sample</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-get-resolution" title="gimp_metadata_get_resolution ()">gimp_metadata_get_resolution</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-set-resolution" title="gimp_metadata_set_resolution ()">gimp_metadata_set_resolution</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadataColorspace" title="enum GimpMetadataColorspace"><span class="returnvalue">GimpMetadataColorspace</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-get-colorspace" title="gimp_metadata_get_colorspace ()">gimp_metadata_get_colorspace</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-set-colorspace" title="gimp_metadata_set_colorspace ()">gimp_metadata_set_colorspace</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-is-tag-supported" title="gimp_metadata_is_tag_supported ()">gimp_metadata_is_tag_supported</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpMetadata.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata">GimpMetadata</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadataLoadFlags" title="enum GimpMetadataLoadFlags">GimpMetadataLoadFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadataSaveFlags" title="enum GimpMetadataSaveFlags">GimpMetadataSaveFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadataColorspace" title="enum GimpMetadataColorspace">GimpMetadataColorspace</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpMetadata.description"></a><h2>Description</h2>
+<p>Basic functions for handling <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> objects.</p>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpMetadata.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-metadata-new"></a><h3>gimp_metadata_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+gimp_metadata_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p>
+<div class="refsect3">
+<a name="gimp-metadata-new.returns"></a><h4>Returns</h4>
+<p> The new <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-duplicate"></a><h3>gimp_metadata_duplicate ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+gimp_metadata_duplicate (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>);</pre>
+<p>Duplicates a <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p>
+<div class="refsect3">
+<a name="gimp-metadata-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>The object to duplicate, or <code class="literal">NULL</code>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-duplicate.returns"></a><h4>Returns</h4>
+<p> The new <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a>, or <code class="literal">NULL</code> if <em class="parameter"><code>metadata</code></em>
+is <code class="literal">NULL</code>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-deserialize"></a><h3>gimp_metadata_deserialize ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+gimp_metadata_deserialize (<em class="parameter"><code>const <span class="type">gchar</span> *metadata_xml</code></em>);</pre>
+<p>Deserializes a string of XML that has been created by
+<a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-serialize" title="gimp_metadata_serialize ()"><code class="function">gimp_metadata_serialize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-metadata-deserialize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>metadata_xml</p></td>
+<td class="parameter_description"><p>A string of serialized metadata XML.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-deserialize.returns"></a><h4>Returns</h4>
+<p> The new <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-serialize"></a><h3>gimp_metadata_serialize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_metadata_serialize (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>);</pre>
+<p>Serializes <em class="parameter"><code>metadata</code></em>
+ into an XML string that can later be deserialized
+using <a class="link" href="libgimpbase-GimpMetadata.html#gimp-metadata-deserialize" title="gimp_metadata_deserialize ()"><code class="function">gimp_metadata_deserialize()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-metadata-serialize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-serialize.returns"></a><h4>Returns</h4>
+<p> The serialized XML string.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-get-guid"></a><h3>gimp_metadata_get_guid ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_metadata_get_guid (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Generate Version 4 UUID/GUID.</p>
+<div class="refsect3">
+<a name="gimp-metadata-get-guid.returns"></a><h4>Returns</h4>
+<p> The new GUID/UUID string.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-add-xmp-history"></a><h3>gimp_metadata_add_xmp_history ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_metadata_add_xmp_history (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                               <em class="parameter"><code><span class="type">gchar</span> *state_status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-load-from-file"></a><h3>gimp_metadata_load_from_file ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+gimp_metadata_load_from_file (<em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                              <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Loads <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> from <em class="parameter"><code>file</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-load-from-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>The <span class="type">GFile</span> to load the metadata from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for error message</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-load-from-file.returns"></a><h4>Returns</h4>
+<p> The loaded <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-save-to-file"></a><h3>gimp_metadata_save_to_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_metadata_save_to_file (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                            <em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                            <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Saves <em class="parameter"><code>metadata</code></em>
+ to <em class="parameter"><code>file</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-save-to-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>The file to save the metadata to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for error message</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-save-to-file.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-set-from-exif"></a><h3>gimp_metadata_set_from_exif ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_metadata_set_from_exif (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                             <em class="parameter"><code>const <span class="type">guchar</span> *exif_data</code></em>,
+                             <em class="parameter"><code><span class="type">gint</span> exif_data_length</code></em>,
+                             <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Sets the tags from a piece of Exif data on <em class="parameter"><code>metadata</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-set-from-exif.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exif_data</p></td>
+<td class="parameter_description"><p>The blob of Exif data to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exif_data_length</p></td>
+<td class="parameter_description"><p>Length of <em class="parameter"><code>exif_data</code></em>
+, in bytes</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for error message</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-set-from-exif.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-set-from-iptc"></a><h3>gimp_metadata_set_from_iptc ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_metadata_set_from_iptc (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                             <em class="parameter"><code>const <span class="type">guchar</span> *iptc_data</code></em>,
+                             <em class="parameter"><code><span class="type">gint</span> iptc_data_length</code></em>,
+                             <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Sets the tags from a piece of IPTC data on <em class="parameter"><code>metadata</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-set-from-iptc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iptc_data</p></td>
+<td class="parameter_description"><p>The blob of Ipc data to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iptc_data_length</p></td>
+<td class="parameter_description"><p>Length of <em class="parameter"><code>iptc_data</code></em>
+, in bytes</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for error message</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-set-from-iptc.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-set-from-xmp"></a><h3>gimp_metadata_set_from_xmp ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_metadata_set_from_xmp (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                            <em class="parameter"><code>const <span class="type">guchar</span> *xmp_data</code></em>,
+                            <em class="parameter"><code><span class="type">gint</span> xmp_data_length</code></em>,
+                            <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Sets the tags from a piece of XMP data on <em class="parameter"><code>metadata</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-set-from-xmp.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xmp_data</p></td>
+<td class="parameter_description"><p>The blob of Exif data to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xmp_data_length</p></td>
+<td class="parameter_description"><p>Length of <em class="parameter"><code>exif_data</code></em>
+, in bytes</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for error message</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-set-from-xmp.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-set-pixel-size"></a><h3>gimp_metadata_set_pixel_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_metadata_set_pixel_size (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                              <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                              <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
+<p>Sets Exif.Image.ImageWidth and Exif.Image.ImageLength on <em class="parameter"><code>metadata</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-set-pixel-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Width in pixels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Height in pixels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-set-bits-per-sample"></a><h3>gimp_metadata_set_bits_per_sample ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_metadata_set_bits_per_sample (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                                   <em class="parameter"><code><span class="type">gint</span> bits_per_sample</code></em>);</pre>
+<p>Sets Exif.Image.BitsPerSample on <em class="parameter"><code>metadata</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-set-bits-per-sample.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bits_per_sample</p></td>
+<td class="parameter_description"><p>Bits per pixel, per component</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-get-resolution"></a><h3>gimp_metadata_get_resolution ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_metadata_get_resolution (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                              <em class="parameter"><code><span class="type">gdouble</span> *xres</code></em>,
+                              <em class="parameter"><code><span class="type">gdouble</span> *yres</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> *unit</code></em>);</pre>
+<p>Returns values based on Exif.Image.XResolution,
+Exif.Image.YResolution and Exif.Image.ResolutionUnit of <em class="parameter"><code>metadata</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-get-resolution.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xres</p></td>
+<td class="parameter_description"><p>Return location for the X Resolution, in ppi</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yres</p></td>
+<td class="parameter_description"><p>Return location for the Y Resolution, in ppi</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>Return location for the unit unit</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-get-resolution.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> on success, <code class="literal">FALSE</code> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-set-resolution"></a><h3>gimp_metadata_set_resolution ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_metadata_set_resolution (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                              <em class="parameter"><code><span class="type">gdouble</span> xres</code></em>,
+                              <em class="parameter"><code><span class="type">gdouble</span> yres</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<p>Sets Exif.Image.XResolution, Exif.Image.YResolution and
+Exif.Image.ResolutionUnit of <em class="parameter"><code>metadata</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-set-resolution.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xres</p></td>
+<td class="parameter_description"><p>The image's X Resolution, in ppi</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yres</p></td>
+<td class="parameter_description"><p>The image's Y Resolution, in ppi</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The image's unit</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-get-colorspace"></a><h3>gimp_metadata_get_colorspace ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadataColorspace" title="enum GimpMetadataColorspace"><span class="returnvalue">GimpMetadataColorspace</span></a>
+gimp_metadata_get_colorspace (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>);</pre>
+<p>Returns values based on Exif.Photo.ColorSpace, Xmp.exif.ColorSpace,
+Exif.Iop.InteroperabilityIndex, Exif.Nikon3.ColorSpace,
+Exif.Canon.ColorSpace of <em class="parameter"><code>metadata</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-get-colorspace.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-get-colorspace.returns"></a><h4>Returns</h4>
+<p> The colorspace specified by above tags.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-set-colorspace"></a><h3>gimp_metadata_set_colorspace ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_metadata_set_colorspace (<em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadataColorspace" title="enum GimpMetadataColorspace"><span class="type">GimpMetadataColorspace</span></a> colorspace</code></em>);</pre>
+<p>Sets Exif.Photo.ColorSpace, Xmp.exif.ColorSpace,
+Exif.Iop.InteroperabilityIndex, Exif.Nikon3.ColorSpace,
+Exif.Canon.ColorSpace of <em class="parameter"><code>metadata</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-set-colorspace.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgimpbase-GimpMetadata.html#GimpMetadata" title="GimpMetadata"><span class="type">GimpMetadata</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>colorspace</p></td>
+<td class="parameter_description"><p>The color space.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-metadata-is-tag-supported"></a><h3>gimp_metadata_is_tag_supported ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_metadata_is_tag_supported (<em class="parameter"><code>const <span class="type">gchar</span> *tag</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *mime_type</code></em>);</pre>
+<p>Returns whether <em class="parameter"><code>tag</code></em>
+ is supported in a file of type <em class="parameter"><code>mime_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-metadata-is-tag-supported.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tag</p></td>
+<td class="parameter_description"><p>A metadata tag name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>A mime type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-metadata-is-tag-supported.returns"></a><h4>Returns</h4>
+<p> <code class="literal">TRUE</code> if the <em class="parameter"><code>tag</code></em>
+supported with <em class="parameter"><code>mime_type</code></em>
+, <code class="literal">FALSE</code> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpMetadata.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpMetadata"></a><h3>GimpMetadata</h3>
+<pre class="programlisting">typedef struct _GimpMetadata GimpMetadata;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpMetadataLoadFlags"></a><h3>enum GimpMetadataLoadFlags</h3>
+<p>What metadata to load when importing images.</p>
+<div class="refsect3">
+<a name="GimpMetadataLoadFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-LOAD-COMMENT:CAPS"></a>GIMP_METADATA_LOAD_COMMENT</p></td>
+<td class="enum_member_description">
+<p>Load the comment</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-LOAD-RESOLUTION:CAPS"></a>GIMP_METADATA_LOAD_RESOLUTION</p></td>
+<td class="enum_member_description">
+<p>Load the resolution</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-LOAD-ORIENTATION:CAPS"></a>GIMP_METADATA_LOAD_ORIENTATION</p></td>
+<td class="enum_member_description">
+<p>Load the orientation (rotation)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-LOAD-COLORSPACE:CAPS"></a>GIMP_METADATA_LOAD_COLORSPACE</p></td>
+<td class="enum_member_description">
+<p>Load the colorspace</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-LOAD-ALL:CAPS"></a>GIMP_METADATA_LOAD_ALL</p></td>
+<td class="enum_member_description">
+<p>Load all of the above</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpMetadataSaveFlags"></a><h3>enum GimpMetadataSaveFlags</h3>
+<p>What kinds of metadata to save when exporting images.</p>
+<div class="refsect3">
+<a name="GimpMetadataSaveFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-SAVE-EXIF:CAPS"></a>GIMP_METADATA_SAVE_EXIF</p></td>
+<td class="enum_member_description">
+<p>Save EXIF</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-SAVE-XMP:CAPS"></a>GIMP_METADATA_SAVE_XMP</p></td>
+<td class="enum_member_description">
+<p>Save XMP</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-SAVE-IPTC:CAPS"></a>GIMP_METADATA_SAVE_IPTC</p></td>
+<td class="enum_member_description">
+<p>Save IPTC</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-SAVE-THUMBNAIL:CAPS"></a>GIMP_METADATA_SAVE_THUMBNAIL</p></td>
+<td class="enum_member_description">
+<p>Save a thumbnail of the image</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-SAVE-COLOR-PROFILE:CAPS"></a>GIMP_METADATA_SAVE_COLOR_PROFILE</p></td>
+<td class="enum_member_description">
+<p>Save the image's color profile
+Since: 2.10.10</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-SAVE-ALL:CAPS"></a>GIMP_METADATA_SAVE_ALL</p></td>
+<td class="enum_member_description">
+<p>Save all of the above</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpMetadataColorspace"></a><h3>enum GimpMetadataColorspace</h3>
+<p>Well-defined colorspace information available from metadata</p>
+<div class="refsect3">
+<a name="GimpMetadataColorspace.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-COLORSPACE-UNSPECIFIED:CAPS"></a>GIMP_METADATA_COLORSPACE_UNSPECIFIED</p></td>
+<td class="enum_member_description">
+<p>Unspecified</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-COLORSPACE-UNCALIBRATED:CAPS"></a>GIMP_METADATA_COLORSPACE_UNCALIBRATED</p></td>
+<td class="enum_member_description">
+<p>Uncalibrated</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-COLORSPACE-SRGB:CAPS"></a>GIMP_METADATA_COLORSPACE_SRGB</p></td>
+<td class="enum_member_description">
+<p>sRGB</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-METADATA-COLORSPACE-ADOBERGB:CAPS"></a>GIMP_METADATA_COLORSPACE_ADOBERGB</p></td>
+<td class="enum_member_description">
+<p>Adobe RGB</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpMetadata.see-also"></a><h2>See Also</h2>
+<p>gimp_image_metadata_load_prepare(),
+<code class="function">gimp_image_metadata_load_finish()</code>,
+<code class="function">gimp_image_metadata_save_prepare()</code>,
+<code class="function">gimp_image_metadata_save_finish()</code>.</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

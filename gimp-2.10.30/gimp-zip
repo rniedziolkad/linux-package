@@ -1,0 +1,67 @@
+#!/bin/sh
+
+# Build zipfiles for GIMP on Win32: separate runtime and developer
+# packages.
+
+ZIP=/tmp/gimp-2.10.30.zip
+DEVZIP=/tmp/gimp-dev-2.10.30.zip
+
+cd /usr/local
+
+rm $ZIP
+zip -r $ZIP -@ <<EOF
+etc/gimp/2.0
+bin/gimp-2.10.exe
+bin/libgimp-2.0-0.dll
+bin/libgimpbase-2.0-0.dll
+bin/libgimpcolor-2.0-0.dll
+bin/libgimpconfig-2.0-0.dll
+bin/libgimpmath-2.0-0.dll
+bin/libgimpmodule-2.0-0.dll
+bin/libgimpthumb-2.0-0.dll
+bin/libgimpui-2.0-0.dll
+bin/libgimpwidgets-2.0-0.dll
+lib/gimp/2.0/environ
+lib/gimp/2.0/plug-ins
+share/gimp/2.0
+man/man1/gimp-2.10.1
+man/man5/gimprc-2.10.5
+EOF
+
+zip $ZIP lib/gimp/2.0/modules/*.dll
+zip $ZIP lib/locale/*/LC_MESSAGES/gimp20*.mo
+
+rm $DEVZIP
+zip -r $DEVZIP -@ <<EOF
+bin/gimptool-2.0.exe
+lib/libgimp-2.0.dll.a
+lib/gimp-2.0.lib
+lib/gimp.def
+lib/libgimpbase-2.0.dll.a
+lib/gimpbase-2.0.lib
+lib/gimpbase.def
+lib/libgimpcolor-2.0.dll.a
+lib/gimpcolor-2.0.lib
+lib/gimpcolor.def
+lib/libgimpconfig-2.0.dll.a
+lib/gimpconfig-2.0.lib
+lib/gimpconfig.def
+lib/libgimpmath-2.0.dll.a
+lib/gimpmath-2.0.lib
+lib/gimpmath.def
+lib/libgimpmodule-2.0.dll.a
+lib/gimpmodule-2.0.lib
+lib/gimpmodule.def
+lib/gimpthumb-2.0.lib
+lib/gimpthumb.def
+lib/libgimpui-2.0.dll.a
+lib/gimpui-2.0.lib
+lib/gimpui.def
+lib/libgimpwidgets-2.0.dll.a
+lib/gimpwidgets-2.0.lib
+lib/gimpwidgets.def
+include/gimp-2.0
+man/man1/gimptool-2.0.1
+EOF
+
+zip $DEVZIP lib/pkgconfig/gimp*.pc

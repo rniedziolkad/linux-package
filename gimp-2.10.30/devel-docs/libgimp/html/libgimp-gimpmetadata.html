@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpmetadata: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpimageundo.html" title="gimpimageundo">
+<link rel="next" href="libgimp-gimpitem.html" title="gimpitem">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpmetadata.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpimageundo.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpitem.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpmetadata"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpmetadata.top_of_page"></a>gimpmetadata</span></h2>
+<p>gimpmetadata</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpmetadata.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-GimpMetadata.html#GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-load-prepare" title="gimp_image_metadata_load_prepare ()">gimp_image_metadata_load_prepare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-load-finish" title="gimp_image_metadata_load_finish ()">gimp_image_metadata_load_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-GimpMetadata.html#GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-save-prepare" title="gimp_image_metadata_save_prepare ()">gimp_image_metadata_save_prepare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-save-finish" title="gimp_image_metadata_save_finish ()">gimp_image_metadata_save_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-load-thumbnail" title="gimp_image_metadata_load_thumbnail ()">gimp_image_metadata_load_thumbnail</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpmetadata.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpmetadata.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-image-metadata-load-prepare"></a><h3>gimp_image_metadata_load_prepare ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-GimpMetadata.html#GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+gimp_image_metadata_load_prepare (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                                  <em class="parameter"><code>const <span class="type">gchar</span> *mime_type</code></em>,
+                                  <em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                                  <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Loads and returns metadata from <em class="parameter"><code>file</code></em>
+ to be passed into
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-load-finish" title="gimp_image_metadata_load_finish ()"><code class="function">gimp_image_metadata_load_finish()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-image-metadata-load-prepare.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>The loaded file's mime-type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>The file to load the metadata from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for error</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-metadata-load-prepare.returns"></a><h4>Returns</h4>
+<p> The file's metadata.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-metadata-load-finish"></a><h3>gimp_image_metadata_load_finish ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_image_metadata_load_finish (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                                 <em class="parameter"><code>const <span class="type">gchar</span> *mime_type</code></em>,
+                                 <em class="parameter"><code><a href="../html/libgimpbase-GimpMetadata.html#GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                                 <em class="parameter"><code><a href="../html/libgimpbase-GimpMetadata.html#GimpMetadataLoadFlags"><span class="type">GimpMetadataLoadFlags</span></a> flags</code></em>,
+                                 <em class="parameter"><code><span class="type">gboolean</span> interactive</code></em>);</pre>
+<p>Applies the <em class="parameter"><code>metadata</code></em>
+ previously loaded with
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-load-prepare" title="gimp_image_metadata_load_prepare ()"><code class="function">gimp_image_metadata_load_prepare()</code></a> to the image, taking into account
+the passed <em class="parameter"><code>flags</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-image-metadata-load-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>The loaded file's mime-type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>The metadata to set on the image</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>Flags to specify what of the metadata to apply to the image</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interactive</p></td>
+<td class="parameter_description"><p>Whether this function is allowed to query info with dialogs</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-metadata-save-prepare"></a><h3>gimp_image_metadata_save_prepare ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-GimpMetadata.html#GimpMetadata"><span class="returnvalue">GimpMetadata</span></a> *
+gimp_image_metadata_save_prepare (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                                  <em class="parameter"><code>const <span class="type">gchar</span> *mime_type</code></em>,
+                                  <em class="parameter"><code><a href="../html/libgimpbase-GimpMetadata.html#GimpMetadataSaveFlags"><span class="type">GimpMetadataSaveFlags</span></a> *suggested_flags</code></em>);</pre>
+<p>Gets the image metadata for saving it using
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-save-finish" title="gimp_image_metadata_save_finish ()"><code class="function">gimp_image_metadata_save_finish()</code></a>.</p>
+<p>The <em class="parameter"><code>suggested_flags</code></em>
+ are determined from what kind of metadata
+(Exif, XMP, ...) is actually present in the image and the preferences
+for metadata exporting.
+The calling application may still update <em class="parameter"><code>available_flags</code></em>
+, for
+instance to follow the settings from a previous export in the same
+session, or a previous export of the same image. But it should not
+override the preferences without a good reason since it is a data
+leak.</p>
+<p>The suggested value for GIMP_METADATA_SAVE_THUMBNAIL is determined by
+whether there was a thumbnail in the previously imported image.</p>
+<div class="refsect3">
+<a name="gimp-image-metadata-save-prepare.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>The saved file's mime-type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>suggested_flags</p></td>
+<td class="parameter_description"><p>Suggested default values for the <em class="parameter"><code>flags</code></em>
+passed to
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-save-finish" title="gimp_image_metadata_save_finish ()"><code class="function">gimp_image_metadata_save_finish()</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-metadata-save-prepare.returns"></a><h4>Returns</h4>
+<p> The image's metadata, prepared for saving.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-metadata-save-finish"></a><h3>gimp_image_metadata_save_finish ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_metadata_save_finish (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                                 <em class="parameter"><code>const <span class="type">gchar</span> *mime_type</code></em>,
+                                 <em class="parameter"><code><a href="../html/libgimpbase-GimpMetadata.html#GimpMetadata"><span class="type">GimpMetadata</span></a> *metadata</code></em>,
+                                 <em class="parameter"><code><a href="../html/libgimpbase-GimpMetadata.html#GimpMetadataSaveFlags"><span class="type">GimpMetadataSaveFlags</span></a> flags</code></em>,
+                                 <em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                                 <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Saves the <em class="parameter"><code>metadata</code></em>
+ retrieved from the image with
+<a class="link" href="libgimp-gimpmetadata.html#gimp-image-metadata-save-prepare" title="gimp_image_metadata_save_prepare ()"><code class="function">gimp_image_metadata_save_prepare()</code></a> to <em class="parameter"><code>file</code></em>
+, taking into account
+the passed <em class="parameter"><code>flags</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-image-metadata-save-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>The saved file's mime-type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>metadata</p></td>
+<td class="parameter_description"><p>The metadata to set on the image</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>Flags to specify what of the metadata to save</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>The file to load the metadata from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for error message</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-metadata-save-finish.returns"></a><h4>Returns</h4>
+<p> Whether the save was successful.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-metadata-load-thumbnail"></a><h3>gimp_image_metadata_load_thumbnail ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_image_metadata_load_thumbnail (<em class="parameter"><code><span class="type">GFile</span> *file</code></em>,
+                                    <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

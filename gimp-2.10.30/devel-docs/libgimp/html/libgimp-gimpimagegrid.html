@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpimagegrid: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpimageconvert.html" title="gimpimageconvert">
+<link rel="next" href="libgimp-gimpimageguides.html" title="gimpimageguides">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpimagegrid.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpimageconvert.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpimageguides.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpimagegrid"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpimagegrid.top_of_page"></a>gimpimagegrid</span></h2>
+<p>gimpimagegrid — Functions manuipulating an image's grid.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpimagegrid.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-get-spacing" title="gimp_image_grid_get_spacing ()">gimp_image_grid_get_spacing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-set-spacing" title="gimp_image_grid_set_spacing ()">gimp_image_grid_set_spacing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-get-offset" title="gimp_image_grid_get_offset ()">gimp_image_grid_get_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-set-offset" title="gimp_image_grid_set_offset ()">gimp_image_grid_set_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-get-foreground-color" title="gimp_image_grid_get_foreground_color ()">gimp_image_grid_get_foreground_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-set-foreground-color" title="gimp_image_grid_set_foreground_color ()">gimp_image_grid_set_foreground_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-get-background-color" title="gimp_image_grid_get_background_color ()">gimp_image_grid_get_background_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-set-background-color" title="gimp_image_grid_set_background_color ()">gimp_image_grid_set_background_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpGridStyle"><span class="returnvalue">GimpGridStyle</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-get-style" title="gimp_image_grid_get_style ()">gimp_image_grid_get_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimagegrid.html#gimp-image-grid-set-style" title="gimp_image_grid_set_style ()">gimp_image_grid_set_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpimagegrid.description"></a><h2>Description</h2>
+<p>Functions manuipulating an image's grid.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpimagegrid.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-image-grid-get-spacing"></a><h3>gimp_image_grid_get_spacing ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_grid_get_spacing (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> *xspacing</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> *yspacing</code></em>);</pre>
+<p>Gets the spacing of an image's grid.</p>
+<p>This procedure retrieves the horizontal and vertical spacing of an
+image's grid. It takes the image as parameter.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-get-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xspacing</p></td>
+<td class="parameter_description"><p>The image's grid horizontal spacing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yspacing</p></td>
+<td class="parameter_description"><p>The image's grid vertical spacing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-get-spacing.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-grid-set-spacing"></a><h3>gimp_image_grid_set_spacing ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_grid_set_spacing (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> xspacing</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> yspacing</code></em>);</pre>
+<p>Sets the spacing of an image's grid.</p>
+<p>This procedure sets the horizontal and vertical spacing of an
+image's grid.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-set-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xspacing</p></td>
+<td class="parameter_description"><p>The image's grid horizontal spacing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yspacing</p></td>
+<td class="parameter_description"><p>The image's grid vertical spacing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-set-spacing.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-grid-get-offset"></a><h3>gimp_image_grid_get_offset ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_grid_get_offset (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> *xoffset</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> *yoffset</code></em>);</pre>
+<p>Gets the offset of an image's grid.</p>
+<p>This procedure retrieves the horizontal and vertical offset of an
+image's grid. It takes the image as parameter.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-get-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xoffset</p></td>
+<td class="parameter_description"><p>The image's grid horizontal offset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yoffset</p></td>
+<td class="parameter_description"><p>The image's grid vertical offset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-get-offset.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-grid-set-offset"></a><h3>gimp_image_grid_set_offset ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_grid_set_offset (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> xoffset</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> yoffset</code></em>);</pre>
+<p>Sets the offset of an image's grid.</p>
+<p>This procedure sets the horizontal and vertical offset of an image's
+grid.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-set-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xoffset</p></td>
+<td class="parameter_description"><p>The image's grid horizontal offset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yoffset</p></td>
+<td class="parameter_description"><p>The image's grid vertical offset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-set-offset.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-grid-get-foreground-color"></a><h3>gimp_image_grid_get_foreground_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_grid_get_foreground_color (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                                      <em class="parameter"><code><a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *fgcolor</code></em>);</pre>
+<p>Sets the foreground color of an image's grid.</p>
+<p>This procedure gets the foreground color of an image's grid.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-get-foreground-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fgcolor</p></td>
+<td class="parameter_description"><p>The image's grid foreground color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-get-foreground-color.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-grid-set-foreground-color"></a><h3>gimp_image_grid_set_foreground_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_grid_set_foreground_color (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                                      <em class="parameter"><code>const <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *fgcolor</code></em>);</pre>
+<p>Gets the foreground color of an image's grid.</p>
+<p>This procedure sets the foreground color of an image's grid.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-set-foreground-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fgcolor</p></td>
+<td class="parameter_description"><p>The new foreground color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-set-foreground-color.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-grid-get-background-color"></a><h3>gimp_image_grid_get_background_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_grid_get_background_color (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                                      <em class="parameter"><code><a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *bgcolor</code></em>);</pre>
+<p>Sets the background color of an image's grid.</p>
+<p>This procedure gets the background color of an image's grid.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-get-background-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bgcolor</p></td>
+<td class="parameter_description"><p>The image's grid background color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-get-background-color.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-grid-set-background-color"></a><h3>gimp_image_grid_set_background_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_grid_set_background_color (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                                      <em class="parameter"><code>const <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *bgcolor</code></em>);</pre>
+<p>Gets the background color of an image's grid.</p>
+<p>This procedure sets the background color of an image's grid.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-set-background-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bgcolor</p></td>
+<td class="parameter_description"><p>The new background color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-set-background-color.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-grid-get-style"></a><h3>gimp_image_grid_get_style ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpGridStyle"><span class="returnvalue">GimpGridStyle</span></a>
+gimp_image_grid_get_style (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<p>Gets the style of an image's grid.</p>
+<p>This procedure retrieves the style of an image's grid.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-get-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-get-style.returns"></a><h4>Returns</h4>
+<p> The image's grid style.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-grid-set-style"></a><h3>gimp_image_grid_set_style ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_image_grid_set_style (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                           <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpGridStyle"><span class="type">GimpGridStyle</span></a> style</code></em>);</pre>
+<p>Sets the style unit of an image's grid.</p>
+<p>This procedure sets the style of an image's grid. It takes the image
+and the new style as parameters.</p>
+<div class="refsect3">
+<a name="gimp-image-grid-set-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>The image's grid style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-image-grid-set-style.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpchannel: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="next" href="libgimp-gimpcolor.html" title="gimpcolor">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpchannel.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-image.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpcolor.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpchannel"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpchannel.top_of_page"></a>gimpchannel</span></h2>
+<p>gimpchannel — Functions for manipulating channels.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpchannel.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-new" title="gimp_channel_new ()">gimp_channel_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-new-from-component" title="gimp_channel_new_from_component ()">gimp_channel_new_from_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-copy" title="gimp_channel_copy ()">gimp_channel_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-get-show-masked" title="gimp_channel_get_show_masked ()">gimp_channel_get_show_masked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-set-show-masked" title="gimp_channel_set_show_masked ()">gimp_channel_set_show_masked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-get-opacity" title="gimp_channel_get_opacity ()">gimp_channel_get_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-set-opacity" title="gimp_channel_set_opacity ()">gimp_channel_set_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-get-color" title="gimp_channel_get_color ()">gimp_channel_get_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-set-color" title="gimp_channel_set_color ()">gimp_channel_set_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpchannel.html#gimp-channel-combine-masks" title="gimp_channel_combine_masks ()">gimp_channel_combine_masks</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpchannel.description"></a><h2>Description</h2>
+<p>Functions for manipulating channels.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpchannel.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-channel-new"></a><h3>gimp_channel_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_channel_new (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                  <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                  <em class="parameter"><code><span class="type">guint</span> width</code></em>,
+                  <em class="parameter"><code><span class="type">guint</span> height</code></em>,
+                  <em class="parameter"><code><span class="type">gdouble</span> opacity</code></em>,
+                  <em class="parameter"><code>const <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *color</code></em>);</pre>
+<p>Create a new channel.</p>
+<p>This procedure creates a new channel with the specified width and
+height. Name, opacity, and color are also supplied parameters. The
+new channel still needs to be added to the image, as this is not
+automatic. Add the new channel with the <a class="link" href="libgimp-gimpimage.html#gimp-image-insert-channel" title="gimp_image_insert_channel ()"><code class="function">gimp_image_insert_channel()</code></a>
+command. Other attributes such as channel show masked, should be
+set with explicit procedure calls. The channel's contents are
+undefined initially.</p>
+<div class="refsect3">
+<a name="gimp-channel-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image to which to add the channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The channel name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The channel width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The channel height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>opacity</p></td>
+<td class="parameter_description"><p>The channel opacity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>color</p></td>
+<td class="parameter_description"><p>The channel compositing color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-new.returns"></a><h4>Returns</h4>
+<p> The newly created channel.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-channel-new-from-component"></a><h3>gimp_channel_new_from_component ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_channel_new_from_component (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                                 <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpChannelType"><span class="type">GimpChannelType</span></a> component</code></em>,
+                                 <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Create a new channel from a color component</p>
+<p>This procedure creates a new channel from a color component.
+The new channel still needs to be added to the image, as this is not
+automatic. Add the new channel with <a class="link" href="libgimp-gimpimage.html#gimp-image-insert-channel" title="gimp_image_insert_channel ()"><code class="function">gimp_image_insert_channel()</code></a>.
+Other attributes, such as channel visibility, should be set with
+explicit procedure calls.</p>
+<div class="refsect3">
+<a name="gimp-channel-new-from-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image to which to add the channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component</p></td>
+<td class="parameter_description"><p>The image component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The channel name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-new-from-component.returns"></a><h4>Returns</h4>
+<p> The newly created channel.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-channel-copy"></a><h3>gimp_channel_copy ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_channel_copy (<em class="parameter"><code><span class="type">gint32</span> channel_ID</code></em>);</pre>
+<p>Copy a channel.</p>
+<p>This procedure copies the specified channel and returns the copy.
+The new channel still needs to be added to the image, as this is not
+automatic. Add the new channel with <a class="link" href="libgimp-gimpimage.html#gimp-image-insert-channel" title="gimp_image_insert_channel ()"><code class="function">gimp_image_insert_channel()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-channel-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>channel_ID</p></td>
+<td class="parameter_description"><p>The channel to copy.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-copy.returns"></a><h4>Returns</h4>
+<p> The newly copied channel.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-channel-get-show-masked"></a><h3>gimp_channel_get_show_masked ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_channel_get_show_masked (<em class="parameter"><code><span class="type">gint32</span> channel_ID</code></em>);</pre>
+<p>Get the composite method of the specified channel.</p>
+<p>This procedure returns the specified channel's composite method. If
+it is TRUE, then the channel is composited with the image so that
+masked regions are shown. Otherwise, selected regions are shown.</p>
+<div class="refsect3">
+<a name="gimp-channel-get-show-masked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>channel_ID</p></td>
+<td class="parameter_description"><p>The channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-get-show-masked.returns"></a><h4>Returns</h4>
+<p> The channel composite method.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-channel-set-show-masked"></a><h3>gimp_channel_set_show_masked ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_channel_set_show_masked (<em class="parameter"><code><span class="type">gint32</span> channel_ID</code></em>,
+                              <em class="parameter"><code><span class="type">gboolean</span> show_masked</code></em>);</pre>
+<p>Set the composite method of the specified channel.</p>
+<p>This procedure sets the specified channel's composite method. If it
+is TRUE, then the channel is composited with the image so that
+masked regions are shown. Otherwise, selected regions are shown.</p>
+<div class="refsect3">
+<a name="gimp-channel-set-show-masked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>channel_ID</p></td>
+<td class="parameter_description"><p>The channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>show_masked</p></td>
+<td class="parameter_description"><p>The new channel composite method.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-set-show-masked.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-channel-get-opacity"></a><h3>gimp_channel_get_opacity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_channel_get_opacity (<em class="parameter"><code><span class="type">gint32</span> channel_ID</code></em>);</pre>
+<p>Get the opacity of the specified channel.</p>
+<p>This procedure returns the specified channel's opacity.</p>
+<div class="refsect3">
+<a name="gimp-channel-get-opacity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>channel_ID</p></td>
+<td class="parameter_description"><p>The channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-get-opacity.returns"></a><h4>Returns</h4>
+<p> The channel opacity.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-channel-set-opacity"></a><h3>gimp_channel_set_opacity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_channel_set_opacity (<em class="parameter"><code><span class="type">gint32</span> channel_ID</code></em>,
+                          <em class="parameter"><code><span class="type">gdouble</span> opacity</code></em>);</pre>
+<p>Set the opacity of the specified channel.</p>
+<p>This procedure sets the specified channel's opacity.</p>
+<div class="refsect3">
+<a name="gimp-channel-set-opacity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>channel_ID</p></td>
+<td class="parameter_description"><p>The channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>opacity</p></td>
+<td class="parameter_description"><p>The new channel opacity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-set-opacity.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-channel-get-color"></a><h3>gimp_channel_get_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_channel_get_color (<em class="parameter"><code><span class="type">gint32</span> channel_ID</code></em>,
+                        <em class="parameter"><code><a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *color</code></em>);</pre>
+<p>Get the compositing color of the specified channel.</p>
+<p>This procedure returns the specified channel's compositing color.</p>
+<div class="refsect3">
+<a name="gimp-channel-get-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>channel_ID</p></td>
+<td class="parameter_description"><p>The channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>color</p></td>
+<td class="parameter_description"><p>The channel compositing color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-get-color.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-channel-set-color"></a><h3>gimp_channel_set_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_channel_set_color (<em class="parameter"><code><span class="type">gint32</span> channel_ID</code></em>,
+                        <em class="parameter"><code>const <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *color</code></em>);</pre>
+<p>Set the compositing color of the specified channel.</p>
+<p>This procedure sets the specified channel's compositing color.</p>
+<div class="refsect3">
+<a name="gimp-channel-set-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>channel_ID</p></td>
+<td class="parameter_description"><p>The channel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>color</p></td>
+<td class="parameter_description"><p>The new channel compositing color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-set-color.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-channel-combine-masks"></a><h3>gimp_channel_combine_masks ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_channel_combine_masks (<em class="parameter"><code><span class="type">gint32</span> channel1_ID</code></em>,
+                            <em class="parameter"><code><span class="type">gint32</span> channel2_ID</code></em>,
+                            <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpChannelOps"><span class="type">GimpChannelOps</span></a> operation</code></em>,
+                            <em class="parameter"><code><span class="type">gint</span> offx</code></em>,
+                            <em class="parameter"><code><span class="type">gint</span> offy</code></em>);</pre>
+<p>Combine two channel masks.</p>
+<p>This procedure combines two channel masks. The result is stored in
+the first channel.</p>
+<div class="refsect3">
+<a name="gimp-channel-combine-masks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>channel1_ID</p></td>
+<td class="parameter_description"><p>The channel1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel2_ID</p></td>
+<td class="parameter_description"><p>The channel2.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operation</p></td>
+<td class="parameter_description"><p>The selection operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offx</p></td>
+<td class="parameter_description"><p>x offset between upper left corner of channels: (second - first).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offy</p></td>
+<td class="parameter_description"><p>y offset between upper left corner of channels: (second - first).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-channel-combine-masks.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

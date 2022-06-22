@@ -1,0 +1,753 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpfileops: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpedit.html" title="gimpedit">
+<link rel="next" href="libgimp-gimpfloatingsel.html" title="gimpfloatingsel">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpfileops.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpedit.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpfloatingsel.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpfileops"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpfileops.top_of_page"></a>gimpfileops</span></h2>
+<p>gimpfileops — Image file operations (load, save, etc.)</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpfileops.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-temp-name" title="gimp_temp_name ()">gimp_temp_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-file-load" title="gimp_file_load ()">gimp_file_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-file-load-layer" title="gimp_file_load_layer ()">gimp_file_load_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-file-load-layers" title="gimp_file_load_layers ()">gimp_file_load_layers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-file-save" title="gimp_file_save ()">gimp_file_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-file-save-thumbnail" title="gimp_file_save_thumbnail ()">gimp_file_save_thumbnail</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-register-magic-load-handler" title="gimp_register_magic_load_handler ()">gimp_register_magic_load_handler</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-register-load-handler" title="gimp_register_load_handler ()">gimp_register_load_handler</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-register-save-handler" title="gimp_register_save_handler ()">gimp_register_save_handler</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-register-file-handler-priority" title="gimp_register_file_handler_priority ()">gimp_register_file_handler_priority</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-register-file-handler-mime" title="gimp_register_file_handler_mime ()">gimp_register_file_handler_mime</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-register-file-handler-uri" title="gimp_register_file_handler_uri ()">gimp_register_file_handler_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-register-file-handler-raw" title="gimp_register_file_handler_raw ()">gimp_register_file_handler_raw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfileops.html#gimp-register-thumbnail-loader" title="gimp_register_thumbnail_loader ()">gimp_register_thumbnail_loader</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpfileops.description"></a><h2>Description</h2>
+<p>Image file operations (load, save, etc.)</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpfileops.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-temp-name"></a><h3>gimp_temp_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+gimp_temp_name (<em class="parameter"><code>const <span class="type">gchar</span> *extension</code></em>);</pre>
+<p>Generates a unique filename.</p>
+<p>Generates a unique filename using the temp path supplied in the
+user's gimprc.</p>
+<div class="refsect3">
+<a name="gimp-temp-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>extension</p></td>
+<td class="parameter_description"><p>The extension the file will have.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-temp-name.returns"></a><h4>Returns</h4>
+<p> The new temp filename.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-file-load"></a><h3>gimp_file_load ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_file_load (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpRunMode"><span class="type">GimpRunMode</span></a> run_mode</code></em>,
+                <em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>,
+                <em class="parameter"><code>const <span class="type">gchar</span> *raw_filename</code></em>);</pre>
+<p>Loads an image file by invoking the right load handler.</p>
+<p>This procedure invokes the correct file load handler using magic if
+possible, and falling back on the file's extension and/or prefix if
+not. The name of the file to load is typically a full pathname, and
+the name entered is what the user actually typed before prepending a
+directory path. The reason for this is that if the user types
+https://www.gimp.org/foo.png he wants to fetch a URL, and the full
+pathname will not look like a URL.</p>
+<div class="refsect3">
+<a name="gimp-file-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>run_mode</p></td>
+<td class="parameter_description"><p>The run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>The name of the file to load.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>raw_filename</p></td>
+<td class="parameter_description"><p>The name as entered by the user.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-file-load.returns"></a><h4>Returns</h4>
+<p> The output image.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-file-load-layer"></a><h3>gimp_file_load_layer ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_file_load_layer (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpRunMode"><span class="type">GimpRunMode</span></a> run_mode</code></em>,
+                      <em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                      <em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>);</pre>
+<p>Loads an image file as a layer for an existing image.</p>
+<p>This procedure behaves like the file-load procedure but opens the
+specified image as a layer for an existing image. The returned layer
+needs to be added to the existing image with
+<a class="link" href="libgimp-gimpimage.html#gimp-image-insert-layer" title="gimp_image_insert_layer ()"><code class="function">gimp_image_insert_layer()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-file-load-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>run_mode</p></td>
+<td class="parameter_description"><p>The run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>Destination image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>The name of the file to load.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-file-load-layer.returns"></a><h4>Returns</h4>
+<p> The layer created when loading the image file.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-file-load-layers"></a><h3>gimp_file_load_layers ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span> *
+gimp_file_load_layers (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpRunMode"><span class="type">GimpRunMode</span></a> run_mode</code></em>,
+                       <em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> *num_layers</code></em>);</pre>
+<p>Loads an image file as layers for an existing image.</p>
+<p>This procedure behaves like the file-load procedure but opens the
+specified image as layers for an existing image. The returned layers
+needs to be added to the existing image with
+<a class="link" href="libgimp-gimpimage.html#gimp-image-insert-layer" title="gimp_image_insert_layer ()"><code class="function">gimp_image_insert_layer()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-file-load-layers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>run_mode</p></td>
+<td class="parameter_description"><p>The run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>Destination image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>The name of the file to load.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_layers</p></td>
+<td class="parameter_description"><p>The number of loaded layers.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-file-load-layers.returns"></a><h4>Returns</h4>
+<p> The list of loaded layers.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-file-save"></a><h3>gimp_file_save ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_file_save (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpRunMode"><span class="type">GimpRunMode</span></a> run_mode</code></em>,
+                <em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                <em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                <em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>,
+                <em class="parameter"><code>const <span class="type">gchar</span> *raw_filename</code></em>);</pre>
+<p>Saves a file by extension.</p>
+<p>This procedure invokes the correct file save handler according to
+the file's extension and/or prefix. The name of the file to save is
+typically a full pathname, and the name entered is what the user
+actually typed before prepending a directory path. The reason for
+this is that if the user types https://www.gimp.org/foo.png she
+wants to fetch a URL, and the full pathname will not look like a
+URL.</p>
+<div class="refsect3">
+<a name="gimp-file-save.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>run_mode</p></td>
+<td class="parameter_description"><p>The run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>Input image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>Drawable to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>The name of the file to save the image in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>raw_filename</p></td>
+<td class="parameter_description"><p>The name as entered by the user.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-file-save.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-file-save-thumbnail"></a><h3>gimp_file_save_thumbnail ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_file_save_thumbnail (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                          <em class="parameter"><code>const <span class="type">gchar</span> *filename</code></em>);</pre>
+<p>Saves a thumbnail for the given image</p>
+<p>This procedure saves a thumbnail for the given image according to
+the Free Desktop Thumbnail Managing Standard. The thumbnail is saved
+so that it belongs to the file with the given filename. This means
+you have to save the image under this name first, otherwise this
+procedure will fail. This procedure may become useful if you want to
+explicitly save a thumbnail with a file.</p>
+<div class="refsect3">
+<a name="gimp-file-save-thumbnail.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>The name of the file the thumbnail belongs to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-file-save-thumbnail.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-register-magic-load-handler"></a><h3>gimp_register_magic_load_handler ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_register_magic_load_handler (<em class="parameter"><code>const <span class="type">gchar</span> *procedure_name</code></em>,
+                                  <em class="parameter"><code>const <span class="type">gchar</span> *extensions</code></em>,
+                                  <em class="parameter"><code>const <span class="type">gchar</span> *prefixes</code></em>,
+                                  <em class="parameter"><code>const <span class="type">gchar</span> *magics</code></em>);</pre>
+<p>Registers a file load handler procedure.</p>
+<p>Registers a procedural database procedure to be called to load files
+of a particular file format using magic file information.</p>
+<div class="refsect3">
+<a name="gimp-register-magic-load-handler.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>procedure_name</p></td>
+<td class="parameter_description"><p>The name of the procedure to be used for loading.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extensions</p></td>
+<td class="parameter_description"><p>comma separated list of extensions this handler can load (i.e. \"jpg,jpeg\").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefixes</p></td>
+<td class="parameter_description"><p>comma separated list of prefixes this handler can load (i.e. \"http:,ftp:\").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>magics</p></td>
+<td class="parameter_description"><p>comma separated list of magic file information this handler can load (i.e. \"0,string,GIF\").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-register-magic-load-handler.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-register-load-handler"></a><h3>gimp_register_load_handler ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_register_load_handler (<em class="parameter"><code>const <span class="type">gchar</span> *procedure_name</code></em>,
+                            <em class="parameter"><code>const <span class="type">gchar</span> *extensions</code></em>,
+                            <em class="parameter"><code>const <span class="type">gchar</span> *prefixes</code></em>);</pre>
+<p>Registers a file load handler procedure.</p>
+<p>Registers a procedural database procedure to be called to load files
+of a particular file format.</p>
+<div class="refsect3">
+<a name="gimp-register-load-handler.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>procedure_name</p></td>
+<td class="parameter_description"><p>The name of the procedure to be used for loading.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extensions</p></td>
+<td class="parameter_description"><p>comma separated list of extensions this handler can load (i.e. \"jpg,jpeg\").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefixes</p></td>
+<td class="parameter_description"><p>comma separated list of prefixes this handler can load (i.e. \"http:,ftp:\").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-register-load-handler.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-register-save-handler"></a><h3>gimp_register_save_handler ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_register_save_handler (<em class="parameter"><code>const <span class="type">gchar</span> *procedure_name</code></em>,
+                            <em class="parameter"><code>const <span class="type">gchar</span> *extensions</code></em>,
+                            <em class="parameter"><code>const <span class="type">gchar</span> *prefixes</code></em>);</pre>
+<p>Registers a file save handler procedure.</p>
+<p>Registers a procedural database procedure to be called to save files
+in a particular file format.</p>
+<div class="refsect3">
+<a name="gimp-register-save-handler.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>procedure_name</p></td>
+<td class="parameter_description"><p>The name of the procedure to be used for saving.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extensions</p></td>
+<td class="parameter_description"><p>comma separated list of extensions this handler can save (i.e. \"jpg,jpeg\").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefixes</p></td>
+<td class="parameter_description"><p>comma separated list of prefixes this handler can save (i.e. \"http:,ftp:\").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-register-save-handler.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-register-file-handler-priority"></a><h3>gimp_register_file_handler_priority ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_register_file_handler_priority (<em class="parameter"><code>const <span class="type">gchar</span> *procedure_name</code></em>,
+                                     <em class="parameter"><code><span class="type">gint</span> priority</code></em>);</pre>
+<p>Sets the priority of a file handler procedure.</p>
+<p>Sets the priority of a file handler procedure. When more than one
+procedure matches a given file, the procedure with the lowest
+priority is used; if more than one procedure has the lowest
+priority, it is unspecified which one of them is used. The default
+priority for file handler procedures is 0.</p>
+<div class="refsect3">
+<a name="gimp-register-file-handler-priority.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>procedure_name</p></td>
+<td class="parameter_description"><p>The name of the procedure to set the priority of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>The procedure priority.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-register-file-handler-priority.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10-6.html#api-index-2.10.6">2.10.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-register-file-handler-mime"></a><h3>gimp_register_file_handler_mime ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_register_file_handler_mime (<em class="parameter"><code>const <span class="type">gchar</span> *procedure_name</code></em>,
+                                 <em class="parameter"><code>const <span class="type">gchar</span> *mime_types</code></em>);</pre>
+<p>Associates MIME types with a file handler procedure.</p>
+<p>Registers MIME types for a file handler procedure. This allows GIMP
+to determine the MIME type of the file opened or saved using this
+procedure. It is recommended that only one MIME type is registered
+per file procedure; when registering more than one MIME type, GIMP
+will associate the first one with files opened or saved with this
+procedure.</p>
+<div class="refsect3">
+<a name="gimp-register-file-handler-mime.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>procedure_name</p></td>
+<td class="parameter_description"><p>The name of the procedure to associate a MIME type with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_types</p></td>
+<td class="parameter_description"><p>A comma-separated list of MIME types, such as \"image/jpeg\".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-register-file-handler-mime.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-register-file-handler-uri"></a><h3>gimp_register_file_handler_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_register_file_handler_uri (<em class="parameter"><code>const <span class="type">gchar</span> *procedure_name</code></em>);</pre>
+<p>Registers a file handler procedure as capable of handling URIs.</p>
+<p>Registers a file handler procedure as capable of handling URIs. This
+allows GIMP to call the procedure directly for all kinds of URIs,
+and the 'filename' traditionally passed to file procedures turns
+into an URI.</p>
+<div class="refsect3">
+<a name="gimp-register-file-handler-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>procedure_name</p></td>
+<td class="parameter_description"><p>The name of the procedure to enable URIs for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-register-file-handler-uri.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-register-file-handler-raw"></a><h3>gimp_register_file_handler_raw ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_register_file_handler_raw (<em class="parameter"><code>const <span class="type">gchar</span> *procedure_name</code></em>);</pre>
+<p>Registers a file handler procedure as capable of handling raw camera
+files.</p>
+<p>Registers a file handler procedure as capable of handling raw
+digital camera files. Use this procedure only to register raw load
+handlers, calling it on a save handler will generate an error.</p>
+<div class="refsect3">
+<a name="gimp-register-file-handler-raw.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>procedure_name</p></td>
+<td class="parameter_description"><p>The name of the procedure to enable raw handling for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-register-file-handler-raw.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-register-thumbnail-loader"></a><h3>gimp_register_thumbnail_loader ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_register_thumbnail_loader (<em class="parameter"><code>const <span class="type">gchar</span> *load_proc</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *thumb_proc</code></em>);</pre>
+<p>Associates a thumbnail loader with a file load procedure.</p>
+<p>Some file formats allow for embedded thumbnails, other file formats
+contain a scalable image or provide the image data in different
+resolutions. A file plug-in for such a format may register a special
+procedure that allows GIMP to load a thumbnail preview of the image.
+This procedure is then associated with the standard load procedure
+using this function.</p>
+<div class="refsect3">
+<a name="gimp-register-thumbnail-loader.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>load_proc</p></td>
+<td class="parameter_description"><p>The name of the procedure the thumbnail loader with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>thumb_proc</p></td>
+<td class="parameter_description"><p>The name of the thumbnail load procedure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-register-thumbnail-loader.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

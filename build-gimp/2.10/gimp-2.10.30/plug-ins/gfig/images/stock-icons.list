@@ -1,0 +1,32 @@
+stock_bezier
+  ./stock-bezier.png
+stock_circle
+  ./stock-circle.png
+stock_copy_object
+  ./stock-copy-object.png
+stock_curve
+  ./stock-curve.png
+stock_delete_object
+  ./stock-delete-object.png
+stock_ellipse
+  ./stock-ellipse.png
+stock_line
+  ./stock-line.png
+stock_move_object
+  ./stock-move-object.png
+stock_move_point
+  ./stock-move-point.png
+stock_polygon
+  ./stock-polygon.png
+stock_rectangle
+  ./stock-rectangle.png
+stock_select_object
+  ./stock-select-object.png
+stock_show_all
+  ./stock-show-all.png
+stock_spiral
+  ./stock-spiral.png
+stock_star
+  ./stock-star.png
+stock_logo
+  ./stock-logo.png

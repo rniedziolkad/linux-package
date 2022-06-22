@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpdebug: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-general.html" title="Functions not Related to Specific Images">
+<link rel="prev" href="libgimp-gimpprogress.html" title="gimpprogress">
+<link rel="next" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpdebug.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-general.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpprogress.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-image.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpdebug"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpdebug.top_of_page"></a>gimpdebug</span></h2>
+<p>gimpdebug — Debug utility functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpdebug.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdebug.html#gimp-debug-timer-start" title="gimp_debug_timer_start ()">gimp_debug_timer_start</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdebug.html#gimp-debug-timer-end" title="gimp_debug_timer_end ()">gimp_debug_timer_end</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdebug.description"></a><h2>Description</h2>
+<p>Miscellaneous debug utility functions. Not part of the stable
+library interface.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdebug.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-debug-timer-start"></a><h3>gimp_debug_timer_start ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_debug_timer_start (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Starts measuring elapsed time.</p>
+<p>This procedure starts a timer, measuring the elapsed time since the
+call. Each call to this procedure should be matched by a call to
+<a class="link" href="libgimp-gimpdebug.html#gimp-debug-timer-end" title="gimp_debug_timer_end ()"><code class="function">gimp_debug_timer_end()</code></a>, which returns the elapsed time.
+If there is already an active timer, it is not affected by the call,
+however, a matching <a class="link" href="libgimp-gimpdebug.html#gimp-debug-timer-end" title="gimp_debug_timer_end ()"><code class="function">gimp_debug_timer_end()</code></a> call is still required.</p>
+<p>This is a debug utility procedure. It is subject to change at any
+point, and should not be used in production.</p>
+<div class="refsect3">
+<a name="gimp-debug-timer-start.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-debug-timer-end"></a><h3>gimp_debug_timer_end ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_debug_timer_end (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Finishes measuring elapsed time.</p>
+<p>This procedure stops the timer started by a previous
+<a class="link" href="libgimp-gimpdebug.html#gimp-debug-timer-start" title="gimp_debug_timer_start ()"><code class="function">gimp_debug_timer_start()</code></a> call, and prints and returns the elapsed
+time.
+If there was already an active timer at the time of corresponding
+call to <a class="link" href="libgimp-gimpdebug.html#gimp-debug-timer-start" title="gimp_debug_timer_start ()"><code class="function">gimp_debug_timer_start()</code></a>, a dummy value is returned.</p>
+<p>This is a debug utility procedure. It is subject to change at any
+point, and should not be used in production.</p>
+<div class="refsect3">
+<a name="gimp-debug-timer-end.returns"></a><h4>Returns</h4>
+<p> The elapsed time, in seconds.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

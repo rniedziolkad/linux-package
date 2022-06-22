@@ -1,0 +1,1943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimplayer: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manipulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpitemtransform.html" title="gimpitemtransform">
+<link rel="next" href="libgimp-gimppaths.html" title="gimppaths">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimplayer.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpitemtransform.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimppaths.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimplayer"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimplayer.top_of_page"></a>gimplayer</span></h2>
+<p>gimplayer — Operations on a single layer.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimplayer.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new" title="gimp_layer_new ()">gimp_layer_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new-from-drawable" title="gimp_layer_new_from_drawable ()">gimp_layer_new_from_drawable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new-from-visible" title="gimp_layer_new_from_visible ()">gimp_layer_new_from_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new-from-pixbuf" title="gimp_layer_new_from_pixbuf ()">gimp_layer_new_from_pixbuf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new-from-surface" title="gimp_layer_new_from_surface ()">gimp_layer_new_from_surface</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-group-new" title="gimp_layer_group_new ()">gimp_layer_group_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-copy" title="gimp_layer_copy ()">gimp_layer_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-scale" title="gimp_layer_scale ()">gimp_layer_scale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-scale-full" title="gimp_layer_scale_full ()">gimp_layer_scale_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-resize" title="gimp_layer_resize ()">gimp_layer_resize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-resize-to-image-size" title="gimp_layer_resize_to_image_size ()">gimp_layer_resize_to_image_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-translate" title="gimp_layer_translate ()">gimp_layer_translate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-add-alpha" title="gimp_layer_add_alpha ()">gimp_layer_add_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-flatten" title="gimp_layer_flatten ()">gimp_layer_flatten</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-offsets" title="gimp_layer_set_offsets ()">gimp_layer_set_offsets</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-create-mask" title="gimp_layer_create_mask ()">gimp_layer_create_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-from-mask" title="gimp_layer_from_mask ()">gimp_layer_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-mask" title="gimp_layer_get_mask ()">gimp_layer_get_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-add-mask" title="gimp_layer_add_mask ()">gimp_layer_add_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-remove-mask" title="gimp_layer_remove_mask ()">gimp_layer_remove_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-is-floating-sel" title="gimp_layer_is_floating_sel ()">gimp_layer_is_floating_sel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-lock-alpha" title="gimp_layer_get_lock_alpha ()">gimp_layer_get_lock_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-lock-alpha" title="gimp_layer_set_lock_alpha ()">gimp_layer_set_lock_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-preserve-trans" title="gimp_layer_get_preserve_trans ()">gimp_layer_get_preserve_trans</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-preserve-trans" title="gimp_layer_set_preserve_trans ()">gimp_layer_set_preserve_trans</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-apply-mask" title="gimp_layer_get_apply_mask ()">gimp_layer_get_apply_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-apply-mask" title="gimp_layer_set_apply_mask ()">gimp_layer_set_apply_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-show-mask" title="gimp_layer_get_show_mask ()">gimp_layer_get_show_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-show-mask" title="gimp_layer_set_show_mask ()">gimp_layer_set_show_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-edit-mask" title="gimp_layer_get_edit_mask ()">gimp_layer_get_edit_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-edit-mask" title="gimp_layer_set_edit_mask ()">gimp_layer_set_edit_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gdouble</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-opacity" title="gimp_layer_get_opacity ()">gimp_layer_get_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-opacity" title="gimp_layer_set_opacity ()">gimp_layer_set_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="returnvalue">GimpLayerMode</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-mode" title="gimp_layer_get_mode ()">gimp_layer_get_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-mode" title="gimp_layer_set_mode ()">gimp_layer_set_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpLayerColorSpace" title="enum GimpLayerColorSpace"><span class="returnvalue">GimpLayerColorSpace</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-blend-space" title="gimp_layer_get_blend_space ()">gimp_layer_get_blend_space</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-blend-space" title="gimp_layer_set_blend_space ()">gimp_layer_set_blend_space</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpLayerColorSpace" title="enum GimpLayerColorSpace"><span class="returnvalue">GimpLayerColorSpace</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-composite-space" title="gimp_layer_get_composite_space ()">gimp_layer_get_composite_space</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-composite-space" title="gimp_layer_set_composite_space ()">gimp_layer_set_composite_space</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpLayerCompositeMode" title="enum GimpLayerCompositeMode"><span class="returnvalue">GimpLayerCompositeMode</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-composite-mode" title="gimp_layer_get_composite_mode ()">gimp_layer_get_composite_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-composite-mode" title="gimp_layer_set_composite_mode ()">gimp_layer_set_composite_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimplayer.description"></a><h2>Description</h2>
+<p>Operations on a single layer.</p>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimplayer.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-layer-new"></a><h3>gimp_layer_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_new (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> height</code></em>,
+                <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpImageType"><span class="type">GimpImageType</span></a> type</code></em>,
+                <em class="parameter"><code><span class="type">gdouble</span> opacity</code></em>,
+                <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="type">GimpLayerMode</span></a> mode</code></em>);</pre>
+<p>Create a new layer.</p>
+<p>This procedure creates a new layer with the specified width, height,
+and type. Name, opacity, and mode are also supplied parameters. The
+new layer still needs to be added to the image, as this is not
+automatic. Add the new layer with the <a class="link" href="libgimp-gimpimage.html#gimp-image-insert-layer" title="gimp_image_insert_layer ()"><code class="function">gimp_image_insert_layer()</code></a>
+command. Other attributes such as layer mask modes, and offsets
+should be set with explicit procedure calls.</p>
+<div class="refsect3">
+<a name="gimp-layer-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image to which to add the layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The layer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The layer width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The layer height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>The layer type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>opacity</p></td>
+<td class="parameter_description"><p>The layer opacity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>The layer combination mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-new.returns"></a><h4>Returns</h4>
+<p> The newly created layer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-new-from-drawable"></a><h3>gimp_layer_new_from_drawable ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_new_from_drawable (<em class="parameter"><code><span class="type">gint32</span> drawable_ID</code></em>,
+                              <em class="parameter"><code><span class="type">gint32</span> dest_image_ID</code></em>);</pre>
+<p>Create a new layer by copying an existing drawable.</p>
+<p>This procedure creates a new layer as a copy of the specified
+drawable. The new layer still needs to be added to the image, as
+this is not automatic. Add the new layer with the
+<a class="link" href="libgimp-gimpimage.html#gimp-image-insert-layer" title="gimp_image_insert_layer ()"><code class="function">gimp_image_insert_layer()</code></a> command. Other attributes such as layer
+mask modes, and offsets should be set with explicit procedure calls.</p>
+<div class="refsect3">
+<a name="gimp-layer-new-from-drawable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable_ID</p></td>
+<td class="parameter_description"><p>The source drawable from where the new layer is copied.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_image_ID</p></td>
+<td class="parameter_description"><p>The destination image to which to add the layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-new-from-drawable.returns"></a><h4>Returns</h4>
+<p> The newly copied layer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-new-from-visible"></a><h3>gimp_layer_new_from_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_new_from_visible (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                             <em class="parameter"><code><span class="type">gint32</span> dest_image_ID</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<p>Create a new layer from what is visible in an image.</p>
+<p>This procedure creates a new layer from what is visible in the given
+image. The new layer still needs to be added to the destination
+image, as this is not automatic. Add the new layer with the
+<a class="link" href="libgimp-gimpimage.html#gimp-image-insert-layer" title="gimp_image_insert_layer ()"><code class="function">gimp_image_insert_layer()</code></a> command. Other attributes such as layer
+mask modes, and offsets should be set with explicit procedure calls.</p>
+<div class="refsect3">
+<a name="gimp-layer-new-from-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The source image from where the content is copied.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_image_ID</p></td>
+<td class="parameter_description"><p>The destination image to which to add the layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The layer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-new-from-visible.returns"></a><h4>Returns</h4>
+<p> The newly created layer.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-new-from-pixbuf"></a><h3>gimp_layer_new_from_pixbuf ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_new_from_pixbuf (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                            <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                            <em class="parameter"><code><span class="type">GdkPixbuf</span> *pixbuf</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> opacity</code></em>,
+                            <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="type">GimpLayerMode</span></a> mode</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> progress_start</code></em>,
+                            <em class="parameter"><code><span class="type">gdouble</span> progress_end</code></em>);</pre>
+<p>Create a new layer from a <code class="literal">GdkPixbuf</code>.</p>
+<p>This procedure creates a new layer from the given <code class="literal">GdkPixbuf</code>.  The
+image has to be an RGB image and just like with <a class="link" href="libgimp-gimplayer.html#gimp-layer-new" title="gimp_layer_new ()"><code class="function">gimp_layer_new()</code></a>
+you will still need to add the layer to it.</p>
+<p>If you pass <em class="parameter"><code>progress_end</code></em>
+ &gt; <em class="parameter"><code>progress_start</code></em>
+ to this function,
+<a class="link" href="libgimp-gimpprogress.html#gimp-progress-update" title="gimp_progress_update ()"><code class="function">gimp_progress_update()</code></a> will be called for. You have to call
+<a class="link" href="libgimp-gimpprogress.html#gimp-progress-init" title="gimp_progress_init ()"><code class="function">gimp_progress_init()</code></a> beforehand then.</p>
+<div class="refsect3">
+<a name="gimp-layer-new-from-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The RGB image to which to add the layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The layer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pixbuf</p></td>
+<td class="parameter_description"><p>A GdkPixbuf.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>opacity</p></td>
+<td class="parameter_description"><p>The layer opacity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>The layer combination mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>progress_start</p></td>
+<td class="parameter_description"><p>start of progress</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>progress_end</p></td>
+<td class="parameter_description"><p>end of progress</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-new-from-pixbuf.returns"></a><h4>Returns</h4>
+<p> The newly created layer.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-new-from-surface"></a><h3>gimp_layer_new_from_surface ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_new_from_surface (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                             <em class="parameter"><code><span class="type">cairo_surface_t</span> *surface</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> progress_start</code></em>,
+                             <em class="parameter"><code><span class="type">gdouble</span> progress_end</code></em>);</pre>
+<p>Create a new layer from a <span class="type">cairo_surface_t</span>.</p>
+<p>This procedure creates a new layer from the given
+<span class="type">cairo_surface_t</span>. The image has to be an RGB image and just like
+with <a class="link" href="libgimp-gimplayer.html#gimp-layer-new" title="gimp_layer_new ()"><code class="function">gimp_layer_new()</code></a> you will still need to add the layer to it.</p>
+<p>If you pass <em class="parameter"><code>progress_end</code></em>
+ &gt; <em class="parameter"><code>progress_start</code></em>
+ to this function,
+<a class="link" href="libgimp-gimpprogress.html#gimp-progress-update" title="gimp_progress_update ()"><code class="function">gimp_progress_update()</code></a> will be called for. You have to call
+<a class="link" href="libgimp-gimpprogress.html#gimp-progress-init" title="gimp_progress_init ()"><code class="function">gimp_progress_init()</code></a> beforehand then.</p>
+<div class="refsect3">
+<a name="gimp-layer-new-from-surface.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The RGB image to which to add the layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The layer name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A Cairo image surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>progress_start</p></td>
+<td class="parameter_description"><p>start of progress</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>progress_end</p></td>
+<td class="parameter_description"><p>end of progress</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-new-from-surface.returns"></a><h4>Returns</h4>
+<p> The newly created layer.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-group-new"></a><h3>gimp_layer_group_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_group_new (<em class="parameter"><code><span class="type">gint32</span> image_ID</code></em>);</pre>
+<p>Create a new layer group.</p>
+<p>This procedure creates a new layer group. Attributes such as layer
+mode and opacity should be set with explicit procedure calls. Add
+the new layer group (which is a kind of layer) with the
+<a class="link" href="libgimp-gimpimage.html#gimp-image-insert-layer" title="gimp_image_insert_layer ()"><code class="function">gimp_image_insert_layer()</code></a> command.
+Other procedures useful with layer groups:
+<a class="link" href="libgimp-gimpimage.html#gimp-image-reorder-item" title="gimp_image_reorder_item ()"><code class="function">gimp_image_reorder_item()</code></a>, <a class="link" href="libgimp-gimpitem.html#gimp-item-get-parent" title="gimp_item_get_parent ()"><code class="function">gimp_item_get_parent()</code></a>,
+<a class="link" href="libgimp-gimpitem.html#gimp-item-get-children" title="gimp_item_get_children ()"><code class="function">gimp_item_get_children()</code></a>, <a class="link" href="libgimp-gimpitem.html#gimp-item-is-group" title="gimp_item_is_group ()"><code class="function">gimp_item_is_group()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-layer-group-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>image_ID</p></td>
+<td class="parameter_description"><p>The image to which to add the layer group.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-group-new.returns"></a><h4>Returns</h4>
+<p> The newly created layer group.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-copy"></a><h3>gimp_layer_copy ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_copy (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Copy a layer.</p>
+<p>This procedure copies the specified layer and returns the copy. The
+newly copied layer is for use within the original layer's image. It
+should not be subsequently added to any other image.</p>
+<div class="refsect3">
+<a name="gimp-layer-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer to copy.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-copy.returns"></a><h4>Returns</h4>
+<p> The newly copied layer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-scale"></a><h3>gimp_layer_scale ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_scale (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> new_width</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> new_height</code></em>,
+                  <em class="parameter"><code><span class="type">gboolean</span> local_origin</code></em>);</pre>
+<p>Scale the layer using the default interpolation method.</p>
+<p>This procedure scales the layer so that its new width and height are
+equal to the supplied parameters. The 'local-origin' parameter
+specifies whether to scale from the center of the layer, or from the
+image origin. This operation only works if the layer has been added
+to an image. The interpolation method used can be set with
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()"><code class="function">gimp_context_set_interpolation()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-layer-scale.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_width</p></td>
+<td class="parameter_description"><p>New layer width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_height</p></td>
+<td class="parameter_description"><p>New layer height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>local_origin</p></td>
+<td class="parameter_description"><p>Use a local origin (as opposed to the image origin).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-scale.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-scale-full"></a><h3>gimp_layer_scale_full ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_scale_full (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> new_width</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> new_height</code></em>,
+                       <em class="parameter"><code><span class="type">gboolean</span> local_origin</code></em>,
+                       <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpInterpolationType"><span class="type">GimpInterpolationType</span></a> interpolation</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_layer_scale_full</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimplayer.html#gimp-layer-scale" title="gimp_layer_scale ()"><code class="function">gimp_layer_scale()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-scale-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_width</p></td>
+<td class="parameter_description"><p>New layer width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_height</p></td>
+<td class="parameter_description"><p>New layer height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>local_origin</p></td>
+<td class="parameter_description"><p>Use a local origin (as opposed to the image origin).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Type of interpolation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-scale-full.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-resize"></a><h3>gimp_layer_resize ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_resize (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> new_width</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> new_height</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> offx</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> offy</code></em>);</pre>
+<p>Resize the layer to the specified extents.</p>
+<p>This procedure resizes the layer so that its new width and height
+are equal to the supplied parameters. Offsets are also provided
+which describe the position of the previous layer's content. This
+operation only works if the layer has been added to an image.</p>
+<div class="refsect3">
+<a name="gimp-layer-resize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_width</p></td>
+<td class="parameter_description"><p>New layer width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_height</p></td>
+<td class="parameter_description"><p>New layer height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offx</p></td>
+<td class="parameter_description"><p>x offset between upper left corner of old and new layers: (old - new).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offy</p></td>
+<td class="parameter_description"><p>y offset between upper left corner of old and new layers: (old - new).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-resize.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-resize-to-image-size"></a><h3>gimp_layer_resize_to_image_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_resize_to_image_size (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Resize a layer to the image size.</p>
+<p>This procedure resizes the layer so that it's new width and height
+are equal to the width and height of its image container.</p>
+<div class="refsect3">
+<a name="gimp-layer-resize-to-image-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer to resize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-resize-to-image-size.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-translate"></a><h3>gimp_layer_translate ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_translate (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> offx</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> offy</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_layer_translate</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-translate" title="gimp_item_transform_translate ()"><code class="function">gimp_item_transform_translate()</code></a> instead.</p>
+</div>
+<p>Translate the layer by the specified offsets.</p>
+<p>This procedure translates the layer by the amounts specified in the
+x and y arguments. These can be negative, and are considered offsets
+from the current position. This command only works if the layer has
+been added to an image. All additional layers contained in the image
+which have the linked flag set to TRUE w ill also be translated by
+the specified offsets.</p>
+<div class="refsect3">
+<a name="gimp-layer-translate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offx</p></td>
+<td class="parameter_description"><p>Offset in x direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offy</p></td>
+<td class="parameter_description"><p>Offset in y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-translate.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-add-alpha"></a><h3>gimp_layer_add_alpha ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_add_alpha (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Add an alpha channel to the layer if it doesn't already have one.</p>
+<p>This procedure adds an additional component to the specified layer
+if it does not already possess an alpha channel. An alpha channel
+makes it possible to clear and erase to transparency, instead of the
+background color. This transforms layers of type RGB to RGBA, GRAY
+to GRAYA, and INDEXED to INDEXEDA.</p>
+<div class="refsect3">
+<a name="gimp-layer-add-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-add-alpha.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-flatten"></a><h3>gimp_layer_flatten ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_flatten (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Remove the alpha channel from the layer if it has one.</p>
+<p>This procedure removes the alpha channel from a layer, blending all
+(partially) transparent pixels in the layer against the background
+color. This transforms layers of type RGBA to RGB, GRAYA to GRAY,
+and INDEXEDA to INDEXED.</p>
+<div class="refsect3">
+<a name="gimp-layer-flatten.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-flatten.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-offsets"></a><h3>gimp_layer_set_offsets ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_offsets (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                        <em class="parameter"><code><span class="type">gint</span> offx</code></em>,
+                        <em class="parameter"><code><span class="type">gint</span> offy</code></em>);</pre>
+<p>Set the layer offsets.</p>
+<p>This procedure sets the offsets for the specified layer. The offsets
+are relative to the image origin and can be any values. This
+operation is valid only on layers which have been added to an image.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-offsets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offx</p></td>
+<td class="parameter_description"><p>Offset in x direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offy</p></td>
+<td class="parameter_description"><p>Offset in y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-offsets.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-create-mask"></a><h3>gimp_layer_create_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_create_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                        <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpAddMaskType"><span class="type">GimpAddMaskType</span></a> mask_type</code></em>);</pre>
+<p>Create a layer mask for the specified layer.</p>
+<p>This procedure creates a layer mask for the specified layer.
+Layer masks serve as an additional alpha channel for a layer.
+Different types of masks are allowed for initialisation:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>white mask (leaves the layer fully visible);</p></li>
+<li class="listitem"><p>black mask (gives the layer complete transparency);</p></li>
+<li class="listitem"><p>the layer's alpha channel (either a copy, or a transfer, which
+leaves the layer fully visible, but which may be more useful than a
+white mask);</p></li>
+<li class="listitem"><p>the current selection;</p></li>
+<li class="listitem"><p>a grayscale copy of the layer;</p></li>
+<li class="listitem"><p>or a copy of the active channel.</p></li>
+</ul></div>
+<p>The layer mask still needs to be added to the layer. This can be
+done with a call to <a class="link" href="libgimp-gimplayer.html#gimp-layer-add-mask" title="gimp_layer_add_mask ()"><code class="function">gimp_layer_add_mask()</code></a>.</p>
+<p>gimp_layer_create_mask() will fail if there are no active channels
+on the image, when called with 'ADD-CHANNEL-MASK'. It will return a
+black mask when called with 'ADD-ALPHA-MASK' or
+'ADD-ALPHA-TRANSFER-MASK' on a layer with no alpha channels, or with
+'ADD-SELECTION-MASK' when there is no selection on the image.</p>
+<div class="refsect3">
+<a name="gimp-layer-create-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer to which to add the mask.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_type</p></td>
+<td class="parameter_description"><p>The type of mask.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-create-mask.returns"></a><h4>Returns</h4>
+<p> The newly created mask.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-from-mask"></a><h3>gimp_layer_from_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_from_mask (<em class="parameter"><code><span class="type">gint32</span> mask_ID</code></em>);</pre>
+<p>Get the specified mask's layer.</p>
+<p>This procedure returns the specified mask's layer , or -1 if none
+exists.</p>
+<div class="refsect3">
+<a name="gimp-layer-from-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask_ID</p></td>
+<td class="parameter_description"><p>Mask for which to return the layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-from-mask.returns"></a><h4>Returns</h4>
+<p> The mask's layer.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-mask"></a><h3>gimp_layer_get_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+gimp_layer_get_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the specified layer's mask if it exists.</p>
+<p>This procedure returns the specified layer's mask, or -1 if none
+exists.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-mask.returns"></a><h4>Returns</h4>
+<p> The layer mask.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-add-mask"></a><h3>gimp_layer_add_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_add_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                     <em class="parameter"><code><span class="type">gint32</span> mask_ID</code></em>);</pre>
+<p>Add a layer mask to the specified layer.</p>
+<p>This procedure adds a layer mask to the specified layer. Layer masks
+serve as an additional alpha channel for a layer. This procedure
+will fail if a number of prerequisites aren't met. The layer cannot
+already have a layer mask. The specified mask must exist and have
+the same dimensions as the layer. The layer must have been created
+for use with the specified image and the mask must have been created
+with the procedure 'gimp-layer-create-mask'.</p>
+<div class="refsect3">
+<a name="gimp-layer-add-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer to receive the mask.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_ID</p></td>
+<td class="parameter_description"><p>The mask to add to the layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-add-mask.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-remove-mask"></a><h3>gimp_layer_remove_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_remove_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                        <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpMaskApplyMode"><span class="type">GimpMaskApplyMode</span></a> mode</code></em>);</pre>
+<p>Remove the specified layer mask from the layer.</p>
+<p>This procedure removes the specified layer mask from the layer. If
+the mask doesn't exist, an error is returned.</p>
+<div class="refsect3">
+<a name="gimp-layer-remove-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer from which to remove mask.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Removal mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-remove-mask.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-is-floating-sel"></a><h3>gimp_layer_is_floating_sel ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_is_floating_sel (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Is the specified layer a floating selection?</p>
+<p>This procedure returns whether the layer is a floating selection.
+Floating selections are special cases of layers which are attached
+to a specific drawable.</p>
+<div class="refsect3">
+<a name="gimp-layer-is-floating-sel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-is-floating-sel.returns"></a><h4>Returns</h4>
+<p> TRUE if the layer is a floating selection.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-lock-alpha"></a><h3>gimp_layer_get_lock_alpha ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_get_lock_alpha (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the lock alpha channel setting of the specified layer.</p>
+<p>This procedure returns the specified layer's lock alpha channel
+setting.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-lock-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-lock-alpha.returns"></a><h4>Returns</h4>
+<p> The layer's lock alpha channel setting.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-lock-alpha"></a><h3>gimp_layer_set_lock_alpha ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_lock_alpha (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                           <em class="parameter"><code><span class="type">gboolean</span> lock_alpha</code></em>);</pre>
+<p>Set the lock alpha channel setting of the specified layer.</p>
+<p>This procedure sets the specified layer's lock alpha channel
+setting.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-lock-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lock_alpha</p></td>
+<td class="parameter_description"><p>The new layer's lock alpha channel setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-lock-alpha.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-preserve-trans"></a><h3>gimp_layer_get_preserve_trans ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_get_preserve_trans (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_layer_get_preserve_trans</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This procedure is deprecated! Use <a class="link" href="libgimp-gimplayer.html#gimp-layer-get-lock-alpha" title="gimp_layer_get_lock_alpha ()"><code class="function">gimp_layer_get_lock_alpha()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-preserve-trans.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-preserve-trans.returns"></a><h4>Returns</h4>
+<p> The layer's preserve transperancy setting.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-preserve-trans"></a><h3>gimp_layer_set_preserve_trans ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_preserve_trans (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                               <em class="parameter"><code><span class="type">gboolean</span> preserve_trans</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_layer_set_preserve_trans</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This procedure is deprecated! Use <a class="link" href="libgimp-gimplayer.html#gimp-layer-set-lock-alpha" title="gimp_layer_set_lock_alpha ()"><code class="function">gimp_layer_set_lock_alpha()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-preserve-trans.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preserve_trans</p></td>
+<td class="parameter_description"><p>The new layer's preserve transperancy setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-preserve-trans.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-apply-mask"></a><h3>gimp_layer_get_apply_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_get_apply_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the apply mask setting of the specified layer.</p>
+<p>This procedure returns the specified layer's apply mask setting. If
+the value is TRUE, then the layer mask for this layer is currently
+being composited with the layer's alpha channel.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-apply-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-apply-mask.returns"></a><h4>Returns</h4>
+<p> The layer's apply mask setting.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-apply-mask"></a><h3>gimp_layer_set_apply_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_apply_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                           <em class="parameter"><code><span class="type">gboolean</span> apply_mask</code></em>);</pre>
+<p>Set the apply mask setting of the specified layer.</p>
+<p>This procedure sets the specified layer's apply mask setting. This
+controls whether the layer's mask is currently affecting the alpha
+channel. If there is no layer mask, this function will return an
+error.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-apply-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>apply_mask</p></td>
+<td class="parameter_description"><p>The new layer's apply mask setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-apply-mask.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-show-mask"></a><h3>gimp_layer_get_show_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_get_show_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the show mask setting of the specified layer.</p>
+<p>This procedure returns the specified layer's show mask setting. This
+controls whether the layer or its mask is visible. TRUE indicates
+that the mask should be visible. If the layer has no mask, then this
+function returns an error.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-show-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-show-mask.returns"></a><h4>Returns</h4>
+<p> The layer's show mask setting.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-show-mask"></a><h3>gimp_layer_set_show_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_show_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                          <em class="parameter"><code><span class="type">gboolean</span> show_mask</code></em>);</pre>
+<p>Set the show mask setting of the specified layer.</p>
+<p>This procedure sets the specified layer's show mask setting. This
+controls whether the layer or its mask is visible. TRUE indicates
+that the mask should be visible. If there is no layer mask, this
+function will return an error.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-show-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>show_mask</p></td>
+<td class="parameter_description"><p>The new layer's show mask setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-show-mask.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-edit-mask"></a><h3>gimp_layer_get_edit_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_get_edit_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the edit mask setting of the specified layer.</p>
+<p>This procedure returns the specified layer's edit mask setting. If
+the value is TRUE, then the layer mask for this layer is currently
+active, and not the layer.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-edit-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-edit-mask.returns"></a><h4>Returns</h4>
+<p> The layer's edit mask setting.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-edit-mask"></a><h3>gimp_layer_set_edit_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_edit_mask (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                          <em class="parameter"><code><span class="type">gboolean</span> edit_mask</code></em>);</pre>
+<p>Set the edit mask setting of the specified layer.</p>
+<p>This procedure sets the specified layer's edit mask setting. This
+controls whether the layer or it's mask is currently active for
+editing. If the specified layer has no layer mask, then this
+procedure will return an error.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-edit-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>edit_mask</p></td>
+<td class="parameter_description"><p>The new layer's edit mask setting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-edit-mask.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-opacity"></a><h3>gimp_layer_get_opacity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gdouble</span>
+gimp_layer_get_opacity (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the opacity of the specified layer.</p>
+<p>This procedure returns the specified layer's opacity.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-opacity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-opacity.returns"></a><h4>Returns</h4>
+<p> The layer opacity.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-opacity"></a><h3>gimp_layer_set_opacity ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_opacity (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                        <em class="parameter"><code><span class="type">gdouble</span> opacity</code></em>);</pre>
+<p>Set the opacity of the specified layer.</p>
+<p>This procedure sets the specified layer's opacity.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-opacity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>opacity</p></td>
+<td class="parameter_description"><p>The new layer opacity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-opacity.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-mode"></a><h3>gimp_layer_get_mode ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="returnvalue">GimpLayerMode</span></a>
+gimp_layer_get_mode (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the combination mode of the specified layer.</p>
+<p>This procedure returns the specified layer's combination mode.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-mode.returns"></a><h4>Returns</h4>
+<p> The layer combination mode.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-mode"></a><h3>gimp_layer_set_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_mode (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                     <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerMode" title="enum GimpLayerMode"><span class="type">GimpLayerMode</span></a> mode</code></em>);</pre>
+<p>Set the combination mode of the specified layer.</p>
+<p>This procedure sets the specified layer's combination mode.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>The new layer combination mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-mode.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-blend-space"></a><h3>gimp_layer_get_blend_space ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpLayerColorSpace" title="enum GimpLayerColorSpace"><span class="returnvalue">GimpLayerColorSpace</span></a>
+gimp_layer_get_blend_space (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the blend space of the specified layer.</p>
+<p>This procedure returns the specified layer's blend space.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-blend-space.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-blend-space.returns"></a><h4>Returns</h4>
+<p> The layer blend space.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-blend-space"></a><h3>gimp_layer_set_blend_space ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_blend_space (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                            <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerColorSpace" title="enum GimpLayerColorSpace"><span class="type">GimpLayerColorSpace</span></a> blend_space</code></em>);</pre>
+<p>Set the blend space of the specified layer.</p>
+<p>This procedure sets the specified layer's blend space.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-blend-space.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>blend_space</p></td>
+<td class="parameter_description"><p>The new layer blend space.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-blend-space.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-composite-space"></a><h3>gimp_layer_get_composite_space ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpLayerColorSpace" title="enum GimpLayerColorSpace"><span class="returnvalue">GimpLayerColorSpace</span></a>
+gimp_layer_get_composite_space (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the composite space of the specified layer.</p>
+<p>This procedure returns the specified layer's composite space.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-composite-space.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-composite-space.returns"></a><h4>Returns</h4>
+<p> The layer composite space.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-composite-space"></a><h3>gimp_layer_set_composite_space ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_composite_space (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerColorSpace" title="enum GimpLayerColorSpace"><span class="type">GimpLayerColorSpace</span></a> composite_space</code></em>);</pre>
+<p>Set the composite space of the specified layer.</p>
+<p>This procedure sets the specified layer's composite space.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-composite-space.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>composite_space</p></td>
+<td class="parameter_description"><p>The new layer composite space.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-composite-space.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-composite-mode"></a><h3>gimp_layer_get_composite_mode ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpLayerCompositeMode" title="enum GimpLayerCompositeMode"><span class="returnvalue">GimpLayerCompositeMode</span></a>
+gimp_layer_get_composite_mode (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>);</pre>
+<p>Get the composite mode of the specified layer.</p>
+<p>This procedure returns the specified layer's composite mode.</p>
+<div class="refsect3">
+<a name="gimp-layer-get-composite-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-get-composite-mode.returns"></a><h4>Returns</h4>
+<p> The layer composite mode.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-composite-mode"></a><h3>gimp_layer_set_composite_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+gimp_layer_set_composite_mode (<em class="parameter"><code><span class="type">gint32</span> layer_ID</code></em>,
+                               <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerCompositeMode" title="enum GimpLayerCompositeMode"><span class="type">GimpLayerCompositeMode</span></a> composite_mode</code></em>);</pre>
+<p>Set the composite mode of the specified layer.</p>
+<p>This procedure sets the specified layer's composite mode.</p>
+<div class="refsect3">
+<a name="gimp-layer-set-composite-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer_ID</p></td>
+<td class="parameter_description"><p>The layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>composite_mode</p></td>
+<td class="parameter_description"><p>The new layer composite mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-layer-set-composite-mode.returns"></a><h4>Returns</h4>
+<p> TRUE on success.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

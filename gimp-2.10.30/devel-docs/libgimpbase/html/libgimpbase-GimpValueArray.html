@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpValueArray: GIMP Base Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="GIMP Base Library Reference Manual">
+<link rel="up" href="pt01.html" title="Part I. GIMP Base Library">
+<link rel="prev" href="libgimpbase-gimputils.html" title="gimputils">
+<link rel="next" href="api-index-full.html" title="Index">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpbase-GimpValueArray.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="pt01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpbase-gimputils.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpbase-GimpValueArray"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpbase-GimpValueArray.top_of_page"></a>GimpValueArray</span></h2>
+<p>GimpValueArray — A container structure to maintain an array of
+generic values</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpbase-GimpValueArray.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-new" title="gimp_value_array_new ()">gimp_value_array_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-ref" title="gimp_value_array_ref ()">gimp_value_array_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-unref" title="gimp_value_array_unref ()">gimp_value_array_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-length" title="gimp_value_array_length ()">gimp_value_array_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GValue</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-index" title="gimp_value_array_index ()">gimp_value_array_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-prepend" title="gimp_value_array_prepend ()">gimp_value_array_prepend</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-append" title="gimp_value_array_append ()">gimp_value_array_append</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-insert" title="gimp_value_array_insert ()">gimp_value_array_insert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-remove" title="gimp_value_array_remove ()">gimp_value_array_remove</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-truncate" title="gimp_value_array_truncate ()">gimp_value_array_truncate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GParamSpec</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-param-spec-value-array" title="gimp_param_spec_value_array ()">gimp_param_spec_value_array</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpValueArray.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray">GimpValueArray</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="libgimpbase-GimpValueArray.html#GimpParamSpecValueArray" title="struct GimpParamSpecValueArray">GimpParamSpecValueArray</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpValueArray.description"></a><h2>Description</h2>
+<p>The prime purpose of a <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> is for it to be used as an
+object property that holds an array of values. A <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> wraps
+an array of <span class="type">GValue</span> elements in order for it to be used as a boxed
+type through <code class="literal">GIMP_TYPE_VALUE_ARRAY</code>.</p>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpValueArray.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-value-array-new"></a><h3>gimp_value_array_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+gimp_value_array_new (<em class="parameter"><code><span class="type">gint</span> n_prealloced</code></em>);</pre>
+<p>Allocate and initialize a new <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a>, optionally preserve space
+for <em class="parameter"><code>n_prealloced</code></em>
+ elements. New arrays always contain 0 elements,
+regardless of the value of <em class="parameter"><code>n_prealloced</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-value-array-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>n_prealloced</p></td>
+<td class="parameter_description"><p>number of values to preallocate space for</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-value-array-new.returns"></a><h4>Returns</h4>
+<p> a newly allocated <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> with 0 values</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-value-array-ref"></a><h3>gimp_value_array_ref ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+gimp_value_array_ref (<em class="parameter"><code><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> *value_array</code></em>);</pre>
+<p>Adds a reference to a <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a>.</p>
+<div class="refsect3">
+<a name="gimp-value-array-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>value_array</p></td>
+<td class="parameter_description"><p><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> to ref</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-value-array-ref.returns"></a><h4>Returns</h4>
+<p> the same <em class="parameter"><code>value_array</code></em>
+</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-value-array-unref"></a><h3>gimp_value_array_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_value_array_unref (<em class="parameter"><code><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> *value_array</code></em>);</pre>
+<p>Unref a <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a>. If the reference count drops to zero, the
+array including its contents are freed.</p>
+<div class="refsect3">
+<a name="gimp-value-array-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>value_array</p></td>
+<td class="parameter_description"><p><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> to unref</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-value-array-length"></a><h3>gimp_value_array_length ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+gimp_value_array_length (<em class="parameter"><code>const <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> *value_array</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-value-array-index"></a><h3>gimp_value_array_index ()</h3>
+<pre class="programlisting"><span class="returnvalue">GValue</span> *
+gimp_value_array_index (<em class="parameter"><code>const <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> *value_array</code></em>,
+                        <em class="parameter"><code><span class="type">gint</span> index</code></em>);</pre>
+<p>Return a pointer to the value at <em class="parameter"><code>index</code></em>
+ contained in <em class="parameter"><code>value_array</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-value-array-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>value_array</p></td>
+<td class="parameter_description"><p><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> to get a value from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>index of the value of interest</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-value-array-index.returns"></a><h4>Returns</h4>
+<p>pointer to a value at <em class="parameter"><code>index</code></em>
+in <em class="parameter"><code>value_array</code></em>
+. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-value-array-prepend"></a><h3>gimp_value_array_prepend ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+gimp_value_array_prepend (<em class="parameter"><code><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> *value_array</code></em>,
+                          <em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>);</pre>
+<p>Insert a copy of <em class="parameter"><code>value</code></em>
+ as first element of <em class="parameter"><code>value_array</code></em>
+. If <em class="parameter"><code>value</code></em>
+ is
+<code class="literal">NULL</code>, an uninitialized value is prepended.</p>
+<div class="refsect3">
+<a name="gimp-value-array-prepend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>value_array</p></td>
+<td class="parameter_description"><p><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> to add an element to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p><span class="type">GValue</span> to copy into <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a>, or <code class="literal">NULL</code>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-value-array-prepend.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> passed in as <em class="parameter"><code>value_array</code></em>
+. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-value-array-append"></a><h3>gimp_value_array_append ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+gimp_value_array_append (<em class="parameter"><code><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> *value_array</code></em>,
+                         <em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>);</pre>
+<p>Insert a copy of <em class="parameter"><code>value</code></em>
+ as last element of <em class="parameter"><code>value_array</code></em>
+. If <em class="parameter"><code>value</code></em>
+ is
+<code class="literal">NULL</code>, an uninitialized value is appended.</p>
+<div class="refsect3">
+<a name="gimp-value-array-append.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>value_array</p></td>
+<td class="parameter_description"><p><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> to add an element to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p><span class="type">GValue</span> to copy into <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a>, or <code class="literal">NULL</code>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-value-array-append.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> passed in as <em class="parameter"><code>value_array</code></em>
+. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-value-array-insert"></a><h3>gimp_value_array_insert ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+gimp_value_array_insert (<em class="parameter"><code><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> *value_array</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> index</code></em>,
+                         <em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>);</pre>
+<p>Insert a copy of <em class="parameter"><code>value</code></em>
+ at specified position into <em class="parameter"><code>value_array</code></em>
+. If <em class="parameter"><code>value</code></em>
+
+is <code class="literal">NULL</code>, an uninitialized value is inserted.</p>
+<div class="refsect3">
+<a name="gimp-value-array-insert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>value_array</p></td>
+<td class="parameter_description"><p><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> to add an element to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>insertion position, must be &lt;= <a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-length" title="gimp_value_array_length ()"><code class="function">gimp_value_array_length()</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p><span class="type">GValue</span> to copy into <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a>, or <code class="literal">NULL</code>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-value-array-insert.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> passed in as <em class="parameter"><code>value_array</code></em>
+. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-value-array-remove"></a><h3>gimp_value_array_remove ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="returnvalue">GimpValueArray</span></a> *
+gimp_value_array_remove (<em class="parameter"><code><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> *value_array</code></em>,
+                         <em class="parameter"><code><span class="type">gint</span> index</code></em>);</pre>
+<p>Remove the value at position <em class="parameter"><code>index</code></em>
+ from <em class="parameter"><code>value_array</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-value-array-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>value_array</p></td>
+<td class="parameter_description"><p><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> to remove an element from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>position of value to remove, which must be less than
+<a class="link" href="libgimpbase-GimpValueArray.html#gimp-value-array-length" title="gimp_value_array_length ()"><code class="function">gimp_value_array_length()</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-value-array-remove.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> passed in as <em class="parameter"><code>value_array</code></em>
+. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-value-array-truncate"></a><h3>gimp_value_array_truncate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_value_array_truncate (<em class="parameter"><code><a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> *value_array</code></em>,
+                           <em class="parameter"><code><span class="type">gint</span> n_values</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-param-spec-value-array"></a><h3>gimp_param_spec_value_array ()</h3>
+<pre class="programlisting"><span class="returnvalue">GParamSpec</span> *
+gimp_param_spec_value_array (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *nick</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *blurb</code></em>,
+                             <em class="parameter"><code><span class="type">GParamSpec</span> *element_spec</code></em>,
+                             <em class="parameter"><code><span class="type">GParamFlags</span> flags</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpValueArray.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpValueArray"></a><h3>GimpValueArray</h3>
+<pre class="programlisting">typedef struct _GimpValueArray GimpValueArray;</pre>
+<p>A <a class="link" href="libgimpbase-GimpValueArray.html#GimpValueArray" title="GimpValueArray"><span class="type">GimpValueArray</span></a> contains an array of <span class="type">GValue</span> elements.</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpParamSpecValueArray"></a><h3>struct GimpParamSpecValueArray</h3>
+<pre class="programlisting">struct GimpParamSpecValueArray {
+  GParamSpec  parent_instance;
+  GParamSpec *element_spec;
+  gint        fixed_n_elements;
+};
+</pre>
+<p>A <span class="type">GParamSpec</span> derived structure that contains the meta data for
+value array properties.</p>
+<div class="refsect3">
+<a name="GimpParamSpecValueArray.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><span class="type">GParamSpec</span> *<em class="structfield"><code><a name="GimpParamSpecValueArray.element-spec"></a>element_spec</code></em>;</p></td>
+<td class="struct_member_description"><p>the <span class="type">GParamSpec</span> of the array elements</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">gint</span> <em class="structfield"><code><a name="GimpParamSpecValueArray.fixed-n-elements"></a>fixed_n_elements</code></em>;</p></td>
+<td class="struct_member_description"><p>default length of the array</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-GimpValueArray.see-also"></a><h2>See Also</h2>
+<p><span class="type">GValue</span>, <span class="type">GParamSpecValueArray</span>, <a class="link" href="libgimpbase-GimpValueArray.html#gimp-param-spec-value-array" title="gimp_param_spec_value_array ()"><code class="function">gimp_param_spec_value_array()</code></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

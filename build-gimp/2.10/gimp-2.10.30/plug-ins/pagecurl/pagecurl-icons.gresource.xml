@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gimp/pagecurl-icons">
+    <file preprocess="to-pixdata">curl0.png</file>
+    <file preprocess="to-pixdata">curl1.png</file>
+    <file preprocess="to-pixdata">curl2.png</file>
+    <file preprocess="to-pixdata">curl3.png</file>
+    <file preprocess="to-pixdata">curl4.png</file>
+    <file preprocess="to-pixdata">curl5.png</file>
+    <file preprocess="to-pixdata">curl6.png</file>
+    <file preprocess="to-pixdata">curl7.png</file>
+  </gresource>
+</gresources>
